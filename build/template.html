@@ -422,7 +422,6 @@ body.locked > :not(#lock){visibility:hidden}
 
     <h2>Sources and coverage</h2>
     <ul id="coverage" style="margin:0 0 12px;padding-left:20px"></ul>
-    <details class="more"><summary>Products with traffic in the period that are no longer live on the store</summary><div class="hublist" style="margin-top:8px"><figure><ol id="ghostlist"></ol></figure></div></details>
 
     <h2>Refreshing the data</h2>
     <ol class="steps">
@@ -704,14 +703,13 @@ $('#newstats').textContent = `Right now: ${fmt(c.new_lt30)} products under 30 da
 $('#er-site').textContent = D.product_er + '%'; $('#er-all').textContent = D.site_er + '%';
 $('#newlink').addEventListener('click', e => { e.preventDefault(); $('#tab-method').click(); setTimeout(() => $('#newproduct').scrollIntoView({behavior: 'smooth'}), 50); });
 $('#coverage').innerHTML = [
-  `GA4 Pages and screens, 90 days: ${fmt(c.ga_rows)} rows; ${fmt(c.ga_product_paths)} distinct product URLs after merging language prefixes (/en/) and collection paths (/collections/x/products/y), ${fmt(c.ga_product_views)} product page views. ${fmt(c.product_views)} of them (${(c.product_views / c.ga_product_views * 100).toFixed(0)}%) belong to the ${fmt(c.products)} products live on the store today; the rest belong to ${fmt(c.ghost)} products that have since been unpublished (listed below).`,
+  `GA4 Pages and screens, 90 days: ${fmt(c.ga_rows)} rows; ${fmt(c.ga_product_paths)} distinct product URLs after merging language prefixes (/en/) and collection paths (/collections/x/products/y), ${fmt(c.ga_product_views)} product page views. ${fmt(c.product_views)} of them (${(c.product_views / c.ga_product_views * 100).toFixed(0)}%) belong to the ${fmt(c.products)} products live on the store today; the rest belong to ${fmt(c.ghost)} products that are no longer on the store and are not shown anywhere in this dashboard. Every product URL was checked against the live site on ${D.period.crawled}.`,
   `GA4 Pages and screens, 30 days and 12 months: ${fmt(c.ga_rows12)} rows in the 12-month export, used for recency weighting and the trend column.`,
   `GA4 Ecommerce items: ${fmt(c.items_n)} item names, ${fmt(c.items_matched)} matched to a live product (${(c.item_views_matched / c.item_views_total * 100).toFixed(0)}% of item views). Greek and English names of the same item (the /en/ storefront) are merged. Unmatched names are unpublished products.`,
   `Search Console through the GA4 link: ${fmt(c.gsc_rows)} landing pages, ${fmt(c.gsc_clicks_total)} organic clicks, of which ${fmt(c.gsc_product_clicks)} land on product pages. Most organic demand lands on collection pages (wedding, home, dresses), which is why the click weight is redistributed inside most collections.`,
   `Catalogue: ${fmt(c.collections_crawled)} collections and ${fmt(c.products)} live products read from the store on ${D.period.crawled}, with images, prices, colour options, publish dates and per-variant stock. ${fmt(c.listed)} products are listed in at least one collection; ${fmt(c.unlisted_with_views)} with traffic are in no collection at all.`,
   `Stock: ${fmt(c.soldout)} products sold out in every size, carrying ${fmt(c.soldout_views)} product page views.`
 ].map(s => `<li>${s}</li>`).join('');
-$('#ghostlist').innerHTML = (D.ghost || []).map(([h, v]) => `<li><code>/products/${esc(h)}</code><span class="num" style="white-space:nowrap">${fmt(v)} views</span></li>`).join('') || '<li>none</li>';
 }
 const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
 document.body.classList.add('locked');

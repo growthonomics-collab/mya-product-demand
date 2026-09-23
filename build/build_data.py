@@ -98,7 +98,11 @@ def price_band(p):
 
 # ---------- catalogue
 site = json.load(open('site.json'))
-PRODUCTS = site['products']; MEMB = site['membership']; COLLS = {c['handle']: c for c in site['collections']}
+PRODUCTS = site['products']; MEMB = site['membership']
+# products whose URL no longer answers on the live site (checked with HTTP requests at build time) are dropped
+NOT_LIVE = set(json.load(open('not_live.json'))) if __import__('os').path.exists('not_live.json') else set()
+PRODUCTS = {h: p for h, p in PRODUCTS.items() if h not in NOT_LIVE}
+MEMB = {c: [h for h in hs if h not in NOT_LIVE] for c, hs in MEMB.items()}; COLLS = {c['handle']: c for c in site['collections']}
 NAV = [  # from the live site navigation, in menu order
     ('house-of-peonies-fw27', 'House of Peonies FW27', 'House of Peonies FW27', 'root'),
     ('peonies-dress', 'Peonies · Dresses', 'House of Peonies FW27', 'sub'), ('peonies-tops', 'Peonies · Tops', 'House of Peonies FW27', 'sub'), ('peonies-skirts', 'Peonies · Skirts', 'House of Peonies FW27', 'sub'),
@@ -362,7 +366,7 @@ cols = ['pid', 'name', 'slug', 'img', 'type', 'season', 'colour', 'colours', 'pr
         'views_raw', 'views', 'users', 'sess', 'engs', 'er', 'clicks', 'impr', 'atc', 'purch', 'revenue', 'views12', 'rank', 'score', 'ratio', 'ratio12', 'prov', 'tier', 'trend']
 D = dict(product_cols=cols, products=[[r[c] if not isinstance(r[c], float) else round(r[c], 2) for c in cols] for r in PL], hubs=hubs, tiers=TIERCOUNT, hub_pages=hub_pages, attr=ATTR, coverage=cov,
          site_totals=dict(views=int(S90['views']), users=int(S90['users']), sess=int(S90['sess']), engs=int(S90['engs']), gsc_clicks=int(gsc_tot['clicks']), gsc_impr=int(gsc_tot['impr']), atc=int(items_total['atc']), purch=int(items_total['purch']), revenue=round(items_total['revenue'])),
-         site_er=round(site_er, 1), product_er=round(product_er, 1), ghost=ghost[:40], unmatched_items=sorted(unmatched_names, key=lambda x: -x[1])[:40],
+         site_er=round(site_er, 1), product_er=round(product_er, 1),  unmatched_items=sorted(unmatched_names, key=lambda x: -x[1])[:40],
          period=dict(start=PERIOD_START.isoformat(), end=PERIOD_END.isoformat(), start12='2025-09-23', crawled=TODAY.isoformat()))
 json.dump(D, open('data.json', 'w'), ensure_ascii=False)
 print('products', len(PL), 'hubs', len(hubs), 'ghost', len(ghost), 'items matched', items_matched, '/', items_total['n'], f"({items_matched_views/items_total['item_views']*100:.0f}% of item views)")
