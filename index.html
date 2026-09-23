@@ -1,0 +1,729 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>MYA Product Demand</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#F6F4F2; --blush:#F3E7E1; --line:#D2D5D9; --line-strong:#B8BCC2;
+  --ink:#212326; --ink-2:#4B4E53; --ink-3:#7A7E85;
+  --taupe:#1A1B18; --taupe-2:#C9A99B; --taupe-3:#ECD7CD; --taupe-soft:#F3E7E1;
+  --accent:#1A1B18; --accent-ink:#8A5F4E; --accent-soft:#F3E7E1;
+  --series:#C9A99B; --series-soft:#ECD7CD; --gold:#1A1B18; --sale:#FFB8B8;
+  --focus:#1A1B18;
+  --sans:"Jost","Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
+  --serif:"Amiri","Cormorant Garamond",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#141314; --surface:#1B1A1B; --surface-2:#232122; --blush:#2A2426; --line:#343132; --line-strong:#4A4547;
+    --ink:#F5F1EF; --ink-2:#CFC8C4; --ink-3:#958D89;
+    --taupe:#ECD7CD; --accent:#ECD7CD; --accent-ink:#E2BFB0; --accent-soft:#2E2625;
+    --series:#B99786; --series-soft:#3A3230; --gold:#F5F1EF;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#141314; --surface:#1B1A1B; --surface-2:#232122; --blush:#2A2426; --line:#343132; --line-strong:#4A4547;
+  --ink:#F5F1EF; --ink-2:#CFC8C4; --ink-3:#958D89;
+  --taupe:#ECD7CD; --accent:#ECD7CD; --accent-ink:#E2BFB0; --accent-soft:#2E2625;
+  --series:#B99786; --series-soft:#3A3230; --gold:#F5F1EF;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.55;padding-block:0 56px;padding-inline:0}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:0;text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,4.6vw,54px);line-height:1.05}
+h1 em,h2 em{font-style:italic}
+h2{font-size:30px;line-height:1.15}
+h3{font-size:22px}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+.num{font-variant-numeric:tabular-nums}
+.muted{color:var(--ink-2)}
+.small{font-size:13px}
+.topbar{background:var(--taupe);color:var(--bg);text-align:center;font-size:12px;padding:7px 16px;letter-spacing:.02em}
+.topbar a{color:inherit}
+.sitehead{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:30}
+.sitehead .wrap{display:flex;align-items:center;gap:28px;min-height:64px;flex-wrap:wrap}
+.wordmark{font-family:var(--sans);font-weight:600;font-size:24px;letter-spacing:.34em;text-transform:uppercase;text-decoration:none;padding-right:8px;white-space:nowrap}
+nav.tabs{display:flex;gap:2px;flex-wrap:wrap;margin:0;flex:1}
+nav.tabs button{background:none;border:0;border-bottom:2px solid transparent;padding:22px 9px 20px;font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);cursor:pointer;margin-bottom:-1px;white-space:nowrap}
+nav.tabs button:hover{color:var(--accent-ink)}
+nav.tabs button[aria-selected="true"]{border-bottom-color:var(--ink)}
+.headcta{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:var(--taupe-3);color:#1A1B18;padding:9px 16px;text-decoration:none;white-space:nowrap}
+nav.tabs button:focus-visible,select:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+section[role="tabpanel"][hidden]{display:none}
+.hero{background:var(--blush);padding-block:54px 50px;text-align:center}
+.hero .wrap{max-width:900px}
+.hero .eyebrow{color:var(--accent-ink);margin-bottom:12px}
+.hero .sub{margin:16px auto 0;color:var(--ink-2);max-width:66ch;font-size:15px}
+.totals{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 44px;margin-top:30px}
+.totals div{padding-block:4px;text-align:center}
+.totals b{display:block;font-family:var(--serif);font-size:32px;font-weight:400;line-height:1.05}
+.totals span{font-size:11px;color:var(--ink-3);letter-spacing:.12em;text-transform:uppercase}
+.panel-head{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-content:space-between;margin:34px 0 22px}
+.panel-head p{max-width:70ch;color:var(--ink-2);margin-top:8px}
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+select{font:inherit;font-size:13px;padding:9px 34px 9px 12px;border:1px solid var(--line-strong);border-radius:0;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23000' stroke-width='1.4'/%3E%3C/svg%3E") no-repeat right 12px center;color:var(--ink);appearance:none;-webkit-appearance:none;max-width:100%}
+label.ctl{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);display:flex;flex-direction:column;gap:5px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:24px}
+.tiles div{background:var(--surface);padding:16px 18px}
+.tiles b{display:block;font-family:var(--serif);font-size:28px;font-weight:400;line-height:1.05}
+.tiles span{font-size:11px;color:var(--ink-3);letter-spacing:.1em;text-transform:uppercase}
+.tiles small{display:block;color:var(--ink-2);font-size:12px;margin-top:4px}
+.grid2{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;align-items:start}
+@media (max-width:900px){.grid2{grid-template-columns:1fr}}
+figure{margin:0;background:var(--surface);border:1px solid var(--line);padding:18px 20px}
+figure figcaption{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:12px}
+figure figcaption h3{font-size:22px}
+figure figcaption span{font-size:12px;color:var(--ink-3)}
+svg{display:block;width:100%;height:auto;overflow:visible}
+.bar{fill:var(--series)}
+.bar.hi{fill:var(--gold)}
+.bar-bg{fill:var(--surface-2)}
+.lbl{fill:var(--ink);font-size:12.5px;font-family:inherit}
+.val{fill:var(--ink-2);font-size:12px;font-family:inherit}
+.axis{stroke:var(--line);stroke-width:1}
+.hit{fill:transparent;cursor:default}
+.row:hover .bar{filter:brightness(.85)}
+.tt{position:fixed;z-index:40;pointer-events:none;background:var(--ink);color:var(--bg);padding:8px 10px;font-size:12.5px;line-height:1.4;max-width:280px;box-shadow:0 4px 14px rgba(0,0,0,.18);display:none}
+.tt b{display:block;font-weight:500;margin-bottom:2px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:22px 18px;margin:0 0 30px}
+.card{position:relative;text-decoration:none;display:block;color:inherit}
+.card .img{position:relative;aspect-ratio:3/4;background:#F3F3F3;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.card .img img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;top:10px;left:10px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border:1px solid var(--ink);background:var(--bg);color:var(--ink);line-height:1}
+.badge.b-Hero{background:var(--ink);color:var(--bg)}
+.badge.b-Strong{background:var(--bg)}
+.badge.b-New{background:var(--taupe-3);border-color:var(--taupe-3);color:#1A1B18}
+.badge.b-Average{border-color:var(--line-strong);color:var(--ink-2)}
+.badge.b-Low{border-style:dashed;border-color:var(--line-strong);color:var(--ink-3)}
+.soldout{position:absolute;bottom:10px;left:10px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;background:var(--sale);color:#1A1B18;line-height:1}
+.rankno{position:absolute;top:10px;right:10px;font-family:var(--serif);font-size:16px;color:var(--ink);background:var(--bg);padding:2px 7px}
+.card .cname{font-family:var(--serif);font-size:17px;text-align:center;margin-top:12px;line-height:1.25}
+.card .cmeta{text-align:center;font-size:12px;color:var(--ink-2);margin-top:4px}
+.card .cratio{text-align:center;font-size:12px;margin-top:6px;letter-spacing:.04em;text-transform:uppercase}
+.card .cratio b{font-weight:500}
+.card:hover .cname{text-decoration:underline;text-underline-offset:3px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:1240px}
+td:has(.pcell){min-width:300px}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);font-weight:500;background:var(--surface-2);position:sticky;top:0}
+td.n,th.n{text-align:right}
+tr:last-child td{border-bottom:0}
+td .name{font-family:var(--serif);font-size:15.5px;text-decoration:none;display:block;max-width:34ch;line-height:1.25}
+td .name:hover{text-decoration:underline}
+.chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+.chip{font-size:10.5px;padding:1px 7px;background:var(--surface-2);color:var(--ink-2);border:1px solid var(--line);letter-spacing:.02em}
+.chip.out{background:var(--sale);color:#1A1B18;border-color:var(--sale)}
+.share{display:inline-block;min-width:52px}
+.sharebar{display:inline-block;height:8px;background:var(--series);vertical-align:middle;margin-right:6px}
+.flag{color:var(--accent-ink);font-size:12px}
+.attrgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.hublist{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px;margin-top:22px}
+.hublist figure ol{margin:0;padding:0;list-style:none}
+.hublist li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed var(--line);font-size:13px}
+.hublist li:last-child{border-bottom:0}
+.hublist li code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--ink-2);word-break:break-all}
+.method{max-width:74ch;margin-top:34px}
+.method h2{margin-top:36px;margin-bottom:10px}
+.method h3{margin-top:24px;margin-bottom:6px}
+.method p{margin-bottom:12px}
+.formula{background:var(--surface-2);border:1px solid var(--line);border-left:3px solid var(--taupe-2);padding:14px 18px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;line-height:1.6;margin:12px 0 16px;overflow-x:auto}
+.wtable{width:auto;min-width:0;font-size:14px}
+.wtable th{position:static}
+.callout{background:var(--blush);padding:14px 18px;margin:14px 0}
+.steps{counter-reset:s;padding:0;margin:0 0 14px;list-style:none}
+.steps li{counter-increment:s;position:relative;padding-left:36px;margin-bottom:10px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:var(--taupe);color:var(--bg);font-family:var(--serif);font-size:13px;display:flex;align-items:center;justify-content:center}
+@media (prefers-reduced-motion:no-preference){.bar{transition:width .35s ease}}
+.formula-top{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:24px 40px;padding-block:32px 30px;border-bottom:1px solid var(--line)}
+@media (max-width:900px){.formula-top{grid-template-columns:1fr}}
+.formula-top .formula{font-size:12.5px;line-height:1.55}
+.formula-top .eyebrow{color:var(--accent-ink)}
+.mini{margin:10px 0 8px;padding-left:18px;font-size:13.5px;color:var(--ink-2)}
+.mini li{margin-bottom:6px}
+.mini b{color:var(--ink);font-weight:500}
+.thumb{width:44px;height:56px;object-fit:cover;background:var(--surface-2);border:1px solid var(--line);flex:none}
+.pcell{display:flex;gap:12px;align-items:flex-start}
+.pcell > div{min-width:0}
+.filters{align-items:flex-end}
+.filters input,.controls input{font:inherit;font-size:13px;padding:9px 12px;border:1px solid var(--line-strong);border-radius:0;background:var(--surface);color:var(--ink);min-width:200px}
+th.sort{cursor:pointer;user-select:none}
+th.sort:hover{color:var(--ink)}
+th.sort[data-dir="desc"]::after{content:" ↓"}
+th.sort[data-dir="asc"]::after{content:" ↑"}
+.tier{font-size:10px;padding:3px 8px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;border:1px solid var(--ink);line-height:1;display:inline-block}
+.tier-Hero{background:var(--ink);color:var(--bg)}
+.tier-Strong{background:var(--bg);color:var(--ink)}
+.tier-Average{background:var(--bg);color:var(--ink-2);border-color:var(--line-strong)}
+.tier-New{background:var(--taupe-3);color:#1A1B18;border-color:var(--taupe-3)}
+.tier-Low{background:var(--bg);color:var(--ink-3);border:1px dashed var(--line-strong)}
+.tier-No-data{background:var(--surface-2);color:var(--ink-3);border:1px dashed var(--line-strong)}
+.more summary{cursor:pointer;color:var(--accent-ink);font-size:12px;margin-top:2px}
+.trend{font-size:11.5px;white-space:nowrap;color:var(--ink-2)}
+.trend-Rising{color:#1f7a3a}.trend-Fading{color:#a33d2f}.trend-New{color:var(--accent-ink)}
+:root[data-theme="dark"] .trend-Rising{color:#5fd08a}:root[data-theme="dark"] .trend-Fading{color:#f08a7a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .trend-Rising{color:#5fd08a}:root:not([data-theme="light"]) .trend-Fading{color:#f08a7a}}
+.pl{font-size:12px;color:var(--ink-2);line-height:1.5}
+.pl b{color:var(--ink);font-weight:500}
+.pager{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:14px;font-size:13px}
+.pager button{font:inherit;font-size:12px;padding:6px 11px;border:1px solid var(--line-strong);border-radius:0;background:var(--surface);color:var(--ink);cursor:pointer}
+.pager button[aria-current="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.mapgroup{margin-bottom:28px}
+.mapgroup summary{cursor:pointer;margin-bottom:10px;list-style:none}
+.mapgroup summary::before{content:"▸ ";color:var(--ink-3)}
+.mapgroup[open] summary::before{content:"▾ "}
+.stack{display:grid;grid-template-columns:220px 1fr 60px;gap:10px;align-items:center;font-size:13px;padding:4px 0}
+.stack .bar-row{display:flex;height:16px;overflow:hidden;background:var(--surface-2);gap:2px}
+.stack .seg{height:100%}
+.seg-Hero{background:var(--ink)}
+.seg-Strong{background:var(--taupe-2)}
+.seg-Average{background:var(--series-soft)}
+.seg-Low{background:var(--line)}
+.seg-New{background:var(--sale)}
+.seg-No-data{background:repeating-linear-gradient(45deg,var(--line-strong) 0 3px,transparent 3px 6px)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-2);margin-bottom:14px}
+.legend span::before{content:"";display:inline-block;width:11px;height:11px;margin-right:6px;vertical-align:-1px}
+.legend .l-Hero::before{background:var(--ink)}.legend .l-Strong::before{background:var(--taupe-2)}.legend .l-Average::before{background:var(--series-soft)}.legend .l-Low::before{background:var(--line)}.legend .l-New::before{background:var(--sale)}
+.legend .l-No::before{background:repeating-linear-gradient(45deg,var(--line-strong) 0 3px,transparent 3px 6px)}
+@media (max-width:700px){.stack{grid-template-columns:120px 1fr 50px}}
+.matrix{padding-block:40px 36px;border-bottom:1px solid var(--line);background:var(--bg)}
+.bcg{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:22px;align-items:start}
+@media (max-width:980px){.bcg{grid-template-columns:1fr}}
+.quads{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.quads{grid-template-columns:1fr}}
+.bcg > *{min-width:0}
+.quad{min-width:0;border:1px solid var(--line);padding:14px 16px;background:var(--surface);border-top:3px solid var(--q)}
+.quad h3{font-size:21px}
+.quad h3 small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-top:2px}
+.quad .rule{font-size:12px;color:var(--ink-2);margin:4px 0 8px}
+.quad .act{font-size:12.5px;margin:0 0 10px;padding:8px 10px;background:var(--surface-2)}
+.quad ol{margin:0;padding:0;list-style:none}
+.quad li{display:flex;align-items:center;gap:9px;padding:5px 0;border-bottom:1px dashed var(--line);font-size:12.5px}
+.quad li:last-child{border-bottom:0}
+.quad li img,.quad li .thumb{width:32px;height:40px}
+.quad li a{font-family:var(--serif);font-size:14px;text-decoration:none;flex:1;min-width:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.2}
+.quad li a:hover{text-decoration:underline}
+.quad li .qn{color:var(--ink-2);white-space:nowrap;font-size:11.5px}
+.q-Stars{--q:#1A1B18}.q-Cash{--q:#C9A99B}.q-Question{--q:#ECD7CD}.q-Dogs{--q:#D2D5D9}
+:root[data-theme="dark"] .q-Stars{--q:#F5F1EF}
+.dot{stroke:#fff;stroke-width:.5;opacity:.85;cursor:default}
+.dot:hover{opacity:1;stroke:#000;stroke-width:1.5}
+.qlab{font-family:var(--serif);font-size:15px;fill:var(--ink-3)}
+.axl{font-size:11px;fill:var(--ink-3);font-family:inherit;letter-spacing:.08em;text-transform:uppercase}
+.tick{font-size:10.5px;fill:var(--ink-3);font-family:inherit}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-3);text-align:center}
+footer .fm{font-family:var(--sans);font-weight:600;letter-spacing:.34em;text-transform:uppercase;font-size:14px;color:var(--ink);margin-bottom:8px}
+#lock{position:fixed;inset:0;z-index:100;background:#F3E7E1;display:flex;align-items:center;justify-content:center;padding:24px}
+#lock form{background:#fff;padding:40px 36px;max-width:380px;width:100%;text-align:center;border:1px solid #D2D5D9}
+#lock .wm{font-family:"Jost","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:600;font-size:24px;letter-spacing:.34em;text-transform:uppercase;color:#1A1B18;margin-bottom:6px}
+#lock h2{font-family:"Amiri",Georgia,serif;font-weight:400;font-size:26px;color:#212326;margin:0 0 18px}
+#lock input{width:100%;font:inherit;font-size:15px;padding:11px 12px;border:1px solid #B8BCC2;border-radius:0;margin-bottom:12px;color:#212326;background:#fff}
+#lock button{width:100%;font-family:"Jost","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.1em;text-transform:uppercase;background:#1A1B18;color:#fff;border:0;padding:12px;cursor:pointer}
+#lock .err{color:#a33d2f;font-size:13px;min-height:18px;margin-top:10px}
+body.locked > :not(#lock){visibility:hidden}
+</style>
+</head><body>
+<div id="lock"><form id="lockform" autocomplete="off"><div class="wm">MYA</div><h2>Product demand dashboard</h2><input id="pw" type="password" placeholder="Password" autofocus aria-label="Password"><button type="submit">Open dashboard</button><div class="err" id="lockerr"></div></form></div>
+<div class="topbar">Product demand dashboard for myacollection.com, period 25 June to 22 September 2026. Built by <a href="https://growth-onomics.com" target="_blank" rel="noopener">Growth-onomics</a>.</div>
+<div class="sitehead"><div class="wrap">
+  <a class="wordmark" href="#top">MYA</a>
+  <nav class="tabs" role="tablist" aria-label="Views">
+    <button role="tab" id="tab-rank" aria-selected="true" aria-controls="p-rank">Rankings</button>
+    <button role="tab" id="tab-all" aria-selected="false" aria-controls="p-all">Products</button>
+    <button role="tab" id="tab-map" aria-selected="false" aria-controls="p-map">Placement</button>
+    <button role="tab" id="tab-hubs" aria-selected="false" aria-controls="p-hubs">Collections</button>
+    <button role="tab" id="tab-attr" aria-selected="false" aria-controls="p-attr">What sells</button>
+    <button role="tab" id="tab-method" aria-selected="false" aria-controls="p-method">Formula</button>
+  </nav>
+  <a class="headcta" href="#p-method" id="headcta">The method</a>
+</div></div>
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">MYA Collection · myacollection.com</div>
+    <h1><em>Demand</em> Made Visible</h1>
+    <p class="sub">Which pieces customers actually look for inside each collection, ranked from GA4 and Search Console. Every product carries a Popularity Ratio (1.00 = an average product of its collection) that the Shopify store can sort, badge and link by.</p>
+    <div class="totals" id="totals"></div>
+  </div>
+</section>
+<section class="matrix" id="p-bcg" aria-label="Portfolio matrix">
+  <div class="wrap">
+    <div class="panel-head" style="margin-top:0">
+      <div>
+        <div class="eyebrow" style="color:var(--accent-ink)">Portfolio matrix</div>
+        <h2 style="margin-top:6px">Where every piece sits, BCG style</h2>
+        <p>The classic growth-share matrix, filled with our own two numbers. Share = the Popularity Ratio in the product's main collection (1.00 = collection average). Growth = momentum, the 90-day ratio divided by the 12-month ratio (1.00 = holding its position). Newcomers with no 12-month history, which this season means the whole House of Peonies drop, are question marks by definition.</p>
+      </div>
+      <div class="controls">
+        <label class="ctl">Collection<select id="bcghub"><option value="">All collections</option></select></label>
+        <label class="ctl">Size dots by<select id="bcgsize"><option value="views">Page views</option><option value="clicks">Organic clicks</option><option value="atc">Add-to-cart</option><option value="purch">Purchases</option><option value="none">Same size</option></select></label>
+      </div>
+    </div>
+    <div class="bcg">
+      <figure class="bcgchart"><figcaption><h3>Growth × share</h3><span>each dot is a product, hover for details</span></figcaption><div id="bcgplot"></div><p class="small muted" id="bcgnote" style="margin-top:10px"></p></figure>
+      <div class="quads" id="quads"></div>
+    </div>
+  </div>
+</section>
+<div class="wrap">
+<section class="formula-top" aria-label="The formula">
+  <div class="ft-main">
+    <div class="eyebrow">The formula</div>
+    <div class="formula" style="margin:8px 0 6px">Demand Share % = 100 × [ 0.35 × Views ÷ ΣViews(collection) + 0.25 × Users ÷ ΣUsers(collection) + 0.15 × Engaged sessions ÷ ΣEngaged(collection) + 0.15 × Organic clicks ÷ ΣClicks(collection) + 0.10 × Add-to-cart ÷ ΣATC(collection) ]<br>Views and Users are recency-weighted: the last 30 days count double against days 31 to 90<br>Popularity Ratio = Demand Share % × Products in collection ÷ 100<br>Newcomers (under 90 days on site): Ratio = (real views × own ratio + 100 × 1.50) ÷ (real views + 100)<br>12-month check = same share on 12 months of GA4 (0.45 Views + 0.35 Users + 0.20 Engaged sessions); Trend = 90-day ratio ÷ 12-month ratio</div>
+    <p class="small muted">Each product is scored against the other products actually listed in the same Shopify collection (membership read from the store's own collection listings, <span id="ncoll"></span> collections). Ratio 1.00 = an average product of that collection; 3.00 and above = Hero (featured), 1.50 to 2.99 = Strong (first rows), 0.50 to 1.49 = Average (default order), under 0.50 = Low (back of the grid). Engaged sessions carry the engagement rate into the score, so a page people bounce from earns less than one they stay on. The 12-month column shows whether the 90-day position is new or established: Rising = 90-day ratio at least 25% above the 12-month ratio, Fading = at least 20% below. Sources: GA4 Pages and screens (30 days, 90 days and 12 months), GA4 Ecommerce items, Search Console landing pages (through the GA4 link).</p>
+  </div>
+  <div class="ft-side">
+    <div class="eyebrow">Where a product stands when it enters after the formula</div>
+    <ol class="mini">
+      <li><b>Day 1: ratio 1.50, label New.</b> With no views the prior is all there is: first rows of its collection, no Hero slot, no risk of the back of the grid.</li>
+      <li><b>Every day after: the prior fades as views arrive.</b> Its signals are scaled to a full window and blended with the prior in proportion to its real views: at 100 views it is halfway to its own performance, at 1,000 views the prior is gone. A strong launch shows in days, a weak one drifts down gently.</li>
+      <li><b>Day 90 onwards: the plain formula.</b> Launch date comes from the Shopify publish date, checked against GA4 (a republished product with earlier history is treated as established).</li>
+    </ol>
+    <p class="small muted" id="newstats"></p>
+    <a href="#p-method" class="small" id="newlink">Full rules and the launch checklist</a>
+  </div>
+</section>
+
+<section role="tabpanel" id="p-rank" aria-labelledby="tab-rank">
+  <div class="panel-head">
+    <div>
+      <h2>Most popular pieces per collection</h2>
+      <p>Pick any collection page on the store. Products are ranked by Demand Share, the share of that collection's page views, users, engaged sessions, organic clicks and add-to-carts that each product captures. Use the top rows to decide featured products, collection ordering and internal links.</p>
+    </div>
+    <div class="controls">
+      <label class="ctl">Find a collection<input id="hubq" type="search" placeholder="type part of the name, e.g. sirens"></label>
+      <label class="ctl">Collection<select id="hubsel"></select></label>
+      <label class="ctl">Show<select id="topn"><option value="10">Top 10</option><option value="15" selected>Top 15</option><option value="25">Top 25</option><option value="50">Top 50</option><option value="0">All products in collection</option></select></label>
+    </div>
+  </div>
+  <p class="callout small" id="hubnote" hidden></p>
+  <p class="small muted" id="hubsrc" style="margin:-8px 0 14px"></p>
+  <div class="tiles" id="hubtiles"></div>
+  <div class="grid2">
+    <figure>
+      <figcaption><h3 id="chart-title">Demand Share</h3><span>% of collection demand · <span style="display:inline-block;width:10px;height:10px;background:var(--gold);border-radius:2px;vertical-align:middle"></span> had a purchase</span></figcaption>
+      <div id="chart"></div>
+    </figure>
+    <figure>
+      <figcaption><h3>How concentrated this collection is</h3><span>share of each signal taken by the listed products</span></figcaption>
+      <div id="mixchart"></div>
+      <p class="small muted" id="mixnote" style="margin-top:10px"></p>
+    </figure>
+  </div>
+  <h3 style="margin:30px 0 14px">Top of the collection, as it would look on the shop grid</h3>
+  <div class="cards" id="topcards"></div>
+  <h3 style="margin:26px 0 12px">Ranked table</h3>
+  <div class="tablewrap"><table id="ranktable"></table></div>
+  <p class="small muted" style="margin-top:8px">Add-to-cart and purchases come from the GA4 items report (item name matched to the product), so quick-adds from collection pages are attributed to the product, not to the collection page. Stock status is read from the live store at build time: a Hero product that is sold out is demand the store cannot currently serve.</p>
+</section>
+
+<section role="tabpanel" id="p-all" aria-labelledby="tab-all" hidden>
+  <div class="panel-head">
+    <div>
+      <h2>Every product and where it goes</h2>
+      <p>Every live product in the catalogue with its main collection, Popularity Ratio (1.00 = an average product of its collection), merch tier, rank, stock status, and every other collection it belongs to with its rank inside it. Search, filter, and click a column heading to sort.</p>
+    </div>
+  </div>
+  <div class="controls filters" id="filters">
+    <label class="ctl">Search<input id="q" type="search" placeholder="name or URL"></label>
+    <label class="ctl">Main collection<select id="f-hub_label"><option value="">All</option></select></label>
+    <label class="ctl">Tier<select id="f-tier"><option value="">All</option><option>Hero</option><option>Strong</option><option>Average</option><option>Low</option><option>New</option><option>No data</option></select></label>
+    <label class="ctl">Age<select id="f-status"><option value="">All</option><option>Established</option><option>Ramping</option><option>New</option><option>No data</option></select></label>
+    <label class="ctl">Trend<select id="f-trend"><option value="">All</option><option>Rising</option><option>Steady</option><option>Fading</option><option>New</option></select></label>
+    <label class="ctl">Type<select id="f-type"><option value="">All</option></select></label>
+    <label class="ctl">Season<select id="f-season"><option value="">All</option></select></label>
+    <label class="ctl">Colour<select id="f-colour"><option value="">All</option></select></label>
+    <label class="ctl">Price<select id="f-price_band"><option value="">All</option></select></label>
+    <label class="ctl">Stock<select id="f-stock_band"><option value="">All</option></select></label>
+  </div>
+  <p class="small muted" id="allcount" style="margin:12px 0 8px"></p>
+  <div class="tablewrap"><table id="alltable"></table></div>
+  <div class="pager" id="pager"></div>
+</section>
+
+<section role="tabpanel" id="p-map" aria-labelledby="tab-map" hidden>
+  <div class="panel-head">
+    <div>
+      <h2>Placement map</h2>
+      <p>How each collection's products split into merch tiers. Hero (ratio 3.00 and above) gets the featured slots and the popular badge, Strong (1.50 to 2.99) fills the first rows, Average (0.50 to 1.49) is the default order, Low (under 0.50) goes to the back of the grid or gets reviewed. New is the provisional 1.50 for products with under 100 views since launch. Hover a bar for counts.</p>
+    </div>
+  </div>
+  <div id="mapgroups"></div>
+</section>
+
+<section role="tabpanel" id="p-hubs" aria-labelledby="tab-hubs" hidden>
+  <div class="panel-head">
+    <div>
+      <h2>Collection page demand</h2>
+      <p>How much traffic each collection family attracts on its own collection pages (not the products inside). Page views from GA4, organic clicks from Search Console. The bars show which families deserve more merchandising attention and which collection pages are the entry points from Google.</p>
+    </div>
+  </div>
+  <figure>
+    <figcaption><h3>Collection page views by family</h3><span>GA4 views, 90 days</span></figcaption>
+    <div id="hubchart"></div>
+  </figure>
+  <div class="hublist" id="hublist"></div>
+  <h3 style="margin:30px 0 10px">Every collection page with traffic</h3>
+  <p class="small muted" style="margin-bottom:12px" id="navnote"></p>
+  <div class="tablewrap"><table id="navtable" style="min-width:900px"></table></div>
+</section>
+
+<section role="tabpanel" id="p-attr" aria-labelledby="tab-attr" hidden>
+  <div class="panel-head">
+    <div>
+      <h2>What MYA shoppers look at</h2>
+      <p>Share of product page views by attribute, read from the Shopify catalogue (product type, colour option, price, season tag and live stock). Each chart is a share of the products where the attribute is known.</p>
+    </div>
+  </div>
+  <div class="attrgrid" id="attrgrid"></div>
+  <p class="callout small" style="margin-top:18px" id="stocknote"></p>
+</section>
+
+<section role="tabpanel" id="p-method" aria-labelledby="tab-method" hidden>
+  <div class="method">
+    <h2 style="margin-top:0">The formula</h2>
+    <p>Every product is scored inside its collection, never against the whole store, so a strong skirt is not buried under dresses. The score is a Demand Share: the percentage of the collection's total demand that one product captures. Shares inside a collection add up to 100.</p>
+    <div class="formula">Demand Share (product, collection) =<br>
+&nbsp;&nbsp;0.35 × Views(product) / Σ Views(collection)<br>
+&nbsp;+ 0.25 × Users(product) / Σ Users(collection)<br>
+&nbsp;+ 0.15 × Engaged sessions(product) / Σ Engaged sessions(collection)<br>
+&nbsp;+ 0.15 × Organic clicks(product) / Σ Organic clicks(collection)<br>
+&nbsp;+ 0.10 × Add-to-cart(product) / Σ Add-to-cart(collection)<br>
+&nbsp;× 100<br><br>Engaged sessions = GA4 sessions over 10 seconds, with a key event, or with 2+ page views</div>
+    <table class="wtable"><thead><tr><th>Signal</th><th>Source</th><th class="n">Weight</th><th>Why</th></tr></thead><tbody>
+      <tr><td>Page views</td><td>GA4 · Pages and screens</td><td class="n">35%</td><td>Raw interest. Counts repeat looks, which is how people shop for occasion wear.</td></tr>
+      <tr><td>Active users</td><td>GA4 · Pages and screens</td><td class="n">25%</td><td>Breadth of interest. Stops one visitor refreshing a page from inflating it.</td></tr>
+      <tr><td>Engaged sessions</td><td>GA4 · Pages and screens</td><td class="n">15%</td><td>Quality of interest. A product people stay on, scroll and click earns more than one they bounce from.</td></tr>
+      <tr><td>Organic clicks</td><td>Search Console (GA4 link) · Landing pages</td><td class="n">15%</td><td>Demand from Google, independent of where the store links internally. On this store most organic clicks land on collection pages, so the weight is redistributed in collections with no product-level clicks.</td></tr>
+      <tr><td>Add-to-cart</td><td>GA4 · Ecommerce items</td><td class="n">10%</td><td>Purchase intent. Low weight because sold-out products cannot be added to cart, which would otherwise punish the most wanted pieces.</td></tr>
+    </tbody></table>
+    <p style="margin-top:12px">If a collection has no data for a signal (for example no organic clicks yet), that weight is dropped and the others are rescaled, so the shares still add up to 100.</p>
+
+    <h3>Reading the number</h3>
+    <p>A Demand Share of 6.5 means that product captures 6.5% of everything the collection's shoppers do. Inside a collection of 53 dresses the average product sits at 1.9, so anything above 6 is a hero piece. Compare shares within a collection only; a 30% share in the 8-product pants range is not the same as 30% in Sirens dresses.</p>
+    <p>Purchases are shown but not scored: <span id="purchn"></span> purchases across the period are enough for a tie-break and for checking that a popular product also sells, not for ranking a 459-product catalogue.</p>
+
+    <h3>Engagement rate on its own</h3>
+    <p>The tables also show each product's engagement rate. Site-wide, product pages run at about <span id="er-site"></span> engaged sessions, against <span id="er-all"></span> for the site as a whole. Read it as a quality check next to the ratio: a Hero product with an engagement rate well under the collection average is being clicked on but not liked (price, imagery or a mismatch with the listing it came from), and a Low product with a very high engagement rate is a candidate for better placement.</p>
+
+    <h2>Stock, and why it changes the reading</h2>
+    <p id="stocktext"></p>
+
+    <h2>Collections, not URL words</h2>
+    <p>Shopify already knows which products belong to which collection. The <span id="ncoll2"></span> collections on the store were read from the store's own collection listings, so a product is ranked inside the collections that actually list it, in the same order the customer sees. Each product has a main collection for its headline ratio: the season sub-collection in the menu (for example Sirens · Dresses) when it has one, otherwise the season root, otherwise the largest collection it belongs to.</p>
+    <p>Three kinds of collection appear in the Rankings selector: the menu collections (starred), the wedding and christening landing pages that exist for Google rather than the menu, and tag, drop and older collections that still carry traffic. Collection pages that have views but no live products (last season's drops, swimwear) are listed under Collections with their traffic only.</p>
+
+    <h2>Recency and the 12-month check</h2>
+    <p>Views and users are recency-weighted with a two-step rule: the last 30 days count double against days 31 to 90, normalised back to the 90-day scale. A product rising this month therefore shows now rather than at the next quarterly refresh. The 12-month column is the same share formula over 12 months of GA4 (23 September 2025 to 22 September 2026) using views, users and engaged sessions; Search Console and add-to-cart are not part of it because the organic export covers the current period only.</p>
+    <p>The Trend flag compares the two: Rising means the 90-day ratio is at least 25% above the 12-month ratio, Fading means at least 20% below, Steady is anything between, New means it has 90-day data but no earlier history. Remember the calendar when reading Fading: the 12 months include the wedding and christening season peak (spring and early summer), the 90 days run from late June to late September, so a summer occasion dress can look like it is fading in September when it is simply between seasons.</p>
+
+    <h2>Sources and coverage</h2>
+    <ul id="coverage" style="margin:0 0 12px;padding-left:20px"></ul>
+    <details class="more"><summary>Products with traffic in the period that are no longer live on the store</summary><div class="hublist" style="margin-top:8px"><figure><ol id="ghostlist"></ol></figure></div></details>
+
+    <h2>Refreshing the data</h2>
+    <ol class="steps">
+      <li>GA4 → Reports → Engagement → Pages and screens, dimension Page path and screen class. Customise the report (pencil) and add Sessions, Engaged sessions, Engagement rate, Add to carts and Ecommerce purchases, Apply. Export three date ranges: last 30 days, last 90 days, last 12 months (Share → Download CSV).</li>
+      <li>GA4 → Reports → Monetization → Ecommerce purchases (Item name), last 90 days, Download CSV.</li>
+      <li>GA4 → Reports → Search Console → Google organic search traffic (Landing page + query string), last 90 days, Download CSV.</li>
+      <li>Run the build script. It re-crawls the store's collections and products (Shopify's public collections.json and products.json), recomputes Demand Share and regenerates this page with the current stock status.</li>
+    </ol>
+
+    <h2 id="newproduct">When a new product enters the store</h2>
+    <p>A product that goes live after the formula has run has no history, so a plain share-of-collection score would give it close to 0 and push it to the back of its collection. That is the wrong signal: no data means unknown, not unpopular. The scoring handles this itself. It reads each product's launch date from Shopify (published_at), checks it against GA4 (a republished product with earlier views is treated as established), and applies the three-stage rule below before ranking.</p>
+    <h3>The cold-start rule (built into the score)</h3>
+    <table class="wtable"><thead><tr><th>Age on site</th><th>Ratio used</th><th>Where it goes</th></tr></thead><tbody>
+      <tr><td>0 to 30 days</td><td class="n">1.50 (provisional)</td><td>Strong tier: first rows of its collection, "New" label, never a Hero slot or the popular badge.</td></tr>
+      <tr><td>30 to 89 days</td><td class="n">Scored, scaled</td><td>Its views, users, engaged sessions, clicks and add-to-carts are multiplied by 90 ÷ days live, then blended with the 1.50 prior in proportion to real views. With under 100 real views the sample is too small: it stays at 1.50 and New.</td></tr>
+      <tr><td>90 days and over</td><td class="n">Scored normally</td><td>Same rules as every other product from the next refresh onwards.</td></tr>
+    </tbody></table>
+    <p id="newnow"></p>
+    <h3>Launch checklist</h3>
+    <ol class="steps">
+      <li>Assign it to its season root and its type sub-collection on day one (for example House of Peonies FW27 and Peonies · Dresses). The scoring ranks it only inside the collections that list it.</li>
+      <li>Set the provisional ratio of 1.50 and the "New" flag in the product metafields so the collection sort picks it up immediately.</li>
+      <li>Give it two internal links from the collection it belongs to (collection description or a "New in" block) so it collects organic clicks from the start.</li>
+      <li>At day 30 run the score. Hero or Strong: move it into the earned slot and drop the "New" label. Average or Low: it keeps the default position, and the merchandising question becomes price, imagery or duplication with an existing best seller.</li>
+    </ol>
+
+    <h2>Using it on the store</h2>
+    <ol class="steps">
+      <li>Collection ordering. Put the top five Demand Share products first on each collection page (Shopify manual sort, or a metafield sort through an app). Revisit monthly during a launch, quarterly otherwise.</li>
+      <li>Internal linking. From each collection page, link to its top three products in the collection description, and from those products back to the collection.</li>
+      <li>Stock first. Filter Products by Stock = Sold out and Tier = Hero or Strong: these are the pieces to restock, re-cut or replace with the closest in-stock alternative, and the pages to add a back-in-stock signup to.</li>
+      <li>Merchandising gaps. Where the Collections tab shows a collection page with strong views but its products carry low Demand Share, the page is sending traffic to pieces people do not want to look at. Refresh the selection there first.</li>
+    </ol>
+  </div>
+</section>
+
+<footer><div class="fm">MYA</div>Data: GA4 property MYA Collection (347705989) with the Search Console link, exported 23 September 2026; catalogue and stock from myacollection.com on the same day. Built by Growth-onomics.</footer>
+</div>
+<div class="tt" id="tt"></div>
+
+<script id="data" type="application/json"></script>
+<script id="enc" type="application/octet-stream" data-salt="eZ9RTlNOmR2ZQbT0azX8QA==" data-iv="xoYrMSrM9I6KXjz8" data-iter="200000"></script>
+<script src="data.js"></script>
+<script>
+async function boot(){
+const D = JSON.parse(document.getElementById('data').textContent);
+const fmt = n => Math.round(n).toLocaleString('en-GB');
+const eur = n => '€' + fmt(n);
+const PC = D.product_cols; const P = {}; const PL = D.products.map(a => { const o = {}; PC.forEach((k, i) => o[k] = a[i]); o.url = 'https://myacollection.com/products/' + o.slug; P[o.pid] = o; return o; });
+const HUB = {}; D.hubs.forEach(h => HUB[h.id] = h);
+PL.forEach(o => o.placements = []);
+D.hubs.forEach(h => { if (h.id === 'all') return; const nl = Math.max(h.n_products - (h.n_nodata || 0), 1); h.all.forEach(([pid, rank, score]) => { const o = P[pid]; if (o) o.placements.push([h.id, rank, +(score * nl / 100).toFixed(2)]); }); });
+PL.forEach(o => o.placements.sort((a, b) => (a[1] || 1e9) - (b[1] || 1e9)));
+const trendPill = tr => tr ? `<span class="trend trend-${tr}">${tr === 'Rising' ? '↑ ' : tr === 'Fading' ? '↓ ' : tr === 'New' ? '✦ ' : '→ '}${tr}</span>` : '';
+const tierOf = x => x >= 3 ? 'Hero' : x >= 1.5 ? 'Strong' : x >= 0.5 ? 'Average' : 'Low';
+const tierPill = t => `<span class="tier tier-${t.replace(' ','-')}">${t}</span>`;
+const img = (o, w) => o.img ? o.img + (o.img.includes('?') ? '&' : '?') + 'width=' + w : '';
+const thumb = o => o.img ? `<img class="thumb" src="${esc(img(o, 120))}" alt="" loading="lazy" width="44" height="56">` : `<span class="thumb" aria-hidden="true"></span>`;
+const pct = n => n.toFixed(n >= 10 ? 1 : 2);
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const stockChip = o => o.instock === 0 ? '<span class="chip out">Sold out</span>' : o.instock < 50 ? `<span class="chip">${Math.round(o.instock)}% of sizes in stock</span>` : '';
+function chips(o){ return [o.type, o.season, o.colour, o.price ? eur(o.price) : '', o.limited ? 'Limited' : ''].filter(Boolean).map(v => `<span class="chip">${esc(v)}</span>`).join('') + stockChip(o); }
+function plist(o, skip){ const xs = (o.placements || []).filter(x => x[0] !== skip && x[0] !== o.hub); if (!xs.length) return '<span class="muted">main collection only</span>'; const show = xs.slice(0, 6).map(x => `${esc(HUB[x[0]].label)} <b>${x[1] ? '#' + x[1] : 'no data'}</b> of ${HUB[x[0]].n_products}`).join('<br>'); return show + (xs.length > 6 ? `<details class="more"><summary>+${xs.length - 6} more</summary>${xs.slice(6).map(x => `${esc(HUB[x[0]].label)} <b>${x[1] ? '#' + x[1] : 'no data'}</b> of ${HUB[x[0]].n_products}`).join('<br>')}</details>` : ''); }
+
+$('#ncoll').textContent = fmt(D.coverage.hubs); $('#ncoll2').textContent = fmt(D.coverage.hubs);
+$('#purchn').textContent = fmt(D.site_totals.purch);
+$('#totals').innerHTML = [
+  ['Product page views', D.coverage.product_views], ['Products scored', D.coverage.products],
+  ['Organic clicks (site)', D.site_totals.gsc_clicks], ['Add-to-cart (site)', D.site_totals.atc], ['Purchases (items)', D.site_totals.purch]
+].map(([l,v]) => `<div><b class="num">${fmt(v)}</b><span>${l}</span></div>`).join('');
+
+document.querySelectorAll('nav.tabs button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('nav.tabs button').forEach(x => x.setAttribute('aria-selected', x === b));
+  document.querySelectorAll('section[role=tabpanel]').forEach(s => s.hidden = s.id !== b.getAttribute('aria-controls'));
+  try { localStorage.setItem('mya-tab', b.id); } catch(e) {}
+}));
+try { const t = localStorage.getItem('mya-tab'); if (t && $('#'+t)) $('#'+t).click(); } catch(e) {}
+
+const tt = $('#tt');
+function showTT(e, html){ tt.innerHTML = html; tt.style.display = 'block'; moveTT(e); }
+function moveTT(e){ const w = tt.offsetWidth, h = tt.offsetHeight; let x = e.clientX + 14, y = e.clientY + 14; if (x + w > innerWidth - 8) x = e.clientX - w - 14; if (y + h > innerHeight - 8) y = e.clientY - h - 14; tt.style.left = x + 'px'; tt.style.top = y + 'px'; }
+function hideTT(){ tt.style.display = 'none'; }
+
+function hbar(el, rows, opts){
+  const {label, value, valueText, tip, hi} = opts;
+  const rowH = 30, labelW = opts.labelW || 215, valW = 64, W = 640, x0 = labelW, plotW = W - labelW - valW;
+  const max = Math.max(...rows.map(value)) || 1;
+  const H = rows.length * rowH + 6;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.aria||'bar chart')}">`;
+  rows.forEach((r, i) => {
+    const y = i * rowH + 3, w = Math.max(2, plotW * value(r) / max);
+    const name = label(r), short = name.length > 28 ? name.slice(0, 27) + '…' : name;
+    s += `<g class="row" data-i="${i}">
+      <text class="lbl" x="${x0 - 10}" y="${y + 18}" text-anchor="end">${esc(short)}</text>
+      <rect class="bar-bg" x="${x0}" y="${y + 5}" width="${plotW}" height="16" rx="3"/>
+      <rect class="bar${hi && hi(r) ? ' hi' : ''}" x="${x0}" y="${y + 5}" width="${w}" height="16" rx="3"/>
+      <text class="val num" x="${x0 + w + 8}" y="${y + 18}">${esc(valueText(r))}</text>
+      <rect class="hit" x="0" y="${y}" width="${W}" height="${rowH}"/></g>`;
+  });
+  s += '</svg>';
+  el.innerHTML = s;
+  el.querySelectorAll('.row').forEach(g => { const r = rows[+g.dataset.i]; g.addEventListener('mousemove', e => showTT(e, tip(r))); g.addEventListener('mouseleave', hideTT); });
+}
+
+// ---- Rankings
+const sel = $('#hubsel');
+const groupOrder = ['House of Peonies FW27', 'Sirens SS26', 'Sale & archive', 'Occasion wear', 'Shop', 'Wedding & occasion landing pages', 'Not in the menu (tag, drop or older collection)'];
+const groups = [...new Set(D.hubs.map(h => h.group))].sort((a, b) => groupOrder.indexOf(a) - groupOrder.indexOf(b));
+function fillSel(q){ q = (q || '').toLowerCase(); const keep = sel.value;
+  const match = h => !q || h.label.toLowerCase().includes(q) || h.id.includes(q) || (h.title || '').toLowerCase().includes(q);
+  const opt = h => `<option value="${h.id}">${h.nav ? '★ ' : ''}${esc(h.label)} (${h.n_products ? h.n_products + ' products' : 'no live products'})</option>`;
+  sel.innerHTML = groups.map(g => { const hs = D.hubs.filter(h => h.group === g && match(h)).sort((a, b) => (b.nav - a.nav) || (b.n_products - a.n_products)); return hs.length ? `<optgroup label="${esc(g)}">` + hs.map(opt).join('') + '</optgroup>' : ''; }).join('');
+  if ([...sel.options].some(o => o.value === keep)) sel.value = keep; else if (!q && [...sel.options].some(o => o.value === 'ss26-sirens-dresses')) sel.value = 'ss26-sirens-dresses'; }
+fillSel('');
+$('#hubq').addEventListener('input', () => { fillSel($('#hubq').value); renderHub(); });
+try { const v = localStorage.getItem('mya-hub'); if (v && HUB[v]) sel.value = v; } catch(e) {}
+sel.addEventListener('change', () => { try { localStorage.setItem('mya-hub', sel.value); } catch(e) {} renderHub(); });
+$('#topn').addEventListener('change', renderHub);
+
+function renderHub(){
+  const h = HUB[sel.value] || D.hubs[0];
+  const n0 = +$('#topn').value; const n = n0 || h.n_products;
+  const nl = Math.max(h.n_products - (h.n_nodata || 0), 1);
+  const rows = h.all.slice(0, n).map(([pid, rank, score, score12, prov]) => { const o = P[pid]; if (!o) return null; const ratio = +(score * nl / 100).toFixed(2), ratio12 = +((score12 || 0) * nl / 100).toFixed(2); const tr = o.status !== 'Established' ? 'New' : !ratio12 && !ratio ? '' : !ratio12 ? 'New' : ratio / ratio12 >= 1.25 ? 'Rising' : ratio / ratio12 <= 0.8 ? 'Fading' : 'Steady'; return Object.assign({}, o, {score, rank, ratio, ratio12, prov: !!prov, trend: tr, nodata: rank === 0, tierH: rank === 0 ? 'No data' : (prov || o.status === 'New') ? 'New' : tierOf(ratio)}); }).filter(Boolean);
+  const note = !h.n_products ? 'This collection page has traffic but no live products on it right now (an older drop, a sold-through capsule, or a tag collection that is empty). Traffic is shown under Collections; there is nothing to rank.' : h.id === 'all' ? 'The whole catalogue ranked against itself. Use it for the home page and the Shop now grid; for a collection page, pick that collection instead.' : '';
+  $('#hubnote').textContent = note; $('#hubnote').hidden = !note;
+  $('#hubsrc').textContent = h.n_products ? `Members: the ${fmt(h.n_products)} products this collection lists on the store (read ${D.period.crawled}). ${h.kind === 'sub' || h.kind === 'root' ? 'In the site menu.' : h.kind === 'landing' ? 'A landing collection for Google searches, not in the menu.' : 'Not in the menu.'}` : '';
+  const t = h.tot; const soldout = rows.filter(r => r.instock === 0).length;
+  $('#hubtiles').innerHTML = [
+    ['Products in collection', h.n_products, `${fmt(h.all.filter(x => P[x[0]] && P[x[0]].instock === 0).length)} sold out`],
+    ['Product views', t.views, `${fmt(t.users)} users`],
+    ['Organic clicks', t.clicks, `${fmt(t.impr)} impressions on product pages`],
+    ['Add-to-cart', t.atc, `${fmt(t.purch)} purchased`],
+    ['Engagement rate', (rows.reduce((a,r)=>a+r.engs,0) / Math.max(rows.reduce((a,r)=>a+r.sess,0),1) * 100).toFixed(1) + '%', `shown products · site product pages ${D.product_er}%`],
+    ['Collection page views', h.hub_pages.views, h.hub_pages.clicks ? `${fmt(h.hub_pages.clicks)} organic clicks to the collection page` : 'no organic clicks to the collection page']
+  ].map(([l,v,s]) => `<div><span>${l}</span><b class="num">${typeof v === 'number' ? fmt(v) : v}</b>${s?`<small>${s}</small>`:''}</div>`).join('');
+  $('#chart-title').textContent = `Demand Share, ${h.label}` + (n > 25 ? ' (chart shows top 25, table shows ' + (n0 ? 'top ' + n : 'all ' + h.n_products) + ')' : '');
+  hbar($('#chart'), rows.slice(0, 25), {
+    aria: `Top ${n} products in ${h.label} by demand share`,
+    label: r => r.name, value: r => r.score, valueText: r => pct(r.score) + '%',
+    hi: r => r.purch > 0,
+    tip: r => `<b>${esc(r.name)}</b>Demand share ${pct(r.score)}%<br>${fmt(r.views)} views · ${fmt(r.users)} users<br>${fmt(r.clicks)} organic clicks · ${fmt(r.atc)} add-to-cart${r.purch?` · ${r.purch} purchased`:''}${r.instock === 0 ? '<br>Sold out' : ''}`
+  });
+  const conc = ['views','users','clicks','atc'].map(k => ({k, label: {views:'Page views',users:'Users',clicks:'Organic clicks',atc:'Add-to-cart'}[k], top: rows.reduce((a,r)=>a+r[k],0), tot: t[k]}));
+  hbar($('#mixchart'), conc, { aria: 'Share of collection totals captured by the listed products', labelW: 130, label: r => r.label, value: r => r.tot ? r.top / r.tot * 100 : 0, valueText: r => r.tot ? (r.top / r.tot * 100).toFixed(0) + '%' : 'n/a', tip: r => `<b>${r.label}</b>Top ${n} products: ${fmt(r.top)} of ${fmt(r.tot)} in collection` });
+  $('#mixnote').textContent = `The share of each signal that the top ${n} products take. High concentration means a few pieces carry the collection; low means demand is spread and the collection ordering does more work.`;
+  $('#topcards').innerHTML = rows.filter(r => !r.nodata).slice(0, 8).map(r => `<a class="card" href="${esc(r.url)}" target="_blank" rel="noopener">
+    <div class="img">${r.img ? `<img src="${esc(img(r, 480))}" alt="" loading="lazy">` : ''}<span class="badge b-${r.tierH}">${r.tierH === 'Hero' ? 'Popular' : r.tierH === 'New' ? 'New in' : r.tierH}</span><span class="rankno num">#${r.rank}</span>${r.instock === 0 ? '<span class="soldout">Sold out</span>' : ''}</div>
+    <div class="cname">${esc(r.name)}</div>
+    <div class="cmeta">${r.price ? eur(r.price) + ' · ' : ''}${pct(r.score)}% of collection demand</div>
+    <div class="cratio">Ratio <b>${r.ratio.toFixed(2)}</b>${r.trend && r.trend !== 'Steady' ? ' · ' + r.trend : ''}</div></a>`).join('');
+  $('#ranktable').innerHTML = `<thead><tr><th>#</th><th>Product</th><th class="n">Demand share</th><th class="n">Ratio</th><th>Tier</th><th class="n">12-mo ratio</th><th>Trend</th><th class="n">Views</th><th class="n">Users</th><th class="n">Eng. rate</th><th class="n">Engaged sessions</th><th class="n">Organic clicks</th><th class="n">Add-to-cart</th><th class="n">Purchased</th><th class="n">Revenue</th></tr></thead><tbody>` +
+    rows.map(r => `<tr><td class="num">${r.nodata ? '' : r.rank}</td><td><div class="pcell">${thumb(r)}<div><a class="name" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a><div class="chips">${chips(r)}</div><div class="pl">${plist(r, h.id)}</div></div></div></td>
+      <td class="n num"><span class="sharebar" style="width:${Math.max(2, 60 * r.score / (rows[0].score || 1))}px"></span><span class="share">${pct(r.score)}%</span></td>
+      <td class="n num">${r.nodata ? '' : r.ratio.toFixed(2)}</td><td>${tierPill(r.tierH)}${r.days_live ? `<div class="small muted">${r.days_live} days live</div>` : ''}</td>
+      <td class="n num">${r.nodata || !r.ratio12 ? '' : r.ratio12.toFixed(2)}</td><td>${trendPill(r.trend)}</td>
+      <td class="n num">${fmt(r.views)}</td><td class="n num">${fmt(r.users)}</td><td class="n num">${r.sess ? r.er.toFixed(1) + '%' : ''}</td><td class="n num">${fmt(r.engs)}</td><td class="n num">${fmt(r.clicks)}</td><td class="n num">${fmt(r.atc)}</td><td class="n num">${r.purch ? '<span class="flag">' + r.purch + '</span>' : '0'}</td><td class="n num">${r.revenue ? eur(r.revenue) : ''}</td></tr>`).join('') + '</tbody>';
+}
+renderHub();
+
+// ---- Portfolio (BCG) matrix
+const QUAD = {
+  Stars: {label:'Stars', rule:'Ratio ≥ 1.00 and momentum ≥ 1.00', act:'Protect and push: hero slots, first rows, internal links from the collection description, paid and social creative. Restock first if sold out.'},
+  Cash: {label:'Cash cows', rule:'Ratio ≥ 1.00 and momentum < 1.00', act:'Keep visible, spend little: they hold the top rows on history. Refresh imagery and check price before they slide; no need for extra promotion.'},
+  Question: {label:'Question marks', rule:'Ratio < 1.00 and momentum ≥ 1.00, plus every newcomer', act:'Test: give them a "New in" or trial slot on the collection for one refresh cycle. Rising ones become Stars; the rest drop to the default order.'},
+  Dogs: {label:'Dogs', rule:'Ratio < 1.00 and momentum < 1.00', act:'Back of the grid or review: move to Archive Sale, fix imagery, or retire. Do not spend links or ads on them.'}
+};
+const quadOf = o => { if (o.tier === 'No data' || !o.ratio) return null; if (o.status !== 'Established') return 'Question'; const m = o.ratio12 ? o.ratio / o.ratio12 : 1; return o.ratio >= 1 ? (m >= 1 ? 'Stars' : 'Cash') : (m >= 1 ? 'Question' : 'Dogs'); };
+PL.forEach(o => { o.quad = quadOf(o); o.mom = o.ratio12 ? +(o.ratio / o.ratio12).toFixed(2) : null; });
+const bcgHub = $('#bcghub');
+[...new Set(PL.map(o => o.hub_label).filter(Boolean))].sort().forEach(t => { const op = document.createElement('option'); op.value = t; op.textContent = t; bcgHub.appendChild(op); });
+function renderBCG(){
+  const hub = bcgHub.value, sz = $('#bcgsize').value;
+  const rows = PL.filter(o => o.quad && (!hub || o.hub_label === hub));
+  const tot = rows.reduce((a, o) => a + o.views, 0) || 1;
+  $('#quads').innerHTML = ['Stars','Question','Cash','Dogs'].map(q => {
+    const list = rows.filter(o => o.quad === q).sort((a, b) => b.views - a.views);
+    const v = list.reduce((a, o) => a + o.views, 0);
+    return `<div class="quad q-${q}"><h3>${QUAD[q].label}<small>${fmt(list.length)} products · ${(v / tot * 100).toFixed(0)}% of views</small></h3><div class="rule">${QUAD[q].rule}</div><div class="act">${QUAD[q].act}</div><ol>${list.slice(0, 6).map(o => `<li>${thumb(o)}<a href="${esc(o.url)}" target="_blank" rel="noopener" title="${esc(o.name)}">${esc(o.name)}${o.instock === 0 ? ' <span class="chip out">Sold out</span>' : ''}</a><span class="qn num">${o.ratio.toFixed(2)}${o.mom ? ' · ×' + o.mom.toFixed(2) : ' · new'}</span></li>`).join('')}</ol></div>`;
+  }).join('');
+  const W = 640, H = 460, ml = 52, mr = 16, mt = 18, mb = 44, iw = W - ml - mr, ih = H - mt - mb;
+  const lx = r => Math.max(-2, Math.min(2, Math.log10(r))), ly = m => Math.max(-1, Math.min(1, Math.log10(m)));
+  const X = r => ml + (lx(r) + 2) / 4 * iw, Y = m => mt + (1 - (ly(m) + 1) / 2) * ih;
+  const pts = rows.filter(o => o.mom);
+  const maxS = Math.max(...pts.map(o => sz === 'none' ? 1 : o[sz]), 1);
+  const col = {Stars:'#1A1B18', Cash:'#C9A99B', Question:'#ECD7CD', Dogs:'#D2D5D9'};
+  const dots = pts.map(o => { const r = sz === 'none' ? 3 : 2 + 9 * Math.sqrt((o[sz] || 0) / maxS); return `<circle class="dot" cx="${X(o.ratio).toFixed(1)}" cy="${Y(o.mom).toFixed(1)}" r="${r.toFixed(1)}" fill="${col[o.quad]}" data-i="${o.pid}"/>`; }).join('');
+  const xt = [0.01,0.1,1,10,100].map(v => `<line x1="${X(v)}" x2="${X(v)}" y1="${mt}" y2="${mt+ih}" class="axis"/><text class="tick" x="${X(v)}" y="${mt+ih+14}" text-anchor="middle">${v}</text>`).join('');
+  const yt = [0.1,0.5,1,2,10].map(v => `<line y1="${Y(v)}" y2="${Y(v)}" x1="${ml}" x2="${ml+iw}" class="axis"/><text class="tick" x="${ml-6}" y="${Y(v)+3}" text-anchor="end">×${v}</text>`).join('');
+  $('#bcgplot').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Growth share matrix of products">
+    <rect x="${ml}" y="${mt}" width="${iw}" height="${ih}" fill="var(--surface-2)"/>${xt}${yt}
+    <line x1="${X(1)}" x2="${X(1)}" y1="${mt}" y2="${mt+ih}" stroke="var(--ink)" stroke-width="1"/>
+    <line y1="${Y(1)}" y2="${Y(1)}" x1="${ml}" x2="${ml+iw}" stroke="var(--ink)" stroke-width="1"/>
+    <text class="qlab" x="${ml+iw-8}" y="${mt+18}" text-anchor="end">Stars</text>
+    <text class="qlab" x="${ml+8}" y="${mt+18}">Question marks</text>
+    <text class="qlab" x="${ml+iw-8}" y="${mt+ih-8}" text-anchor="end">Cash cows</text>
+    <text class="qlab" x="${ml+8}" y="${mt+ih-8}">Dogs</text>${dots}
+    <text class="axl" x="${ml+iw/2}" y="${H-6}" text-anchor="middle">Share: popularity ratio in main collection (log)</text>
+    <text class="axl" transform="translate(12 ${mt+ih/2}) rotate(-90)" text-anchor="middle">Growth: 90-day ÷ 12-month ratio (log)</text></svg>`;
+  const nNew = rows.filter(o => !o.mom).length;
+  $('#bcgnote').textContent = `${fmt(pts.length)} products plotted${hub ? ' in ' + hub : ''}; ${fmt(nNew)} newcomers without 12-month history are counted as question marks but not drawn.`;
+  $('#bcgplot').querySelectorAll('.dot').forEach(c => {
+    c.addEventListener('mousemove', e => { const o = P[c.dataset.i]; showTT(e, `<b>${esc(o.name)}</b>${QUAD[o.quad].label} · ${esc(o.hub_label)}<br>Ratio ${o.ratio.toFixed(2)} · 12-mo ${o.ratio12.toFixed(2)} · momentum ×${o.mom.toFixed(2)}<br>${fmt(o.views)} views · ${fmt(o.atc)} add-to-cart · ${fmt(o.purch)} purchased${o.instock === 0 ? '<br>Sold out' : ''}`); });
+    c.addEventListener('mouseleave', hideTT);
+  });
+}
+bcgHub.addEventListener('change', renderBCG); $('#bcgsize').addEventListener('change', renderBCG);
+renderBCG();
+
+// ---- Collections panel
+const hp = D.hub_pages.filter(h => h.views > 0).sort((a,b) => b.views - a.views);
+hbar($('#hubchart'), hp, { aria: 'Collection page views by family', labelW: 250, label: r => r.label, value: r => r.views, valueText: r => fmt(r.views), tip: r => `<b>${esc(r.label)}</b>${fmt(r.views)} collection page views<br>${fmt(r.clicks)} organic clicks · ${fmt(r.impr)} impressions` });
+$('#hublist').innerHTML = hp.map(h => `<figure><figcaption><h3>${esc(h.label)}</h3><span>top entry pages</span></figcaption><ol>` + h.pages.slice(0, 10).map(pg => `<li><code>${esc(pg.path)}</code><span class="num" style="white-space:nowrap">${fmt(pg.views)} views · ${fmt(pg.clicks)} clicks</span></li>`).join('') + '</ol></figure>').join('');
+const navHubs = D.hubs.filter(h => h.hub_pages.views > 0 || h.hub_pages.clicks > 0).sort((a,b) => b.hub_pages.views - a.hub_pages.views);
+$('#navnote').textContent = `${fmt(navHubs.length)} collection URLs with views or organic clicks in the period. Starred rows are in the site menu. Organic clicks and impressions are Search Console figures for the collection page itself.`;
+$('#navtable').innerHTML = '<thead><tr><th>Collection page</th><th>Group</th><th class="n">Live products</th><th class="n">Page views</th><th class="n">Organic clicks</th><th class="n">Impressions</th><th class="n">Views, 12 months</th></tr></thead><tbody>' +
+  navHubs.map(h => `<tr><td>${h.nav ? '★ ' : ''}<a href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.label)}</a><div class="small muted">/collections/${esc(h.id)}</div></td><td class="small">${esc(h.group)}</td><td class="n num">${h.n_products ? fmt(h.n_products) : '<span class="flag">none</span>'}</td><td class="n num">${fmt(h.hub_pages.views)}</td><td class="n num">${fmt(h.hub_pages.clicks)}</td><td class="n num">${fmt(h.hub_pages.impr)}</td><td class="n num">${fmt(h.hub_pages.views12)}</td></tr>`).join('') + '</tbody>';
+
+// ---- What sells (attributes)
+const attrLabels = {type:'Product type', season:'Season / collection', colours:'Colour (from the colour option)', price_band:'Price band', stock_band:'Stock status right now', type_dresses_colour:'Dress colours'};
+$('#attrgrid').innerHTML = Object.keys(attrLabels).map(k => `<figure><figcaption><h3>${attrLabels[k]}</h3><span>share of product views</span></figcaption><div id="attr-${k}"></div></figure>`).join('');
+Object.keys(attrLabels).forEach(k => {
+  const rows = (D.attr[k] || []).slice(0, 12); const tot = (D.attr[k] || []).reduce((a,r)=>a+r.views,0) || 1;
+  hbar($('#attr-'+k), rows, { aria: attrLabels[k] + ' share of product views', labelW: 170, label: r => r.label, value: r => r.views, valueText: r => (r.views/tot*100).toFixed(0) + '%',
+    tip: r => `<b>${esc(r.label)}</b>${fmt(r.views)} views across ${fmt(r.n)} products<br>${fmt(r.users)} users · ${fmt(r.atc)} add-to-cart · ${fmt(r.purch)} purchased` });
+});
+const so = D.attr.stock_band.find(x => x.label === 'Sold out') || {views:0, n:0, atc:0};
+$('#stocknote').innerHTML = `<b>Stock is the headline finding.</b> ${fmt(so.n)} of ${fmt(D.coverage.products)} live products are sold out in every size, yet they took ${(so.views / D.coverage.product_views * 100).toFixed(0)}% of product page views in the period. Demand is landing on pages that cannot sell. Filter the Products tab by Stock = Sold out and Tier = Hero or Strong for the restock list.`;
+$('#stocktext').innerHTML = `Stock status was read from the live store on ${D.period.crawled}: a product counts as sold out when no size or colour variant is available. ${fmt(so.n)} of the ${fmt(D.coverage.products)} live products are sold out and they carried ${fmt(so.views)} of the ${fmt(D.coverage.product_views)} product page views (${(so.views / D.coverage.product_views * 100).toFixed(0)}%). The score deliberately does not penalise sold-out pieces: their views and users still count in full, and add-to-cart has only a 10% weight precisely because a sold-out product cannot be added to cart. A sold-out Hero is therefore a restock or re-cut candidate, not a product to hide; the Products tab flags it and the shop cards carry a "Sold out" tag. When the store keeps sold-out products visible, the Popular badge should still be shown with a back-in-stock signup rather than an add-to-cart button.`;
+
+// ---- Every product
+const fkeys = ['hub_label','type','season','colour','price_band','stock_band'];
+const bandOrder = ['Under €80','From €80 to €129','From €130 to €199','From €200 to €299','€300 and over','Sold out','Low stock (under half of sizes)','Mostly in stock','Fully in stock'];
+fkeys.forEach(k => { const vals = [...new Set(PL.map(o => o[k]).filter(Boolean))].sort((a,b) => (bandOrder.indexOf(a) - bandOrder.indexOf(b)) || a.localeCompare(b)); const s = $('#f-' + k); vals.forEach(v => { const o = document.createElement('option'); o.value = v; o.textContent = v; s.appendChild(o); }); });
+let sortKey = 'ratio', sortDir = 'desc', page = 1; const PAGE = 100;
+const trendOrder = {Rising:0, New:1, Steady:2, Fading:3, '':4};
+const allCols = [['name','Product',false],['hub_label','Main collection',false],['tier','Tier',false],['status','Age',false],['ratio','Ratio',true],['rank','Rank',true],['ratio12','12-mo ratio',true],['trend','Trend',false],['views','Views',true],['users','Users',true],['er','Eng. rate',true],['clicks','Organic clicks',true],['atc','Add-to-cart',true],['purch','Purchased',true],['revenue','Revenue',true],['instock','In stock',true]];
+const tierOrder = {Hero:0, Strong:1, Average:2, Low:3, New:4, 'No data':5};
+function filtered(){
+  const q = $('#q').value.trim().toLowerCase();
+  const f = {}; fkeys.forEach(k => f[k] = $('#f-' + k).value); const ft = $('#f-tier').value, ftr = $('#f-trend').value, fst = $('#f-status').value;
+  let rows = PL.filter(o => (!q || o.name.toLowerCase().includes(q) || o.slug.includes(q)) && (!ft || o.tier === ft) && (!ftr || o.trend === ftr) && (!fst || o.status === fst) && fkeys.every(k => !f[k] || o[k] === f[k]));
+  rows.sort((a, b) => { let x = a[sortKey], y = b[sortKey]; if (sortKey === 'tier') { x = tierOrder[x]; y = tierOrder[y]; } if (sortKey === 'trend') { x = trendOrder[x]; y = trendOrder[y]; } if (typeof x === 'string') return sortDir === 'asc' ? x.localeCompare(y) : y.localeCompare(x); x = x ?? -1; y = y ?? -1; return sortDir === 'asc' ? x - y : y - x; });
+  return rows;
+}
+function renderAll(){
+  const rows = filtered(); const pages = Math.max(1, Math.ceil(rows.length / PAGE)); if (page > pages) page = pages;
+  const slice = rows.slice((page - 1) * PAGE, page * PAGE);
+  $('#allcount').textContent = `${fmt(rows.length)} of ${fmt(PL.length)} products` + (rows.length > PAGE ? `, showing ${(page-1)*PAGE+1} to ${Math.min(page*PAGE, rows.length)}` : '');
+  $('#alltable').innerHTML = '<thead><tr>' + allCols.map(([k, l, num]) => `<th class="sort${num?' n':''}" data-k="${k}" ${k===sortKey?`data-dir="${sortDir}"`:''}>${l}</th>`).join('') + '<th>Also listed in (rank)</th></tr></thead><tbody>' +
+    slice.map(o => `<tr><td><div class="pcell">${thumb(o)}<div><a class="name" href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.name)}</a><div class="chips">${chips(o)}</div></div></div></td>
+      <td>${esc(o.hub_label)}</td><td>${tierPill(o.tier)}</td><td class="small">${o.status === 'Established' ? '<span class="muted">Established</span>' : o.status === 'No data' ? '<span class="muted">No views yet</span>' : `${o.status}, ${o.days_live} days${o.status === 'Ramping' ? `, ${fmt(o.views_raw)} real views` : ''}`}</td><td class="n num">${o.tier === 'No data' ? '' : o.ratio.toFixed(2)}</td><td class="n num">${o.rank || ''}</td>
+      <td class="n num">${o.tier === 'No data' || !o.ratio12 ? '' : o.ratio12.toFixed(2)}</td><td>${trendPill(o.trend)}</td>
+      <td class="n num">${fmt(o.views)}</td><td class="n num">${fmt(o.users)}</td><td class="n num">${o.sess ? o.er.toFixed(1) + '%' : ''}</td><td class="n num">${fmt(o.clicks)}</td><td class="n num">${fmt(o.atc)}</td><td class="n num">${o.purch ? '<span class="flag">' + o.purch + '</span>' : '0'}</td><td class="n num">${o.revenue ? eur(o.revenue) : ''}</td><td class="n num">${o.instock === 0 ? '<span class="chip out">Sold out</span>' : Math.round(o.instock) + '%'}</td>
+      <td class="pl">${plist(o, null)}</td></tr>`).join('') + '</tbody>';
+  $('#alltable').querySelectorAll('th.sort').forEach(th => th.addEventListener('click', () => { const k = th.dataset.k; if (sortKey === k) sortDir = sortDir === 'asc' ? 'desc' : 'asc'; else { sortKey = k; sortDir = (k === 'name' || k === 'hub_label' || k === 'tier' || k === 'rank') ? 'asc' : 'desc'; } page = 1; renderAll(); }));
+  let pg = '';
+  if (pages > 1) { const around = [...new Set([1, 2, page - 1, page, page + 1, pages - 1, pages].filter(x => x >= 1 && x <= pages))].sort((a,b)=>a-b); let prev = 0; around.forEach(x => { if (x - prev > 1) pg += '<span>…</span>'; pg += `<button data-p="${x}" ${x===page?'aria-current="true"':''}>${x}</button>`; prev = x; }); }
+  $('#pager').innerHTML = pg;
+  $('#pager').querySelectorAll('button').forEach(b => b.addEventListener('click', () => { page = +b.dataset.p; renderAll(); window.scrollTo({top: $('#allcount').offsetTop - 80}); }));
+}
+$('#q').addEventListener('input', () => { page = 1; renderAll(); });
+['tier', 'trend', 'status', ...fkeys].forEach(k => $('#f-' + k).addEventListener('change', () => { page = 1; renderAll(); }));
+renderAll();
+
+// ---- Placement map
+$('#mapgroups').innerHTML = '<div class="legend"><span class="l-Hero">Hero (3.00+)</span><span class="l-Strong">Strong (1.50 to 2.99)</span><span class="l-Average">Average (0.50 to 1.49)</span><span class="l-Low">Low (under 0.50)</span><span class="l-New">New (provisional 1.50)</span></div>' + groups.map(g => { const hs = D.hubs.filter(h => h.group === g).sort((a,b) => b.n_products - a.n_products || b.hub_pages.views - a.hub_pages.views); const ranked = hs.filter(h => h.n_products > 0); const other = hs.filter(h => h.n_products === 0);
+  return `<details class="mapgroup" ${ranked.length && g !== 'Not in the menu (tag, drop or older collection)' ? 'open' : ''}><summary><h3 style="display:inline">${esc(g)}</h3> <span class="muted small">${hs.length} pages, ${ranked.length} with ranked products</span></summary>` +
+  ranked.map(h => { const t = D.tiers[h.id]; const n = h.n_products; return `<div class="stack" data-h="${h.id}"><span>${esc(h.label)}</span><div class="bar-row">${['Hero','Strong','Average','Low','New','No data'].map(k => t[k] ? `<div class="seg seg-${k.replace(' ','-')}" style="width:${t[k]/n*100}%"></div>` : '').join('')}</div><span class="num muted">${fmt(n)}</span></div>`; }).join('') +
+  (other.length ? `<details class="more" style="margin-top:8px"><summary>${other.length} collection pages with traffic but no live products</summary><div class="hublist" style="margin-top:8px"><figure><ol>${other.map(h => `<li><code>/collections/${esc(h.id)}</code><span class="num" style="white-space:nowrap">${fmt(h.hub_pages.views)} views · ${fmt(h.hub_pages.clicks)} clicks</span></li>`).join('')}</ol></figure></div></details>` : '') + '</details>'; }).join('');
+$('#mapgroups').querySelectorAll('.stack').forEach(el => { const h = HUB[el.dataset.h], t = D.tiers[h.id];
+  el.addEventListener('mousemove', e => showTT(e, `<b>${esc(h.label)}</b>Hero ${t.Hero||0} · Strong ${t.Strong||0} · Average ${t.Average||0} · Low ${t.Low||0} · New ${t.New || 0}<br>${fmt(h.n_products)} products, ${fmt(h.tot.views)} views`));
+  el.addEventListener('mouseleave', hideTT); });
+
+const c = D.coverage;
+$('#newnow').textContent = `In the current data ${fmt(c.newcomers)} products entered during the 90 days (the House of Peonies FW27 drop went live on 4 September): ${fmt(c.new_lt30)} are under 30 days old and held at 1.50, ${fmt(c.ramping)} are between 30 and 89 days and score on their scaled numbers blended with the prior. Filter the Products tab by Age to see them.`;
+$('#newstats').textContent = `Right now: ${fmt(c.new_lt30)} products under 30 days old, ${fmt(c.ramping)} between 30 and 89 days, ${fmt(c.provisional)} carrying the New label.`;
+$('#er-site').textContent = D.product_er + '%'; $('#er-all').textContent = D.site_er + '%';
+$('#newlink').addEventListener('click', e => { e.preventDefault(); $('#tab-method').click(); setTimeout(() => $('#newproduct').scrollIntoView({behavior: 'smooth'}), 50); });
+$('#coverage').innerHTML = [
+  `GA4 Pages and screens, 90 days: ${fmt(c.ga_rows)} rows; ${fmt(c.ga_product_paths)} distinct product URLs after merging language prefixes (/en/) and collection paths (/collections/x/products/y), ${fmt(c.ga_product_views)} product page views. ${fmt(c.product_views)} of them (${(c.product_views / c.ga_product_views * 100).toFixed(0)}%) belong to the ${fmt(c.products)} products live on the store today; the rest belong to ${fmt(c.ghost)} products that have since been unpublished (listed below).`,
+  `GA4 Pages and screens, 30 days and 12 months: ${fmt(c.ga_rows12)} rows in the 12-month export, used for recency weighting and the trend column.`,
+  `GA4 Ecommerce items: ${fmt(c.items_n)} item names, ${fmt(c.items_matched)} matched to a live product (${(c.item_views_matched / c.item_views_total * 100).toFixed(0)}% of item views). Greek and English names of the same item (the /en/ storefront) are merged. Unmatched names are unpublished products.`,
+  `Search Console through the GA4 link: ${fmt(c.gsc_rows)} landing pages, ${fmt(c.gsc_clicks_total)} organic clicks, of which ${fmt(c.gsc_product_clicks)} land on product pages. Most organic demand lands on collection pages (wedding, home, dresses), which is why the click weight is redistributed inside most collections.`,
+  `Catalogue: ${fmt(c.collections_crawled)} collections and ${fmt(c.products)} live products read from the store on ${D.period.crawled}, with images, prices, colour options, publish dates and per-variant stock. ${fmt(c.listed)} products are listed in at least one collection; ${fmt(c.unlisted_with_views)} with traffic are in no collection at all.`,
+  `Stock: ${fmt(c.soldout)} products sold out in every size, carrying ${fmt(c.soldout_views)} product page views.`
+].map(s => `<li>${s}</li>`).join('');
+$('#ghostlist').innerHTML = (D.ghost || []).map(([h, v]) => `<li><code>/products/${esc(h)}</code><span class="num" style="white-space:nowrap">${fmt(v)} views</span></li>`).join('') || '<li>none</li>';
+}
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+document.body.classList.add('locked');
+document.getElementById('lockform').addEventListener('submit', async ev => {
+  ev.preventDefault(); const el = document.getElementById('enc'); const err = document.getElementById('lockerr'); err.textContent = 'Checking…';
+  try {
+    const km = await crypto.subtle.importKey('raw', new TextEncoder().encode(document.getElementById('pw').value), 'PBKDF2', false, ['deriveKey']);
+    const key = await crypto.subtle.deriveKey({name:'PBKDF2', salt:b64(el.dataset.salt), iterations:+el.dataset.iter, hash:'SHA-256'}, km, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    const pt = await crypto.subtle.decrypt({name:'AES-GCM', iv:b64(el.dataset.iv)}, key, b64(window.__ENC));
+    document.getElementById('data').textContent = new TextDecoder().decode(pt);
+    el.remove(); document.getElementById('lock').remove(); document.body.classList.remove('locked');
+    await boot();
+  } catch(e) { err.textContent = 'Wrong password, try again.'; console.error(e); }
+});
+</script></body></html>
