@@ -1,0 +1,113 @@
+﻿position,handle,product_id,title,ratio_in_collection,tier,sold_out,views_90d
+1,elodie-dress,10566138757453,Elodie Φόρεμα,9.92,Hero,no,38367
+2,marbella-dress,10814110531917,Marbella Dress,4.42,Hero,no,6719
+3,crystalia,10652663251277,Crystalia Φόρεμα,4.25,Hero,no,19946
+4,sylvia,10714453999949,Sylvia Κιμονό,3.45,Hero,no,12882
+5,victoria,10697115926861,Victoria Φόρεμα,3.36,Hero,no,17323
+6,nerida,10710349381965,Nerida Φόρεμα,2.48,Strong,no,8969
+7,sophia,10642032361805,Sophia Φόρεμα,2.41,Strong,no,12047
+8,greta-dress,10566155960653,Greta Φόρεμα,2.33,Strong,no,9251
+9,noelle,10786243215693,Noelle Φόρεμα,2.07,Strong,no,5265
+10,rosalie-2,10786210480461,Rosalie Φόρεμα,1.83,Strong,no,4660
+11,maeva-dress,10566112903501,Maeva Φόρεμα,1.52,Strong,no,3089
+12,zoe-pants,10564703289677,Zoe Παντελόνα,1.32,Average,no,5365
+13,livia-copy,10786186232141,Rose Ολόσωμη φόρμα,1.25,Average,no,3229
+14,eve-copy,10670927511885,Selene Ολόσωμη φόρμα,1.13,Average,no,5395
+15,auralis-kimono,10563066659149,Auralis Κιμονό,1.09,Average,no,4655
+16,runa-top,10566035374413,Runa Τοπ,1.08,Average,no,5147
+17,ione-2,10710363537741,Ione Φόρεμα,1.00,Average,no,5338
+18,marceline,10786231877965,Marceline Φόρεμα,0.89,Average,no,2561
+19,meria-dress,10563092447565,Meria Φόρεμα,0.65,Average,no,3030
+20,margie-dress,10566101827917,Margie Φόρεμα,0.62,Average,no,2780
+21,gaia-jumpsuit,10563135537485,Gaia Ολόσωμη φόρμα,0.59,Average,no,2809
+22,eve-jumpsuit,10566210683213,Eve Ολόσωμη φόρμα,0.59,Average,no,2843
+23,liberty-dress,10566102974797,Liberty Φόρεμα,0.58,Average,no,2042
+24,livia-dress,10563406201165,Livia Φόρεμα,0.55,Average,no,2632
+25,zale-dress,10563130229069,Zale Φόρεμα,0.54,Average,no,2833
+26,myrtle-dress-1,10563103392077,Myrtle Φόρεμα,0.49,Low,no,2200
+27,aria-skirt-1,10563312714061,Aria Skirt,0.49,Low,no,2041
+28,sienna-copy,10697387508045,Patricia Τοπ,0.49,Low,no,2028
+29,elyra-pants,10563246784845,Elyra Παντελόνα,0.48,Low,no,2146
+30,elyra-top,10563231154509,Elyra Τοπ,0.45,Low,no,1849
+31,moss-dress-1,10563105227085,Moss Φόρεμα,0.41,Low,no,1769
+32,indira-skirt,10563304816973,Indira Skirt,0.35,Low,no,1345
+33,aria-top-1,10563232760141,Aria Τοπ,0.31,Low,no,1141
+34,elyra-body,10563024912717,Elyra Κορμάκι,0.29,Low,no,1066
+35,zaria-top,10563046768973,Zaria Τοπ,0.26,Low,no,845
+36,livia-skirt,10563055878477,Livia Skirt,0.25,Low,no,1034
+37,livia-top,10563040510285,Livia Τοπ,0.16,Low,no,594
+38,evelisse-limited,10652612165965,Evelisse LIMITED Φόρεμα,3.13,Hero,yes,11724
+39,marisa,10671661482317,Marisa Φόρεμα,2.63,Strong,yes,10471
+40,helia-dress,10563090907469,Helia Φόρεμα,2.07,Strong,yes,9780
+41,soraya,10643352158541,Soraya Φόρεμα,2.04,Strong,yes,7652
+42,elise,10664056750413,Elise Φόρεμα,1.65,Strong,yes,7589
+43,asteria-dress,10563094708557,Asteria Φόρεμα,1.62,Strong,yes,6985
+44,phoebe-dress,10564863885645,Phoebe Φόρεμα,1.60,Strong,yes,7952
+45,lydia,10714458063181,Lydia Κιμονό,1.58,Strong,yes,8163
+46,solenne,10644069187917,Solenne Φόρεμα,1.47,Average,yes,7771
+47,electra-dress,10584479564109,Electra Φόρεμα,1.42,Average,yes,6501
+48,astor-kimono,10566045172045,Astor Kimono,1.37,Average,yes,6537
+49,rayne-dress,10564896391501,Rayne Φόρεμα,1.31,Average,yes,6940
+50,calyra-dress,10563075998029,Calyra Φόρεμα,1.30,Average,yes,5681
+51,melina,10714445873485,Melina Κιμονό,1.23,Average,yes,5012
+52,thalassa-limited,10657844953421,Thalassa LIMITED Φόρεμα,1.21,Average,yes,5539
+53,coralia-dress,10566166413645,Coralia Φόρεμα,1.18,Average,yes,5274
+54,copy-2,10588786295117,Linus Φόρεμα,1.12,Average,yes,6068
+55,glowen-dress,10564884070733,Glowen Φόρεμα,1.07,Average,yes,4810
+56,melin-dress,10566165102925,Melin Φόρεμα,0.99,Average,yes,4266
+57,thalassa-dress,10563128525133,Thalassa Φόρεμα,0.95,Average,yes,3268
+58,argenta-cape,10563227615565,Argenta Κάπα,0.93,Average,yes,4111
+59,lilu-jumpsuit,10566207308109,Lilu Ολόσωμη φόρμα,0.93,Average,yes,4533
+60,ariel-siren-limited,10571427971405,Ariel Siren LIMITED Φόρεμα,0.91,Average,yes,3470
+61,argenta-kimono,10563359539533,Argenta Κιμονό,0.88,Average,yes,3102
+62,elyra-dress,10563404235085,Elyra Φόρεμα,0.88,Average,yes,3912
+63,aria-kimono,10564825186637,Aria Κιμονό,0.87,Average,yes,4029
+64,nai-dress,10563110994253,Nai Φόρεμα,0.86,Average,yes,4669
+65,nola-jumpsuit,10566211600717,Nola Ολόσωμη φόρμα,0.86,Average,yes,4818
+66,argenta-jumpsuit,10563172696397,Argenta Ολόσωμη φόρμα,0.85,Average,yes,3840
+67,neta-top,10566385434957,Neta Τοπ,0.85,Average,yes,3741
+68,aegea-dress,10563131900237,Aegea Φόρεμα,0.84,Average,yes,4231
+69,aster-kimono,10559208358221,Aster Κιμονό,0.77,Average,yes,3754
+70,cloe-dress,10566161531213,Cloe Φόρεμα,0.77,Average,yes,3186
+71,thalia-dress,10563095920973,Thalia Φόρεμα,0.76,Average,yes,3106
+72,elyra-cape,10563208315213,Elyra Κάπα,0.72,Average,yes,3260
+73,oceane-jumpsuit,10563149726029,Oceane Ολόσωμη φόρμα,0.71,Average,yes,3272
+74,monique-kimono,10566047891789,Monique Κιμονό,0.71,Average,yes,3169
+75,kathy-dress,10566165856589,Kathy Φόρεμα,0.71,Average,yes,3403
+76,patricia,10697411199309,Patricia Φόρεμα,0.70,Average,yes,3495
+77,dore-dress,10564872208717,Dore Φόρεμα,0.63,Average,yes,3082
+78,menda-dress,10566167626061,Menda Φόρεμα,0.62,Average,yes,3291
+79,zaria-jumpsuit,10563145236813,Zaria Ολόσωμη φόρμα,0.61,Average,yes,2725
+80,midas-dress,10566098714957,Midas Φόρεμα,0.48,Low,yes,2333
+81,byron-dress,10566130303309,Byron Φόρεμα,0.48,Low,yes,2682
+82,livia-jumpsuit,10563137044813,Livia Ολόσωμη φόρμα,0.45,Low,yes,2017
+83,sonia-dress,10564952752461,Sonia Φόρεμα,0.44,Low,yes,2508
+84,rayne-pants,10564908613965,Rayne Παντελόνα,0.43,Low,yes,2358
+85,myriam-dress,10566163464525,Myriam Φόρεμα,0.42,Low,yes,2321
+86,indira-top,10563199992141,Indira Τοπ,0.42,Low,yes,1918
+87,nai-limited-dress,10571365515597,Nai LIMITED Φόρεμα,0.40,Low,yes,1841
+88,zoe-kimono,10564757815629,Zoe Κιμονό,0.38,Low,yes,1751
+89,phoebe-limited-edition,10571285266765,Phoebe LIMITED Edition Φόρεμα,0.36,Low,yes,1773
+90,zaria-skirt,10563065872717,Zaria Skirt,0.35,Low,yes,1598
+91,indy-top,10563435102541,Indy Τοπ,0.33,Low,yes,1665
+92,ophelia-skirt,10563290530125,Ophelia Skirt,0.33,Low,yes,926
+93,myra-skirt,10563057189197,Myra Skirt,0.33,Low,yes,1257
+94,myrielle,10657829552461,Myrielle Φόρεμα,0.32,Low,yes,1761
+95,zoe-cape,10563437789517,Zoe Κάπα,0.31,Low,yes,1297
+96,zelda-dress,10564934369613,Zelda Φόρεμα,0.30,Low,yes,1415
+97,livia-kimono,10564754964813,Livia Κιμονό,0.29,Low,yes,1062
+98,ophelia-top,10563189473613,Ophelia Τοπ,0.24,Low,yes,862
+99,zelda-kimono,10566049726797,Zelda Κιμονό,0.23,Low,yes,1059
+100,arla-top,10566363447629,Arla Τοπ,0.23,Low,yes,1033
+101,myra-top-1,10563042214221,Myra Τοπ,0.21,Low,yes,584
+102,argenta-dress,10564890132813,Argenta Φόρεμα,0.21,Low,yes,820
+103,melissa-top,10566027510093,Melissa Τοπ,0.20,Low,yes,859
+104,indira-kimono,10563362685261,Indira Κιμονό,0.20,Low,yes,969
+105,rhia-top,10563437035853,Rhia Τοπ,0.18,Low,yes,963
+106,opal-top,10563436282189,Opal Τοπ,0.17,Low,yes,890
+107,sienna-top,10566393954637,Sienna Τοπ,0.14,Low,yes,783
+108,nyx-skirt,10563049128269,Nyx Skirt,0.11,Low,yes,622
+109,selma-dress,10566095241549,Selma Φόρεμα,0.11,Low,yes,601
+110,s26-1008,10563044606285,Eirys Τοπ,0.10,Low,yes,380
+111,matilda-dress,10566105825613,Matilda Φόρεμα,0.08,Low,yes,459
+112,nyx-top,10563029533005,Nyx Τοπ,0.07,Low,yes,273
