@@ -1,0 +1,14 @@
+{% comment %}
+  Popular / New badge from the popularity metafields written by apply_popularity.py.
+  Theme: Be Yours. Add to the product card snippet (snippets/product-card.liquid or card-product.liquid,
+  inside the image wrapper next to the existing sale / sold-out badges) as:
+      {% render 'popular-badge', product: card_product %}
+  and to the product page media gallery if the badge is wanted there too.
+  Only Hero products get "Popular"; products under 30 days old get "New". Nothing else shows a badge.
+{% endcomment %}
+{%- assign tier = product.metafields.custom.merch_tier | default: '' -%}
+{%- if tier == 'Hero' -%}
+  <span class="badge badge--popular" style="position:absolute;top:10px;left:10px;z-index:2;background:#1A1B18;color:#fff;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;line-height:1">Popular</span>
+{%- elsif tier == 'New' -%}
+  <span class="badge badge--new" style="position:absolute;top:10px;left:10px;z-index:2;background:#ECD7CD;color:#1A1B18;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;line-height:1">New in</span>
+{%- endif -%}

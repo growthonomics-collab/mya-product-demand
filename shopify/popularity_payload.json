@@ -1,0 +1,9011 @@
+{
+ "updated": "2026-09-23",
+ "sold_out_last": true,
+ "products": [
+  {
+   "id": 10718851137869,
+   "handle": "stella",
+   "popularity_ratio": "7.94",
+   "merch_tier": "Hero",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10566138757453,
+   "handle": "elodie-dress",
+   "popularity_ratio": "6.72",
+   "merch_tier": "Hero",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10814110531917,
+   "handle": "marbella-dress",
+   "popularity_ratio": "5.14",
+   "merch_tier": "Hero",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10298905690445,
+   "handle": "indra-dress-copy",
+   "popularity_ratio": "5.12",
+   "merch_tier": "Hero",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10248692302157,
+   "handle": "ayla-jumpsuit",
+   "popularity_ratio": "4.74",
+   "merch_tier": "Hero",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10834002870605,
+   "handle": "naia-dress",
+   "popularity_ratio": "4.39",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10833962598733,
+   "handle": "daria-limited",
+   "popularity_ratio": "4.27",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10243863937357,
+   "handle": "elva-kimono",
+   "popularity_ratio": "4.24",
+   "merch_tier": "Hero",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10237807329613,
+   "handle": "amira-shirt",
+   "popularity_ratio": "4.13",
+   "merch_tier": "Hero",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10714453999949,
+   "handle": "sylvia",
+   "popularity_ratio": "3.96",
+   "merch_tier": "Hero",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10833955914061,
+   "handle": "belisse-limited",
+   "popularity_ratio": "3.76",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10730619339085,
+   "handle": "coco",
+   "popularity_ratio": "3.73",
+   "merch_tier": "Hero",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 9845707440461,
+   "handle": "tata-kimono-dress",
+   "popularity_ratio": "3.71",
+   "merch_tier": "Hero",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10073195905357,
+   "handle": "empress-top",
+   "popularity_ratio": "3.67",
+   "merch_tier": "Hero",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10730727440717,
+   "handle": "dioni",
+   "popularity_ratio": "3.63",
+   "merch_tier": "Hero",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10834006475085,
+   "handle": "olena-dress",
+   "popularity_ratio": "3.60",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10718845763917,
+   "handle": "stella-top-1",
+   "popularity_ratio": "3.23",
+   "merch_tier": "Hero",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10831622013261,
+   "handle": "melisande-top-1",
+   "popularity_ratio": "3.03",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10831625519437,
+   "handle": "belisse-cape",
+   "popularity_ratio": "2.89",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10652663251277,
+   "handle": "crystalia",
+   "popularity_ratio": "2.89",
+   "merch_tier": "Strong",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 8669619781965,
+   "handle": "amari-dress",
+   "popularity_ratio": "2.87",
+   "merch_tier": "Strong",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10634112041293,
+   "handle": "velora",
+   "popularity_ratio": "2.86",
+   "merch_tier": "Strong",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10564703289677,
+   "handle": "zoe-pants",
+   "popularity_ratio": "2.82",
+   "merch_tier": "Strong",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-pants"
+  },
+  {
+   "id": 10831704588621,
+   "handle": "ameline-top-1",
+   "popularity_ratio": "2.70",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10728598831437,
+   "handle": "dalia-dress",
+   "popularity_ratio": "2.69",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10390642590029,
+   "handle": "aeris-jumpsuit",
+   "popularity_ratio": "2.68",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10730899734861,
+   "handle": "doris",
+   "popularity_ratio": "2.65",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10248741912909,
+   "handle": "alba-pants",
+   "popularity_ratio": "2.62",
+   "merch_tier": "Strong",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10834097766733,
+   "handle": "nerea-dress",
+   "popularity_ratio": "2.56",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10730655580493,
+   "handle": "coco-skirt",
+   "popularity_ratio": "2.52",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10833955160397,
+   "handle": "belisse-dress",
+   "popularity_ratio": "2.51",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10833960927565,
+   "handle": "daria-dress",
+   "popularity_ratio": "2.46",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10633925165389,
+   "handle": "copy-copy-75",
+   "popularity_ratio": "2.46",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10731572789581,
+   "handle": "capri-1",
+   "popularity_ratio": "2.42",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10731628429645,
+   "handle": "scorpios-limited",
+   "popularity_ratio": "2.39",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10566159991117,
+   "handle": "hilary-dress",
+   "popularity_ratio": "2.38",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10697115926861,
+   "handle": "victoria",
+   "popularity_ratio": "2.33",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10804955087181,
+   "handle": "melin-top",
+   "popularity_ratio": "2.31",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10833893097805,
+   "handle": "adelie-dress",
+   "popularity_ratio": "2.26",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10700591759693,
+   "handle": "maeva-kids",
+   "popularity_ratio": "2.25",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10700696977741,
+   "handle": "arielia-kids",
+   "popularity_ratio": "2.24",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10387831095629,
+   "handle": "ember-skirt",
+   "popularity_ratio": "2.21",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10566035374413,
+   "handle": "runa-top",
+   "popularity_ratio": "2.15",
+   "merch_tier": "Strong",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10833930387789,
+   "handle": "sorelia-limited-1",
+   "popularity_ratio": "2.12",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10652612165965,
+   "handle": "evelisse-limited",
+   "popularity_ratio": "2.10",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10833816387917,
+   "handle": "ameline-skirt",
+   "popularity_ratio": "2.01",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-skirts"
+  },
+  {
+   "id": 10563227615565,
+   "handle": "argenta-cape",
+   "popularity_ratio": "1.96",
+   "merch_tier": "Strong",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10831800795469,
+   "handle": "calista-skirt",
+   "popularity_ratio": "1.95",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-skirts"
+  },
+  {
+   "id": 10730988405069,
+   "handle": "perla",
+   "popularity_ratio": "1.93",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10074122977613,
+   "handle": "empress-skirt",
+   "popularity_ratio": "1.91",
+   "merch_tier": "Strong",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10831763931469,
+   "handle": "evania-pants",
+   "popularity_ratio": "1.91",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-pants"
+  },
+  {
+   "id": 10559049138509,
+   "handle": "ariel-siren-dress-blue",
+   "popularity_ratio": "1.90",
+   "merch_tier": "Strong",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10831635022157,
+   "handle": "eira-cape-1",
+   "popularity_ratio": "1.89",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10700575211853,
+   "handle": "celestia-kids",
+   "popularity_ratio": "1.88",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10524729114957,
+   "handle": "harmonia-dress-1",
+   "popularity_ratio": "1.88",
+   "merch_tier": "Strong",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10834117951821,
+   "handle": "adara-dress",
+   "popularity_ratio": "1.86",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10564863885645,
+   "handle": "phoebe-dress",
+   "popularity_ratio": "1.86",
+   "merch_tier": "Strong",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10703252554061,
+   "handle": "zoe-kids",
+   "popularity_ratio": "1.86",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10714458063181,
+   "handle": "lydia",
+   "popularity_ratio": "1.83",
+   "merch_tier": "Strong",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10731569217869,
+   "handle": "magnolia-top",
+   "popularity_ratio": "1.82",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10641885364557,
+   "handle": "orlaya-1",
+   "popularity_ratio": "1.79",
+   "merch_tier": "Strong",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 8669577445709,
+   "handle": "lynn-ann-top",
+   "popularity_ratio": "1.77",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10671661482317,
+   "handle": "marisa",
+   "popularity_ratio": "1.77",
+   "merch_tier": "Strong",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10833837261133,
+   "handle": "alessia-kimono",
+   "popularity_ratio": "1.72",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-kimono-dress"
+  },
+  {
+   "id": 10831700951373,
+   "handle": "ameline-top",
+   "popularity_ratio": "1.72",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10566112903501,
+   "handle": "maeva-dress",
+   "popularity_ratio": "1.71",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10834708365645,
+   "handle": "kalina-dress",
+   "popularity_ratio": "1.70",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10644069187917,
+   "handle": "solenne",
+   "popularity_ratio": "1.69",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10804947190093,
+   "handle": "melin-skirt",
+   "popularity_ratio": "1.67",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10642032361805,
+   "handle": "sophia",
+   "popularity_ratio": "1.67",
+   "merch_tier": "Strong",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10710349381965,
+   "handle": "nerida",
+   "popularity_ratio": "1.66",
+   "merch_tier": "Strong",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10525038674253,
+   "handle": "aurielle-dress",
+   "popularity_ratio": "1.65",
+   "merch_tier": "Strong",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10559114215757,
+   "handle": "thalina-dress-1",
+   "popularity_ratio": "1.65",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10833813078349,
+   "handle": "elara-skirt",
+   "popularity_ratio": "1.64",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-skirts"
+  },
+  {
+   "id": 10833878876493,
+   "handle": "liora-dress-1",
+   "popularity_ratio": "1.64",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10525019046221,
+   "handle": "luvora-dress",
+   "popularity_ratio": "1.64",
+   "merch_tier": "Strong",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10814122819917,
+   "handle": "leandra-dress",
+   "popularity_ratio": "1.63",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 8936685863245,
+   "handle": "gold-underdress",
+   "popularity_ratio": "1.62",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "underdress"
+  },
+  {
+   "id": 10566385434957,
+   "handle": "neta-top",
+   "popularity_ratio": "1.62",
+   "merch_tier": "Strong",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10831648227661,
+   "handle": "aviana-cape",
+   "popularity_ratio": "1.61",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10566155960653,
+   "handle": "greta-dress",
+   "popularity_ratio": "1.61",
+   "merch_tier": "Strong",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10833924161869,
+   "handle": "lyselle-dress",
+   "popularity_ratio": "1.60",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10730911793485,
+   "handle": "doris-1",
+   "popularity_ratio": "1.59",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10833817010509,
+   "handle": "cassia-skirt",
+   "popularity_ratio": "1.58",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-skirts"
+  },
+  {
+   "id": 10566045172045,
+   "handle": "astor-kimono",
+   "popularity_ratio": "1.57",
+   "merch_tier": "Strong",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10559183356237,
+   "handle": "calypso-top-pink",
+   "popularity_ratio": "1.57",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10730842784077,
+   "handle": "kirki",
+   "popularity_ratio": "1.56",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10563208315213,
+   "handle": "elyra-cape",
+   "popularity_ratio": "1.55",
+   "merch_tier": "Strong",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10730877223245,
+   "handle": "kirki-kimono",
+   "popularity_ratio": "1.53",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10786186232141,
+   "handle": "livia-copy",
+   "popularity_ratio": "1.52",
+   "merch_tier": "Strong",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-jumpsuits"
+  },
+  {
+   "id": 10834724651341,
+   "handle": "tamara-jumsuit",
+   "popularity_ratio": "1.52",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-jumpsuits"
+  },
+  {
+   "id": 10564896391501,
+   "handle": "rayne-dress",
+   "popularity_ratio": "1.51",
+   "merch_tier": "Strong",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10831729623373,
+   "handle": "violetta-pants",
+   "popularity_ratio": "1.51",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-pants"
+  },
+  {
+   "id": 10758769738061,
+   "handle": "nora",
+   "popularity_ratio": "1.48",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10664671936845,
+   "handle": "scarlet",
+   "popularity_ratio": "1.48",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "monochrome"
+  },
+  {
+   "id": 10831673491789,
+   "handle": "amaris-top",
+   "popularity_ratio": "1.47",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10833834901837,
+   "handle": "ameline-kimono",
+   "popularity_ratio": "1.44",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-kimono-dress"
+  },
+  {
+   "id": 10563090907469,
+   "handle": "helia-dress",
+   "popularity_ratio": "1.44",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10559200788813,
+   "handle": "calypso-skirt-pink",
+   "popularity_ratio": "1.43",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10833843290445,
+   "handle": "jessamine-blazer",
+   "popularity_ratio": "1.43",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-blazers"
+  },
+  {
+   "id": 10663945011533,
+   "handle": "layered-shell-1",
+   "popularity_ratio": "1.43",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-accessories"
+  },
+  {
+   "id": 10559204852045,
+   "handle": "nerissa-kimono-pink",
+   "popularity_ratio": "1.41",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10786243215693,
+   "handle": "noelle",
+   "popularity_ratio": "1.41",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10670927511885,
+   "handle": "eve-copy",
+   "popularity_ratio": "1.41",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-jumpsuits"
+  },
+  {
+   "id": 10833913938253,
+   "handle": "alessa-dress",
+   "popularity_ratio": "1.40",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10834721472845,
+   "handle": "bianca-jumsuit",
+   "popularity_ratio": "1.40",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-jumpsuits"
+  },
+  {
+   "id": 10714445873485,
+   "handle": "melina",
+   "popularity_ratio": "1.40",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10834069487949,
+   "handle": "paloma-dress",
+   "popularity_ratio": "1.38",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10643352158541,
+   "handle": "soraya",
+   "popularity_ratio": "1.38",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10657844953421,
+   "handle": "thalassa-limited",
+   "popularity_ratio": "1.38",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10566090916173,
+   "handle": "lea-dress",
+   "popularity_ratio": "1.37",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10559198298445,
+   "handle": "calypso-skirt-blue",
+   "popularity_ratio": "1.36",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10700554699085,
+   "handle": "ariel-kids",
+   "popularity_ratio": "1.34",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10197665218893,
+   "handle": "tiffany-dress",
+   "popularity_ratio": "1.33",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10566166413645,
+   "handle": "coralia-dress",
+   "popularity_ratio": "1.32",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10566041698637,
+   "handle": "magnolia-skirt",
+   "popularity_ratio": "1.31",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10566086492493,
+   "handle": "norah-kimono",
+   "popularity_ratio": "1.30",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10863687893325,
+   "handle": "alessandra-dress",
+   "popularity_ratio": "1.29",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10563066659149,
+   "handle": "auralis-kimono",
+   "popularity_ratio": "1.27",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10633956557133,
+   "handle": "lumira",
+   "popularity_ratio": "1.27",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10703248359757,
+   "handle": "nerissa",
+   "popularity_ratio": "1.26",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10833918460237,
+   "handle": "amarise-dress",
+   "popularity_ratio": "1.25",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10786210480461,
+   "handle": "rosalie-2",
+   "popularity_ratio": "1.25",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 8151987355929,
+   "handle": "juliet-top",
+   "popularity_ratio": "1.24",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10564884070733,
+   "handle": "glowen-dress",
+   "popularity_ratio": "1.23",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10390639116621,
+   "handle": "nyra-jumpsuit",
+   "popularity_ratio": "1.23",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10338865250637,
+   "handle": "selira-dress",
+   "popularity_ratio": "1.23",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 6552814256227,
+   "handle": "perla-kimono-dress",
+   "popularity_ratio": "1.22",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10833848992077,
+   "handle": "seraphina-blazer",
+   "popularity_ratio": "1.22",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-blazers"
+  },
+  {
+   "id": 10633971007821,
+   "handle": "copy-copy-78",
+   "popularity_ratio": "1.22",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10906129269069,
+   "handle": "noir-dress",
+   "popularity_ratio": "1.21",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10361722929485,
+   "handle": "isebel-dress",
+   "popularity_ratio": "1.20",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10566207308109,
+   "handle": "lilu-jumpsuit",
+   "popularity_ratio": "1.20",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-jumpsuits"
+  },
+  {
+   "id": 10730866344269,
+   "handle": "kirki-skirt",
+   "popularity_ratio": "1.19",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10657683439949,
+   "handle": "ione-1",
+   "popularity_ratio": "1.18",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 8668340683085,
+   "handle": "sage-bodysuit",
+   "popularity_ratio": "1.18",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10831770747213,
+   "handle": "seraphina-pants",
+   "popularity_ratio": "1.17",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-pants"
+  },
+  {
+   "id": 10338806268237,
+   "handle": "ferina-dress",
+   "popularity_ratio": "1.16",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 8585609249101,
+   "handle": "tiana-top",
+   "popularity_ratio": "1.16",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10635955667277,
+   "handle": "ariel-siren",
+   "popularity_ratio": "1.15",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-accessories"
+  },
+  {
+   "id": 10731571183949,
+   "handle": "capri",
+   "popularity_ratio": "1.14",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10834091508045,
+   "handle": "irina-dress",
+   "popularity_ratio": "1.14",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10074215547213,
+   "handle": "anwen-dress",
+   "popularity_ratio": "1.13",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10664056750413,
+   "handle": "elise",
+   "popularity_ratio": "1.13",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10831722840397,
+   "handle": "maristella-cape",
+   "popularity_ratio": "1.13",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-pants"
+  },
+  {
+   "id": 10664754151757,
+   "handle": "elaria",
+   "popularity_ratio": "1.12",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10831736045901,
+   "handle": "jessamine-pants",
+   "popularity_ratio": "1.12",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-pants"
+  },
+  {
+   "id": 10833830773069,
+   "handle": "leonie-kimono",
+   "popularity_ratio": "1.11",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-kimono-dress"
+  },
+  {
+   "id": 10833908760909,
+   "handle": "mireya-dress",
+   "popularity_ratio": "1.11",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10563094708557,
+   "handle": "asteria-dress",
+   "popularity_ratio": "1.10",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 8669604151629,
+   "handle": "cassidy-skirt",
+   "popularity_ratio": "1.10",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10831632204109,
+   "handle": "daria-cape",
+   "popularity_ratio": "1.10",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10563128525133,
+   "handle": "thalassa-dress",
+   "popularity_ratio": "1.10",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10814128783693,
+   "handle": "nerina-dress",
+   "popularity_ratio": "1.09",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10563172696397,
+   "handle": "argenta-jumpsuit",
+   "popularity_ratio": "1.08",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-jumpsuits"
+  },
+  {
+   "id": 10559144755533,
+   "handle": "calypso-shirt-blue",
+   "popularity_ratio": "1.07",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10571427971405,
+   "handle": "ariel-siren-limited",
+   "popularity_ratio": "1.06",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10563246784845,
+   "handle": "elyra-pants",
+   "popularity_ratio": "1.06",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-pants"
+  },
+  {
+   "id": 10566211600717,
+   "handle": "nola-jumpsuit",
+   "popularity_ratio": "1.04",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-jumpsuits"
+  },
+  {
+   "id": 10633960587597,
+   "handle": "orlena",
+   "popularity_ratio": "1.04",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "monochrome"
+  },
+  {
+   "id": 10388244529485,
+   "handle": "obsidian-dress",
+   "popularity_ratio": "1.03",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10564789961037,
+   "handle": "shona-pants",
+   "popularity_ratio": "1.03",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-pants"
+  },
+  {
+   "id": 10834705842509,
+   "handle": "elettra-dress",
+   "popularity_ratio": "1.02",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10559203049805,
+   "handle": "nerissa-kimono-blue",
+   "popularity_ratio": "1.02",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10563110994253,
+   "handle": "nai-dress",
+   "popularity_ratio": "1.01",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10833805377869,
+   "handle": "althea-skirt",
+   "popularity_ratio": "1.00",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-skirts"
+  },
+  {
+   "id": 10564825186637,
+   "handle": "aria-kimono",
+   "popularity_ratio": "1.00",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10834723045709,
+   "handle": "leontine-jumsuit",
+   "popularity_ratio": "1.00",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-jumpsuits"
+  },
+  {
+   "id": 10833922490701,
+   "handle": "maristelle-dress",
+   "popularity_ratio": "0.99",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10834711085389,
+   "handle": "petra-dress",
+   "popularity_ratio": "0.99",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10834071912781,
+   "handle": "reina-dress-1",
+   "popularity_ratio": "0.99",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10633912582477,
+   "handle": "serina",
+   "popularity_ratio": "0.99",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10834089836877,
+   "handle": "verona-dress",
+   "popularity_ratio": "0.99",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10563359539533,
+   "handle": "argenta-kimono",
+   "popularity_ratio": "0.98",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10831615459661,
+   "handle": "elowen-top-1",
+   "popularity_ratio": "0.98",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10833959190861,
+   "handle": "ciela-dress",
+   "popularity_ratio": "0.97",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10584479564109,
+   "handle": "electra-dress",
+   "popularity_ratio": "0.97",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10907702198605,
+   "handle": "oriana-dress",
+   "popularity_ratio": "0.97",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10831714812237,
+   "handle": "mya-top",
+   "popularity_ratio": "0.96",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 8935675756877,
+   "handle": "bindi-dress",
+   "popularity_ratio": "0.95",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10833806360909,
+   "handle": "eulalia-skirt",
+   "popularity_ratio": "0.95",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-skirts"
+  },
+  {
+   "id": 10847193203021,
+   "handle": "natel",
+   "popularity_ratio": "0.95",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "monochrome"
+  },
+  {
+   "id": 10564908613965,
+   "handle": "rayne-pants",
+   "popularity_ratio": "0.95",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-pants"
+  },
+  {
+   "id": 10566174114125,
+   "handle": "eris-dress",
+   "popularity_ratio": "0.94",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10634114826573,
+   "handle": "meline",
+   "popularity_ratio": "0.94",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "monochrome"
+  },
+  {
+   "id": 10641862000973,
+   "handle": "orlaya",
+   "popularity_ratio": "0.94",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10697387508045,
+   "handle": "sienna-copy",
+   "popularity_ratio": "0.94",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10078634836301,
+   "handle": "pink-underdress-long",
+   "popularity_ratio": "0.94",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "underdress"
+  },
+  {
+   "id": 10703235547469,
+   "handle": "aurelia-kids",
+   "popularity_ratio": "0.93",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10833894801741,
+   "handle": "ismerie-dress",
+   "popularity_ratio": "0.93",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10563149726029,
+   "handle": "oceane-jumpsuit",
+   "popularity_ratio": "0.93",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-jumpsuits"
+  },
+  {
+   "id": 10525164896589,
+   "handle": "auralis-dress",
+   "popularity_ratio": "0.92",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10833965449549,
+   "handle": "eira-limited-1",
+   "popularity_ratio": "0.92",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10831789752653,
+   "handle": "maelle-skirt",
+   "popularity_ratio": "0.92",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-skirts"
+  },
+  {
+   "id": 10833797644621,
+   "handle": "vespera-skirt",
+   "popularity_ratio": "0.92",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-skirts"
+  },
+  {
+   "id": 10833895883085,
+   "handle": "amorette-dress",
+   "popularity_ratio": "0.91",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10563199992141,
+   "handle": "indira-top",
+   "popularity_ratio": "0.91",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10222371340621,
+   "handle": "lottie-skirt",
+   "popularity_ratio": "0.91",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10633888858445,
+   "handle": "copy-copy-72",
+   "popularity_ratio": "0.91",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "monochrome"
+  },
+  {
+   "id": 10740788068685,
+   "handle": "solea",
+   "popularity_ratio": "0.91",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10563075998029,
+   "handle": "calyra-dress",
+   "popularity_ratio": "0.90",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10728698184013,
+   "handle": "ioli",
+   "popularity_ratio": "0.90",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10834734645581,
+   "handle": "maristella-cape-1",
+   "popularity_ratio": "0.90",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10740803436877,
+   "handle": "solea-1",
+   "popularity_ratio": "0.90",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 9101691617613,
+   "handle": "dolon-dress",
+   "popularity_ratio": "0.89",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 4505870073955,
+   "handle": "floridita-skirt",
+   "popularity_ratio": "0.89",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10833966629197,
+   "handle": "faline-dress",
+   "popularity_ratio": "0.89",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10633937944909,
+   "handle": "thirea",
+   "popularity_ratio": "0.89",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "monochrome"
+  },
+  {
+   "id": 10700490932557,
+   "handle": "amelie-kids-set",
+   "popularity_ratio": "0.88",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10559208358221,
+   "handle": "aster-kimono",
+   "popularity_ratio": "0.88",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10731582325069,
+   "handle": "dalia",
+   "popularity_ratio": "0.88",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-accessories"
+  },
+  {
+   "id": 10833793253709,
+   "handle": "elowen-skirt-1",
+   "popularity_ratio": "0.88",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-skirts"
+  },
+  {
+   "id": 10831601533261,
+   "handle": "maelle-top",
+   "popularity_ratio": "0.88",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10563095920973,
+   "handle": "thalia-dress",
+   "popularity_ratio": "0.88",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10833826283853,
+   "handle": "valeria-kimono",
+   "popularity_ratio": "0.88",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-kimono-dress"
+  },
+  {
+   "id": 10633890300237,
+   "handle": "copy-copy-73",
+   "popularity_ratio": "0.88",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10831558803789,
+   "handle": "aveline-top-1",
+   "popularity_ratio": "0.87",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10831609299277,
+   "handle": "calista-top",
+   "popularity_ratio": "0.87",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10831707406669,
+   "handle": "cassia-top",
+   "popularity_ratio": "0.87",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10332606890317,
+   "handle": "ivoria-dress",
+   "popularity_ratio": "0.87",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10833829331277,
+   "handle": "sabine-kimono",
+   "popularity_ratio": "0.87",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-kimono-dress"
+  },
+  {
+   "id": 10566161531213,
+   "handle": "cloe-dress",
+   "popularity_ratio": "0.86",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10831695315277,
+   "handle": "elara-top",
+   "popularity_ratio": "0.86",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10831701770573,
+   "handle": "evania-top",
+   "popularity_ratio": "0.86",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10564787011917,
+   "handle": "debbie-pants",
+   "popularity_ratio": "0.85",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-pants"
+  },
+  {
+   "id": 10833964007757,
+   "handle": "eira-dress-1",
+   "popularity_ratio": "0.85",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10831611429197,
+   "handle": "elowen-top",
+   "popularity_ratio": "0.85",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10563231154509,
+   "handle": "elyra-top",
+   "popularity_ratio": "0.85",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10566350635341,
+   "handle": "gold-underdress-long-1",
+   "popularity_ratio": "0.85",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "underdress"
+  },
+  {
+   "id": 10831781691725,
+   "handle": "aveline-skirt",
+   "popularity_ratio": "0.84",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-skirts"
+  },
+  {
+   "id": 10730818896205,
+   "handle": "irida-kimono",
+   "popularity_ratio": "0.84",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10831663268173,
+   "handle": "oriane-top",
+   "popularity_ratio": "0.84",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 6728686010467,
+   "handle": "arina-dress",
+   "popularity_ratio": "0.83",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10831618048333,
+   "handle": "melisande-top",
+   "popularity_ratio": "0.83",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10559196856653,
+   "handle": "calypso-pants",
+   "popularity_ratio": "0.83",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-pants"
+  },
+  {
+   "id": 10703250948429,
+   "handle": "nerissa-kids",
+   "popularity_ratio": "0.83",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10834723832141,
+   "handle": "rafaela-jumsuit",
+   "popularity_ratio": "0.83",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-jumpsuits"
+  },
+  {
+   "id": 10834735432013,
+   "handle": "zinnia-cape",
+   "popularity_ratio": "0.83",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10847613124941,
+   "handle": "celeste-dress-1",
+   "popularity_ratio": "0.82",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 8155052146969,
+   "handle": "jessica-top",
+   "popularity_ratio": "0.82",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10831669330253,
+   "handle": "zelie-cape-1",
+   "popularity_ratio": "0.82",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10834099208525,
+   "handle": "odessa-dress",
+   "popularity_ratio": "0.81",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 8171401183513,
+   "handle": "gloria-dress",
+   "popularity_ratio": "0.80",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10833814716749,
+   "handle": "lysandra-skirt",
+   "popularity_ratio": "0.80",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-skirts"
+  },
+  {
+   "id": 10833841258829,
+   "handle": "sereia-kimono",
+   "popularity_ratio": "0.80",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-kimono-dress"
+  },
+  {
+   "id": 10831717695821,
+   "handle": "leonora-cape",
+   "popularity_ratio": "0.79",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10566047891789,
+   "handle": "monique-kimono",
+   "popularity_ratio": "0.79",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10847552897357,
+   "handle": "virelia-dress",
+   "popularity_ratio": "0.79",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10563145236813,
+   "handle": "zaria-jumpsuit",
+   "popularity_ratio": "0.79",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-jumpsuits"
+  },
+  {
+   "id": 10833926947149,
+   "handle": "sorelia-dress",
+   "popularity_ratio": "0.78",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10833902534989,
+   "handle": "zafira-dress",
+   "popularity_ratio": "0.78",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10238244094285,
+   "handle": "lina-skirt",
+   "popularity_ratio": "0.77",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10833820385613,
+   "handle": "oriella-kimono",
+   "popularity_ratio": "0.77",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-kimono-dress"
+  },
+  {
+   "id": 10697411199309,
+   "handle": "patricia",
+   "popularity_ratio": "0.77",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10710401483085,
+   "handle": "isabella",
+   "popularity_ratio": "0.76",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10588786295117,
+   "handle": "copy-2",
+   "popularity_ratio": "0.76",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 6552849907811,
+   "handle": "angelica-dress",
+   "popularity_ratio": "0.75",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10563135537485,
+   "handle": "gaia-jumpsuit",
+   "popularity_ratio": "0.75",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-jumpsuits"
+  },
+  {
+   "id": 10563222045005,
+   "handle": "lyla-top",
+   "popularity_ratio": "0.75",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10238252286285,
+   "handle": "amara-skirt",
+   "popularity_ratio": "0.74",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10863625961805,
+   "handle": "annelise-dress",
+   "popularity_ratio": "0.73",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10566167626061,
+   "handle": "menda-dress",
+   "popularity_ratio": "0.72",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10703240692045,
+   "handle": "mirabelle-kids",
+   "popularity_ratio": "0.72",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10834733793613,
+   "handle": "zafrina-dress",
+   "popularity_ratio": "0.72",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10566210683213,
+   "handle": "eve-jumpsuit",
+   "popularity_ratio": "0.71",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-jumpsuits"
+  },
+  {
+   "id": 10563435102541,
+   "handle": "indy-top",
+   "popularity_ratio": "0.71",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10710406005069,
+   "handle": "isabellatop",
+   "popularity_ratio": "0.71",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10563065413965,
+   "handle": "eirys-skirt",
+   "popularity_ratio": "0.70",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10710363537741,
+   "handle": "ione-2",
+   "popularity_ratio": "0.70",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10663946092877,
+   "handle": "layered-silver-1",
+   "popularity_ratio": "0.70",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-accessories"
+  },
+  {
+   "id": 10833951162701,
+   "handle": "aviana-limited",
+   "popularity_ratio": "0.69",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10834722324813,
+   "handle": "katia-jumsuit",
+   "popularity_ratio": "0.69",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-jumpsuits"
+  },
+  {
+   "id": 10566165102925,
+   "handle": "melin-dress",
+   "popularity_ratio": "0.69",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10564824432973,
+   "handle": "stella-kimono",
+   "popularity_ratio": "0.69",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10833916559693,
+   "handle": "cressida-dress",
+   "popularity_ratio": "0.68",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10758774489421,
+   "handle": "nora-1",
+   "popularity_ratio": "0.68",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10563437789517,
+   "handle": "zoe-cape",
+   "popularity_ratio": "0.66",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10563312714061,
+   "handle": "aria-skirt-1",
+   "popularity_ratio": "0.65",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10833979244877,
+   "handle": "leandra-limited",
+   "popularity_ratio": "0.65",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10834074337613,
+   "handle": "samara-dress",
+   "popularity_ratio": "0.65",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10336362463565,
+   "handle": "vionae-dress",
+   "popularity_ratio": "0.65",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10663947960653,
+   "handle": "camelia",
+   "popularity_ratio": "0.64",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10810757415245,
+   "handle": "fiorella-white",
+   "popularity_ratio": "0.64",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10834090557773,
+   "handle": "freya-dress",
+   "popularity_ratio": "0.64",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10833985175885,
+   "handle": "mirea-dress",
+   "popularity_ratio": "0.64",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10633856221517,
+   "handle": "aura",
+   "popularity_ratio": "0.63",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10786231877965,
+   "handle": "marceline",
+   "popularity_ratio": "0.63",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10564823515469,
+   "handle": "shona-kimono",
+   "popularity_ratio": "0.63",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10566111854925,
+   "handle": "sierra-dress-1",
+   "popularity_ratio": "0.63",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10703246393677,
+   "handle": "alina-kids",
+   "popularity_ratio": "0.62",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10833949294925,
+   "handle": "aviana-dress",
+   "popularity_ratio": "0.62",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10847616008525,
+   "handle": "evadne-dress",
+   "popularity_ratio": "0.62",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10834092753229,
+   "handle": "jolie-dress-1",
+   "popularity_ratio": "0.62",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10833890148685,
+   "handle": "lavinia-dress-1",
+   "popularity_ratio": "0.62",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10833931174221,
+   "handle": "novalie-dress",
+   "popularity_ratio": "0.62",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10833853940045,
+   "handle": "azelie-dress",
+   "popularity_ratio": "0.61",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10657672266061,
+   "handle": "ione",
+   "popularity_ratio": "0.61",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10745646252365,
+   "handle": "ismini-1",
+   "popularity_ratio": "0.61",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10641906958669,
+   "handle": "orlaya-2",
+   "popularity_ratio": "0.61",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10563404235085,
+   "handle": "elyra-dress",
+   "popularity_ratio": "0.60",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10833969807693,
+   "handle": "inessa-dress",
+   "popularity_ratio": "0.60",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10833998643533,
+   "handle": "mirea-limited",
+   "popularity_ratio": "0.60",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10728541159757,
+   "handle": "nefeli",
+   "popularity_ratio": "0.60",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10833920721229,
+   "handle": "odelia-dress-1",
+   "popularity_ratio": "0.60",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10834083283277,
+   "handle": "talia-dress-1",
+   "popularity_ratio": "0.60",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10834094031181,
+   "handle": "kiara-dress",
+   "popularity_ratio": "0.59",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10563131900237,
+   "handle": "aegea-dress",
+   "popularity_ratio": "0.58",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10563232760141,
+   "handle": "aria-top-1",
+   "popularity_ratio": "0.58",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10637297090893,
+   "handle": "aurelle",
+   "popularity_ratio": "0.58",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10559164318029,
+   "handle": "calypso-top-blue",
+   "popularity_ratio": "0.58",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10563137044813,
+   "handle": "livia-jumpsuit",
+   "popularity_ratio": "0.58",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-jumpsuits"
+  },
+  {
+   "id": 10834710036813,
+   "handle": "malina-dress",
+   "popularity_ratio": "0.58",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10833934483789,
+   "handle": "copy-copy-79",
+   "popularity_ratio": "0.58",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10833897455949,
+   "handle": "orietta-dress",
+   "popularity_ratio": "0.58",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 8936687141197,
+   "handle": "pink-underdress",
+   "popularity_ratio": "0.58",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "underdress"
+  },
+  {
+   "id": 10847566528845,
+   "handle": "faline-dress-copy",
+   "popularity_ratio": "0.58",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10833912070477,
+   "handle": "vianne-dress",
+   "popularity_ratio": "0.58",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10636342690125,
+   "handle": "viora",
+   "popularity_ratio": "0.58",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10850840478029,
+   "handle": "eloise-dress-1",
+   "popularity_ratio": "0.57",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10248477278541,
+   "handle": "iliana-dress",
+   "popularity_ratio": "0.57",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10834095440205,
+   "handle": "kiara-limited",
+   "popularity_ratio": "0.57",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10833971741005,
+   "handle": "leandra-dress-1",
+   "popularity_ratio": "0.57",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10563307635021,
+   "handle": "lyla-skirt",
+   "popularity_ratio": "0.57",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10833928782157,
+   "handle": "sorelia-limited",
+   "popularity_ratio": "0.57",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10834101633357,
+   "handle": "tessa-dress",
+   "popularity_ratio": "0.57",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10834115395917,
+   "handle": "tessa-limited",
+   "popularity_ratio": "0.57",
+   "merch_tier": "New",
+   "popularity_trend": "New",
+   "age_status": "New",
+   "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10566130303309,
+   "handle": "byron-dress",
+   "popularity_ratio": "0.56",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10563024912717,
+   "handle": "elyra-body",
+   "popularity_ratio": "0.56",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10566098714957,
+   "handle": "midas-dress",
+   "popularity_ratio": "0.56",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10559098978637,
+   "handle": "s26-5048",
+   "popularity_ratio": "0.55",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10074213515597,
+   "handle": "carmine-dress",
+   "popularity_ratio": "0.55",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10635926929741,
+   "handle": "turban",
+   "popularity_ratio": "0.53",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-accessories"
+  },
+  {
+   "id": 10563304816973,
+   "handle": "indira-skirt",
+   "popularity_ratio": "0.53",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10730927784269,
+   "handle": "irida-top",
+   "popularity_ratio": "0.53",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10388197507405,
+   "handle": "luxe-dress",
+   "popularity_ratio": "0.52",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10237854777677,
+   "handle": "lyra-top",
+   "popularity_ratio": "0.52",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10559193186637,
+   "handle": "calypso-shirt-pink",
+   "popularity_ratio": "0.51",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10525047095629,
+   "handle": "ethera-dress",
+   "popularity_ratio": "0.50",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10730779771213,
+   "handle": "nadia-dress",
+   "popularity_ratio": "0.50",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10566363447629,
+   "handle": "arla-top",
+   "popularity_ratio": "0.49",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10566163464525,
+   "handle": "myriam-dress",
+   "popularity_ratio": "0.49",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10563065872717,
+   "handle": "zaria-skirt",
+   "popularity_ratio": "0.49",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10563046768973,
+   "handle": "zaria-top",
+   "popularity_ratio": "0.49",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10564841374029,
+   "handle": "hilda-dress-champagne",
+   "popularity_ratio": "0.48",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10566165856589,
+   "handle": "kathy-dress",
+   "popularity_ratio": "0.48",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10563057189197,
+   "handle": "myra-skirt",
+   "popularity_ratio": "0.48",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10524680028493,
+   "handle": "lissara-skirt",
+   "popularity_ratio": "0.47",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10571365515597,
+   "handle": "nai-limited-dress",
+   "popularity_ratio": "0.47",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10563290530125,
+   "handle": "ophelia-skirt",
+   "popularity_ratio": "0.47",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10566027510093,
+   "handle": "melissa-top",
+   "popularity_ratio": "0.46",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10730953146701,
+   "handle": "thetis",
+   "popularity_ratio": "0.46",
+   "merch_tier": "Low",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10703237939533,
+   "handle": "coraline-kids",
+   "popularity_ratio": "0.45",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10634213425485,
+   "handle": "norel",
+   "popularity_ratio": "0.45",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10564578804045,
+   "handle": "shona-shirt",
+   "popularity_ratio": "0.45",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10700582224205,
+   "handle": "valentina-kids",
+   "popularity_ratio": "0.45",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10361324011853,
+   "handle": "elaris-jacket",
+   "popularity_ratio": "0.44",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10563092447565,
+   "handle": "meria-dress",
+   "popularity_ratio": "0.44",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10636006129997,
+   "handle": "nyx",
+   "popularity_ratio": "0.44",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-accessories"
+  },
+  {
+   "id": 10564757815629,
+   "handle": "zoe-kimono",
+   "popularity_ratio": "0.44",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10564872208717,
+   "handle": "dore-dress",
+   "popularity_ratio": "0.43",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10731588223309,
+   "handle": "mare-top",
+   "popularity_ratio": "0.43",
+   "merch_tier": "Low",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10566101827917,
+   "handle": "margie-dress",
+   "popularity_ratio": "0.43",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10563042214221,
+   "handle": "myra-top-1",
+   "popularity_ratio": "0.43",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10563189473613,
+   "handle": "ophelia-top",
+   "popularity_ratio": "0.43",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10571285266765,
+   "handle": "phoebe-limited-edition",
+   "popularity_ratio": "0.43",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10566145638733,
+   "handle": "saffron-dress",
+   "popularity_ratio": "0.43",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10633906127181,
+   "handle": "rosea",
+   "popularity_ratio": "0.42",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10074164396365,
+   "handle": "vanetta-skirt",
+   "popularity_ratio": "0.42",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10564586668365,
+   "handle": "ember-top-yellow",
+   "popularity_ratio": "0.41",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10566102974797,
+   "handle": "liberty-dress",
+   "popularity_ratio": "0.40",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10566201803085,
+   "handle": "azalea-dress",
+   "popularity_ratio": "0.39",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10564590010701,
+   "handle": "debbie-shirt",
+   "popularity_ratio": "0.39",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10710381297997,
+   "handle": "elaria-copy",
+   "popularity_ratio": "0.39",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10703232729421,
+   "handle": "stardust-kids",
+   "popularity_ratio": "0.39",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10563406201165,
+   "handle": "livia-dress",
+   "popularity_ratio": "0.38",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10523384611149,
+   "handle": "lumina-dress",
+   "popularity_ratio": "0.38",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10641918886221,
+   "handle": "orlaya-3",
+   "popularity_ratio": "0.37",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10563130229069,
+   "handle": "zale-dress",
+   "popularity_ratio": "0.37",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10563437035853,
+   "handle": "rhia-top",
+   "popularity_ratio": "0.36",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10566039175501,
+   "handle": "elma-pants",
+   "popularity_ratio": "0.35",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-pants"
+  },
+  {
+   "id": 10566028427597,
+   "handle": "gabby-top",
+   "popularity_ratio": "0.35",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 8162775630105,
+   "handle": "lilliana-skirt",
+   "popularity_ratio": "0.35",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10564934369613,
+   "handle": "zelda-dress",
+   "popularity_ratio": "0.35",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10563055878477,
+   "handle": "livia-skirt",
+   "popularity_ratio": "0.34",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10563103392077,
+   "handle": "myrtle-dress-1",
+   "popularity_ratio": "0.34",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10007641030989,
+   "handle": "odile-top",
+   "popularity_ratio": "0.34",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10566182437197,
+   "handle": "astra-dress",
+   "popularity_ratio": "0.33",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10563436282189,
+   "handle": "opal-top",
+   "popularity_ratio": "0.33",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10523483111757,
+   "handle": "silvara-dress",
+   "popularity_ratio": "0.33",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10663944454477,
+   "handle": "earth-tone",
+   "popularity_ratio": "0.32",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-accessories"
+  },
+  {
+   "id": 10730873160013,
+   "handle": "ismini",
+   "popularity_ratio": "0.32",
+   "merch_tier": "Low",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10564754964813,
+   "handle": "livia-kimono",
+   "popularity_ratio": "0.32",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10700565840205,
+   "handle": "pearlina-kids",
+   "popularity_ratio": "0.32",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10657650803021,
+   "handle": "rinna",
+   "popularity_ratio": "0.32",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10564592664909,
+   "handle": "shona-top",
+   "popularity_ratio": "0.32",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10633898852685,
+   "handle": "copy-copy-74",
+   "popularity_ratio": "0.32",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10377585262925,
+   "handle": "arivel-dress",
+   "popularity_ratio": "0.31",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "samples"
+  },
+  {
+   "id": 10566111002957,
+   "handle": "ellie-dress",
+   "popularity_ratio": "0.31",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10564952752461,
+   "handle": "sonia-dress",
+   "popularity_ratio": "0.31",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10563234267469,
+   "handle": "stella-top",
+   "popularity_ratio": "0.31",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10703242985805,
+   "handle": "vivienne-kids",
+   "popularity_ratio": "0.31",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10566185877837,
+   "handle": "krista-dress",
+   "popularity_ratio": "0.30",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10566393954637,
+   "handle": "sienna-top",
+   "popularity_ratio": "0.30",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10566352666957,
+   "handle": "sundra-top",
+   "popularity_ratio": "0.30",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10566150095181,
+   "handle": "sylla-dress",
+   "popularity_ratio": "0.30",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10566360826189,
+   "handle": "romi-top",
+   "popularity_ratio": "0.29",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10563313762637,
+   "handle": "stella-skirt",
+   "popularity_ratio": "0.29",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10700556566861,
+   "handle": "bella-kids",
+   "popularity_ratio": "0.28",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kids"
+  },
+  {
+   "id": 10566351814989,
+   "handle": "glinda-skirt",
+   "popularity_ratio": "0.28",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10663946715469,
+   "handle": "ivory-stone-1",
+   "popularity_ratio": "0.28",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-accessories"
+  },
+  {
+   "id": 10563040510285,
+   "handle": "livia-top",
+   "popularity_ratio": "0.28",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10564537778509,
+   "handle": "mae-top",
+   "popularity_ratio": "0.28",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10563105227085,
+   "handle": "moss-dress-1",
+   "popularity_ratio": "0.28",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10566100255053,
+   "handle": "hilda-dress-dusty-pink",
+   "popularity_ratio": "0.27",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10566068437325,
+   "handle": "lilly-kimono",
+   "popularity_ratio": "0.27",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10355601867085,
+   "handle": "veon-top",
+   "popularity_ratio": "0.27",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10525170172237,
+   "handle": "lissara-dress",
+   "popularity_ratio": "0.26",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10566049726797,
+   "handle": "zelda-kimono",
+   "popularity_ratio": "0.26",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10564749328717,
+   "handle": "lyla-kimono",
+   "popularity_ratio": "0.25",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10564890132813,
+   "handle": "argenta-dress",
+   "popularity_ratio": "0.24",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10525090709837,
+   "handle": "frostelle-dress",
+   "popularity_ratio": "0.24",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "all"
+  },
+  {
+   "id": 10644362002765,
+   "handle": "meline-copy",
+   "popularity_ratio": "0.24",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10563071410509,
+   "handle": "pearl-dress",
+   "popularity_ratio": "0.24",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10563044606285,
+   "handle": "s26-1008",
+   "popularity_ratio": "0.23",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10524697297229,
+   "handle": "florelle-shirt",
+   "popularity_ratio": "0.22",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10563362685261,
+   "handle": "indira-kimono",
+   "popularity_ratio": "0.22",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-kimono-dresses"
+  },
+  {
+   "id": 10657829552461,
+   "handle": "myrielle",
+   "popularity_ratio": "0.22",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10336546980173,
+   "handle": "venira-top",
+   "popularity_ratio": "0.22",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10074174619981,
+   "handle": "odette-orange-skirt",
+   "popularity_ratio": "0.21",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10663943110989,
+   "handle": "ivory-1",
+   "popularity_ratio": "0.19",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-accessories"
+  },
+  {
+   "id": 10566126928205,
+   "handle": "parker-dress",
+   "popularity_ratio": "0.19",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10307851714893,
+   "handle": "copy-copy-42",
+   "popularity_ratio": "0.18",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10525130293581,
+   "handle": "elvessa-dress",
+   "popularity_ratio": "0.17",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "all"
+  },
+  {
+   "id": 10564766138701,
+   "handle": "shona-skirt",
+   "popularity_ratio": "0.17",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10563049128269,
+   "handle": "nyx-skirt",
+   "popularity_ratio": "0.16",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10633884762445,
+   "handle": "noma",
+   "popularity_ratio": "0.15",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10563029533005,
+   "handle": "nyx-top",
+   "popularity_ratio": "0.15",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10007663804749,
+   "handle": "odile-skirt",
+   "popularity_ratio": "0.15",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 6552844959843,
+   "handle": "reina-dress",
+   "popularity_ratio": "0.14",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10633892299085,
+   "handle": "fiora",
+   "popularity_ratio": "0.13",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10566095241549,
+   "handle": "selma-dress",
+   "popularity_ratio": "0.13",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10564583817549,
+   "handle": "ines-shirt",
+   "popularity_ratio": "0.12",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10633886466381,
+   "handle": "copy-copy-69",
+   "popularity_ratio": "0.12",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10633941942605,
+   "handle": "olira",
+   "popularity_ratio": "0.12",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10524577136973,
+   "handle": "opaline-dress",
+   "popularity_ratio": "0.12",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10564803887437,
+   "handle": "ines-pants-1",
+   "popularity_ratio": "0.11",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-pants"
+  },
+  {
+   "id": 10007597187405,
+   "handle": "louisa-skirt",
+   "popularity_ratio": "0.11",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10566370197837,
+   "handle": "lucy-shirt",
+   "popularity_ratio": "0.11",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10137725534541,
+   "handle": "odette-yellow-top",
+   "popularity_ratio": "0.11",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 6730743185507,
+   "handle": "yvet-top",
+   "popularity_ratio": "0.10",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10633887056205,
+   "handle": "copy-copy-71",
+   "popularity_ratio": "0.09",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10566105825613,
+   "handle": "matilda-dress",
+   "popularity_ratio": "0.09",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10633929261389,
+   "handle": "ismera",
+   "popularity_ratio": "0.08",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10633917563213,
+   "handle": "thalea",
+   "popularity_ratio": "0.08",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10006232727885,
+   "handle": "cessna-top",
+   "popularity_ratio": "0.06",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 6730744660067,
+   "handle": "penny-top",
+   "popularity_ratio": "0.06",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  },
+  {
+   "id": 10566040191309,
+   "handle": "monique-skirt",
+   "popularity_ratio": "0.05",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10633966977357,
+   "handle": "copy-copy-77",
+   "popularity_ratio": "0.04",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 6728673165411,
+   "handle": "janah-skirt",
+   "popularity_ratio": "0.03",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "archive-sale"
+  }
+ ],
+ "collections": [
+  {
+   "id": 646609535309,
+   "handle": "archive-sale",
+   "title": "ARCHIVE SALE",
+   "order": [
+    {
+     "id": 10237807329613,
+     "handle": "amira-shirt"
+    },
+    {
+     "id": 8669619781965,
+     "handle": "amari-dress"
+    },
+    {
+     "id": 10390642590029,
+     "handle": "aeris-jumpsuit"
+    },
+    {
+     "id": 10387831095629,
+     "handle": "ember-skirt"
+    },
+    {
+     "id": 10524729114957,
+     "handle": "harmonia-dress-1"
+    },
+    {
+     "id": 8669577445709,
+     "handle": "lynn-ann-top"
+    },
+    {
+     "id": 10525038674253,
+     "handle": "aurielle-dress"
+    },
+    {
+     "id": 8151987355929,
+     "handle": "juliet-top"
+    },
+    {
+     "id": 10338865250637,
+     "handle": "selira-dress"
+    },
+    {
+     "id": 6552814256227,
+     "handle": "perla-kimono-dress"
+    },
+    {
+     "id": 8668340683085,
+     "handle": "sage-bodysuit"
+    },
+    {
+     "id": 10338806268237,
+     "handle": "ferina-dress"
+    },
+    {
+     "id": 10074215547213,
+     "handle": "anwen-dress"
+    },
+    {
+     "id": 10388244529485,
+     "handle": "obsidian-dress"
+    },
+    {
+     "id": 4505870073955,
+     "handle": "floridita-skirt"
+    },
+    {
+     "id": 9101691617613,
+     "handle": "dolon-dress"
+    },
+    {
+     "id": 6728686010467,
+     "handle": "arina-dress"
+    },
+    {
+     "id": 8155052146969,
+     "handle": "jessica-top"
+    },
+    {
+     "id": 10388197507405,
+     "handle": "luxe-dress"
+    },
+    {
+     "id": 10524680028493,
+     "handle": "lissara-skirt"
+    },
+    {
+     "id": 10361324011853,
+     "handle": "elaris-jacket"
+    },
+    {
+     "id": 10355601867085,
+     "handle": "veon-top"
+    },
+    {
+     "id": 10524697297229,
+     "handle": "florelle-shirt"
+    },
+    {
+     "id": 10007597187405,
+     "handle": "louisa-skirt"
+    },
+    {
+     "id": 10137725534541,
+     "handle": "odette-yellow-top"
+    },
+    {
+     "id": 6730743185507,
+     "handle": "yvet-top"
+    },
+    {
+     "id": 10006232727885,
+     "handle": "cessna-top"
+    },
+    {
+     "id": 6730744660067,
+     "handle": "penny-top"
+    },
+    {
+     "id": 10298905690445,
+     "handle": "indra-dress-copy"
+    },
+    {
+     "id": 10248692302157,
+     "handle": "ayla-jumpsuit"
+    },
+    {
+     "id": 10243863937357,
+     "handle": "elva-kimono"
+    },
+    {
+     "id": 9845707440461,
+     "handle": "tata-kimono-dress"
+    },
+    {
+     "id": 10248741912909,
+     "handle": "alba-pants"
+    },
+    {
+     "id": 10525019046221,
+     "handle": "luvora-dress"
+    },
+    {
+     "id": 10390639116621,
+     "handle": "nyra-jumpsuit"
+    },
+    {
+     "id": 10361722929485,
+     "handle": "isebel-dress"
+    },
+    {
+     "id": 8585609249101,
+     "handle": "tiana-top"
+    },
+    {
+     "id": 8669604151629,
+     "handle": "cassidy-skirt"
+    },
+    {
+     "id": 8935675756877,
+     "handle": "bindi-dress"
+    },
+    {
+     "id": 10525164896589,
+     "handle": "auralis-dress"
+    },
+    {
+     "id": 10222371340621,
+     "handle": "lottie-skirt"
+    },
+    {
+     "id": 10332606890317,
+     "handle": "ivoria-dress"
+    },
+    {
+     "id": 8171401183513,
+     "handle": "gloria-dress"
+    },
+    {
+     "id": 10238244094285,
+     "handle": "lina-skirt"
+    },
+    {
+     "id": 6552849907811,
+     "handle": "angelica-dress"
+    },
+    {
+     "id": 10238252286285,
+     "handle": "amara-skirt"
+    },
+    {
+     "id": 10336362463565,
+     "handle": "vionae-dress"
+    },
+    {
+     "id": 10248477278541,
+     "handle": "iliana-dress"
+    },
+    {
+     "id": 10074213515597,
+     "handle": "carmine-dress"
+    },
+    {
+     "id": 10237854777677,
+     "handle": "lyra-top"
+    },
+    {
+     "id": 10525047095629,
+     "handle": "ethera-dress"
+    },
+    {
+     "id": 10074164396365,
+     "handle": "vanetta-skirt"
+    },
+    {
+     "id": 10523384611149,
+     "handle": "lumina-dress"
+    },
+    {
+     "id": 8162775630105,
+     "handle": "lilliana-skirt"
+    },
+    {
+     "id": 10007641030989,
+     "handle": "odile-top"
+    },
+    {
+     "id": 10523483111757,
+     "handle": "silvara-dress"
+    },
+    {
+     "id": 10525170172237,
+     "handle": "lissara-dress"
+    },
+    {
+     "id": 10336546980173,
+     "handle": "venira-top"
+    },
+    {
+     "id": 10074174619981,
+     "handle": "odette-orange-skirt"
+    },
+    {
+     "id": 10307851714893,
+     "handle": "copy-copy-42"
+    },
+    {
+     "id": 10007663804749,
+     "handle": "odile-skirt"
+    },
+    {
+     "id": 6552844959843,
+     "handle": "reina-dress"
+    },
+    {
+     "id": 10524577136973,
+     "handle": "opaline-dress"
+    },
+    {
+     "id": 6728673165411,
+     "handle": "janah-skirt"
+    }
+   ]
+  },
+  {
+   "id": 640397836621,
+   "handle": "dresses-wedding",
+   "title": "Dresses Wedding",
+   "order": [
+    {
+     "id": 10298905690445,
+     "handle": "indra-dress-copy"
+    },
+    {
+     "id": 10248477278541,
+     "handle": "iliana-dress"
+    }
+   ]
+  },
+  {
+   "id": 667532886349,
+   "handle": "house-of-peonies-fw27",
+   "title": "FW27 House Of Peonies",
+   "order": [
+    {
+     "id": 10834002870605,
+     "handle": "naia-dress"
+    },
+    {
+     "id": 8936685863245,
+     "handle": "gold-underdress"
+    },
+    {
+     "id": 10833962598733,
+     "handle": "daria-limited"
+    },
+    {
+     "id": 10833955914061,
+     "handle": "belisse-limited"
+    },
+    {
+     "id": 10834006475085,
+     "handle": "olena-dress"
+    },
+    {
+     "id": 10833955160397,
+     "handle": "belisse-dress"
+    },
+    {
+     "id": 10833960927565,
+     "handle": "daria-dress"
+    },
+    {
+     "id": 10834097766733,
+     "handle": "nerea-dress"
+    },
+    {
+     "id": 10833893097805,
+     "handle": "adelie-dress"
+    },
+    {
+     "id": 10833930387789,
+     "handle": "sorelia-limited-1"
+    },
+    {
+     "id": 10566350635341,
+     "handle": "gold-underdress-long-1"
+    },
+    {
+     "id": 10834117951821,
+     "handle": "adara-dress"
+    },
+    {
+     "id": 10833924161869,
+     "handle": "lyselle-dress"
+    },
+    {
+     "id": 10833878876493,
+     "handle": "liora-dress-1"
+    },
+    {
+     "id": 10833913938253,
+     "handle": "alessa-dress"
+    },
+    {
+     "id": 10834069487949,
+     "handle": "paloma-dress"
+    },
+    {
+     "id": 10831622013261,
+     "handle": "melisande-top-1"
+    },
+    {
+     "id": 10863687893325,
+     "handle": "alessandra-dress"
+    },
+    {
+     "id": 10833837261133,
+     "handle": "alessia-kimono"
+    },
+    {
+     "id": 10833918460237,
+     "handle": "amarise-dress"
+    },
+    {
+     "id": 10834091508045,
+     "handle": "irina-dress"
+    },
+    {
+     "id": 10831625519437,
+     "handle": "belisse-cape"
+    },
+    {
+     "id": 10831704588621,
+     "handle": "ameline-top-1"
+    },
+    {
+     "id": 10833908760909,
+     "handle": "mireya-dress"
+    },
+    {
+     "id": 10078634836301,
+     "handle": "pink-underdress-long"
+    },
+    {
+     "id": 10834724651341,
+     "handle": "tamara-jumsuit"
+    },
+    {
+     "id": 10834071912781,
+     "handle": "reina-dress-1"
+    },
+    {
+     "id": 10833922490701,
+     "handle": "maristelle-dress"
+    },
+    {
+     "id": 8936687141197,
+     "handle": "pink-underdress"
+    },
+    {
+     "id": 10833834901837,
+     "handle": "ameline-kimono"
+    },
+    {
+     "id": 10833959190861,
+     "handle": "ciela-dress"
+    },
+    {
+     "id": 10834089836877,
+     "handle": "verona-dress"
+    },
+    {
+     "id": 10834705842509,
+     "handle": "elettra-dress"
+    },
+    {
+     "id": 10906129269069,
+     "handle": "noir-dress"
+    },
+    {
+     "id": 10833894801741,
+     "handle": "ismerie-dress"
+    },
+    {
+     "id": 10833965449549,
+     "handle": "eira-limited-1"
+    },
+    {
+     "id": 10834721472845,
+     "handle": "bianca-jumsuit"
+    },
+    {
+     "id": 10833966629197,
+     "handle": "faline-dress"
+    },
+    {
+     "id": 10834711085389,
+     "handle": "petra-dress"
+    },
+    {
+     "id": 10833895883085,
+     "handle": "amorette-dress"
+    },
+    {
+     "id": 10831770747213,
+     "handle": "seraphina-pants"
+    },
+    {
+     "id": 10833848992077,
+     "handle": "seraphina-blazer"
+    },
+    {
+     "id": 10831736045901,
+     "handle": "jessamine-pants"
+    },
+    {
+     "id": 10831800795469,
+     "handle": "calista-skirt"
+    },
+    {
+     "id": 10847552897357,
+     "handle": "virelia-dress"
+    },
+    {
+     "id": 10834099208525,
+     "handle": "odessa-dress"
+    },
+    {
+     "id": 10833964007757,
+     "handle": "eira-dress-1"
+    },
+    {
+     "id": 10831635022157,
+     "handle": "eira-cape-1"
+    },
+    {
+     "id": 10833816387917,
+     "handle": "ameline-skirt"
+    },
+    {
+     "id": 10831700951373,
+     "handle": "ameline-top"
+    },
+    {
+     "id": 10907702198605,
+     "handle": "oriana-dress"
+    },
+    {
+     "id": 10847613124941,
+     "handle": "celeste-dress-1"
+    },
+    {
+     "id": 10833830773069,
+     "handle": "leonie-kimono"
+    },
+    {
+     "id": 10831615459661,
+     "handle": "elowen-top-1"
+    },
+    {
+     "id": 10833902534989,
+     "handle": "zafira-dress"
+    },
+    {
+     "id": 10831714812237,
+     "handle": "mya-top"
+    },
+    {
+     "id": 10831648227661,
+     "handle": "aviana-cape"
+    },
+    {
+     "id": 10833813078349,
+     "handle": "elara-skirt"
+    },
+    {
+     "id": 10834733793613,
+     "handle": "zafrina-dress"
+    },
+    {
+     "id": 10831673491789,
+     "handle": "amaris-top"
+    },
+    {
+     "id": 10831729623373,
+     "handle": "violetta-pants"
+    },
+    {
+     "id": 10834723045709,
+     "handle": "leontine-jumsuit"
+    },
+    {
+     "id": 10833797644621,
+     "handle": "vespera-skirt"
+    },
+    {
+     "id": 10831763931469,
+     "handle": "evania-pants"
+    },
+    {
+     "id": 10833843290445,
+     "handle": "jessamine-blazer"
+    },
+    {
+     "id": 10863625961805,
+     "handle": "annelise-dress"
+    },
+    {
+     "id": 10833817010509,
+     "handle": "cassia-skirt"
+    },
+    {
+     "id": 10833951162701,
+     "handle": "aviana-limited"
+    },
+    {
+     "id": 10833926947149,
+     "handle": "sorelia-dress"
+    },
+    {
+     "id": 10833916559693,
+     "handle": "cressida-dress"
+    },
+    {
+     "id": 10833793253709,
+     "handle": "elowen-skirt-1"
+    },
+    {
+     "id": 10834074337613,
+     "handle": "samara-dress"
+    },
+    {
+     "id": 10831558803789,
+     "handle": "aveline-top-1"
+    },
+    {
+     "id": 10831722840397,
+     "handle": "maristella-cape"
+    },
+    {
+     "id": 10831601533261,
+     "handle": "maelle-top"
+    },
+    {
+     "id": 10831707406669,
+     "handle": "cassia-top"
+    },
+    {
+     "id": 10833979244877,
+     "handle": "leandra-limited"
+    },
+    {
+     "id": 10831701770573,
+     "handle": "evania-top"
+    },
+    {
+     "id": 10833826283853,
+     "handle": "valeria-kimono"
+    },
+    {
+     "id": 10847616008525,
+     "handle": "evadne-dress"
+    },
+    {
+     "id": 10833829331277,
+     "handle": "sabine-kimono"
+    },
+    {
+     "id": 10834090557773,
+     "handle": "freya-dress"
+    },
+    {
+     "id": 10831663268173,
+     "handle": "oriane-top"
+    },
+    {
+     "id": 10834092753229,
+     "handle": "jolie-dress-1"
+    },
+    {
+     "id": 10833890148685,
+     "handle": "lavinia-dress-1"
+    },
+    {
+     "id": 10834723832141,
+     "handle": "rafaela-jumsuit"
+    },
+    {
+     "id": 10831618048333,
+     "handle": "melisande-top"
+    },
+    {
+     "id": 10831632204109,
+     "handle": "daria-cape"
+    },
+    {
+     "id": 10833949294925,
+     "handle": "aviana-dress"
+    },
+    {
+     "id": 10833853940045,
+     "handle": "azelie-dress"
+    },
+    {
+     "id": 10833841258829,
+     "handle": "sereia-kimono"
+    },
+    {
+     "id": 10833998643533,
+     "handle": "mirea-limited"
+    },
+    {
+     "id": 10831609299277,
+     "handle": "calista-top"
+    },
+    {
+     "id": 10831781691725,
+     "handle": "aveline-skirt"
+    },
+    {
+     "id": 10833920721229,
+     "handle": "odelia-dress-1"
+    },
+    {
+     "id": 10833969807693,
+     "handle": "inessa-dress"
+    },
+    {
+     "id": 10833820385613,
+     "handle": "oriella-kimono"
+    },
+    {
+     "id": 10831695315277,
+     "handle": "elara-top"
+    },
+    {
+     "id": 10833985175885,
+     "handle": "mirea-dress"
+    },
+    {
+     "id": 10834735432013,
+     "handle": "zinnia-cape"
+    },
+    {
+     "id": 10831789752653,
+     "handle": "maelle-skirt"
+    },
+    {
+     "id": 10833931174221,
+     "handle": "novalie-dress"
+    },
+    {
+     "id": 10833912070477,
+     "handle": "vianne-dress"
+    },
+    {
+     "id": 10847566528845,
+     "handle": "faline-dress-copy"
+    },
+    {
+     "id": 10833814716749,
+     "handle": "lysandra-skirt"
+    },
+    {
+     "id": 10834710036813,
+     "handle": "malina-dress"
+    },
+    {
+     "id": 10831717695821,
+     "handle": "leonora-cape"
+    },
+    {
+     "id": 10834734645581,
+     "handle": "maristella-cape-1"
+    },
+    {
+     "id": 10833805377869,
+     "handle": "althea-skirt"
+    },
+    {
+     "id": 10834101633357,
+     "handle": "tessa-dress"
+    },
+    {
+     "id": 10834083283277,
+     "handle": "talia-dress-1"
+    },
+    {
+     "id": 10833806360909,
+     "handle": "eulalia-skirt"
+    },
+    {
+     "id": 10833971741005,
+     "handle": "leandra-dress-1"
+    },
+    {
+     "id": 10834722324813,
+     "handle": "katia-jumsuit"
+    },
+    {
+     "id": 10833934483789,
+     "handle": "copy-copy-79"
+    },
+    {
+     "id": 10831611429197,
+     "handle": "elowen-top"
+    },
+    {
+     "id": 10831669330253,
+     "handle": "zelie-cape-1"
+    },
+    {
+     "id": 10833928782157,
+     "handle": "sorelia-limited"
+    },
+    {
+     "id": 10834115395917,
+     "handle": "tessa-limited"
+    },
+    {
+     "id": 10833897455949,
+     "handle": "orietta-dress"
+    },
+    {
+     "id": 10850840478029,
+     "handle": "eloise-dress-1"
+    },
+    {
+     "id": 10834708365645,
+     "handle": "kalina-dress"
+    },
+    {
+     "id": 10834095440205,
+     "handle": "kiara-limited"
+    },
+    {
+     "id": 10834094031181,
+     "handle": "kiara-dress"
+    }
+   ]
+  },
+  {
+   "id": 667604451661,
+   "handle": "peonies-blazers",
+   "title": "Peonies BLAZERS",
+   "order": [
+    {
+     "id": 10833843290445,
+     "handle": "jessamine-blazer"
+    },
+    {
+     "id": 10833848992077,
+     "handle": "seraphina-blazer"
+    }
+   ]
+  },
+  {
+   "id": 667533115725,
+   "handle": "peonies-dress",
+   "title": "Peonies DRESS",
+   "order": [
+    {
+     "id": 10834002870605,
+     "handle": "naia-dress"
+    },
+    {
+     "id": 10833962598733,
+     "handle": "daria-limited"
+    },
+    {
+     "id": 10833955914061,
+     "handle": "belisse-limited"
+    },
+    {
+     "id": 10834006475085,
+     "handle": "olena-dress"
+    },
+    {
+     "id": 10834097766733,
+     "handle": "nerea-dress"
+    },
+    {
+     "id": 10833955160397,
+     "handle": "belisse-dress"
+    },
+    {
+     "id": 10833960927565,
+     "handle": "daria-dress"
+    },
+    {
+     "id": 10833893097805,
+     "handle": "adelie-dress"
+    },
+    {
+     "id": 10833930387789,
+     "handle": "sorelia-limited-1"
+    },
+    {
+     "id": 10834117951821,
+     "handle": "adara-dress"
+    },
+    {
+     "id": 10833878876493,
+     "handle": "liora-dress-1"
+    },
+    {
+     "id": 10833924161869,
+     "handle": "lyselle-dress"
+    },
+    {
+     "id": 10833913938253,
+     "handle": "alessa-dress"
+    },
+    {
+     "id": 10834069487949,
+     "handle": "paloma-dress"
+    },
+    {
+     "id": 10863687893325,
+     "handle": "alessandra-dress"
+    },
+    {
+     "id": 10833918460237,
+     "handle": "amarise-dress"
+    },
+    {
+     "id": 10906129269069,
+     "handle": "noir-dress"
+    },
+    {
+     "id": 10834091508045,
+     "handle": "irina-dress"
+    },
+    {
+     "id": 10833908760909,
+     "handle": "mireya-dress"
+    },
+    {
+     "id": 10834705842509,
+     "handle": "elettra-dress"
+    },
+    {
+     "id": 10834071912781,
+     "handle": "reina-dress-1"
+    },
+    {
+     "id": 10834711085389,
+     "handle": "petra-dress"
+    },
+    {
+     "id": 10833922490701,
+     "handle": "maristelle-dress"
+    },
+    {
+     "id": 10834089836877,
+     "handle": "verona-dress"
+    },
+    {
+     "id": 10833959190861,
+     "handle": "ciela-dress"
+    },
+    {
+     "id": 10907702198605,
+     "handle": "oriana-dress"
+    },
+    {
+     "id": 10833894801741,
+     "handle": "ismerie-dress"
+    },
+    {
+     "id": 10833965449549,
+     "handle": "eira-limited-1"
+    },
+    {
+     "id": 10833895883085,
+     "handle": "amorette-dress"
+    },
+    {
+     "id": 10833966629197,
+     "handle": "faline-dress"
+    },
+    {
+     "id": 10833964007757,
+     "handle": "eira-dress-1"
+    },
+    {
+     "id": 10847613124941,
+     "handle": "celeste-dress-1"
+    },
+    {
+     "id": 10834099208525,
+     "handle": "odessa-dress"
+    },
+    {
+     "id": 10847552897357,
+     "handle": "virelia-dress"
+    },
+    {
+     "id": 10833926947149,
+     "handle": "sorelia-dress"
+    },
+    {
+     "id": 10833902534989,
+     "handle": "zafira-dress"
+    },
+    {
+     "id": 10863625961805,
+     "handle": "annelise-dress"
+    },
+    {
+     "id": 10834733793613,
+     "handle": "zafrina-dress"
+    },
+    {
+     "id": 10833951162701,
+     "handle": "aviana-limited"
+    },
+    {
+     "id": 10833916559693,
+     "handle": "cressida-dress"
+    },
+    {
+     "id": 10833979244877,
+     "handle": "leandra-limited"
+    },
+    {
+     "id": 10834074337613,
+     "handle": "samara-dress"
+    },
+    {
+     "id": 10833985175885,
+     "handle": "mirea-dress"
+    },
+    {
+     "id": 10834090557773,
+     "handle": "freya-dress"
+    },
+    {
+     "id": 10847616008525,
+     "handle": "evadne-dress"
+    },
+    {
+     "id": 10833931174221,
+     "handle": "novalie-dress"
+    },
+    {
+     "id": 10834092753229,
+     "handle": "jolie-dress-1"
+    },
+    {
+     "id": 10833890148685,
+     "handle": "lavinia-dress-1"
+    },
+    {
+     "id": 10833949294925,
+     "handle": "aviana-dress"
+    },
+    {
+     "id": 10833853940045,
+     "handle": "azelie-dress"
+    },
+    {
+     "id": 10833969807693,
+     "handle": "inessa-dress"
+    },
+    {
+     "id": 10833920721229,
+     "handle": "odelia-dress-1"
+    },
+    {
+     "id": 10834083283277,
+     "handle": "talia-dress-1"
+    },
+    {
+     "id": 10833998643533,
+     "handle": "mirea-limited"
+    },
+    {
+     "id": 10833912070477,
+     "handle": "vianne-dress"
+    },
+    {
+     "id": 10833897455949,
+     "handle": "orietta-dress"
+    },
+    {
+     "id": 10847566528845,
+     "handle": "faline-dress-copy"
+    },
+    {
+     "id": 10834710036813,
+     "handle": "malina-dress"
+    },
+    {
+     "id": 10833934483789,
+     "handle": "copy-copy-79"
+    },
+    {
+     "id": 10834101633357,
+     "handle": "tessa-dress"
+    },
+    {
+     "id": 10833928782157,
+     "handle": "sorelia-limited"
+    },
+    {
+     "id": 10850840478029,
+     "handle": "eloise-dress-1"
+    },
+    {
+     "id": 10833971741005,
+     "handle": "leandra-dress-1"
+    },
+    {
+     "id": 10834115395917,
+     "handle": "tessa-limited"
+    },
+    {
+     "id": 10834708365645,
+     "handle": "kalina-dress"
+    },
+    {
+     "id": 10834094031181,
+     "handle": "kiara-dress"
+    },
+    {
+     "id": 10834095440205,
+     "handle": "kiara-limited"
+    }
+   ]
+  },
+  {
+   "id": 667533574477,
+   "handle": "peonies-jumpsuits",
+   "title": "Peonies JUMPSUITS",
+   "order": [
+    {
+     "id": 10834724651341,
+     "handle": "tamara-jumsuit"
+    },
+    {
+     "id": 10834721472845,
+     "handle": "bianca-jumsuit"
+    },
+    {
+     "id": 10834723045709,
+     "handle": "leontine-jumsuit"
+    },
+    {
+     "id": 10834723832141,
+     "handle": "rafaela-jumsuit"
+    },
+    {
+     "id": 10834722324813,
+     "handle": "katia-jumsuit"
+    }
+   ]
+  },
+  {
+   "id": 667533181261,
+   "handle": "peonies-kimono-dress",
+   "title": "Peonies KIMONO DRESSES",
+   "order": [
+    {
+     "id": 10833837261133,
+     "handle": "alessia-kimono"
+    },
+    {
+     "id": 10833834901837,
+     "handle": "ameline-kimono"
+    },
+    {
+     "id": 10833830773069,
+     "handle": "leonie-kimono"
+    },
+    {
+     "id": 10833826283853,
+     "handle": "valeria-kimono"
+    },
+    {
+     "id": 10833829331277,
+     "handle": "sabine-kimono"
+    },
+    {
+     "id": 10833841258829,
+     "handle": "sereia-kimono"
+    },
+    {
+     "id": 10833820385613,
+     "handle": "oriella-kimono"
+    }
+   ]
+  },
+  {
+   "id": 667533541709,
+   "handle": "peonies-pants",
+   "title": "Peonies PANTS",
+   "order": [
+    {
+     "id": 10831763931469,
+     "handle": "evania-pants"
+    },
+    {
+     "id": 10831729623373,
+     "handle": "violetta-pants"
+    },
+    {
+     "id": 10831770747213,
+     "handle": "seraphina-pants"
+    },
+    {
+     "id": 10831722840397,
+     "handle": "maristella-cape"
+    },
+    {
+     "id": 10831736045901,
+     "handle": "jessamine-pants"
+    }
+   ]
+  },
+  {
+   "id": 667533476173,
+   "handle": "peonies-skirts",
+   "title": "Peonies SKIRTS",
+   "order": [
+    {
+     "id": 10833816387917,
+     "handle": "ameline-skirt"
+    },
+    {
+     "id": 10831800795469,
+     "handle": "calista-skirt"
+    },
+    {
+     "id": 10833813078349,
+     "handle": "elara-skirt"
+    },
+    {
+     "id": 10833817010509,
+     "handle": "cassia-skirt"
+    },
+    {
+     "id": 10833805377869,
+     "handle": "althea-skirt"
+    },
+    {
+     "id": 10833806360909,
+     "handle": "eulalia-skirt"
+    },
+    {
+     "id": 10831789752653,
+     "handle": "maelle-skirt"
+    },
+    {
+     "id": 10833797644621,
+     "handle": "vespera-skirt"
+    },
+    {
+     "id": 10833793253709,
+     "handle": "elowen-skirt-1"
+    },
+    {
+     "id": 10831781691725,
+     "handle": "aveline-skirt"
+    },
+    {
+     "id": 10833814716749,
+     "handle": "lysandra-skirt"
+    }
+   ]
+  },
+  {
+   "id": 667533246797,
+   "handle": "peonies-tops",
+   "title": "Peonies TOPS",
+   "order": [
+    {
+     "id": 10831622013261,
+     "handle": "melisande-top-1"
+    },
+    {
+     "id": 10831625519437,
+     "handle": "belisse-cape"
+    },
+    {
+     "id": 10831704588621,
+     "handle": "ameline-top-1"
+    },
+    {
+     "id": 10831635022157,
+     "handle": "eira-cape-1"
+    },
+    {
+     "id": 10831700951373,
+     "handle": "ameline-top"
+    },
+    {
+     "id": 10831648227661,
+     "handle": "aviana-cape"
+    },
+    {
+     "id": 10831673491789,
+     "handle": "amaris-top"
+    },
+    {
+     "id": 10831632204109,
+     "handle": "daria-cape"
+    },
+    {
+     "id": 10831615459661,
+     "handle": "elowen-top-1"
+    },
+    {
+     "id": 10831714812237,
+     "handle": "mya-top"
+    },
+    {
+     "id": 10834734645581,
+     "handle": "maristella-cape-1"
+    },
+    {
+     "id": 10831601533261,
+     "handle": "maelle-top"
+    },
+    {
+     "id": 10831558803789,
+     "handle": "aveline-top-1"
+    },
+    {
+     "id": 10831707406669,
+     "handle": "cassia-top"
+    },
+    {
+     "id": 10831609299277,
+     "handle": "calista-top"
+    },
+    {
+     "id": 10831695315277,
+     "handle": "elara-top"
+    },
+    {
+     "id": 10831701770573,
+     "handle": "evania-top"
+    },
+    {
+     "id": 10831611429197,
+     "handle": "elowen-top"
+    },
+    {
+     "id": 10831663268173,
+     "handle": "oriane-top"
+    },
+    {
+     "id": 10831618048333,
+     "handle": "melisande-top"
+    },
+    {
+     "id": 10834735432013,
+     "handle": "zinnia-cape"
+    },
+    {
+     "id": 10831669330253,
+     "handle": "zelie-cape-1"
+    },
+    {
+     "id": 10831717695821,
+     "handle": "leonora-cape"
+    }
+   ]
+  },
+  {
+   "id": 664695505229,
+   "handle": "ss26-sirens",
+   "title": "SS26 SIRENS",
+   "order": [
+    {
+     "id": 10566138757453,
+     "handle": "elodie-dress"
+    },
+    {
+     "id": 10814110531917,
+     "handle": "marbella-dress"
+    },
+    {
+     "id": 10652663251277,
+     "handle": "crystalia"
+    },
+    {
+     "id": 10697115926861,
+     "handle": "victoria"
+    },
+    {
+     "id": 10714453999949,
+     "handle": "sylvia"
+    },
+    {
+     "id": 10642032361805,
+     "handle": "sophia"
+    },
+    {
+     "id": 10718845763917,
+     "handle": "stella-top-1"
+    },
+    {
+     "id": 10566155960653,
+     "handle": "greta-dress"
+    },
+    {
+     "id": 10710349381965,
+     "handle": "nerida"
+    },
+    {
+     "id": 10786243215693,
+     "handle": "noelle"
+    },
+    {
+     "id": 10730899734861,
+     "handle": "doris"
+    },
+    {
+     "id": 10730655580493,
+     "handle": "coco-skirt"
+    },
+    {
+     "id": 10786210480461,
+     "handle": "rosalie-2"
+    },
+    {
+     "id": 10566112903501,
+     "handle": "maeva-dress"
+    },
+    {
+     "id": 10814122819917,
+     "handle": "leandra-dress"
+    },
+    {
+     "id": 10728698184013,
+     "handle": "ioli"
+    },
+    {
+     "id": 10564703289677,
+     "handle": "zoe-pants"
+    },
+    {
+     "id": 10730877223245,
+     "handle": "kirki-kimono"
+    },
+    {
+     "id": 10804947190093,
+     "handle": "melin-skirt"
+    },
+    {
+     "id": 10786186232141,
+     "handle": "livia-copy"
+    },
+    {
+     "id": 10804955087181,
+     "handle": "melin-top"
+    },
+    {
+     "id": 10559204852045,
+     "handle": "nerissa-kimono-pink"
+    },
+    {
+     "id": 10670927511885,
+     "handle": "eve-copy"
+    },
+    {
+     "id": 10563066659149,
+     "handle": "auralis-kimono"
+    },
+    {
+     "id": 10566035374413,
+     "handle": "runa-top"
+    },
+    {
+     "id": 10731569217869,
+     "handle": "magnolia-top"
+    },
+    {
+     "id": 10710363537741,
+     "handle": "ione-2"
+    },
+    {
+     "id": 10566041698637,
+     "handle": "magnolia-skirt"
+    },
+    {
+     "id": 10559198298445,
+     "handle": "calypso-skirt-blue"
+    },
+    {
+     "id": 10814128783693,
+     "handle": "nerina-dress"
+    },
+    {
+     "id": 10633856221517,
+     "handle": "aura"
+    },
+    {
+     "id": 10663947960653,
+     "handle": "camelia"
+    },
+    {
+     "id": 10730911793485,
+     "handle": "doris-1"
+    },
+    {
+     "id": 10786231877965,
+     "handle": "marceline"
+    },
+    {
+     "id": 10559183356237,
+     "handle": "calypso-top-pink"
+    },
+    {
+     "id": 10657683439949,
+     "handle": "ione-1"
+    },
+    {
+     "id": 10728541159757,
+     "handle": "nefeli"
+    },
+    {
+     "id": 10730842784077,
+     "handle": "kirki"
+    },
+    {
+     "id": 10758769738061,
+     "handle": "nora"
+    },
+    {
+     "id": 10740788068685,
+     "handle": "solea"
+    },
+    {
+     "id": 10563092447565,
+     "handle": "meria-dress"
+    },
+    {
+     "id": 10566101827917,
+     "handle": "margie-dress"
+    },
+    {
+     "id": 10564824432973,
+     "handle": "stella-kimono"
+    },
+    {
+     "id": 10566210683213,
+     "handle": "eve-jumpsuit"
+    },
+    {
+     "id": 10566102974797,
+     "handle": "liberty-dress"
+    },
+    {
+     "id": 10563135537485,
+     "handle": "gaia-jumpsuit"
+    },
+    {
+     "id": 10563406201165,
+     "handle": "livia-dress"
+    },
+    {
+     "id": 10563130229069,
+     "handle": "zale-dress"
+    },
+    {
+     "id": 10710401483085,
+     "handle": "isabella"
+    },
+    {
+     "id": 10636342690125,
+     "handle": "viora"
+    },
+    {
+     "id": 10740803436877,
+     "handle": "solea-1"
+    },
+    {
+     "id": 10563103392077,
+     "handle": "myrtle-dress-1"
+    },
+    {
+     "id": 10563246784845,
+     "handle": "elyra-pants"
+    },
+    {
+     "id": 10697387508045,
+     "handle": "sienna-copy"
+    },
+    {
+     "id": 10563312714061,
+     "handle": "aria-skirt-1"
+    },
+    {
+     "id": 10564789961037,
+     "handle": "shona-pants"
+    },
+    {
+     "id": 10745646252365,
+     "handle": "ismini-1"
+    },
+    {
+     "id": 10657650803021,
+     "handle": "rinna"
+    },
+    {
+     "id": 10563231154509,
+     "handle": "elyra-top"
+    },
+    {
+     "id": 10563307635021,
+     "handle": "lyla-skirt"
+    },
+    {
+     "id": 10564841374029,
+     "handle": "hilda-dress-champagne"
+    },
+    {
+     "id": 10563105227085,
+     "handle": "moss-dress-1"
+    },
+    {
+     "id": 10566100255053,
+     "handle": "hilda-dress-dusty-pink"
+    },
+    {
+     "id": 10564787011917,
+     "handle": "debbie-pants"
+    },
+    {
+     "id": 10563222045005,
+     "handle": "lyla-top"
+    },
+    {
+     "id": 10563304816973,
+     "handle": "indira-skirt"
+    },
+    {
+     "id": 10730927784269,
+     "handle": "irida-top"
+    },
+    {
+     "id": 10710406005069,
+     "handle": "isabellatop"
+    },
+    {
+     "id": 10657672266061,
+     "handle": "ione"
+    },
+    {
+     "id": 10563232760141,
+     "handle": "aria-top-1"
+    },
+    {
+     "id": 10563024912717,
+     "handle": "elyra-body"
+    },
+    {
+     "id": 10563046768973,
+     "handle": "zaria-top"
+    },
+    {
+     "id": 10563055878477,
+     "handle": "livia-skirt"
+    },
+    {
+     "id": 10564578804045,
+     "handle": "shona-shirt"
+    },
+    {
+     "id": 10644362002765,
+     "handle": "meline-copy"
+    },
+    {
+     "id": 10566351814989,
+     "handle": "glinda-skirt"
+    },
+    {
+     "id": 10564537778509,
+     "handle": "mae-top"
+    },
+    {
+     "id": 10563040510285,
+     "handle": "livia-top"
+    },
+    {
+     "id": 10563234267469,
+     "handle": "stella-top"
+    },
+    {
+     "id": 10564766138701,
+     "handle": "shona-skirt"
+    },
+    {
+     "id": 10633886466381,
+     "handle": "copy-copy-69"
+    },
+    {
+     "id": 10633887056205,
+     "handle": "copy-copy-71"
+    },
+    {
+     "id": 10633917563213,
+     "handle": "thalea"
+    },
+    {
+     "id": 10633929261389,
+     "handle": "ismera"
+    },
+    {
+     "id": 10633966977357,
+     "handle": "copy-copy-77"
+    },
+    {
+     "id": 10718851137869,
+     "handle": "stella"
+    },
+    {
+     "id": 10566159991117,
+     "handle": "hilary-dress"
+    },
+    {
+     "id": 10730727440717,
+     "handle": "dioni"
+    },
+    {
+     "id": 10652612165965,
+     "handle": "evelisse-limited"
+    },
+    {
+     "id": 10559049138509,
+     "handle": "ariel-siren-dress-blue"
+    },
+    {
+     "id": 10671661482317,
+     "handle": "marisa"
+    },
+    {
+     "id": 10634112041293,
+     "handle": "velora"
+    },
+    {
+     "id": 10728598831437,
+     "handle": "dalia-dress"
+    },
+    {
+     "id": 10633925165389,
+     "handle": "copy-copy-75"
+    },
+    {
+     "id": 10563090907469,
+     "handle": "helia-dress"
+    },
+    {
+     "id": 10731628429645,
+     "handle": "scorpios-limited"
+    },
+    {
+     "id": 10730619339085,
+     "handle": "coco"
+    },
+    {
+     "id": 10643352158541,
+     "handle": "soraya"
+    },
+    {
+     "id": 10073195905357,
+     "handle": "empress-top"
+    },
+    {
+     "id": 10633956557133,
+     "handle": "lumira"
+    },
+    {
+     "id": 10730988405069,
+     "handle": "perla"
+    },
+    {
+     "id": 10664056750413,
+     "handle": "elise"
+    },
+    {
+     "id": 10564863885645,
+     "handle": "phoebe-dress"
+    },
+    {
+     "id": 10563094708557,
+     "handle": "asteria-dress"
+    },
+    {
+     "id": 10714458063181,
+     "handle": "lydia"
+    },
+    {
+     "id": 10644069187917,
+     "handle": "solenne"
+    },
+    {
+     "id": 10074122977613,
+     "handle": "empress-skirt"
+    },
+    {
+     "id": 10559114215757,
+     "handle": "thalina-dress-1"
+    },
+    {
+     "id": 10584479564109,
+     "handle": "electra-dress"
+    },
+    {
+     "id": 10566045172045,
+     "handle": "astor-kimono"
+    },
+    {
+     "id": 10731572789581,
+     "handle": "capri-1"
+    },
+    {
+     "id": 10564896391501,
+     "handle": "rayne-dress"
+    },
+    {
+     "id": 10563075998029,
+     "handle": "calyra-dress"
+    },
+    {
+     "id": 10641885364557,
+     "handle": "orlaya-1"
+    },
+    {
+     "id": 10657844953421,
+     "handle": "thalassa-limited"
+    },
+    {
+     "id": 10566090916173,
+     "handle": "lea-dress"
+    },
+    {
+     "id": 10714445873485,
+     "handle": "melina"
+    },
+    {
+     "id": 10566086492493,
+     "handle": "norah-kimono"
+    },
+    {
+     "id": 10566166413645,
+     "handle": "coralia-dress"
+    },
+    {
+     "id": 10588786295117,
+     "handle": "copy-2"
+    },
+    {
+     "id": 10564884070733,
+     "handle": "glowen-dress"
+    },
+    {
+     "id": 10633971007821,
+     "handle": "copy-copy-78"
+    },
+    {
+     "id": 10559200788813,
+     "handle": "calypso-skirt-pink"
+    },
+    {
+     "id": 10566165102925,
+     "handle": "melin-dress"
+    },
+    {
+     "id": 10563128525133,
+     "handle": "thalassa-dress"
+    },
+    {
+     "id": 10731571183949,
+     "handle": "capri"
+    },
+    {
+     "id": 10566207308109,
+     "handle": "lilu-jumpsuit"
+    },
+    {
+     "id": 10563227615565,
+     "handle": "argenta-cape"
+    },
+    {
+     "id": 10559203049805,
+     "handle": "nerissa-kimono-blue"
+    },
+    {
+     "id": 10571427971405,
+     "handle": "ariel-siren-limited"
+    },
+    {
+     "id": 10730866344269,
+     "handle": "kirki-skirt"
+    },
+    {
+     "id": 10563359539533,
+     "handle": "argenta-kimono"
+    },
+    {
+     "id": 10564825186637,
+     "handle": "aria-kimono"
+    },
+    {
+     "id": 10563110994253,
+     "handle": "nai-dress"
+    },
+    {
+     "id": 10566211600717,
+     "handle": "nola-jumpsuit"
+    },
+    {
+     "id": 10563404235085,
+     "handle": "elyra-dress"
+    },
+    {
+     "id": 10563172696397,
+     "handle": "argenta-jumpsuit"
+    },
+    {
+     "id": 10810757415245,
+     "handle": "fiorella-white"
+    },
+    {
+     "id": 10633912582477,
+     "handle": "serina"
+    },
+    {
+     "id": 10563131900237,
+     "handle": "aegea-dress"
+    },
+    {
+     "id": 10566385434957,
+     "handle": "neta-top"
+    },
+    {
+     "id": 10566174114125,
+     "handle": "eris-dress"
+    },
+    {
+     "id": 10559098978637,
+     "handle": "s26-5048"
+    },
+    {
+     "id": 10559208358221,
+     "handle": "aster-kimono"
+    },
+    {
+     "id": 10633890300237,
+     "handle": "copy-copy-73"
+    },
+    {
+     "id": 10563095920973,
+     "handle": "thalia-dress"
+    },
+    {
+     "id": 10566161531213,
+     "handle": "cloe-dress"
+    },
+    {
+     "id": 10563208315213,
+     "handle": "elyra-cape"
+    },
+    {
+     "id": 10730818896205,
+     "handle": "irida-kimono"
+    },
+    {
+     "id": 10566047891789,
+     "handle": "monique-kimono"
+    },
+    {
+     "id": 10563149726029,
+     "handle": "oceane-jumpsuit"
+    },
+    {
+     "id": 10566165856589,
+     "handle": "kathy-dress"
+    },
+    {
+     "id": 10697411199309,
+     "handle": "patricia"
+    },
+    {
+     "id": 10566167626061,
+     "handle": "menda-dress"
+    },
+    {
+     "id": 10564872208717,
+     "handle": "dore-dress"
+    },
+    {
+     "id": 10563145236813,
+     "handle": "zaria-jumpsuit"
+    },
+    {
+     "id": 10566201803085,
+     "handle": "azalea-dress"
+    },
+    {
+     "id": 10566111854925,
+     "handle": "sierra-dress-1"
+    },
+    {
+     "id": 10564823515469,
+     "handle": "shona-kimono"
+    },
+    {
+     "id": 10758774489421,
+     "handle": "nora-1"
+    },
+    {
+     "id": 10559144755533,
+     "handle": "calypso-shirt-blue"
+    },
+    {
+     "id": 10566098714957,
+     "handle": "midas-dress"
+    },
+    {
+     "id": 10566130303309,
+     "handle": "byron-dress"
+    },
+    {
+     "id": 10566182437197,
+     "handle": "astra-dress"
+    },
+    {
+     "id": 10563065413965,
+     "handle": "eirys-skirt"
+    },
+    {
+     "id": 10564952752461,
+     "handle": "sonia-dress"
+    },
+    {
+     "id": 10563137044813,
+     "handle": "livia-jumpsuit"
+    },
+    {
+     "id": 10566185877837,
+     "handle": "krista-dress"
+    },
+    {
+     "id": 10564908613965,
+     "handle": "rayne-pants"
+    },
+    {
+     "id": 10730779771213,
+     "handle": "nadia-dress"
+    },
+    {
+     "id": 10566150095181,
+     "handle": "sylla-dress"
+    },
+    {
+     "id": 10641862000973,
+     "handle": "orlaya"
+    },
+    {
+     "id": 10563199992141,
+     "handle": "indira-top"
+    },
+    {
+     "id": 10641906958669,
+     "handle": "orlaya-2"
+    },
+    {
+     "id": 10566163464525,
+     "handle": "myriam-dress"
+    },
+    {
+     "id": 10571365515597,
+     "handle": "nai-limited-dress"
+    },
+    {
+     "id": 10634213425485,
+     "handle": "norel"
+    },
+    {
+     "id": 10564757815629,
+     "handle": "zoe-kimono"
+    },
+    {
+     "id": 10730953146701,
+     "handle": "thetis"
+    },
+    {
+     "id": 10571285266765,
+     "handle": "phoebe-limited-edition"
+    },
+    {
+     "id": 10566145638733,
+     "handle": "saffron-dress"
+    },
+    {
+     "id": 10633906127181,
+     "handle": "rosea"
+    },
+    {
+     "id": 10559196856653,
+     "handle": "calypso-pants"
+    },
+    {
+     "id": 10563065872717,
+     "handle": "zaria-skirt"
+    },
+    {
+     "id": 10710381297997,
+     "handle": "elaria-copy"
+    },
+    {
+     "id": 10563435102541,
+     "handle": "indy-top"
+    },
+    {
+     "id": 10731588223309,
+     "handle": "mare-top"
+    },
+    {
+     "id": 10563057189197,
+     "handle": "myra-skirt"
+    },
+    {
+     "id": 10657829552461,
+     "handle": "myrielle"
+    },
+    {
+     "id": 10563290530125,
+     "handle": "ophelia-skirt"
+    },
+    {
+     "id": 10563437789517,
+     "handle": "zoe-cape"
+    },
+    {
+     "id": 10564934369613,
+     "handle": "zelda-dress"
+    },
+    {
+     "id": 10564754964813,
+     "handle": "livia-kimono"
+    },
+    {
+     "id": 10731582325069,
+     "handle": "dalia"
+    },
+    {
+     "id": 10566126928205,
+     "handle": "parker-dress"
+    },
+    {
+     "id": 10633898852685,
+     "handle": "copy-copy-74"
+    },
+    {
+     "id": 10730873160013,
+     "handle": "ismini"
+    },
+    {
+     "id": 10559164318029,
+     "handle": "calypso-top-blue"
+    },
+    {
+     "id": 10566111002957,
+     "handle": "ellie-dress"
+    },
+    {
+     "id": 10559193186637,
+     "handle": "calypso-shirt-pink"
+    },
+    {
+     "id": 10566049726797,
+     "handle": "zelda-kimono"
+    },
+    {
+     "id": 10566068437325,
+     "handle": "lilly-kimono"
+    },
+    {
+     "id": 10566363447629,
+     "handle": "arla-top"
+    },
+    {
+     "id": 10564749328717,
+     "handle": "lyla-kimono"
+    },
+    {
+     "id": 10563189473613,
+     "handle": "ophelia-top"
+    },
+    {
+     "id": 10564890132813,
+     "handle": "argenta-dress"
+    },
+    {
+     "id": 10566027510093,
+     "handle": "melissa-top"
+    },
+    {
+     "id": 10563071410509,
+     "handle": "pearl-dress"
+    },
+    {
+     "id": 10563313762637,
+     "handle": "stella-skirt"
+    },
+    {
+     "id": 10641918886221,
+     "handle": "orlaya-3"
+    },
+    {
+     "id": 10563042214221,
+     "handle": "myra-top-1"
+    },
+    {
+     "id": 10563362685261,
+     "handle": "indira-kimono"
+    },
+    {
+     "id": 10564586668365,
+     "handle": "ember-top-yellow"
+    },
+    {
+     "id": 10633892299085,
+     "handle": "fiora"
+    },
+    {
+     "id": 10563437035853,
+     "handle": "rhia-top"
+    },
+    {
+     "id": 10566028427597,
+     "handle": "gabby-top"
+    },
+    {
+     "id": 10563436282189,
+     "handle": "opal-top"
+    },
+    {
+     "id": 10564590010701,
+     "handle": "debbie-shirt"
+    },
+    {
+     "id": 10566039175501,
+     "handle": "elma-pants"
+    },
+    {
+     "id": 10566393954637,
+     "handle": "sienna-top"
+    },
+    {
+     "id": 10564592664909,
+     "handle": "shona-top"
+    },
+    {
+     "id": 10566352666957,
+     "handle": "sundra-top"
+    },
+    {
+     "id": 10566360826189,
+     "handle": "romi-top"
+    },
+    {
+     "id": 10633884762445,
+     "handle": "noma"
+    },
+    {
+     "id": 10566095241549,
+     "handle": "selma-dress"
+    },
+    {
+     "id": 10633941942605,
+     "handle": "olira"
+    },
+    {
+     "id": 10563049128269,
+     "handle": "nyx-skirt"
+    },
+    {
+     "id": 10563044606285,
+     "handle": "s26-1008"
+    },
+    {
+     "id": 10566105825613,
+     "handle": "matilda-dress"
+    },
+    {
+     "id": 10563029533005,
+     "handle": "nyx-top"
+    },
+    {
+     "id": 10564583817549,
+     "handle": "ines-shirt"
+    },
+    {
+     "id": 10566370197837,
+     "handle": "lucy-shirt"
+    },
+    {
+     "id": 10564803887437,
+     "handle": "ines-pants-1"
+    },
+    {
+     "id": 10566040191309,
+     "handle": "monique-skirt"
+    }
+   ]
+  },
+  {
+   "id": 656728228173,
+   "handle": "ss26-sirens-accessories",
+   "title": "SS26 SIRENS - ACCESSORIES",
+   "order": [
+    {
+     "id": 8936685863245,
+     "handle": "gold-underdress"
+    },
+    {
+     "id": 10078634836301,
+     "handle": "pink-underdress-long"
+    },
+    {
+     "id": 10566350635341,
+     "handle": "gold-underdress-long-1"
+    },
+    {
+     "id": 10635955667277,
+     "handle": "ariel-siren"
+    },
+    {
+     "id": 8936687141197,
+     "handle": "pink-underdress"
+    },
+    {
+     "id": 10663945011533,
+     "handle": "layered-shell-1"
+    },
+    {
+     "id": 10731582325069,
+     "handle": "dalia"
+    },
+    {
+     "id": 10663946092877,
+     "handle": "layered-silver-1"
+    },
+    {
+     "id": 10635926929741,
+     "handle": "turban"
+    },
+    {
+     "id": 10636006129997,
+     "handle": "nyx"
+    },
+    {
+     "id": 10663944454477,
+     "handle": "earth-tone"
+    },
+    {
+     "id": 10663946715469,
+     "handle": "ivory-stone-1"
+    },
+    {
+     "id": 10663943110989,
+     "handle": "ivory-1"
+    }
+   ]
+  },
+  {
+   "id": 656726982989,
+   "handle": "ss26-sirens-dresses",
+   "title": "SS26 SIRENS - DRESSES",
+   "order": [
+    {
+     "id": 10566138757453,
+     "handle": "elodie-dress"
+    },
+    {
+     "id": 10652663251277,
+     "handle": "crystalia"
+    },
+    {
+     "id": 10697115926861,
+     "handle": "victoria"
+    },
+    {
+     "id": 10642032361805,
+     "handle": "sophia"
+    },
+    {
+     "id": 10710349381965,
+     "handle": "nerida"
+    },
+    {
+     "id": 10566155960653,
+     "handle": "greta-dress"
+    },
+    {
+     "id": 10786243215693,
+     "handle": "noelle"
+    },
+    {
+     "id": 10197665218893,
+     "handle": "tiffany-dress"
+    },
+    {
+     "id": 10786210480461,
+     "handle": "rosalie-2"
+    },
+    {
+     "id": 10664754151757,
+     "handle": "elaria"
+    },
+    {
+     "id": 10728698184013,
+     "handle": "ioli"
+    },
+    {
+     "id": 10710363537741,
+     "handle": "ione-2"
+    },
+    {
+     "id": 10663947960653,
+     "handle": "camelia"
+    },
+    {
+     "id": 10633856221517,
+     "handle": "aura"
+    },
+    {
+     "id": 10786231877965,
+     "handle": "marceline"
+    },
+    {
+     "id": 10728541159757,
+     "handle": "nefeli"
+    },
+    {
+     "id": 10637297090893,
+     "handle": "aurelle"
+    },
+    {
+     "id": 10563092447565,
+     "handle": "meria-dress"
+    },
+    {
+     "id": 10566101827917,
+     "handle": "margie-dress"
+    },
+    {
+     "id": 10566102974797,
+     "handle": "liberty-dress"
+    },
+    {
+     "id": 10563406201165,
+     "handle": "livia-dress"
+    },
+    {
+     "id": 10563130229069,
+     "handle": "zale-dress"
+    },
+    {
+     "id": 10563103392077,
+     "handle": "myrtle-dress-1"
+    },
+    {
+     "id": 10657650803021,
+     "handle": "rinna"
+    },
+    {
+     "id": 10563105227085,
+     "handle": "moss-dress-1"
+    },
+    {
+     "id": 10566100255053,
+     "handle": "hilda-dress-dusty-pink"
+    },
+    {
+     "id": 10566159991117,
+     "handle": "hilary-dress"
+    },
+    {
+     "id": 10652612165965,
+     "handle": "evelisse-limited"
+    },
+    {
+     "id": 10559049138509,
+     "handle": "ariel-siren-dress-blue"
+    },
+    {
+     "id": 10671661482317,
+     "handle": "marisa"
+    },
+    {
+     "id": 10563090907469,
+     "handle": "helia-dress"
+    },
+    {
+     "id": 10643352158541,
+     "handle": "soraya"
+    },
+    {
+     "id": 10633956557133,
+     "handle": "lumira"
+    },
+    {
+     "id": 10664056750413,
+     "handle": "elise"
+    },
+    {
+     "id": 10563094708557,
+     "handle": "asteria-dress"
+    },
+    {
+     "id": 10584479564109,
+     "handle": "electra-dress"
+    },
+    {
+     "id": 10563075998029,
+     "handle": "calyra-dress"
+    },
+    {
+     "id": 10588786295117,
+     "handle": "copy-2"
+    },
+    {
+     "id": 10566165102925,
+     "handle": "melin-dress"
+    },
+    {
+     "id": 10810757415245,
+     "handle": "fiorella-white"
+    },
+    {
+     "id": 10563404235085,
+     "handle": "elyra-dress"
+    },
+    {
+     "id": 10563131900237,
+     "handle": "aegea-dress"
+    },
+    {
+     "id": 10559098978637,
+     "handle": "s26-5048"
+    },
+    {
+     "id": 10566165856589,
+     "handle": "kathy-dress"
+    },
+    {
+     "id": 10564872208717,
+     "handle": "dore-dress"
+    },
+    {
+     "id": 10566201803085,
+     "handle": "azalea-dress"
+    },
+    {
+     "id": 10566182437197,
+     "handle": "astra-dress"
+    },
+    {
+     "id": 10564952752461,
+     "handle": "sonia-dress"
+    },
+    {
+     "id": 10566185877837,
+     "handle": "krista-dress"
+    },
+    {
+     "id": 10566150095181,
+     "handle": "sylla-dress"
+    },
+    {
+     "id": 10657829552461,
+     "handle": "myrielle"
+    },
+    {
+     "id": 10566126928205,
+     "handle": "parker-dress"
+    },
+    {
+     "id": 10633892299085,
+     "handle": "fiora"
+    }
+   ]
+  },
+  {
+   "id": 656729538893,
+   "handle": "ss26-sirens-jumpsuits",
+   "title": "SS26 SIRENS - JUMPSUITS",
+   "order": [
+    {
+     "id": 10786186232141,
+     "handle": "livia-copy"
+    },
+    {
+     "id": 10670927511885,
+     "handle": "eve-copy"
+    },
+    {
+     "id": 10563135537485,
+     "handle": "gaia-jumpsuit"
+    },
+    {
+     "id": 10566210683213,
+     "handle": "eve-jumpsuit"
+    },
+    {
+     "id": 10566207308109,
+     "handle": "lilu-jumpsuit"
+    },
+    {
+     "id": 10563172696397,
+     "handle": "argenta-jumpsuit"
+    },
+    {
+     "id": 10566211600717,
+     "handle": "nola-jumpsuit"
+    },
+    {
+     "id": 10563149726029,
+     "handle": "oceane-jumpsuit"
+    },
+    {
+     "id": 10563145236813,
+     "handle": "zaria-jumpsuit"
+    },
+    {
+     "id": 10563137044813,
+     "handle": "livia-jumpsuit"
+    }
+   ]
+  },
+  {
+   "id": 662963749197,
+   "handle": "ss26-sirens-kids",
+   "title": "SS26 SIRENS - KIDS",
+   "order": [
+    {
+     "id": 10700575211853,
+     "handle": "celestia-kids"
+    },
+    {
+     "id": 10703248359757,
+     "handle": "nerissa"
+    },
+    {
+     "id": 10703250948429,
+     "handle": "nerissa-kids"
+    },
+    {
+     "id": 10703242985805,
+     "handle": "vivienne-kids"
+    },
+    {
+     "id": 10700591759693,
+     "handle": "maeva-kids"
+    },
+    {
+     "id": 10700696977741,
+     "handle": "arielia-kids"
+    },
+    {
+     "id": 10703252554061,
+     "handle": "zoe-kids"
+    },
+    {
+     "id": 10700554699085,
+     "handle": "ariel-kids"
+    },
+    {
+     "id": 10703235547469,
+     "handle": "aurelia-kids"
+    },
+    {
+     "id": 10700490932557,
+     "handle": "amelie-kids-set"
+    },
+    {
+     "id": 10703240692045,
+     "handle": "mirabelle-kids"
+    },
+    {
+     "id": 10703246393677,
+     "handle": "alina-kids"
+    },
+    {
+     "id": 10700582224205,
+     "handle": "valentina-kids"
+    },
+    {
+     "id": 10703237939533,
+     "handle": "coraline-kids"
+    },
+    {
+     "id": 10703232729421,
+     "handle": "stardust-kids"
+    },
+    {
+     "id": 10700565840205,
+     "handle": "pearlina-kids"
+    },
+    {
+     "id": 10700556566861,
+     "handle": "bella-kids"
+    }
+   ]
+  },
+  {
+   "id": 656727081293,
+   "handle": "ss26-sirens-kimono-dresses",
+   "title": "SS26 SIRENS - KIMONO DRESSES",
+   "order": [
+    {
+     "id": 10714453999949,
+     "handle": "sylvia"
+    },
+    {
+     "id": 10730877223245,
+     "handle": "kirki-kimono"
+    },
+    {
+     "id": 10559204852045,
+     "handle": "nerissa-kimono-pink"
+    },
+    {
+     "id": 10563066659149,
+     "handle": "auralis-kimono"
+    },
+    {
+     "id": 10564824432973,
+     "handle": "stella-kimono"
+    },
+    {
+     "id": 10714458063181,
+     "handle": "lydia"
+    },
+    {
+     "id": 10566045172045,
+     "handle": "astor-kimono"
+    },
+    {
+     "id": 10714445873485,
+     "handle": "melina"
+    },
+    {
+     "id": 10566086492493,
+     "handle": "norah-kimono"
+    },
+    {
+     "id": 10559203049805,
+     "handle": "nerissa-kimono-blue"
+    },
+    {
+     "id": 10564825186637,
+     "handle": "aria-kimono"
+    },
+    {
+     "id": 10563359539533,
+     "handle": "argenta-kimono"
+    },
+    {
+     "id": 10559208358221,
+     "handle": "aster-kimono"
+    },
+    {
+     "id": 10730818896205,
+     "handle": "irida-kimono"
+    },
+    {
+     "id": 10566047891789,
+     "handle": "monique-kimono"
+    },
+    {
+     "id": 10564823515469,
+     "handle": "shona-kimono"
+    },
+    {
+     "id": 10564757815629,
+     "handle": "zoe-kimono"
+    },
+    {
+     "id": 10564754964813,
+     "handle": "livia-kimono"
+    },
+    {
+     "id": 10730873160013,
+     "handle": "ismini"
+    },
+    {
+     "id": 10566068437325,
+     "handle": "lilly-kimono"
+    },
+    {
+     "id": 10566049726797,
+     "handle": "zelda-kimono"
+    },
+    {
+     "id": 10564749328717,
+     "handle": "lyla-kimono"
+    },
+    {
+     "id": 10563362685261,
+     "handle": "indira-kimono"
+    }
+   ]
+  },
+  {
+   "id": 656727703885,
+   "handle": "ss26-sirens-pants",
+   "title": "SS26 SIRENS - PANTS",
+   "order": [
+    {
+     "id": 10564703289677,
+     "handle": "zoe-pants"
+    },
+    {
+     "id": 10563246784845,
+     "handle": "elyra-pants"
+    },
+    {
+     "id": 10564789961037,
+     "handle": "shona-pants"
+    },
+    {
+     "id": 10564787011917,
+     "handle": "debbie-pants"
+    },
+    {
+     "id": 10564908613965,
+     "handle": "rayne-pants"
+    },
+    {
+     "id": 10559196856653,
+     "handle": "calypso-pants"
+    },
+    {
+     "id": 10566039175501,
+     "handle": "elma-pants"
+    },
+    {
+     "id": 10564803887437,
+     "handle": "ines-pants-1"
+    }
+   ]
+  },
+  {
+   "id": 656727671117,
+   "handle": "ss26-sirens-skirts",
+   "title": "SS26 SIRENS - SKIRTS",
+   "order": [
+    {
+     "id": 10718845763917,
+     "handle": "stella-top-1"
+    },
+    {
+     "id": 10730899734861,
+     "handle": "doris"
+    },
+    {
+     "id": 10730655580493,
+     "handle": "coco-skirt"
+    },
+    {
+     "id": 10804947190093,
+     "handle": "melin-skirt"
+    },
+    {
+     "id": 10559198298445,
+     "handle": "calypso-skirt-blue"
+    },
+    {
+     "id": 10566041698637,
+     "handle": "magnolia-skirt"
+    },
+    {
+     "id": 10657683439949,
+     "handle": "ione-1"
+    },
+    {
+     "id": 10740788068685,
+     "handle": "solea"
+    },
+    {
+     "id": 10710401483085,
+     "handle": "isabella"
+    },
+    {
+     "id": 10563312714061,
+     "handle": "aria-skirt-1"
+    },
+    {
+     "id": 10745646252365,
+     "handle": "ismini-1"
+    },
+    {
+     "id": 10563307635021,
+     "handle": "lyla-skirt"
+    },
+    {
+     "id": 10563304816973,
+     "handle": "indira-skirt"
+    },
+    {
+     "id": 10563055878477,
+     "handle": "livia-skirt"
+    },
+    {
+     "id": 10566351814989,
+     "handle": "glinda-skirt"
+    },
+    {
+     "id": 10564766138701,
+     "handle": "shona-skirt"
+    },
+    {
+     "id": 10074122977613,
+     "handle": "empress-skirt"
+    },
+    {
+     "id": 10641885364557,
+     "handle": "orlaya-1"
+    },
+    {
+     "id": 10559200788813,
+     "handle": "calypso-skirt-pink"
+    },
+    {
+     "id": 10730866344269,
+     "handle": "kirki-skirt"
+    },
+    {
+     "id": 10731571183949,
+     "handle": "capri"
+    },
+    {
+     "id": 10563065413965,
+     "handle": "eirys-skirt"
+    },
+    {
+     "id": 10758774489421,
+     "handle": "nora-1"
+    },
+    {
+     "id": 10641906958669,
+     "handle": "orlaya-2"
+    },
+    {
+     "id": 10563065872717,
+     "handle": "zaria-skirt"
+    },
+    {
+     "id": 10563057189197,
+     "handle": "myra-skirt"
+    },
+    {
+     "id": 10563290530125,
+     "handle": "ophelia-skirt"
+    },
+    {
+     "id": 10563313762637,
+     "handle": "stella-skirt"
+    },
+    {
+     "id": 10563049128269,
+     "handle": "nyx-skirt"
+    },
+    {
+     "id": 10566040191309,
+     "handle": "monique-skirt"
+    }
+   ]
+  },
+  {
+   "id": 656727146829,
+   "handle": "ss26-sirens-tops",
+   "title": "SS26 SIRENS - TOPS",
+   "order": [
+    {
+     "id": 10804955087181,
+     "handle": "melin-top"
+    },
+    {
+     "id": 10566035374413,
+     "handle": "runa-top"
+    },
+    {
+     "id": 10731569217869,
+     "handle": "magnolia-top"
+    },
+    {
+     "id": 10730911793485,
+     "handle": "doris-1"
+    },
+    {
+     "id": 10559183356237,
+     "handle": "calypso-top-pink"
+    },
+    {
+     "id": 10730842784077,
+     "handle": "kirki"
+    },
+    {
+     "id": 10758769738061,
+     "handle": "nora"
+    },
+    {
+     "id": 10697387508045,
+     "handle": "sienna-copy"
+    },
+    {
+     "id": 10740803436877,
+     "handle": "solea-1"
+    },
+    {
+     "id": 10563231154509,
+     "handle": "elyra-top"
+    },
+    {
+     "id": 10563222045005,
+     "handle": "lyla-top"
+    },
+    {
+     "id": 10710406005069,
+     "handle": "isabellatop"
+    },
+    {
+     "id": 10657672266061,
+     "handle": "ione"
+    },
+    {
+     "id": 10563232760141,
+     "handle": "aria-top-1"
+    },
+    {
+     "id": 10563024912717,
+     "handle": "elyra-body"
+    },
+    {
+     "id": 10730927784269,
+     "handle": "irida-top"
+    },
+    {
+     "id": 10563046768973,
+     "handle": "zaria-top"
+    },
+    {
+     "id": 10564578804045,
+     "handle": "shona-shirt"
+    },
+    {
+     "id": 10563234267469,
+     "handle": "stella-top"
+    },
+    {
+     "id": 10563040510285,
+     "handle": "livia-top"
+    },
+    {
+     "id": 10564537778509,
+     "handle": "mae-top"
+    },
+    {
+     "id": 10718851137869,
+     "handle": "stella"
+    },
+    {
+     "id": 10730619339085,
+     "handle": "coco"
+    },
+    {
+     "id": 10073195905357,
+     "handle": "empress-top"
+    },
+    {
+     "id": 10731572789581,
+     "handle": "capri-1"
+    },
+    {
+     "id": 10563227615565,
+     "handle": "argenta-cape"
+    },
+    {
+     "id": 10566385434957,
+     "handle": "neta-top"
+    },
+    {
+     "id": 10563208315213,
+     "handle": "elyra-cape"
+    },
+    {
+     "id": 10559144755533,
+     "handle": "calypso-shirt-blue"
+    },
+    {
+     "id": 10641862000973,
+     "handle": "orlaya"
+    },
+    {
+     "id": 10563199992141,
+     "handle": "indira-top"
+    },
+    {
+     "id": 10563435102541,
+     "handle": "indy-top"
+    },
+    {
+     "id": 10563437789517,
+     "handle": "zoe-cape"
+    },
+    {
+     "id": 10559164318029,
+     "handle": "calypso-top-blue"
+    },
+    {
+     "id": 10559193186637,
+     "handle": "calypso-shirt-pink"
+    },
+    {
+     "id": 10566363447629,
+     "handle": "arla-top"
+    },
+    {
+     "id": 10730953146701,
+     "handle": "thetis"
+    },
+    {
+     "id": 10566027510093,
+     "handle": "melissa-top"
+    },
+    {
+     "id": 10563189473613,
+     "handle": "ophelia-top"
+    },
+    {
+     "id": 10563042214221,
+     "handle": "myra-top-1"
+    },
+    {
+     "id": 10731588223309,
+     "handle": "mare-top"
+    },
+    {
+     "id": 10564586668365,
+     "handle": "ember-top-yellow"
+    },
+    {
+     "id": 10564590010701,
+     "handle": "debbie-shirt"
+    },
+    {
+     "id": 10641918886221,
+     "handle": "orlaya-3"
+    },
+    {
+     "id": 10563437035853,
+     "handle": "rhia-top"
+    },
+    {
+     "id": 10566028427597,
+     "handle": "gabby-top"
+    },
+    {
+     "id": 10563436282189,
+     "handle": "opal-top"
+    },
+    {
+     "id": 10564592664909,
+     "handle": "shona-top"
+    },
+    {
+     "id": 10566393954637,
+     "handle": "sienna-top"
+    },
+    {
+     "id": 10566352666957,
+     "handle": "sundra-top"
+    },
+    {
+     "id": 10566360826189,
+     "handle": "romi-top"
+    },
+    {
+     "id": 10563044606285,
+     "handle": "s26-1008"
+    },
+    {
+     "id": 10563029533005,
+     "handle": "nyx-top"
+    },
+    {
+     "id": 10564583817549,
+     "handle": "ines-shirt"
+    },
+    {
+     "id": 10566370197837,
+     "handle": "lucy-shirt"
+    }
+   ]
+  },
+  {
+   "id": 668524478797,
+   "handle": "underdress",
+   "title": "Underdress",
+   "order": [
+    {
+     "id": 8936685863245,
+     "handle": "gold-underdress"
+    },
+    {
+     "id": 10078634836301,
+     "handle": "pink-underdress-long"
+    },
+    {
+     "id": 10566350635341,
+     "handle": "gold-underdress-long-1"
+    },
+    {
+     "id": 8936687141197,
+     "handle": "pink-underdress"
+    }
+   ]
+  },
+  {
+   "id": 660041302349,
+   "handle": "monochrome",
+   "title": "ΡΟΥΧΑ  ΠΕΡΙΣΤΑΣΗΣ",
+   "order": [
+    {
+     "id": 10664754151757,
+     "handle": "elaria"
+    },
+    {
+     "id": 10663947960653,
+     "handle": "camelia"
+    },
+    {
+     "id": 10633856221517,
+     "handle": "aura"
+    },
+    {
+     "id": 10637297090893,
+     "handle": "aurelle"
+    },
+    {
+     "id": 10847193203021,
+     "handle": "natel"
+    },
+    {
+     "id": 10634114826573,
+     "handle": "meline"
+    },
+    {
+     "id": 10633888858445,
+     "handle": "copy-copy-72"
+    },
+    {
+     "id": 10633937944909,
+     "handle": "thirea"
+    },
+    {
+     "id": 10636342690125,
+     "handle": "viora"
+    },
+    {
+     "id": 10644362002765,
+     "handle": "meline-copy"
+    },
+    {
+     "id": 10633886466381,
+     "handle": "copy-copy-69"
+    },
+    {
+     "id": 10633887056205,
+     "handle": "copy-copy-71"
+    },
+    {
+     "id": 10633917563213,
+     "handle": "thalea"
+    },
+    {
+     "id": 10633929261389,
+     "handle": "ismera"
+    },
+    {
+     "id": 10633966977357,
+     "handle": "copy-copy-77"
+    },
+    {
+     "id": 10634112041293,
+     "handle": "velora"
+    },
+    {
+     "id": 10633925165389,
+     "handle": "copy-copy-75"
+    },
+    {
+     "id": 10633956557133,
+     "handle": "lumira"
+    },
+    {
+     "id": 10644069187917,
+     "handle": "solenne"
+    },
+    {
+     "id": 10633971007821,
+     "handle": "copy-copy-78"
+    },
+    {
+     "id": 10664671936845,
+     "handle": "scarlet"
+    },
+    {
+     "id": 10633912582477,
+     "handle": "serina"
+    },
+    {
+     "id": 10633890300237,
+     "handle": "copy-copy-73"
+    },
+    {
+     "id": 10633960587597,
+     "handle": "orlena"
+    },
+    {
+     "id": 10634213425485,
+     "handle": "norel"
+    },
+    {
+     "id": 10633906127181,
+     "handle": "rosea"
+    },
+    {
+     "id": 10710381297997,
+     "handle": "elaria-copy"
+    },
+    {
+     "id": 10633898852685,
+     "handle": "copy-copy-74"
+    },
+    {
+     "id": 10633892299085,
+     "handle": "fiora"
+    },
+    {
+     "id": 10633884762445,
+     "handle": "noma"
+    },
+    {
+     "id": 10633941942605,
+     "handle": "olira"
+    }
+   ]
+  },
+  {
+   "id": 659102695757,
+   "handle": "wedding-baptism",
+   "title": "Ρούχα και Φορέματα για Γάμο & Βάπτιση",
+   "order": [
+    {
+     "id": 10566138757453,
+     "handle": "elodie-dress"
+    },
+    {
+     "id": 10814110531917,
+     "handle": "marbella-dress"
+    },
+    {
+     "id": 10652663251277,
+     "handle": "crystalia"
+    },
+    {
+     "id": 10697115926861,
+     "handle": "victoria"
+    },
+    {
+     "id": 10714453999949,
+     "handle": "sylvia"
+    },
+    {
+     "id": 10642032361805,
+     "handle": "sophia"
+    },
+    {
+     "id": 10710349381965,
+     "handle": "nerida"
+    },
+    {
+     "id": 10566155960653,
+     "handle": "greta-dress"
+    },
+    {
+     "id": 10786243215693,
+     "handle": "noelle"
+    },
+    {
+     "id": 10786210480461,
+     "handle": "rosalie-2"
+    },
+    {
+     "id": 10566112903501,
+     "handle": "maeva-dress"
+    },
+    {
+     "id": 10564703289677,
+     "handle": "zoe-pants"
+    },
+    {
+     "id": 10786186232141,
+     "handle": "livia-copy"
+    },
+    {
+     "id": 10559204852045,
+     "handle": "nerissa-kimono-pink"
+    },
+    {
+     "id": 10670927511885,
+     "handle": "eve-copy"
+    },
+    {
+     "id": 10563066659149,
+     "handle": "auralis-kimono"
+    },
+    {
+     "id": 10566035374413,
+     "handle": "runa-top"
+    },
+    {
+     "id": 10710363537741,
+     "handle": "ione-2"
+    },
+    {
+     "id": 10559198298445,
+     "handle": "calypso-skirt-blue"
+    },
+    {
+     "id": 10559183356237,
+     "handle": "calypso-top-pink"
+    },
+    {
+     "id": 10786231877965,
+     "handle": "marceline"
+    },
+    {
+     "id": 10563092447565,
+     "handle": "meria-dress"
+    },
+    {
+     "id": 10566101827917,
+     "handle": "margie-dress"
+    },
+    {
+     "id": 10564824432973,
+     "handle": "stella-kimono"
+    },
+    {
+     "id": 10566210683213,
+     "handle": "eve-jumpsuit"
+    },
+    {
+     "id": 10563135537485,
+     "handle": "gaia-jumpsuit"
+    },
+    {
+     "id": 10566102974797,
+     "handle": "liberty-dress"
+    },
+    {
+     "id": 10563406201165,
+     "handle": "livia-dress"
+    },
+    {
+     "id": 10563130229069,
+     "handle": "zale-dress"
+    },
+    {
+     "id": 10563103392077,
+     "handle": "myrtle-dress-1"
+    },
+    {
+     "id": 10697387508045,
+     "handle": "sienna-copy"
+    },
+    {
+     "id": 10563312714061,
+     "handle": "aria-skirt-1"
+    },
+    {
+     "id": 10563246784845,
+     "handle": "elyra-pants"
+    },
+    {
+     "id": 10745646252365,
+     "handle": "ismini-1"
+    },
+    {
+     "id": 10564789961037,
+     "handle": "shona-pants"
+    },
+    {
+     "id": 10563307635021,
+     "handle": "lyla-skirt"
+    },
+    {
+     "id": 10563231154509,
+     "handle": "elyra-top"
+    },
+    {
+     "id": 10563105227085,
+     "handle": "moss-dress-1"
+    },
+    {
+     "id": 10564841374029,
+     "handle": "hilda-dress-champagne"
+    },
+    {
+     "id": 10566100255053,
+     "handle": "hilda-dress-dusty-pink"
+    },
+    {
+     "id": 10564787011917,
+     "handle": "debbie-pants"
+    },
+    {
+     "id": 10563222045005,
+     "handle": "lyla-top"
+    },
+    {
+     "id": 10563304816973,
+     "handle": "indira-skirt"
+    },
+    {
+     "id": 10563232760141,
+     "handle": "aria-top-1"
+    },
+    {
+     "id": 10563024912717,
+     "handle": "elyra-body"
+    },
+    {
+     "id": 10563046768973,
+     "handle": "zaria-top"
+    },
+    {
+     "id": 10563055878477,
+     "handle": "livia-skirt"
+    },
+    {
+     "id": 10564578804045,
+     "handle": "shona-shirt"
+    },
+    {
+     "id": 10563040510285,
+     "handle": "livia-top"
+    },
+    {
+     "id": 10564766138701,
+     "handle": "shona-skirt"
+    },
+    {
+     "id": 10566159991117,
+     "handle": "hilary-dress"
+    },
+    {
+     "id": 10652612165965,
+     "handle": "evelisse-limited"
+    },
+    {
+     "id": 10559049138509,
+     "handle": "ariel-siren-dress-blue"
+    },
+    {
+     "id": 10671661482317,
+     "handle": "marisa"
+    },
+    {
+     "id": 10563090907469,
+     "handle": "helia-dress"
+    },
+    {
+     "id": 10643352158541,
+     "handle": "soraya"
+    },
+    {
+     "id": 10664056750413,
+     "handle": "elise"
+    },
+    {
+     "id": 10563094708557,
+     "handle": "asteria-dress"
+    },
+    {
+     "id": 10564863885645,
+     "handle": "phoebe-dress"
+    },
+    {
+     "id": 10714458063181,
+     "handle": "lydia"
+    },
+    {
+     "id": 10559114215757,
+     "handle": "thalina-dress-1"
+    },
+    {
+     "id": 10644069187917,
+     "handle": "solenne"
+    },
+    {
+     "id": 10584479564109,
+     "handle": "electra-dress"
+    },
+    {
+     "id": 10566045172045,
+     "handle": "astor-kimono"
+    },
+    {
+     "id": 10564896391501,
+     "handle": "rayne-dress"
+    },
+    {
+     "id": 10563075998029,
+     "handle": "calyra-dress"
+    },
+    {
+     "id": 10714445873485,
+     "handle": "melina"
+    },
+    {
+     "id": 10566090916173,
+     "handle": "lea-dress"
+    },
+    {
+     "id": 10657844953421,
+     "handle": "thalassa-limited"
+    },
+    {
+     "id": 10566166413645,
+     "handle": "coralia-dress"
+    },
+    {
+     "id": 10566086492493,
+     "handle": "norah-kimono"
+    },
+    {
+     "id": 10588786295117,
+     "handle": "copy-2"
+    },
+    {
+     "id": 10559200788813,
+     "handle": "calypso-skirt-pink"
+    },
+    {
+     "id": 10564884070733,
+     "handle": "glowen-dress"
+    },
+    {
+     "id": 10566165102925,
+     "handle": "melin-dress"
+    },
+    {
+     "id": 10563128525133,
+     "handle": "thalassa-dress"
+    },
+    {
+     "id": 10566207308109,
+     "handle": "lilu-jumpsuit"
+    },
+    {
+     "id": 10563227615565,
+     "handle": "argenta-cape"
+    },
+    {
+     "id": 10559203049805,
+     "handle": "nerissa-kimono-blue"
+    },
+    {
+     "id": 10571427971405,
+     "handle": "ariel-siren-limited"
+    },
+    {
+     "id": 10564825186637,
+     "handle": "aria-kimono"
+    },
+    {
+     "id": 10563404235085,
+     "handle": "elyra-dress"
+    },
+    {
+     "id": 10563110994253,
+     "handle": "nai-dress"
+    },
+    {
+     "id": 10563359539533,
+     "handle": "argenta-kimono"
+    },
+    {
+     "id": 10566211600717,
+     "handle": "nola-jumpsuit"
+    },
+    {
+     "id": 10563172696397,
+     "handle": "argenta-jumpsuit"
+    },
+    {
+     "id": 10563131900237,
+     "handle": "aegea-dress"
+    },
+    {
+     "id": 10566385434957,
+     "handle": "neta-top"
+    },
+    {
+     "id": 10566174114125,
+     "handle": "eris-dress"
+    },
+    {
+     "id": 10559098978637,
+     "handle": "s26-5048"
+    },
+    {
+     "id": 10559208358221,
+     "handle": "aster-kimono"
+    },
+    {
+     "id": 10566161531213,
+     "handle": "cloe-dress"
+    },
+    {
+     "id": 10563095920973,
+     "handle": "thalia-dress"
+    },
+    {
+     "id": 10563208315213,
+     "handle": "elyra-cape"
+    },
+    {
+     "id": 10563149726029,
+     "handle": "oceane-jumpsuit"
+    },
+    {
+     "id": 10566165856589,
+     "handle": "kathy-dress"
+    },
+    {
+     "id": 10566047891789,
+     "handle": "monique-kimono"
+    },
+    {
+     "id": 10697411199309,
+     "handle": "patricia"
+    },
+    {
+     "id": 10564872208717,
+     "handle": "dore-dress"
+    },
+    {
+     "id": 10566167626061,
+     "handle": "menda-dress"
+    },
+    {
+     "id": 10563145236813,
+     "handle": "zaria-jumpsuit"
+    },
+    {
+     "id": 10566201803085,
+     "handle": "azalea-dress"
+    },
+    {
+     "id": 10564823515469,
+     "handle": "shona-kimono"
+    },
+    {
+     "id": 10559144755533,
+     "handle": "calypso-shirt-blue"
+    },
+    {
+     "id": 10566098714957,
+     "handle": "midas-dress"
+    },
+    {
+     "id": 10566130303309,
+     "handle": "byron-dress"
+    },
+    {
+     "id": 10566182437197,
+     "handle": "astra-dress"
+    },
+    {
+     "id": 10564952752461,
+     "handle": "sonia-dress"
+    },
+    {
+     "id": 10563137044813,
+     "handle": "livia-jumpsuit"
+    },
+    {
+     "id": 10563065413965,
+     "handle": "eirys-skirt"
+    },
+    {
+     "id": 10564908613965,
+     "handle": "rayne-pants"
+    },
+    {
+     "id": 10566150095181,
+     "handle": "sylla-dress"
+    },
+    {
+     "id": 10566185877837,
+     "handle": "krista-dress"
+    },
+    {
+     "id": 10566163464525,
+     "handle": "myriam-dress"
+    },
+    {
+     "id": 10563199992141,
+     "handle": "indira-top"
+    },
+    {
+     "id": 10571365515597,
+     "handle": "nai-limited-dress"
+    },
+    {
+     "id": 10564757815629,
+     "handle": "zoe-kimono"
+    },
+    {
+     "id": 10571285266765,
+     "handle": "phoebe-limited-edition"
+    },
+    {
+     "id": 10559196856653,
+     "handle": "calypso-pants"
+    },
+    {
+     "id": 10563065872717,
+     "handle": "zaria-skirt"
+    },
+    {
+     "id": 10563435102541,
+     "handle": "indy-top"
+    },
+    {
+     "id": 10563057189197,
+     "handle": "myra-skirt"
+    },
+    {
+     "id": 10657829552461,
+     "handle": "myrielle"
+    },
+    {
+     "id": 10563290530125,
+     "handle": "ophelia-skirt"
+    },
+    {
+     "id": 10563437789517,
+     "handle": "zoe-cape"
+    },
+    {
+     "id": 10564934369613,
+     "handle": "zelda-dress"
+    },
+    {
+     "id": 10564754964813,
+     "handle": "livia-kimono"
+    },
+    {
+     "id": 10566126928205,
+     "handle": "parker-dress"
+    },
+    {
+     "id": 10559164318029,
+     "handle": "calypso-top-blue"
+    },
+    {
+     "id": 10559193186637,
+     "handle": "calypso-shirt-pink"
+    },
+    {
+     "id": 10566049726797,
+     "handle": "zelda-kimono"
+    },
+    {
+     "id": 10566363447629,
+     "handle": "arla-top"
+    },
+    {
+     "id": 10563189473613,
+     "handle": "ophelia-top"
+    },
+    {
+     "id": 10564749328717,
+     "handle": "lyla-kimono"
+    },
+    {
+     "id": 10563313762637,
+     "handle": "stella-skirt"
+    },
+    {
+     "id": 10564890132813,
+     "handle": "argenta-dress"
+    },
+    {
+     "id": 10566027510093,
+     "handle": "melissa-top"
+    },
+    {
+     "id": 10563042214221,
+     "handle": "myra-top-1"
+    },
+    {
+     "id": 10563362685261,
+     "handle": "indira-kimono"
+    },
+    {
+     "id": 10563437035853,
+     "handle": "rhia-top"
+    },
+    {
+     "id": 10563436282189,
+     "handle": "opal-top"
+    },
+    {
+     "id": 10564590010701,
+     "handle": "debbie-shirt"
+    },
+    {
+     "id": 10566039175501,
+     "handle": "elma-pants"
+    },
+    {
+     "id": 10566393954637,
+     "handle": "sienna-top"
+    },
+    {
+     "id": 10564592664909,
+     "handle": "shona-top"
+    },
+    {
+     "id": 10566352666957,
+     "handle": "sundra-top"
+    },
+    {
+     "id": 10566095241549,
+     "handle": "selma-dress"
+    },
+    {
+     "id": 10563049128269,
+     "handle": "nyx-skirt"
+    },
+    {
+     "id": 10563044606285,
+     "handle": "s26-1008"
+    },
+    {
+     "id": 10566105825613,
+     "handle": "matilda-dress"
+    },
+    {
+     "id": 10563029533005,
+     "handle": "nyx-top"
+    },
+    {
+     "id": 10564583817549,
+     "handle": "ines-shirt"
+    },
+    {
+     "id": 10564803887437,
+     "handle": "ines-pants-1"
+    }
+   ]
+  },
+  {
+   "id": 659107381581,
+   "handle": "events",
+   "title": "Φορέματα για βάπτιση",
+   "order": [
+    {
+     "id": 10566138757453,
+     "handle": "elodie-dress"
+    },
+    {
+     "id": 10697115926861,
+     "handle": "victoria"
+    },
+    {
+     "id": 10714453999949,
+     "handle": "sylvia"
+    },
+    {
+     "id": 10642032361805,
+     "handle": "sophia"
+    },
+    {
+     "id": 10710349381965,
+     "handle": "nerida"
+    },
+    {
+     "id": 10566155960653,
+     "handle": "greta-dress"
+    },
+    {
+     "id": 10786210480461,
+     "handle": "rosalie-2"
+    },
+    {
+     "id": 10566112903501,
+     "handle": "maeva-dress"
+    },
+    {
+     "id": 10564703289677,
+     "handle": "zoe-pants"
+    },
+    {
+     "id": 10786186232141,
+     "handle": "livia-copy"
+    },
+    {
+     "id": 10559204852045,
+     "handle": "nerissa-kimono-pink"
+    },
+    {
+     "id": 10670927511885,
+     "handle": "eve-copy"
+    },
+    {
+     "id": 10563066659149,
+     "handle": "auralis-kimono"
+    },
+    {
+     "id": 10710363537741,
+     "handle": "ione-2"
+    },
+    {
+     "id": 10559198298445,
+     "handle": "calypso-skirt-blue"
+    },
+    {
+     "id": 10559183356237,
+     "handle": "calypso-top-pink"
+    },
+    {
+     "id": 10563092447565,
+     "handle": "meria-dress"
+    },
+    {
+     "id": 10564824432973,
+     "handle": "stella-kimono"
+    },
+    {
+     "id": 10566210683213,
+     "handle": "eve-jumpsuit"
+    },
+    {
+     "id": 10563135537485,
+     "handle": "gaia-jumpsuit"
+    },
+    {
+     "id": 10566102974797,
+     "handle": "liberty-dress"
+    },
+    {
+     "id": 10563130229069,
+     "handle": "zale-dress"
+    },
+    {
+     "id": 10563103392077,
+     "handle": "myrtle-dress-1"
+    },
+    {
+     "id": 10563312714061,
+     "handle": "aria-skirt-1"
+    },
+    {
+     "id": 10563246784845,
+     "handle": "elyra-pants"
+    },
+    {
+     "id": 10564789961037,
+     "handle": "shona-pants"
+    },
+    {
+     "id": 10745646252365,
+     "handle": "ismini-1"
+    },
+    {
+     "id": 10563231154509,
+     "handle": "elyra-top"
+    },
+    {
+     "id": 10563307635021,
+     "handle": "lyla-skirt"
+    },
+    {
+     "id": 10564841374029,
+     "handle": "hilda-dress-champagne"
+    },
+    {
+     "id": 10566100255053,
+     "handle": "hilda-dress-dusty-pink"
+    },
+    {
+     "id": 10564787011917,
+     "handle": "debbie-pants"
+    },
+    {
+     "id": 10563222045005,
+     "handle": "lyla-top"
+    },
+    {
+     "id": 10563304816973,
+     "handle": "indira-skirt"
+    },
+    {
+     "id": 10563232760141,
+     "handle": "aria-top-1"
+    },
+    {
+     "id": 10563024912717,
+     "handle": "elyra-body"
+    },
+    {
+     "id": 10563046768973,
+     "handle": "zaria-top"
+    },
+    {
+     "id": 10563055878477,
+     "handle": "livia-skirt"
+    },
+    {
+     "id": 10564578804045,
+     "handle": "shona-shirt"
+    },
+    {
+     "id": 10563040510285,
+     "handle": "livia-top"
+    },
+    {
+     "id": 10564766138701,
+     "handle": "shona-skirt"
+    },
+    {
+     "id": 10566159991117,
+     "handle": "hilary-dress"
+    },
+    {
+     "id": 10559049138509,
+     "handle": "ariel-siren-dress-blue"
+    },
+    {
+     "id": 10671661482317,
+     "handle": "marisa"
+    },
+    {
+     "id": 10664056750413,
+     "handle": "elise"
+    },
+    {
+     "id": 10564863885645,
+     "handle": "phoebe-dress"
+    },
+    {
+     "id": 10714458063181,
+     "handle": "lydia"
+    },
+    {
+     "id": 10559114215757,
+     "handle": "thalina-dress-1"
+    },
+    {
+     "id": 10584479564109,
+     "handle": "electra-dress"
+    },
+    {
+     "id": 10563075998029,
+     "handle": "calyra-dress"
+    },
+    {
+     "id": 10714445873485,
+     "handle": "melina"
+    },
+    {
+     "id": 10657844953421,
+     "handle": "thalassa-limited"
+    },
+    {
+     "id": 10566090916173,
+     "handle": "lea-dress"
+    },
+    {
+     "id": 10566166413645,
+     "handle": "coralia-dress"
+    },
+    {
+     "id": 10566086492493,
+     "handle": "norah-kimono"
+    },
+    {
+     "id": 10588786295117,
+     "handle": "copy-2"
+    },
+    {
+     "id": 10559200788813,
+     "handle": "calypso-skirt-pink"
+    },
+    {
+     "id": 10566165102925,
+     "handle": "melin-dress"
+    },
+    {
+     "id": 10566207308109,
+     "handle": "lilu-jumpsuit"
+    },
+    {
+     "id": 10563227615565,
+     "handle": "argenta-cape"
+    },
+    {
+     "id": 10563128525133,
+     "handle": "thalassa-dress"
+    },
+    {
+     "id": 10571427971405,
+     "handle": "ariel-siren-limited"
+    },
+    {
+     "id": 10559203049805,
+     "handle": "nerissa-kimono-blue"
+    },
+    {
+     "id": 10563110994253,
+     "handle": "nai-dress"
+    },
+    {
+     "id": 10564825186637,
+     "handle": "aria-kimono"
+    },
+    {
+     "id": 10566211600717,
+     "handle": "nola-jumpsuit"
+    },
+    {
+     "id": 10563404235085,
+     "handle": "elyra-dress"
+    },
+    {
+     "id": 10563359539533,
+     "handle": "argenta-kimono"
+    },
+    {
+     "id": 10563172696397,
+     "handle": "argenta-jumpsuit"
+    },
+    {
+     "id": 10566385434957,
+     "handle": "neta-top"
+    },
+    {
+     "id": 10566174114125,
+     "handle": "eris-dress"
+    },
+    {
+     "id": 10559098978637,
+     "handle": "s26-5048"
+    },
+    {
+     "id": 10563208315213,
+     "handle": "elyra-cape"
+    },
+    {
+     "id": 10566165856589,
+     "handle": "kathy-dress"
+    },
+    {
+     "id": 10563149726029,
+     "handle": "oceane-jumpsuit"
+    },
+    {
+     "id": 10566047891789,
+     "handle": "monique-kimono"
+    },
+    {
+     "id": 10697411199309,
+     "handle": "patricia"
+    },
+    {
+     "id": 10563145236813,
+     "handle": "zaria-jumpsuit"
+    },
+    {
+     "id": 10566201803085,
+     "handle": "azalea-dress"
+    },
+    {
+     "id": 10564823515469,
+     "handle": "shona-kimono"
+    },
+    {
+     "id": 10559144755533,
+     "handle": "calypso-shirt-blue"
+    },
+    {
+     "id": 10566098714957,
+     "handle": "midas-dress"
+    },
+    {
+     "id": 10566182437197,
+     "handle": "astra-dress"
+    },
+    {
+     "id": 10563137044813,
+     "handle": "livia-jumpsuit"
+    },
+    {
+     "id": 10563065413965,
+     "handle": "eirys-skirt"
+    },
+    {
+     "id": 10564908613965,
+     "handle": "rayne-pants"
+    },
+    {
+     "id": 10566150095181,
+     "handle": "sylla-dress"
+    },
+    {
+     "id": 10566185877837,
+     "handle": "krista-dress"
+    },
+    {
+     "id": 10566163464525,
+     "handle": "myriam-dress"
+    },
+    {
+     "id": 10563199992141,
+     "handle": "indira-top"
+    },
+    {
+     "id": 10571365515597,
+     "handle": "nai-limited-dress"
+    },
+    {
+     "id": 10564757815629,
+     "handle": "zoe-kimono"
+    },
+    {
+     "id": 10559196856653,
+     "handle": "calypso-pants"
+    },
+    {
+     "id": 10563065872717,
+     "handle": "zaria-skirt"
+    },
+    {
+     "id": 10563435102541,
+     "handle": "indy-top"
+    },
+    {
+     "id": 10563057189197,
+     "handle": "myra-skirt"
+    },
+    {
+     "id": 10563290530125,
+     "handle": "ophelia-skirt"
+    },
+    {
+     "id": 10563437789517,
+     "handle": "zoe-cape"
+    },
+    {
+     "id": 10564934369613,
+     "handle": "zelda-dress"
+    },
+    {
+     "id": 10566126928205,
+     "handle": "parker-dress"
+    },
+    {
+     "id": 10564754964813,
+     "handle": "livia-kimono"
+    },
+    {
+     "id": 10559164318029,
+     "handle": "calypso-top-blue"
+    },
+    {
+     "id": 10559193186637,
+     "handle": "calypso-shirt-pink"
+    },
+    {
+     "id": 10566049726797,
+     "handle": "zelda-kimono"
+    },
+    {
+     "id": 10566363447629,
+     "handle": "arla-top"
+    },
+    {
+     "id": 10563189473613,
+     "handle": "ophelia-top"
+    },
+    {
+     "id": 10564749328717,
+     "handle": "lyla-kimono"
+    },
+    {
+     "id": 10563313762637,
+     "handle": "stella-skirt"
+    },
+    {
+     "id": 10564890132813,
+     "handle": "argenta-dress"
+    },
+    {
+     "id": 10566027510093,
+     "handle": "melissa-top"
+    },
+    {
+     "id": 10563362685261,
+     "handle": "indira-kimono"
+    },
+    {
+     "id": 10563042214221,
+     "handle": "myra-top-1"
+    },
+    {
+     "id": 10563437035853,
+     "handle": "rhia-top"
+    },
+    {
+     "id": 10563436282189,
+     "handle": "opal-top"
+    },
+    {
+     "id": 10564590010701,
+     "handle": "debbie-shirt"
+    },
+    {
+     "id": 10566039175501,
+     "handle": "elma-pants"
+    },
+    {
+     "id": 10564592664909,
+     "handle": "shona-top"
+    },
+    {
+     "id": 10566352666957,
+     "handle": "sundra-top"
+    },
+    {
+     "id": 10566095241549,
+     "handle": "selma-dress"
+    },
+    {
+     "id": 10563044606285,
+     "handle": "s26-1008"
+    },
+    {
+     "id": 10566105825613,
+     "handle": "matilda-dress"
+    },
+    {
+     "id": 10564583817549,
+     "handle": "ines-shirt"
+    },
+    {
+     "id": 10564803887437,
+     "handle": "ines-pants-1"
+    }
+   ]
+  },
+  {
+   "id": 659107119437,
+   "handle": "wedding",
+   "title": "Φορέματα για γάμο",
+   "order": [
+    {
+     "id": 10566138757453,
+     "handle": "elodie-dress"
+    },
+    {
+     "id": 10814110531917,
+     "handle": "marbella-dress"
+    },
+    {
+     "id": 10652663251277,
+     "handle": "crystalia"
+    },
+    {
+     "id": 10714453999949,
+     "handle": "sylvia"
+    },
+    {
+     "id": 10697115926861,
+     "handle": "victoria"
+    },
+    {
+     "id": 10710349381965,
+     "handle": "nerida"
+    },
+    {
+     "id": 10642032361805,
+     "handle": "sophia"
+    },
+    {
+     "id": 10566155960653,
+     "handle": "greta-dress"
+    },
+    {
+     "id": 10786243215693,
+     "handle": "noelle"
+    },
+    {
+     "id": 10786210480461,
+     "handle": "rosalie-2"
+    },
+    {
+     "id": 10566112903501,
+     "handle": "maeva-dress"
+    },
+    {
+     "id": 10564703289677,
+     "handle": "zoe-pants"
+    },
+    {
+     "id": 10786186232141,
+     "handle": "livia-copy"
+    },
+    {
+     "id": 10670927511885,
+     "handle": "eve-copy"
+    },
+    {
+     "id": 10563066659149,
+     "handle": "auralis-kimono"
+    },
+    {
+     "id": 10566035374413,
+     "handle": "runa-top"
+    },
+    {
+     "id": 10710363537741,
+     "handle": "ione-2"
+    },
+    {
+     "id": 10786231877965,
+     "handle": "marceline"
+    },
+    {
+     "id": 10563092447565,
+     "handle": "meria-dress"
+    },
+    {
+     "id": 10566101827917,
+     "handle": "margie-dress"
+    },
+    {
+     "id": 10563135537485,
+     "handle": "gaia-jumpsuit"
+    },
+    {
+     "id": 10566210683213,
+     "handle": "eve-jumpsuit"
+    },
+    {
+     "id": 10566102974797,
+     "handle": "liberty-dress"
+    },
+    {
+     "id": 10563406201165,
+     "handle": "livia-dress"
+    },
+    {
+     "id": 10563130229069,
+     "handle": "zale-dress"
+    },
+    {
+     "id": 10563103392077,
+     "handle": "myrtle-dress-1"
+    },
+    {
+     "id": 10563312714061,
+     "handle": "aria-skirt-1"
+    },
+    {
+     "id": 10697387508045,
+     "handle": "sienna-copy"
+    },
+    {
+     "id": 10563246784845,
+     "handle": "elyra-pants"
+    },
+    {
+     "id": 10563231154509,
+     "handle": "elyra-top"
+    },
+    {
+     "id": 10563105227085,
+     "handle": "moss-dress-1"
+    },
+    {
+     "id": 10563304816973,
+     "handle": "indira-skirt"
+    },
+    {
+     "id": 10563232760141,
+     "handle": "aria-top-1"
+    },
+    {
+     "id": 10563024912717,
+     "handle": "elyra-body"
+    },
+    {
+     "id": 10563046768973,
+     "handle": "zaria-top"
+    },
+    {
+     "id": 10563055878477,
+     "handle": "livia-skirt"
+    },
+    {
+     "id": 10563040510285,
+     "handle": "livia-top"
+    },
+    {
+     "id": 10652612165965,
+     "handle": "evelisse-limited"
+    },
+    {
+     "id": 10671661482317,
+     "handle": "marisa"
+    },
+    {
+     "id": 10563090907469,
+     "handle": "helia-dress"
+    },
+    {
+     "id": 10643352158541,
+     "handle": "soraya"
+    },
+    {
+     "id": 10664056750413,
+     "handle": "elise"
+    },
+    {
+     "id": 10563094708557,
+     "handle": "asteria-dress"
+    },
+    {
+     "id": 10564863885645,
+     "handle": "phoebe-dress"
+    },
+    {
+     "id": 10714458063181,
+     "handle": "lydia"
+    },
+    {
+     "id": 10644069187917,
+     "handle": "solenne"
+    },
+    {
+     "id": 10584479564109,
+     "handle": "electra-dress"
+    },
+    {
+     "id": 10566045172045,
+     "handle": "astor-kimono"
+    },
+    {
+     "id": 10564896391501,
+     "handle": "rayne-dress"
+    },
+    {
+     "id": 10563075998029,
+     "handle": "calyra-dress"
+    },
+    {
+     "id": 10714445873485,
+     "handle": "melina"
+    },
+    {
+     "id": 10657844953421,
+     "handle": "thalassa-limited"
+    },
+    {
+     "id": 10566166413645,
+     "handle": "coralia-dress"
+    },
+    {
+     "id": 10588786295117,
+     "handle": "copy-2"
+    },
+    {
+     "id": 10564884070733,
+     "handle": "glowen-dress"
+    },
+    {
+     "id": 10566165102925,
+     "handle": "melin-dress"
+    },
+    {
+     "id": 10563128525133,
+     "handle": "thalassa-dress"
+    },
+    {
+     "id": 10563227615565,
+     "handle": "argenta-cape"
+    },
+    {
+     "id": 10566207308109,
+     "handle": "lilu-jumpsuit"
+    },
+    {
+     "id": 10571427971405,
+     "handle": "ariel-siren-limited"
+    },
+    {
+     "id": 10563359539533,
+     "handle": "argenta-kimono"
+    },
+    {
+     "id": 10563404235085,
+     "handle": "elyra-dress"
+    },
+    {
+     "id": 10564825186637,
+     "handle": "aria-kimono"
+    },
+    {
+     "id": 10563110994253,
+     "handle": "nai-dress"
+    },
+    {
+     "id": 10566211600717,
+     "handle": "nola-jumpsuit"
+    },
+    {
+     "id": 10563172696397,
+     "handle": "argenta-jumpsuit"
+    },
+    {
+     "id": 10566385434957,
+     "handle": "neta-top"
+    },
+    {
+     "id": 10563131900237,
+     "handle": "aegea-dress"
+    },
+    {
+     "id": 10559208358221,
+     "handle": "aster-kimono"
+    },
+    {
+     "id": 10566161531213,
+     "handle": "cloe-dress"
+    },
+    {
+     "id": 10563095920973,
+     "handle": "thalia-dress"
+    },
+    {
+     "id": 10563208315213,
+     "handle": "elyra-cape"
+    },
+    {
+     "id": 10563149726029,
+     "handle": "oceane-jumpsuit"
+    },
+    {
+     "id": 10566047891789,
+     "handle": "monique-kimono"
+    },
+    {
+     "id": 10566165856589,
+     "handle": "kathy-dress"
+    },
+    {
+     "id": 10697411199309,
+     "handle": "patricia"
+    },
+    {
+     "id": 10564872208717,
+     "handle": "dore-dress"
+    },
+    {
+     "id": 10566167626061,
+     "handle": "menda-dress"
+    },
+    {
+     "id": 10563145236813,
+     "handle": "zaria-jumpsuit"
+    },
+    {
+     "id": 10566098714957,
+     "handle": "midas-dress"
+    },
+    {
+     "id": 10566130303309,
+     "handle": "byron-dress"
+    },
+    {
+     "id": 10563137044813,
+     "handle": "livia-jumpsuit"
+    },
+    {
+     "id": 10564952752461,
+     "handle": "sonia-dress"
+    },
+    {
+     "id": 10564908613965,
+     "handle": "rayne-pants"
+    },
+    {
+     "id": 10566163464525,
+     "handle": "myriam-dress"
+    },
+    {
+     "id": 10563199992141,
+     "handle": "indira-top"
+    },
+    {
+     "id": 10571365515597,
+     "handle": "nai-limited-dress"
+    },
+    {
+     "id": 10564757815629,
+     "handle": "zoe-kimono"
+    },
+    {
+     "id": 10571285266765,
+     "handle": "phoebe-limited-edition"
+    },
+    {
+     "id": 10563065872717,
+     "handle": "zaria-skirt"
+    },
+    {
+     "id": 10563435102541,
+     "handle": "indy-top"
+    },
+    {
+     "id": 10563290530125,
+     "handle": "ophelia-skirt"
+    },
+    {
+     "id": 10563057189197,
+     "handle": "myra-skirt"
+    },
+    {
+     "id": 10657829552461,
+     "handle": "myrielle"
+    },
+    {
+     "id": 10563437789517,
+     "handle": "zoe-cape"
+    },
+    {
+     "id": 10564934369613,
+     "handle": "zelda-dress"
+    },
+    {
+     "id": 10564754964813,
+     "handle": "livia-kimono"
+    },
+    {
+     "id": 10563189473613,
+     "handle": "ophelia-top"
+    },
+    {
+     "id": 10566049726797,
+     "handle": "zelda-kimono"
+    },
+    {
+     "id": 10566363447629,
+     "handle": "arla-top"
+    },
+    {
+     "id": 10563042214221,
+     "handle": "myra-top-1"
+    },
+    {
+     "id": 10564890132813,
+     "handle": "argenta-dress"
+    },
+    {
+     "id": 10566027510093,
+     "handle": "melissa-top"
+    },
+    {
+     "id": 10563362685261,
+     "handle": "indira-kimono"
+    },
+    {
+     "id": 10563437035853,
+     "handle": "rhia-top"
+    },
+    {
+     "id": 10563436282189,
+     "handle": "opal-top"
+    },
+    {
+     "id": 10566393954637,
+     "handle": "sienna-top"
+    },
+    {
+     "id": 10563049128269,
+     "handle": "nyx-skirt"
+    },
+    {
+     "id": 10566095241549,
+     "handle": "selma-dress"
+    },
+    {
+     "id": 10563044606285,
+     "handle": "s26-1008"
+    },
+    {
+     "id": 10566105825613,
+     "handle": "matilda-dress"
+    },
+    {
+     "id": 10563029533005,
+     "handle": "nyx-top"
+    }
+   ]
+  }
+ ]
+}
