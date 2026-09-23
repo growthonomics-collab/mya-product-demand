@@ -14,7 +14,7 @@
   {
    "id": 10566138757453,
    "handle": "elodie-dress",
-   "popularity_ratio": "6.72",
+   "popularity_ratio": "6.66",
    "merch_tier": "Hero",
    "popularity_trend": "Rising",
    "age_status": "Established",
@@ -23,7 +23,7 @@
   {
    "id": 10814110531917,
    "handle": "marbella-dress",
-   "popularity_ratio": "5.14",
+   "popularity_ratio": "5.15",
    "merch_tier": "Hero",
    "popularity_trend": "New",
    "age_status": "Ramping",
@@ -174,15 +174,6 @@
    "main_collection": "peonies-tops"
   },
   {
-   "id": 10652663251277,
-   "handle": "crystalia",
-   "popularity_ratio": "2.89",
-   "merch_tier": "Strong",
-   "popularity_trend": "Rising",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 8669619781965,
    "handle": "amari-dress",
    "popularity_ratio": "2.87",
@@ -190,6 +181,15 @@
    "popularity_trend": "Rising",
    "age_status": "Established",
    "main_collection": "archive-sale"
+  },
+  {
+   "id": 10652663251277,
+   "handle": "crystalia",
+   "popularity_ratio": "2.87",
+   "merch_tier": "Strong",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10634112041293,
@@ -320,16 +320,7 @@
   {
    "id": 10566159991117,
    "handle": "hilary-dress",
-   "popularity_ratio": "2.38",
-   "merch_tier": "Strong",
-   "popularity_trend": "Steady",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
-   "id": 10697115926861,
-   "handle": "victoria",
-   "popularity_ratio": "2.33",
+   "popularity_ratio": "2.36",
    "merch_tier": "Strong",
    "popularity_trend": "Steady",
    "age_status": "Established",
@@ -343,6 +334,15 @@
    "popularity_trend": "New",
    "age_status": "Ramping",
    "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10697115926861,
+   "handle": "victoria",
+   "popularity_ratio": "2.31",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10833893097805,
@@ -401,7 +401,7 @@
   {
    "id": 10652612165965,
    "handle": "evelisse-limited",
-   "popularity_ratio": "2.10",
+   "popularity_ratio": "2.08",
    "merch_tier": "Strong",
    "popularity_trend": "Steady",
    "age_status": "Established",
@@ -462,15 +462,6 @@
    "main_collection": "peonies-pants"
   },
   {
-   "id": 10559049138509,
-   "handle": "ariel-siren-dress-blue",
-   "popularity_ratio": "1.90",
-   "merch_tier": "Strong",
-   "popularity_trend": "Fading",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 10831635022157,
    "handle": "eira-cape-1",
    "popularity_ratio": "1.89",
@@ -478,6 +469,15 @@
    "popularity_trend": "New",
    "age_status": "New",
    "main_collection": "peonies-tops"
+  },
+  {
+   "id": 10559049138509,
+   "handle": "ariel-siren-dress-blue",
+   "popularity_ratio": "1.88",
+   "merch_tier": "Strong",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10700575211853,
@@ -563,7 +563,7 @@
   {
    "id": 10671661482317,
    "handle": "marisa",
-   "popularity_ratio": "1.77",
+   "popularity_ratio": "1.76",
    "merch_tier": "Strong",
    "popularity_trend": "Rising",
    "age_status": "Established",
@@ -588,15 +588,6 @@
    "main_collection": "peonies-tops"
   },
   {
-   "id": 10566112903501,
-   "handle": "maeva-dress",
-   "popularity_ratio": "1.71",
-   "merch_tier": "Strong",
-   "popularity_trend": "Steady",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens"
-  },
-  {
    "id": 10834708365645,
    "handle": "kalina-dress",
    "popularity_ratio": "1.70",
@@ -604,6 +595,15 @@
    "popularity_trend": "New",
    "age_status": "New",
    "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10566112903501,
+   "handle": "maeva-dress",
+   "popularity_ratio": "1.70",
+   "merch_tier": "Strong",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
   },
   {
    "id": 10644069187917,
@@ -626,18 +626,9 @@
   {
    "id": 10642032361805,
    "handle": "sophia",
-   "popularity_ratio": "1.67",
-   "merch_tier": "Strong",
-   "popularity_trend": "Fading",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
-   "id": 10710349381965,
-   "handle": "nerida",
    "popularity_ratio": "1.66",
    "merch_tier": "Strong",
-   "popularity_trend": "Rising",
+   "popularity_trend": "Fading",
    "age_status": "Established",
    "main_collection": "ss26-sirens-dresses"
   },
@@ -687,6 +678,15 @@
    "main_collection": "archive-sale"
   },
   {
+   "id": 10710349381965,
+   "handle": "nerida",
+   "popularity_ratio": "1.64",
+   "merch_tier": "Strong",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
    "id": 10814122819917,
    "handle": "leandra-dress",
    "popularity_ratio": "1.63",
@@ -725,7 +725,7 @@
   {
    "id": 10566155960653,
    "handle": "greta-dress",
-   "popularity_ratio": "1.61",
+   "popularity_ratio": "1.60",
    "merch_tier": "Strong",
    "popularity_trend": "Fading",
    "age_status": "Established",
@@ -876,15 +876,6 @@
    "main_collection": "peonies-kimono-dress"
   },
   {
-   "id": 10563090907469,
-   "handle": "helia-dress",
-   "popularity_ratio": "1.44",
-   "merch_tier": "Average",
-   "popularity_trend": "Fading",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 10559200788813,
    "handle": "calypso-skirt-pink",
    "popularity_ratio": "1.43",
@@ -892,6 +883,15 @@
    "popularity_trend": "Fading",
    "age_status": "Established",
    "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10563090907469,
+   "handle": "helia-dress",
+   "popularity_ratio": "1.43",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10833843290445,
@@ -919,15 +919,6 @@
    "popularity_trend": "Steady",
    "age_status": "Established",
    "main_collection": "ss26-sirens-kimono-dresses"
-  },
-  {
-   "id": 10786243215693,
-   "handle": "noelle",
-   "popularity_ratio": "1.41",
-   "merch_tier": "Average",
-   "popularity_trend": "New",
-   "age_status": "Ramping",
-   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10670927511885,
@@ -966,6 +957,15 @@
    "main_collection": "ss26-sirens-kimono-dresses"
   },
   {
+   "id": 10786243215693,
+   "handle": "noelle",
+   "popularity_ratio": "1.40",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
    "id": 10834069487949,
    "handle": "paloma-dress",
    "popularity_ratio": "1.38",
@@ -973,15 +973,6 @@
    "popularity_trend": "New",
    "age_status": "New",
    "main_collection": "peonies-dress"
-  },
-  {
-   "id": 10643352158541,
-   "handle": "soraya",
-   "popularity_ratio": "1.38",
-   "merch_tier": "Average",
-   "popularity_trend": "Steady",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10657844953421,
@@ -1000,6 +991,15 @@
    "popularity_trend": "Steady",
    "age_status": "Established",
    "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10643352158541,
+   "handle": "soraya",
+   "popularity_ratio": "1.37",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10559198298445,
@@ -1076,7 +1076,7 @@
   {
    "id": 10633956557133,
    "handle": "lumira",
-   "popularity_ratio": "1.27",
+   "popularity_ratio": "1.26",
    "merch_tier": "Average",
    "popularity_trend": "Fading",
    "age_status": "Established",
@@ -1101,15 +1101,6 @@
    "main_collection": "peonies-dress"
   },
   {
-   "id": 10786210480461,
-   "handle": "rosalie-2",
-   "popularity_ratio": "1.25",
-   "merch_tier": "Average",
-   "popularity_trend": "New",
-   "age_status": "Ramping",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 8151987355929,
    "handle": "juliet-top",
    "popularity_ratio": "1.24",
@@ -1117,6 +1108,15 @@
    "popularity_trend": "New",
    "age_status": "New",
    "main_collection": "archive-sale"
+  },
+  {
+   "id": 10786210480461,
+   "handle": "rosalie-2",
+   "popularity_ratio": "1.24",
+   "merch_tier": "Average",
+   "popularity_trend": "New",
+   "age_status": "Ramping",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10564884070733,
@@ -1290,15 +1290,6 @@
    "main_collection": "archive-sale"
   },
   {
-   "id": 10664056750413,
-   "handle": "elise",
-   "popularity_ratio": "1.13",
-   "merch_tier": "Average",
-   "popularity_trend": "Rising",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 10831722840397,
    "handle": "maristella-cape",
    "popularity_ratio": "1.13",
@@ -1308,11 +1299,11 @@
    "main_collection": "peonies-pants"
   },
   {
-   "id": 10664754151757,
-   "handle": "elaria",
+   "id": 10664056750413,
+   "handle": "elise",
    "popularity_ratio": "1.12",
    "merch_tier": "Average",
-   "popularity_trend": "Steady",
+   "popularity_trend": "Rising",
    "age_status": "Established",
    "main_collection": "ss26-sirens-dresses"
   },
@@ -1324,6 +1315,15 @@
    "popularity_trend": "New",
    "age_status": "New",
    "main_collection": "peonies-pants"
+  },
+  {
+   "id": 10664754151757,
+   "handle": "elaria",
+   "popularity_ratio": "1.11",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10833830773069,
@@ -1407,15 +1407,6 @@
    "main_collection": "ss26-sirens-tops"
   },
   {
-   "id": 10571427971405,
-   "handle": "ariel-siren-limited",
-   "popularity_ratio": "1.06",
-   "merch_tier": "Average",
-   "popularity_trend": "Fading",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens"
-  },
-  {
    "id": 10563246784845,
    "handle": "elyra-pants",
    "popularity_ratio": "1.06",
@@ -1423,6 +1414,15 @@
    "popularity_trend": "Steady",
    "age_status": "Established",
    "main_collection": "ss26-sirens-pants"
+  },
+  {
+   "id": 10571427971405,
+   "handle": "ariel-siren-limited",
+   "popularity_ratio": "1.05",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens"
   },
   {
    "id": 10566211600717,
@@ -1587,15 +1587,6 @@
    "main_collection": "peonies-dress"
   },
   {
-   "id": 10584479564109,
-   "handle": "electra-dress",
-   "popularity_ratio": "0.97",
-   "merch_tier": "Average",
-   "popularity_trend": "Steady",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 10907702198605,
    "handle": "oriana-dress",
    "popularity_ratio": "0.97",
@@ -1603,6 +1594,15 @@
    "popularity_trend": "New",
    "age_status": "New",
    "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10584479564109,
+   "handle": "electra-dress",
+   "popularity_ratio": "0.96",
+   "merch_tier": "Average",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10831714812237,
@@ -1803,15 +1803,6 @@
    "main_collection": "ss26-sirens-skirts"
   },
   {
-   "id": 10563075998029,
-   "handle": "calyra-dress",
-   "popularity_ratio": "0.90",
-   "merch_tier": "Average",
-   "popularity_trend": "Fading",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 10728698184013,
    "handle": "ioli",
    "popularity_ratio": "0.90",
@@ -1837,6 +1828,15 @@
    "popularity_trend": "New",
    "age_status": "Ramping",
    "main_collection": "ss26-sirens-tops"
+  },
+  {
+   "id": 10563075998029,
+   "handle": "calyra-dress",
+   "popularity_ratio": "0.89",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 9101691617613,
@@ -2298,15 +2298,6 @@
    "main_collection": "ss26-sirens-skirts"
   },
   {
-   "id": 10588786295117,
-   "handle": "copy-2",
-   "popularity_ratio": "0.76",
-   "merch_tier": "Average",
-   "popularity_trend": "Fading",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 6552849907811,
    "handle": "angelica-dress",
    "popularity_ratio": "0.75",
@@ -2323,6 +2314,15 @@
    "popularity_trend": "Steady",
    "age_status": "Established",
    "main_collection": "ss26-sirens-jumpsuits"
+  },
+  {
+   "id": 10588786295117,
+   "handle": "copy-2",
+   "popularity_ratio": "0.75",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10563222045005,
@@ -2415,15 +2415,6 @@
    "main_collection": "ss26-sirens-skirts"
   },
   {
-   "id": 10710363537741,
-   "handle": "ione-2",
-   "popularity_ratio": "0.70",
-   "merch_tier": "Average",
-   "popularity_trend": "Rising",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 10663946092877,
    "handle": "layered-silver-1",
    "popularity_ratio": "0.70",
@@ -2442,6 +2433,15 @@
    "main_collection": "peonies-dress"
   },
   {
+   "id": 10710363537741,
+   "handle": "ione-2",
+   "popularity_ratio": "0.69",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
    "id": 10834722324813,
    "handle": "katia-jumsuit",
    "popularity_ratio": "0.69",
@@ -2449,15 +2449,6 @@
    "popularity_trend": "New",
    "age_status": "New",
    "main_collection": "peonies-jumpsuits"
-  },
-  {
-   "id": 10566165102925,
-   "handle": "melin-dress",
-   "popularity_ratio": "0.69",
-   "merch_tier": "Average",
-   "popularity_trend": "Fading",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10564824432973,
@@ -2476,6 +2467,15 @@
    "popularity_trend": "New",
    "age_status": "New",
    "main_collection": "peonies-dress"
+  },
+  {
+   "id": 10566165102925,
+   "handle": "melin-dress",
+   "popularity_ratio": "0.68",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10758774489421,
@@ -2536,17 +2536,8 @@
    "handle": "camelia",
    "popularity_ratio": "0.64",
    "merch_tier": "Average",
-   "popularity_trend": "Steady",
+   "popularity_trend": "Rising",
    "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
-   "id": 10810757415245,
-   "handle": "fiorella-white",
-   "popularity_ratio": "0.64",
-   "merch_tier": "Average",
-   "popularity_trend": "New",
-   "age_status": "Ramping",
    "main_collection": "ss26-sirens-dresses"
   },
   {
@@ -2757,15 +2748,6 @@
    "main_collection": "peonies-dress"
   },
   {
-   "id": 10563131900237,
-   "handle": "aegea-dress",
-   "popularity_ratio": "0.58",
-   "merch_tier": "Average",
-   "popularity_trend": "Fading",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 10563232760141,
    "handle": "aria-top-1",
    "popularity_ratio": "0.58",
@@ -2773,15 +2755,6 @@
    "popularity_trend": "Fading",
    "age_status": "Established",
    "main_collection": "ss26-sirens-tops"
-  },
-  {
-   "id": 10637297090893,
-   "handle": "aurelle",
-   "popularity_ratio": "0.58",
-   "merch_tier": "Average",
-   "popularity_trend": "Rising",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10559164318029,
@@ -2863,6 +2836,24 @@
    "popularity_trend": "Steady",
    "age_status": "Established",
    "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10563131900237,
+   "handle": "aegea-dress",
+   "popularity_ratio": "0.57",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10637297090893,
+   "handle": "aurelle",
+   "popularity_ratio": "0.57",
+   "merch_tier": "Average",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10850840478029,
@@ -2964,15 +2955,6 @@
    "main_collection": "ss26-sirens"
   },
   {
-   "id": 10559098978637,
-   "handle": "s26-5048",
-   "popularity_ratio": "0.55",
-   "merch_tier": "Average",
-   "popularity_trend": "Fading",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 10074213515597,
    "handle": "carmine-dress",
    "popularity_ratio": "0.55",
@@ -2980,6 +2962,15 @@
    "popularity_trend": "Steady",
    "age_status": "Established",
    "main_collection": "archive-sale"
+  },
+  {
+   "id": 10559098978637,
+   "handle": "s26-5048",
+   "popularity_ratio": "0.54",
+   "merch_tier": "Average",
+   "popularity_trend": "Fading",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10635926929741,
@@ -3099,15 +3090,6 @@
    "main_collection": "ss26-sirens"
   },
   {
-   "id": 10566165856589,
-   "handle": "kathy-dress",
-   "popularity_ratio": "0.48",
-   "merch_tier": "Low",
-   "popularity_trend": "Steady",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 10563057189197,
    "handle": "myra-skirt",
    "popularity_ratio": "0.48",
@@ -3115,6 +3097,15 @@
    "popularity_trend": "Fading",
    "age_status": "Established",
    "main_collection": "ss26-sirens-skirts"
+  },
+  {
+   "id": 10566165856589,
+   "handle": "kathy-dress",
+   "popularity_ratio": "0.47",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10524680028493,
@@ -3324,15 +3315,6 @@
    "main_collection": "ss26-sirens-tops"
   },
   {
-   "id": 10566102974797,
-   "handle": "liberty-dress",
-   "popularity_ratio": "0.40",
-   "merch_tier": "Low",
-   "popularity_trend": "Steady",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 10566201803085,
    "handle": "azalea-dress",
    "popularity_ratio": "0.39",
@@ -3358,6 +3340,15 @@
    "popularity_trend": "Rising",
    "age_status": "Established",
    "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10566102974797,
+   "handle": "liberty-dress",
+   "popularity_ratio": "0.39",
+   "merch_tier": "Low",
+   "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10703232729421,
@@ -3459,15 +3450,6 @@
    "main_collection": "ss26-sirens-skirts"
   },
   {
-   "id": 10563103392077,
-   "handle": "myrtle-dress-1",
-   "popularity_ratio": "0.34",
-   "merch_tier": "Low",
-   "popularity_trend": "Fading",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 10007641030989,
    "handle": "odile-top",
    "popularity_ratio": "0.34",
@@ -3482,6 +3464,15 @@
    "popularity_ratio": "0.33",
    "merch_tier": "Low",
    "popularity_trend": "Steady",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
+  },
+  {
+   "id": 10563103392077,
+   "handle": "myrtle-dress-1",
+   "popularity_ratio": "0.33",
+   "merch_tier": "Low",
+   "popularity_trend": "Fading",
    "age_status": "Established",
    "main_collection": "ss26-sirens-dresses"
   },
@@ -3540,15 +3531,6 @@
    "main_collection": "ss26-sirens-kids"
   },
   {
-   "id": 10657650803021,
-   "handle": "rinna",
-   "popularity_ratio": "0.32",
-   "merch_tier": "Low",
-   "popularity_trend": "Rising",
-   "age_status": "Established",
-   "main_collection": "ss26-sirens-dresses"
-  },
-  {
    "id": 10564592664909,
    "handle": "shona-top",
    "popularity_ratio": "0.32",
@@ -3583,6 +3565,15 @@
    "popularity_trend": "Fading",
    "age_status": "Established",
    "main_collection": "ss26-sirens"
+  },
+  {
+   "id": 10657650803021,
+   "handle": "rinna",
+   "popularity_ratio": "0.31",
+   "merch_tier": "Low",
+   "popularity_trend": "Rising",
+   "age_status": "Established",
+   "main_collection": "ss26-sirens-dresses"
   },
   {
    "id": 10564952752461,
@@ -5999,10 +5990,6 @@
      "handle": "argenta-jumpsuit"
     },
     {
-     "id": 10810757415245,
-     "handle": "fiorella-white"
-    },
-    {
      "id": 10633912582477,
      "handle": "serina"
     },
@@ -6607,10 +6594,6 @@
     {
      "id": 10566165102925,
      "handle": "melin-dress"
-    },
-    {
-     "id": 10810757415245,
-     "handle": "fiorella-white"
     },
     {
      "id": 10563404235085,
