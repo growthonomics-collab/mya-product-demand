@@ -225,14 +225,38 @@ footer .fm{font-family:var(--sans);font-weight:600;letter-spacing:.34em;text-tra
 #lock button{width:100%;font-family:"Jost","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.1em;text-transform:uppercase;background:#1A1B18;color:#fff;border:0;padding:12px;cursor:pointer}
 #lock .err{color:#a33d2f;font-size:13px;min-height:18px;margin-top:10px}
 body.locked > :not(#lock){visibility:hidden}
+
+.periodbar{background:var(--surface-2);border-bottom:1px solid var(--line);position:sticky;top:64px;z-index:29}
+.pb-row{display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap;padding:12px 0 6px}
+.pb-summary{font-size:13px;color:var(--ink-2);align-self:center;margin-left:auto;text-align:right}
+.pb-summary b{color:var(--ink);font-weight:500}
+.pb-chart{padding-bottom:8px}
+.pb-chart svg{width:100%;height:70px}
+.pbar{fill:var(--line-strong);cursor:pointer}.pbar.in{fill:var(--taupe)}.pbar:hover{fill:var(--accent-ink)}
+.thumb-x{display:inline-flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:18px;color:var(--ink-3)}
+.noimg{display:flex;align-items:center;justify-content:center;height:100%;padding:12px;text-align:center;font-family:var(--serif);font-size:18px;color:var(--ink-3)}
+.chip.gone{background:var(--surface-2);color:var(--ink-3);border-style:dashed}
+.soldout.gone{background:var(--ink);color:var(--bg)}
+.legend .l-c::before{background:var(--c)}
+.seasons{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.season ol{margin:0;padding:0;list-style:none}
+.season li{display:flex;align-items:center;gap:9px;padding:5px 0;border-bottom:1px dashed var(--line);font-size:12.5px}
+.season li:last-child{border-bottom:0}
+.season li .thumb{width:32px;height:40px}
+.season li a{font-family:var(--serif);font-size:14px;text-decoration:none;flex:1;min-width:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.2}
+.season li .qn{color:var(--ink-2);white-space:nowrap;font-size:11.5px}
+.season figcaption{flex-direction:column;align-items:flex-start;gap:2px}
+.season figcaption h3 a{text-decoration:none}.season figcaption h3 a:hover{text-decoration:underline}
+@media (max-width:700px){.periodbar{position:static}.pb-summary{margin-left:0;text-align:left}}
 </style>
 </head><body>
 <div id="lock"><form id="lockform" autocomplete="off"><div class="wm">MYA</div><h2>Product demand dashboard</h2><input id="pw" type="password" placeholder="Password" autofocus aria-label="Password"><button type="submit">Open dashboard</button><div class="err" id="lockerr"></div></form></div>
-<div class="topbar">Product demand dashboard for myacollection.com, period 25 June to 22 September 2026. Built by <a href="https://growth-onomics.com" target="_blank" rel="noopener">Growth-onomics</a>.</div>
+<div class="topbar">Product demand dashboard for myacollection.com, every product with traffic since August 2023, scored for any period you pick. Built by <a href="https://growth-onomics.com" target="_blank" rel="noopener">Growth-onomics</a>.</div>
 <div class="sitehead"><div class="wrap">
   <a class="wordmark" href="#top">MYA</a>
   <nav class="tabs" role="tablist" aria-label="Views">
     <button role="tab" id="tab-rank" aria-selected="true" aria-controls="p-rank">Rankings</button>
+    <button role="tab" id="tab-seasons" aria-selected="false" aria-controls="p-seasons">Seasons</button>
     <button role="tab" id="tab-all" aria-selected="false" aria-controls="p-all">Products</button>
     <button role="tab" id="tab-map" aria-selected="false" aria-controls="p-map">Placement</button>
     <button role="tab" id="tab-hubs" aria-selected="false" aria-controls="p-hubs">Collections</button>
@@ -241,11 +265,20 @@ body.locked > :not(#lock){visibility:hidden}
   </nav>
   <a class="headcta" href="#p-method" id="headcta">The method</a>
 </div></div>
+<div class="periodbar"><div class="wrap">
+  <div class="pb-row">
+    <label class="ctl">Period<select id="preset"></select></label>
+    <label class="ctl">From<select id="mfrom"></select></label>
+    <label class="ctl">To<select id="mto"></select></label>
+    <div class="pb-summary" id="pbsum"></div>
+  </div>
+  <div class="pb-chart" id="pbchart" title="Product page views per month. Click a month to start a range, click another to end it."></div>
+</div></div>
 <section class="hero" id="top">
   <div class="wrap">
     <div class="eyebrow">MYA Collection · myacollection.com</div>
     <h1><em>Demand</em> Made Visible</h1>
-    <p class="sub">Which pieces customers actually look for inside each collection, ranked from GA4 and Search Console. Every product carries a Popularity Ratio (1.00 = an average product of its collection) that the Shopify store can sort, badge and link by.</p>
+    <p class="sub">Which pieces customers actually look for inside each collection, in any period since August 2023, ranked from GA4 and Search Console. Every product carries a Popularity Ratio for the chosen period (1.00 = an average product of its collection) that the Shopify store can sort, badge and link by.</p>
     <div class="totals" id="totals"></div>
   </div>
 </section>
@@ -255,11 +288,11 @@ body.locked > :not(#lock){visibility:hidden}
       <div>
         <div class="eyebrow" style="color:var(--accent-ink)">Portfolio matrix</div>
         <h2 style="margin-top:6px">Where every piece sits, BCG style</h2>
-        <p>The classic growth-share matrix, filled with our own two numbers. Share = the Popularity Ratio in the product's main collection (1.00 = collection average). Growth = momentum, the 90-day ratio divided by the 12-month ratio (1.00 = holding its position). Newcomers with no 12-month history, which this season means the whole House of Peonies drop, are question marks by definition.</p>
+        <p>Share = the Popularity Ratio in the product's main collection for the chosen period (1.00 = collection average). Growth = momentum, the ratio in this period divided by the ratio in the period of equal length just before it (1.00 = holding its position). Products that entered during the period are question marks by definition.</p>
       </div>
       <div class="controls">
         <label class="ctl">Collection<select id="bcghub"><option value="">All collections</option></select></label>
-        <label class="ctl">Size dots by<select id="bcgsize"><option value="views">Page views</option><option value="clicks">Organic clicks</option><option value="atc">Add-to-cart</option><option value="purch">Purchases</option><option value="none">Same size</option></select></label>
+        <label class="ctl">Size dots by<select id="bcgsize"><option value="V">Page views</option><option value="K">Organic clicks</option><option value="A">Add-to-cart</option><option value="B">Purchases</option><option value="none">Same size</option></select></label>
       </div>
     </div>
     <div class="bcg">
@@ -272,18 +305,17 @@ body.locked > :not(#lock){visibility:hidden}
 <section class="formula-top" aria-label="The formula">
   <div class="ft-main">
     <div class="eyebrow">The formula</div>
-    <div class="formula" style="margin:8px 0 6px">Demand Share % = 100 × [ 0.35 × Views ÷ ΣViews(collection) + 0.25 × Users ÷ ΣUsers(collection) + 0.15 × Engaged sessions ÷ ΣEngaged(collection) + 0.15 × Organic clicks ÷ ΣClicks(collection) + 0.10 × Add-to-cart ÷ ΣATC(collection) ]<br>Views and Users are recency-weighted: the last 30 days count double against days 31 to 90<br>Popularity Ratio = Demand Share % × Products in collection ÷ 100<br>Newcomers (under 90 days on site): Ratio = (real views × own ratio + 100 × 1.50) ÷ (real views + 100)<br>12-month check = same share on 12 months of GA4 (0.45 Views + 0.35 Users + 0.20 Engaged sessions); Trend = 90-day ratio ÷ 12-month ratio</div>
-    <p class="small muted">Each product is scored against the other products actually listed in the same Shopify collection (membership read from the store's own collection listings, <span id="ncoll"></span> collections). Ratio 1.00 = an average product of that collection; 3.00 and above = Hero (featured), 1.50 to 2.99 = Strong (first rows), 0.50 to 1.49 = Average (default order), under 0.50 = Low (back of the grid). Engaged sessions carry the engagement rate into the score, so a page people bounce from earns less than one they stay on. The 12-month column shows whether the 90-day position is new or established: Rising = 90-day ratio at least 25% above the 12-month ratio, Fading = at least 20% below. Sources: GA4 Pages and screens (30 days, 90 days and 12 months), GA4 Ecommerce items, Search Console landing pages (through the GA4 link).</p>
+    <div class="formula" style="margin:8px 0 6px">Demand Share % = 100 × [ 0.35 × Views ÷ ΣViews(collection) + 0.25 × Users ÷ ΣUsers(collection) + 0.15 × Engaged sessions ÷ ΣEngaged(collection) + 0.15 × Organic clicks ÷ ΣClicks(collection) + 0.10 × Add-to-cart ÷ ΣATC(collection) ], all summed over the chosen months<br>Popularity Ratio = Demand Share % × Products in collection ÷ 100<br>Products that entered during the period: signals scaled to the full period, then Ratio = (real views × own ratio + 100 × 1.50) ÷ (real views + 100)<br>Momentum = Ratio this period ÷ Ratio in the equal-length period before it</div>
+    <p class="small muted">Each product is scored against the other products in the same collection in that period: the products the collection lists on the store today, plus every product that GA4 saw being opened from that collection page (URL /collections/…/products/…) during the period. That is how a collection can be ranked for a season whose products have since left the store. Ratio 1.00 = an average product of that collection; 3.00 and above = Hero, 1.50 to 2.99 = Strong, 0.50 to 1.49 = Average, under 0.50 = Low. Organic clicks exist from June 2025 (Search Console keeps 16 months); for earlier periods that weight is redistributed.</p>
   </div>
   <div class="ft-side">
-    <div class="eyebrow">Where a product stands when it enters after the formula</div>
+    <div class="eyebrow">Reading a period</div>
     <ol class="mini">
-      <li><b>Day 1: ratio 1.50, label New.</b> With no views the prior is all there is: first rows of its collection, no Hero slot, no risk of the back of the grid.</li>
-      <li><b>Every day after: the prior fades as views arrive.</b> Its signals are scaled to a full window and blended with the prior in proportion to its real views: at 100 views it is halfway to its own performance, at 1,000 views the prior is gone. A strong launch shows in days, a weak one drifts down gently.</li>
-      <li><b>Day 90 onwards: the plain formula.</b> Launch date comes from the Shopify publish date, checked against GA4 (a republished product with earlier history is treated as established).</li>
+      <li><b>Pick a season or a custom range.</b> Every tab recomputes: rankings, tiers, matrix, collections, attributes. Nothing is pre-baked.</li>
+      <li><b>Products no longer on the store are included</b> and tagged "Not on site", so past seasons show what really sold attention then, not only what survived.</li>
+      <li><b>Stock is today's stock.</b> A sold-out tag means sold out on the crawl date, whatever period you look at.</li>
     </ol>
     <p class="small muted" id="newstats"></p>
-    <a href="#p-method" class="small" id="newlink">Full rules and the launch checklist</a>
   </div>
 </section>
 
@@ -291,7 +323,7 @@ body.locked > :not(#lock){visibility:hidden}
   <div class="panel-head">
     <div>
       <h2>Most popular pieces per collection</h2>
-      <p>Pick any collection page on the store. Products are ranked by Demand Share, the share of that collection's page views, users, engaged sessions, organic clicks and add-to-carts that each product captures. Use the top rows to decide featured products, collection ordering and internal links.</p>
+      <p>Pick a collection (or a product type). Products are ranked by Demand Share for the chosen period: the share of that collection's page views, users, engaged sessions, organic clicks and add-to-carts each product captured. The timeline below shows how the top pieces moved month by month across the whole history.</p>
     </div>
     <div class="controls">
       <label class="ctl">Find a collection<input id="hubq" type="search" placeholder="type part of the name, e.g. sirens"></label>
@@ -308,36 +340,51 @@ body.locked > :not(#lock){visibility:hidden}
       <div id="chart"></div>
     </figure>
     <figure>
-      <figcaption><h3>How concentrated this collection is</h3><span>share of each signal taken by the listed products</span></figcaption>
-      <div id="mixchart"></div>
-      <p class="small muted" id="mixnote" style="margin-top:10px"></p>
+      <figcaption><h3>Month by month</h3><span>page views of the top 8 in this collection, whole history</span></figcaption>
+      <div id="timeline"></div>
+      <div class="legend" id="tlegend" style="margin-top:8px"></div>
     </figure>
   </div>
   <h3 style="margin:30px 0 14px">Top of the collection, as it would look on the shop grid</h3>
   <div class="cards" id="topcards"></div>
   <h3 style="margin:26px 0 12px">Ranked table</h3>
   <div class="tablewrap"><table id="ranktable"></table></div>
-  <p class="small muted" style="margin-top:8px">Add-to-cart and purchases come from the GA4 items report (item name matched to the product), so quick-adds from collection pages are attributed to the product, not to the collection page. Stock status is read from the live store at build time: a Hero product that is sold out is demand the store cannot currently serve.</p>
+  <p class="small muted" style="margin-top:8px">Add-to-cart and purchases come from the GA4 items report (item name matched to the product; sizes merged) where a match exists, otherwise from the product page. Stock status is today's, read from the live store at build time.</p>
+</section>
+
+<section role="tabpanel" id="p-seasons" aria-labelledby="tab-seasons" hidden>
+  <div class="panel-head">
+    <div>
+      <h2>What was popular, season by season</h2>
+      <p>The top pieces of each season, scored inside the collection or product type you pick, so you can see how taste moved from Wild Love to Sirens. Ratio is the Popularity Ratio for that season. Click a season heading to load it into the period bar.</p>
+    </div>
+    <div class="controls">
+      <label class="ctl">Score inside<select id="seahub"></select></label>
+      <label class="ctl">Show<select id="seatop"><option value="5">Top 5</option><option value="10" selected>Top 10</option><option value="15">Top 15</option></select></label>
+    </div>
+  </div>
+  <div class="seasons" id="seasons"></div>
+  <figure style="margin-top:22px"><figcaption><h3>Product page views by month</h3><span>all products, whole history; seasons shaded</span></figcaption><div id="seasonchart"></div></figure>
 </section>
 
 <section role="tabpanel" id="p-all" aria-labelledby="tab-all" hidden>
   <div class="panel-head">
     <div>
       <h2>Every product and where it goes</h2>
-      <p>Every live product in the catalogue with its main collection, Popularity Ratio (1.00 = an average product of its collection), merch tier, rank, stock status, and every other collection it belongs to with its rank inside it. Search, filter, and click a column heading to sort.</p>
+      <p>Every product with traffic in the chosen period, live or not, with its main collection, Popularity Ratio, merch tier, rank, momentum, today's stock and every other collection it was seen in. Search, filter, and click a column heading to sort.</p>
     </div>
   </div>
   <div class="controls filters" id="filters">
     <label class="ctl">Search<input id="q" type="search" placeholder="name or URL"></label>
+    <label class="ctl">On site today<select id="f-live"><option value="">All</option><option value="yes">Live on the store</option><option value="no">Not on site any more</option></select></label>
     <label class="ctl">Main collection<select id="f-hub_label"><option value="">All</option></select></label>
-    <label class="ctl">Tier<select id="f-tier"><option value="">All</option><option>Hero</option><option>Strong</option><option>Average</option><option>Low</option><option>New</option><option>No data</option></select></label>
-    <label class="ctl">Age<select id="f-status"><option value="">All</option><option>Established</option><option>Ramping</option><option>New</option><option>No data</option></select></label>
-    <label class="ctl">Trend<select id="f-trend"><option value="">All</option><option>Rising</option><option>Steady</option><option>Fading</option><option>New</option></select></label>
+    <label class="ctl">Tier<select id="f-tier"><option value="">All</option><option>Hero</option><option>Strong</option><option>Average</option><option>Low</option><option>New</option></select></label>
+    <label class="ctl">Momentum<select id="f-trend"><option value="">All</option><option>Rising</option><option>Steady</option><option>Fading</option><option>New</option></select></label>
     <label class="ctl">Type<select id="f-type"><option value="">All</option></select></label>
-    <label class="ctl">Season<select id="f-season"><option value="">All</option></select></label>
+    <label class="ctl">Season tag<select id="f-season"><option value="">All</option></select></label>
     <label class="ctl">Colour<select id="f-colour"><option value="">All</option></select></label>
     <label class="ctl">Price<select id="f-price_band"><option value="">All</option></select></label>
-    <label class="ctl">Stock<select id="f-stock_band"><option value="">All</option></select></label>
+    <label class="ctl">Stock today<select id="f-stock_band"><option value="">All</option></select></label>
   </div>
   <p class="small muted" id="allcount" style="margin:12px 0 8px"></p>
   <div class="tablewrap"><table id="alltable"></table></div>
@@ -348,7 +395,7 @@ body.locked > :not(#lock){visibility:hidden}
   <div class="panel-head">
     <div>
       <h2>Placement map</h2>
-      <p>How each collection's products split into merch tiers. Hero (ratio 3.00 and above) gets the featured slots and the popular badge, Strong (1.50 to 2.99) fills the first rows, Average (0.50 to 1.49) is the default order, Low (under 0.50) goes to the back of the grid or gets reviewed. New is the provisional 1.50 for products with under 100 views since launch. Hover a bar for counts.</p>
+      <p>How each collection's products split into merch tiers for the chosen period. Hero (ratio 3.00 and above) gets the featured slots and the popular badge, Strong (1.50 to 2.99) fills the first rows, Average (0.50 to 1.49) is the default order, Low (under 0.50) goes to the back of the grid or gets reviewed. New is the provisional 1.50 for products that entered during the period with under 100 views. Hover a bar for counts.</p>
     </div>
   </div>
   <div id="mapgroups"></div>
@@ -358,24 +405,22 @@ body.locked > :not(#lock){visibility:hidden}
   <div class="panel-head">
     <div>
       <h2>Collection page demand</h2>
-      <p>How much traffic each collection family attracts on its own collection pages (not the products inside). Page views from GA4, organic clicks from Search Console. The bars show which families deserve more merchandising attention and which collection pages are the entry points from Google.</p>
+      <p>Traffic to the collection pages themselves in the chosen period (not the products inside). Page views from GA4, organic clicks from Search Console where available. Starred rows are in today's site menu.</p>
     </div>
   </div>
   <figure>
-    <figcaption><h3>Collection page views by family</h3><span>GA4 views, 90 days</span></figcaption>
+    <figcaption><h3>Collection page views</h3><span>top 25 collection pages in the period</span></figcaption>
     <div id="hubchart"></div>
   </figure>
-  <div class="hublist" id="hublist"></div>
-  <h3 style="margin:30px 0 10px">Every collection page with traffic</h3>
-  <p class="small muted" style="margin-bottom:12px" id="navnote"></p>
+  <h3 style="margin:30px 0 10px">Every collection page with traffic in the period</h3>
   <div class="tablewrap"><table id="navtable" style="min-width:900px"></table></div>
 </section>
 
 <section role="tabpanel" id="p-attr" aria-labelledby="tab-attr" hidden>
   <div class="panel-head">
     <div>
-      <h2>What MYA shoppers look at</h2>
-      <p>Share of product page views by attribute, read from the Shopify catalogue (product type, colour option, price, season tag and live stock). Each chart is a share of the products where the attribute is known.</p>
+      <h2>What MYA shoppers looked at</h2>
+      <p>Share of product page views in the chosen period by attribute. Product type is known for every product (from the catalogue, or from the URL for products no longer on the store). Colour, price, season tag and stock are known for live products only.</p>
     </div>
   </div>
   <div class="attrgrid" id="attrgrid"></div>
@@ -385,331 +430,331 @@ body.locked > :not(#lock){visibility:hidden}
 <section role="tabpanel" id="p-method" aria-labelledby="tab-method" hidden>
   <div class="method">
     <h2 style="margin-top:0">The formula</h2>
-    <p>Every product is scored inside its collection, never against the whole store, so a strong skirt is not buried under dresses. The score is a Demand Share: the percentage of the collection's total demand that one product captures. Shares inside a collection add up to 100.</p>
-    <div class="formula">Demand Share (product, collection) =<br>
+    <p>Every product is scored inside its collection for the chosen months, never against the whole store, so a strong skirt is not buried under dresses. The score is a Demand Share: the percentage of the collection's total demand in the period that one product captures. Shares inside a collection add up to 100.</p>
+    <div class="formula">Demand Share (product, collection, period) =<br>
 &nbsp;&nbsp;0.35 × Views(product) / Σ Views(collection)<br>
 &nbsp;+ 0.25 × Users(product) / Σ Users(collection)<br>
 &nbsp;+ 0.15 × Engaged sessions(product) / Σ Engaged sessions(collection)<br>
 &nbsp;+ 0.15 × Organic clicks(product) / Σ Organic clicks(collection)<br>
 &nbsp;+ 0.10 × Add-to-cart(product) / Σ Add-to-cart(collection)<br>
-&nbsp;× 100<br><br>Engaged sessions = GA4 sessions over 10 seconds, with a key event, or with 2+ page views</div>
+&nbsp;× 100, every term summed over the months in the period</div>
     <table class="wtable"><thead><tr><th>Signal</th><th>Source</th><th class="n">Weight</th><th>Why</th></tr></thead><tbody>
-      <tr><td>Page views</td><td>GA4 · Pages and screens</td><td class="n">35%</td><td>Raw interest. Counts repeat looks, which is how people shop for occasion wear.</td></tr>
-      <tr><td>Active users</td><td>GA4 · Pages and screens</td><td class="n">25%</td><td>Breadth of interest. Stops one visitor refreshing a page from inflating it.</td></tr>
-      <tr><td>Engaged sessions</td><td>GA4 · Pages and screens</td><td class="n">15%</td><td>Quality of interest. A product people stay on, scroll and click earns more than one they bounce from.</td></tr>
-      <tr><td>Organic clicks</td><td>Search Console (GA4 link) · Landing pages</td><td class="n">15%</td><td>Demand from Google, independent of where the store links internally. On this store most organic clicks land on collection pages, so the weight is redistributed in collections with no product-level clicks.</td></tr>
-      <tr><td>Add-to-cart</td><td>GA4 · Ecommerce items</td><td class="n">10%</td><td>Purchase intent. Low weight because sold-out products cannot be added to cart, which would otherwise punish the most wanted pieces.</td></tr>
+      <tr><td>Page views</td><td>GA4 · Pages and screens, by month</td><td class="n">35%</td><td>Raw interest. Counts repeat looks, which is how people shop for occasion wear.</td></tr>
+      <tr><td>Active users</td><td>GA4 · Pages and screens, by month</td><td class="n">25%</td><td>Breadth of interest. Monthly users are summed over the period, so a user active in two months counts twice, equally for every product.</td></tr>
+      <tr><td>Engaged sessions</td><td>GA4 · Pages and screens, by month</td><td class="n">15%</td><td>Quality of interest. A product people stay on, scroll and click earns more than one they bounce from.</td></tr>
+      <tr><td>Organic clicks</td><td>Search Console (GA4 link) · Landing pages, by month</td><td class="n">15%</td><td>Demand from Google. Available from June 2025 (Search Console keeps 16 months). In earlier periods, or in collections with no product-level clicks, the weight is redistributed.</td></tr>
+      <tr><td>Add-to-cart</td><td>GA4 · Ecommerce items, by month</td><td class="n">10%</td><td>Purchase intent. Low weight because sold-out products cannot be added to cart.</td></tr>
     </tbody></table>
-    <p style="margin-top:12px">If a collection has no data for a signal (for example no organic clicks yet), that weight is dropped and the others are rescaled, so the shares still add up to 100.</p>
+    <p style="margin-top:12px">If a collection has no data for a signal in the period, that weight is dropped and the others are rescaled, so the shares still add up to 100.</p>
 
-    <h3>Reading the number</h3>
-    <p>A Demand Share of 6.5 means that product captures 6.5% of everything the collection's shoppers do. Inside a collection of 53 dresses the average product sits at 1.9, so anything above 6 is a hero piece. Compare shares within a collection only; a 30% share in the 8-product pants range is not the same as 30% in Sirens dresses.</p>
-    <p>Purchases are shown but not scored: <span id="purchn"></span> purchases across the period are enough for a tie-break and for checking that a popular product also sells, not for ranking a 459-product catalogue.</p>
+    <h3>Who is in a collection, for a past period</h3>
+    <p>Shopify only knows today's membership. For any period the collection's members are the products it lists today plus every product that GA4 saw opened from that collection page during the period (the store's URLs carry the collection: /collections/ss26-sirens-dresses/products/elodie-dress). A product that has since been unpublished still appears in the seasons it was sold, tagged "Not on site". The same rule builds the product-type rankings (all dresses, all tops), where the type of an old product is read from its URL.</p>
 
-    <h3>Engagement rate on its own</h3>
-    <p>The tables also show each product's engagement rate. Site-wide, product pages run at about <span id="er-site"></span> engaged sessions, against <span id="er-all"></span> for the site as a whole. Read it as a quality check next to the ratio: a Hero product with an engagement rate well under the collection average is being clicked on but not liked (price, imagery or a mismatch with the listing it came from), and a Low product with a very high engagement rate is a candidate for better placement.</p>
+    <h3>Products that entered during the period</h3>
+    <p>A product first seen in the middle of the period has fewer months to collect views than its neighbours. Its signals are scaled to the full period (× months in period ÷ months since first seen), then blended with a prior of 1.50 in proportion to its real views: (views × own ratio + 100 × 1.50) ÷ (views + 100). With under 100 real views it stays at 1.50 and is labelled New. This replaces the launch-date rule of the first version and works for any period.</p>
+
+    <h3>Momentum, and the seasonal trap</h3>
+    <p>Momentum compares the product's ratio in the chosen period with its ratio in the period of equal length immediately before it (for Mar to Aug 2026 that is Sep 2025 to Feb 2026). Rising is at least 25% up, Fading at least 20% down, Steady is between, New means it had no ratio before. Because the comparison period is usually the opposite season, a summer dress fading against a winter period is normal; use the Seasons tab and compare like with like (SS26 against SS25) before drawing conclusions.</p>
 
     <h2>Stock, and why it changes the reading</h2>
     <p id="stocktext"></p>
-
-    <h2>Collections, not URL words</h2>
-    <p>Shopify already knows which products belong to which collection. The <span id="ncoll2"></span> collections on the store were read from the store's own collection listings, so a product is ranked inside the collections that actually list it, in the same order the customer sees. Each product has a main collection for its headline ratio: the season sub-collection in the menu (for example Sirens · Dresses) when it has one, otherwise the season root, otherwise the largest collection it belongs to.</p>
-    <p>Three kinds of collection appear in the Rankings selector: the menu collections (starred), the wedding and christening landing pages that exist for Google rather than the menu, and tag, drop and older collections that still carry traffic. Collection pages that have views but no live products (last season's drops, swimwear) are listed under Collections with their traffic only.</p>
-
-    <h2>Recency and the 12-month check</h2>
-    <p>Views and users are recency-weighted with a two-step rule: the last 30 days count double against days 31 to 90, normalised back to the 90-day scale. A product rising this month therefore shows now rather than at the next quarterly refresh. The 12-month column is the same share formula over 12 months of GA4 (23 September 2025 to 22 September 2026) using views, users and engaged sessions; Search Console and add-to-cart are not part of it because the organic export covers the current period only.</p>
-    <p>The Trend flag compares the two: Rising means the 90-day ratio is at least 25% above the 12-month ratio, Fading means at least 20% below, Steady is anything between, New means it has 90-day data but no earlier history. Remember the calendar when reading Fading: the 12 months include the wedding and christening season peak (spring and early summer), the 90 days run from late June to late September, so a summer occasion dress can look like it is fading in September when it is simply between seasons.</p>
 
     <h2>Sources and coverage</h2>
     <ul id="coverage" style="margin:0 0 12px;padding-left:20px"></ul>
 
     <h2>Refreshing the data</h2>
     <ol class="steps">
-      <li>GA4 → Reports → Engagement → Pages and screens, dimension Page path and screen class. Customise the report (pencil) and add Sessions, Engaged sessions, Engagement rate, Add to carts and Ecommerce purchases, Apply. Export three date ranges: last 30 days, last 90 days, last 12 months (Share → Download CSV).</li>
-      <li>GA4 → Reports → Monetization → Ecommerce purchases (Item name), last 90 days, Download CSV.</li>
-      <li>GA4 → Reports → Search Console → Google organic search traffic (Landing page + query string), last 90 days, Download CSV.</li>
-      <li>Run the build script. It re-crawls the store's collections and products (Shopify's public collections.json and products.json), recomputes Demand Share and regenerates this page with the current stock status.</li>
-    </ol>
-
-    <h2 id="newproduct">When a new product enters the store</h2>
-    <p>A product that goes live after the formula has run has no history, so a plain share-of-collection score would give it close to 0 and push it to the back of its collection. That is the wrong signal: no data means unknown, not unpopular. The scoring handles this itself. It reads each product's launch date from Shopify (published_at), checks it against GA4 (a republished product with earlier views is treated as established), and applies the three-stage rule below before ranking.</p>
-    <h3>The cold-start rule (built into the score)</h3>
-    <table class="wtable"><thead><tr><th>Age on site</th><th>Ratio used</th><th>Where it goes</th></tr></thead><tbody>
-      <tr><td>0 to 30 days</td><td class="n">1.50 (provisional)</td><td>Strong tier: first rows of its collection, "New" label, never a Hero slot or the popular badge.</td></tr>
-      <tr><td>30 to 89 days</td><td class="n">Scored, scaled</td><td>Its views, users, engaged sessions, clicks and add-to-carts are multiplied by 90 ÷ days live, then blended with the 1.50 prior in proportion to real views. With under 100 real views the sample is too small: it stays at 1.50 and New.</td></tr>
-      <tr><td>90 days and over</td><td class="n">Scored normally</td><td>Same rules as every other product from the next refresh onwards.</td></tr>
-    </tbody></table>
-    <p id="newnow"></p>
-    <h3>Launch checklist</h3>
-    <ol class="steps">
-      <li>Assign it to its season root and its type sub-collection on day one (for example House of Peonies FW27 and Peonies · Dresses). The scoring ranks it only inside the collections that list it.</li>
-      <li>Set the provisional ratio of 1.50 and the "New" flag in the product metafields so the collection sort picks it up immediately.</li>
-      <li>Give it two internal links from the collection it belongs to (collection description or a "New in" block) so it collects organic clicks from the start.</li>
-      <li>At day 30 run the score. Hero or Strong: move it into the earned slot and drop the "New" label. Average or Low: it keeps the default position, and the merchandising question becomes price, imagery or duplication with an existing best seller.</li>
+      <li>GA4 → Reports → Engagement → Pages and screens. Add the metrics Sessions, Engaged sessions, Add to carts, Ecommerce purchases; secondary dimension Month; filter Page path contains "/products/". Export one CSV per calendar year (the export is capped at 100,000 rows). Repeat with the filter "/collections/".</li>
+      <li>GA4 → Monetization → Ecommerce purchases (Item name), secondary dimension Month, one CSV per year.</li>
+      <li>GA4 → Search Console → Google organic search traffic (Landing page), one CSV per month (this report does not accept the Month dimension).</li>
+      <li>Drop the files in build/hist, run build/crawl.py (catalogue and stock), build/build_history.py and build/build_page.py. The Shopify sort package (build/build_shopify.py) still runs on the 90-day view, which is the one that should drive the store's order.</li>
     </ol>
 
     <h2>Using it on the store</h2>
     <ol class="steps">
-      <li>Collection ordering. Put the top five Demand Share products first on each collection page (Shopify manual sort, or a metafield sort through an app). Revisit monthly during a launch, quarterly otherwise.</li>
-      <li>Internal linking. From each collection page, link to its top three products in the collection description, and from those products back to the collection.</li>
-      <li>Stock first. Filter Products by Stock = Sold out and Tier = Hero or Strong: these are the pieces to restock, re-cut or replace with the closest in-stock alternative, and the pages to add a back-in-stock signup to.</li>
-      <li>Merchandising gaps. Where the Collections tab shows a collection page with strong views but its products carry low Demand Share, the page is sending traffic to pieces people do not want to look at. Refresh the selection there first.</li>
+      <li>Collection ordering: use the last 90 days (the default period) and the shopify/ package in the repo. Seasons are for planning, the current period is for sorting.</li>
+      <li>Buying and re-cuts: open the season you are planning against (SS26 for next summer), filter Products by "Not on site" to see what sold attention and is gone, and by "Sold out" for what is still listed but cannot sell.</li>
+      <li>Merchandising gaps: in Collections, a collection page with strong views whose products carry low Demand Share is sending traffic to pieces people do not want to look at. Refresh the selection there first.</li>
     </ol>
   </div>
 </section>
 
-<footer><div class="fm">MYA</div>Data: GA4 property MYA Collection (347705989) with the Search Console link, exported 23 September 2026; catalogue and stock from myacollection.com on the same day. Built by Growth-onomics.</footer>
+<footer><div class="fm">MYA</div>Data: GA4 property MYA Collection (347705989) with the Search Console link, monthly exports August 2023 to 23 September 2026; catalogue and stock from myacollection.com on 23 September 2026. Built by Growth-onomics.</footer>
 </div>
 <div class="tt" id="tt"></div>
 
 <script id="data" type="application/json"></script>
-<script id="enc" type="application/octet-stream" data-salt="kZmTRfBUNJopQz+yln4tWA==" data-iv="vV6lUwVjF9yBZiaI" data-iter="200000"></script>
-<script src="data.js"></script>
+<script id="enc" type="application/octet-stream" data-salt="0+22CM5DkR8z1jVS2HoS2g==" data-iv="zl8LPiXu1qKA4Tdy" data-iter="200000"></script>
+<script src="data1.js"></script><script src="data2.js"></script>
 <script>
 async function boot(){
 const D = JSON.parse(document.getElementById('data').textContent);
+const M = D.months, NM = M.length;
 const fmt = n => Math.round(n).toLocaleString('en-GB');
 const eur = n => '€' + fmt(n);
-const PC = D.product_cols; const P = {}; const PL = D.products.map(a => { const o = {}; PC.forEach((k, i) => o[k] = a[i]); o.url = 'https://myacollection.com/products/' + o.slug; P[o.pid] = o; return o; });
-const HUB = {}; D.hubs.forEach(h => HUB[h.id] = h);
-PL.forEach(o => o.placements = []);
-D.hubs.forEach(h => { if (h.id === 'all') return; const nl = Math.max(h.n_products - (h.n_nodata || 0), 1); h.all.forEach(([pid, rank, score]) => { const o = P[pid]; if (o) o.placements.push([h.id, rank, +(score * nl / 100).toFixed(2)]); }); });
-PL.forEach(o => o.placements.sort((a, b) => (a[1] || 1e9) - (b[1] || 1e9)));
-const trendPill = tr => tr ? `<span class="trend trend-${tr}">${tr === 'Rising' ? '↑ ' : tr === 'Fading' ? '↓ ' : tr === 'New' ? '✦ ' : '→ '}${tr}</span>` : '';
-const tierOf = x => x >= 3 ? 'Hero' : x >= 1.5 ? 'Strong' : x >= 0.5 ? 'Average' : 'Low';
-const tierPill = t => `<span class="tier tier-${t.replace(' ','-')}">${t}</span>`;
-const img = (o, w) => o.img ? o.img + (o.img.includes('?') ? '&' : '?') + 'width=' + w : '';
-const thumb = o => o.img ? `<img class="thumb" src="${esc(img(o, 120))}" alt="" loading="lazy" width="44" height="56">` : `<span class="thumb" aria-hidden="true"></span>`;
 const pct = n => n.toFixed(n >= 10 ? 1 : 2);
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const stockChip = o => o.instock === 0 ? '<span class="chip out">Sold out</span>' : o.instock < 50 ? `<span class="chip">${Math.round(o.instock)}% of sizes in stock</span>` : '';
-function chips(o){ return [o.type, o.season, o.colour, o.price ? eur(o.price) : '', o.limited ? 'Limited' : ''].filter(Boolean).map(v => `<span class="chip">${esc(v)}</span>`).join('') + stockChip(o); }
-function plist(o, skip){ const xs = (o.placements || []).filter(x => x[0] !== skip && x[0] !== o.hub); if (!xs.length) return '<span class="muted">main collection only</span>'; const show = xs.slice(0, 6).map(x => `${esc(HUB[x[0]].label)} <b>${x[1] ? '#' + x[1] : 'no data'}</b> of ${HUB[x[0]].n_products}`).join('<br>'); return show + (xs.length > 6 ? `<details class="more"><summary>+${xs.length - 6} more</summary>${xs.slice(6).map(x => `${esc(HUB[x[0]].label)} <b>${x[1] ? '#' + x[1] : 'no data'}</b> of ${HUB[x[0]].n_products}`).join('<br>')}</details>` : ''); }
+const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const mlabel = k => { const [y, m] = k.split('-'); return MON[+m - 1] + ' ' + y; };
+const W = D.weights;
+const PL = D.products; const P = {}; PL.forEach(o => { P[o.pid] = o; o.url = 'https://myacollection.com/products/' + o.slug; });
+const HUBS = D.hubs.slice(); const HUB = {}; HUBS.forEach(h => HUB[h.id] = h);
+D.type_hubs.forEach(t => { const h = {id: 'type:' + t, label: 'All ' + t.toLowerCase(), title: t, group: 'Product types (live and past products)', kind: 'type', nav: false, live_members: [], n_live: 0, pv: new Array(NM).fill(0), pu: new Array(NM).fill(0), pk: new Array(NM).fill(0), pim: new Array(NM).fill(0)}; HUBS.push(h); HUB[h.id] = h; });
+const sum = (arr, a, b) => { let s = 0; for (let i = a; i <= b; i++) s += arr[i] || 0; return s; };
+const tierOf = x => x >= 3 ? 'Hero' : x >= 1.5 ? 'Strong' : x >= 0.5 ? 'Average' : 'Low';
+const img = (o, w) => o.img ? o.img + (o.img.includes('?') ? '&' : '?') + 'width=' + w : '';
+const thumb = o => o.img ? `<img class="thumb" src="${esc(img(o, 120))}" alt="" loading="lazy" width="44" height="56">` : `<span class="thumb thumb-x" aria-hidden="true">${esc((o.name||'?')[0])}</span>`;
+const tierPill = t => `<span class="tier tier-${t.replace(' ','-')}">${t}</span>`;
+const trendPill = tr => tr ? `<span class="trend trend-${tr}">${tr === 'Rising' ? '↑ ' : tr === 'Fading' ? '↓ ' : tr === 'New' ? '✦ ' : '→ '}${tr}</span>` : '';
+const liveChip = o => o.live ? '' : '<span class="chip gone">Not on site</span>';
+const stockChip = o => !o.live ? '' : o.instock === 0 ? '<span class="chip out">Sold out</span>' : o.instock < 50 ? `<span class="chip">${Math.round(o.instock)}% of sizes in stock</span>` : '';
+function chips(o){ return [o.type, o.season, o.colour, o.price ? eur(o.price) : '', o.limited ? 'Limited' : ''].filter(Boolean).map(v => `<span class="chip">${esc(v)}</span>`).join('') + stockChip(o) + liveChip(o); }
 
-$('#ncoll').textContent = fmt(D.coverage.hubs); $('#ncoll2').textContent = fmt(D.coverage.hubs);
-$('#purchn').textContent = fmt(D.site_totals.purch);
-$('#totals').innerHTML = [
-  ['Product page views', D.coverage.product_views], ['Products scored', D.coverage.products],
-  ['Organic clicks (site)', D.site_totals.gsc_clicks], ['Add-to-cart (site)', D.site_totals.atc], ['Purchases (items)', D.site_totals.purch]
-].map(([l,v]) => `<div><b class="num">${fmt(v)}</b><span>${l}</span></div>`).join('');
+// ---------- period state
+let A = M.indexOf('2026-07'), Bi = NM - 1;
+const preset = $('#preset'); D.seasons.forEach(s => { const o = document.createElement('option'); o.value = s.id; o.textContent = s.label; preset.appendChild(o); });
+const custom = document.createElement('option'); custom.value = 'custom'; custom.textContent = 'Custom range'; preset.appendChild(custom);
+[$('#mfrom'), $('#mto')].forEach(sel => M.forEach((k, i) => { const o = document.createElement('option'); o.value = i; o.textContent = mlabel(k); sel.appendChild(o); }));
+function setRange(a, b, fromPreset){ if (a > b) [a, b] = [b, a]; A = a; Bi = b; $('#mfrom').value = a; $('#mto').value = b; if (!fromPreset) { const s = D.seasons.find(s => M.indexOf(s.a) === a && M.indexOf(s.b) === b); preset.value = s ? s.id : 'custom'; } try { localStorage.setItem('mya-range', a + ',' + b); } catch(e) {} renderAll(); }
+preset.addEventListener('change', () => { const s = D.seasons.find(x => x.id === preset.value); if (s) setRange(M.indexOf(s.a), M.indexOf(s.b), true); });
+$('#mfrom').addEventListener('change', () => setRange(+$('#mfrom').value, Bi)); $('#mto').addEventListener('change', () => setRange(A, +$('#mto').value));
+try { const r = localStorage.getItem('mya-range'); if (r) { const [a, b] = r.split(',').map(Number); if (a >= 0 && b < NM) { A = a; Bi = b; } } } catch(e) {}
 
-document.querySelectorAll('nav.tabs button').forEach(b => b.addEventListener('click', () => {
-  document.querySelectorAll('nav.tabs button').forEach(x => x.setAttribute('aria-selected', x === b));
-  document.querySelectorAll('section[role=tabpanel]').forEach(s => s.hidden = s.id !== b.getAttribute('aria-controls'));
-  try { localStorage.setItem('mya-tab', b.id); } catch(e) {}
-}));
-try { const t = localStorage.getItem('mya-tab'); if (t && $('#'+t)) $('#'+t).click(); } catch(e) {}
-
-const tt = $('#tt');
-function showTT(e, html){ tt.innerHTML = html; tt.style.display = 'block'; moveTT(e); }
-function moveTT(e){ const w = tt.offsetWidth, h = tt.offsetHeight; let x = e.clientX + 14, y = e.clientY + 14; if (x + w > innerWidth - 8) x = e.clientX - w - 14; if (y + h > innerHeight - 8) y = e.clientY - h - 14; tt.style.left = x + 'px'; tt.style.top = y + 'px'; }
-function hideTT(){ tt.style.display = 'none'; }
-
-function hbar(el, rows, opts){
-  const {label, value, valueText, tip, hi} = opts;
-  const rowH = 30, labelW = opts.labelW || 215, valW = 64, W = 640, x0 = labelW, plotW = W - labelW - valW;
-  const max = Math.max(...rows.map(value)) || 1;
-  const H = rows.length * rowH + 6;
-  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.aria||'bar chart')}">`;
-  rows.forEach((r, i) => {
-    const y = i * rowH + 3, w = Math.max(2, plotW * value(r) / max);
-    const name = label(r), short = name.length > 28 ? name.slice(0, 27) + '…' : name;
-    s += `<g class="row" data-i="${i}">
-      <text class="lbl" x="${x0 - 10}" y="${y + 18}" text-anchor="end">${esc(short)}</text>
-      <rect class="bar-bg" x="${x0}" y="${y + 5}" width="${plotW}" height="16" rx="3"/>
-      <rect class="bar${hi && hi(r) ? ' hi' : ''}" x="${x0}" y="${y + 5}" width="${w}" height="16" rx="3"/>
-      <text class="val num" x="${x0 + w + 8}" y="${y + 18}">${esc(valueText(r))}</text>
-      <rect class="hit" x="0" y="${y}" width="${W}" height="${rowH}"/></g>`;
+// ---------- scoring for a range
+function metrics(o, a, b){
+  const hasK = M.slice(a, b + 1).some(k => k >= D.coverage.gsc_from && k <= D.coverage.gsc_to);
+  let V = sum(o.v, a, b), U = sum(o.u, a, b), S = sum(o.s, a, b), E = sum(o.e, a, b), K = hasK ? sum(o.k, a, b) : 0, IM = sum(o.im, a, b), Aa = sum(o.a, a, b), Bp = sum(o.b, a, b), R = sum(o.r, a, b);
+  const len = b - a + 1; let status = 'Established', scale = 1, active = len;
+  if (o.first !== null && o.first > a && o.first <= b) { active = b - o.first + 1; scale = len / active; status = 'New in period'; }
+  return {V, U, S, E, K, IM, A: Aa, B: Bp, R, Vraw: V, status, scale, active, sV: V * scale, sU: U * scale, sE: E * scale, sK: K * scale, sA: Aa * scale};
+}
+function members(h, a, b, MX){
+  const includesNow = b === NM - 1;
+  const set = new Set();
+  if (h.id === 'all') { PL.forEach(o => { if (MX[o.pid].V > 0 || (includesNow && o.live)) set.add(o.pid); }); return [...set]; }
+  if (h.kind === 'type') { PL.forEach(o => { if (o.type === h.title && (MX[o.pid].V > 0 || (includesNow && o.live))) set.add(o.pid); }); return [...set]; }
+  h.live_members.forEach(pid => { if (MX[pid] && (MX[pid].V > 0 || includesNow)) set.add(pid); });
+  PL.forEach(o => { const ob = o.obs[h.id]; if (ob && sum(ob, a, b) > 0) set.add(o.pid); });
+  return [...set];
+}
+function scoreHub(h, a, b, MX){
+  const mem = members(h, a, b, MX); const n = mem.length; if (!n) return {n: 0, rows: [], tot: {}};
+  const keys = [['sV','views'],['sU','users'],['sE','engs'],['sK','clicks'],['sA','atc']];
+  const tot = {}; keys.forEach(([k]) => tot[k] = mem.reduce((s, pid) => s + MX[pid][k], 0));
+  const used = keys.reduce((s, [k, w]) => s + (tot[k] > 0 ? W[w] : 0), 0) || 1;
+  const rows = mem.map(pid => { const m = MX[pid]; let sc = 0; keys.forEach(([k, w]) => { if (tot[k] > 0) sc += W[w] * m[k] / tot[k] * 100; }); sc /= used; let ratio = sc * n / 100, prov = false;
+    if (m.status !== 'Established') { ratio = (m.Vraw * ratio + 100 * 1.5) / (m.Vraw + 100); prov = m.Vraw < 100; }
+    return {pid, score: sc, ratio, prov}; });
+  rows.sort((x, y) => y.ratio - x.ratio); rows.forEach((r, i) => r.rank = i + 1);
+  const T = {V: 0, U: 0, E: 0, K: 0, A: 0, B: 0, R: 0, IM: 0, S: 0}; mem.forEach(pid => { const m = MX[pid]; Object.keys(T).forEach(k => T[k] += m[k]); });
+  return {n, rows, tot: T, nodata: mem.filter(pid => MX[pid].V === 0).length};
+}
+function compute(a, b){
+  const MX = {}; PL.forEach(o => MX[o.pid] = metrics(o, a, b));
+  const HS = {}; HUBS.forEach(h => HS[h.id] = scoreHub(h, a, b, MX));
+  return {MX, HS};
+}
+let CUR = null, PREV = null;
+function mainHubId(o){ return HUB[o.hub] ? o.hub : (HUB['type:' + o.type] ? 'type:' + o.type : 'all'); }
+function renderAll(){
+  const a = A, b = Bi, len = b - a + 1;
+  CUR = compute(a, b);
+  PREV = (a - len >= 0) ? compute(a - len, a - 1) : null;
+  // per-product summary for the period
+  PL.forEach(o => { const m = CUR.MX[o.pid]; const hid = mainHubId(o); const hs = CUR.HS[hid]; const row = hs.rows.find(r => r.pid === o.pid);
+    o.m = m; o.hubId = hid; o.hub_label = HUB[hid].label; o.ratio = row ? row.ratio : 0; o.rank = row ? row.rank : 0; o.score = row ? row.score : 0; o.prov = row ? row.prov : false; o.nhub = hs.n;
+    o.tier = !row || m.V === 0 ? 'No data' : (o.prov ? 'New' : tierOf(o.ratio));
+    let rp = 0; if (PREV) { const prow = PREV.HS[hid].rows.find(r => r.pid === o.pid); if (prow && PREV.MX[o.pid].V > 0) rp = prow.ratio; }
+    o.ratio_prev = rp; o.mom = rp ? o.ratio / rp : null;
+    o.trend = m.V === 0 ? '' : m.status !== 'Established' ? 'New' : !rp ? 'New' : o.mom >= 1.25 ? 'Rising' : o.mom <= 0.8 ? 'Fading' : 'Steady';
+    o.placements = HUBS.filter(h => h.id !== 'all' && h.kind !== 'type' && h.id !== hid).map(h => { const r = CUR.HS[h.id].rows.find(r => r.pid === o.pid); return r ? [h.id, r.rank, r.ratio, CUR.HS[h.id].n] : null; }).filter(Boolean).sort((x, y) => x[1] - y[1]);
   });
-  s += '</svg>';
-  el.innerHTML = s;
+  const active = PL.filter(o => o.m.V > 0);
+  $('#pbsum').innerHTML = `<b>${mlabel(M[a])}${a !== b ? ' to ' + mlabel(M[b]) : ''}</b> · ${len} month${len > 1 ? 's' : ''} · ${fmt(active.reduce((s, o) => s + o.m.V, 0))} product views · ${fmt(active.length)} products with traffic${PREV ? ` · momentum vs ${mlabel(M[a - len])}${len > 1 ? ' to ' + mlabel(M[a - 1]) : ''}` : ' · no earlier period for momentum'}`;
+  renderPeriodChart();
+  const hasK = M.slice(a, b + 1).some(k => k >= D.coverage.gsc_from && k <= D.coverage.gsc_to);
+  $('#totals').innerHTML = [['Product page views', active.reduce((s, o) => s + o.m.V, 0)], ['Products with traffic', active.length], ['Not on site any more', active.filter(o => !o.live).length], [hasK ? 'Organic clicks (products)' : 'Organic clicks', hasK ? active.reduce((s, o) => s + o.m.K, 0) : 'n/a'], ['Add-to-cart', active.reduce((s, o) => s + o.m.A, 0)], ['Purchases (items)', active.reduce((s, o) => s + o.m.B, 0)]]
+    .map(([l, v]) => `<div><b class="num">${typeof v === 'number' ? fmt(v) : v}</b><span>${l}</span></div>`).join('');
+  const nnew = PL.filter(o => o.m.status !== 'Established' && o.m.V > 0).length;
+  $('#newstats').textContent = `In this period: ${fmt(active.length)} products with traffic, ${fmt(nnew)} of them first seen inside the period (scaled and blended with the 1.50 prior), ${fmt(active.filter(o => !o.live).length)} no longer on the store.`;
+  renderHub(); renderBCG(); renderTable(); renderMap(); renderColls(); renderAttr(); renderMethod(); renderSeasons();
+}
+
+// ---------- period bar chart
+function renderPeriodChart(){
+  const el = $('#pbchart'); const max = Math.max(...D.monthly_total); const Wd = 1100, H = 54, bw = Wd / NM;
+  let s = `<svg viewBox="0 0 ${Wd} ${H + 16}" preserveAspectRatio="none" style="height:70px">`;
+  D.monthly_total.forEach((v, i) => { const h = Math.max(1, v / max * H); const inr = i >= A && i <= Bi; s += `<rect class="pbar${inr ? ' in' : ''}" data-i="${i}" x="${(i * bw + 1).toFixed(1)}" y="${(H - h).toFixed(1)}" width="${(bw - 2).toFixed(1)}" height="${h.toFixed(1)}"/>`; if (M[i].endsWith('-01')) s += `<text class="tick" x="${(i * bw + 2).toFixed(1)}" y="${H + 13}">${M[i].slice(0, 4)}</text>`; });
+  s += '</svg>'; el.innerHTML = s;
+  let pending = null;
+  el.querySelectorAll('.pbar').forEach(r => { r.addEventListener('click', () => { const i = +r.dataset.i; if (pending === null) { pending = i; setRange(i, i); } else { setRange(pending, i); pending = null; } });
+    r.addEventListener('mousemove', e => showTT(e, `<b>${mlabel(M[+r.dataset.i])}</b>${fmt(D.monthly_total[+r.dataset.i])} product page views<br>Click to start a range, click a second month to end it`)); r.addEventListener('mouseleave', hideTT); });
+}
+
+// ---------- tabs, tooltip, bar chart
+document.querySelectorAll('nav.tabs button').forEach(b => b.addEventListener('click', () => { document.querySelectorAll('nav.tabs button').forEach(x => x.setAttribute('aria-selected', x === b)); document.querySelectorAll('section[role=tabpanel]').forEach(s => s.hidden = s.id !== b.getAttribute('aria-controls')); try { localStorage.setItem('mya-tab', b.id); } catch(e) {} }));
+try { const t = localStorage.getItem('mya-tab'); if (t && $('#' + t)) $('#' + t).click(); } catch(e) {}
+const tt = $('#tt');
+function showTT(e, html){ tt.innerHTML = html; tt.style.display = 'block'; const w = tt.offsetWidth, h = tt.offsetHeight; let x = e.clientX + 14, y = e.clientY + 14; if (x + w > innerWidth - 8) x = e.clientX - w - 14; if (y + h > innerHeight - 8) y = e.clientY - h - 14; tt.style.left = x + 'px'; tt.style.top = y + 'px'; }
+function hideTT(){ tt.style.display = 'none'; }
+function hbar(el, rows, opts){
+  const {label, value, valueText, tip, hi} = opts; const rowH = 30, labelW = opts.labelW || 215, valW = 64, Wd = 640, x0 = labelW, plotW = Wd - labelW - valW; const max = Math.max(...rows.map(value)) || 1; const H = rows.length * rowH + 6;
+  let s = `<svg viewBox="0 0 ${Wd} ${H}" role="img" aria-label="${esc(opts.aria || 'bar chart')}">`;
+  rows.forEach((r, i) => { const y = i * rowH + 3, w = Math.max(2, plotW * value(r) / max); const name = label(r), short = name.length > 28 ? name.slice(0, 27) + '…' : name;
+    s += `<g class="row" data-i="${i}"><text class="lbl" x="${x0 - 10}" y="${y + 18}" text-anchor="end">${esc(short)}</text><rect class="bar-bg" x="${x0}" y="${y + 5}" width="${plotW}" height="16" rx="3"/><rect class="bar${hi && hi(r) ? ' hi' : ''}" x="${x0}" y="${y + 5}" width="${w}" height="16" rx="3"/><text class="val num" x="${x0 + w + 8}" y="${y + 18}">${esc(valueText(r))}</text><rect class="hit" x="0" y="${y}" width="${Wd}" height="${rowH}"/></g>`; });
+  s += '</svg>'; el.innerHTML = s;
   el.querySelectorAll('.row').forEach(g => { const r = rows[+g.dataset.i]; g.addEventListener('mousemove', e => showTT(e, tip(r))); g.addEventListener('mouseleave', hideTT); });
 }
 
-// ---- Rankings
+// ---------- rankings
 const sel = $('#hubsel');
-const groupOrder = ['House of Peonies FW27', 'Sirens SS26', 'Sale & archive', 'Occasion wear', 'Shop', 'Wedding & occasion landing pages', 'Not in the menu (tag, drop or older collection)'];
-const groups = [...new Set(D.hubs.map(h => h.group))].sort((a, b) => groupOrder.indexOf(a) - groupOrder.indexOf(b));
+const groupOrder = ['House of Peonies FW27', 'Sirens SS26', 'Sale & archive', 'Occasion wear', 'Shop', 'Product types (live and past products)', 'Wedding & occasion landing pages', 'Not in the menu (tag, drop or older collection)'];
+const groups = [...new Set(HUBS.map(h => h.group))].sort((x, y) => groupOrder.indexOf(x) - groupOrder.indexOf(y));
 function fillSel(q){ q = (q || '').toLowerCase(); const keep = sel.value;
   const match = h => !q || h.label.toLowerCase().includes(q) || h.id.includes(q) || (h.title || '').toLowerCase().includes(q);
-  const opt = h => `<option value="${h.id}">${h.nav ? '★ ' : ''}${esc(h.label)} (${h.n_products ? h.n_products + ' products' : 'no live products'})</option>`;
-  sel.innerHTML = groups.map(g => { const hs = D.hubs.filter(h => h.group === g && match(h)).sort((a, b) => (b.nav - a.nav) || (b.n_products - a.n_products)); return hs.length ? `<optgroup label="${esc(g)}">` + hs.map(opt).join('') + '</optgroup>' : ''; }).join('');
-  if ([...sel.options].some(o => o.value === keep)) sel.value = keep; else if (!q && [...sel.options].some(o => o.value === 'ss26-sirens-dresses')) sel.value = 'ss26-sirens-dresses'; }
-fillSel('');
+  const opt = h => { const n = CUR ? CUR.HS[h.id].n : h.n_live; return `<option value="${h.id}">${h.nav ? '★ ' : ''}${esc(h.label)} (${n ? n + ' products' : 'nothing in this period'})</option>`; };
+  sel.innerHTML = groups.map(g => { const hs = HUBS.filter(h => h.group === g && match(h) && (!CUR || CUR.HS[h.id].n > 0 || h.nav)).sort((x, y) => (y.nav - x.nav) || ((CUR ? CUR.HS[y.id].n : y.n_live) - (CUR ? CUR.HS[x.id].n : x.n_live))); return hs.length ? `<optgroup label="${esc(g)}">` + hs.map(opt).join('') + '</optgroup>' : ''; }).join('');
+  if ([...sel.options].some(o => o.value === keep)) sel.value = keep; else if ([...sel.options].some(o => o.value === 'ss26-sirens-dresses')) sel.value = 'ss26-sirens-dresses'; }
 $('#hubq').addEventListener('input', () => { fillSel($('#hubq').value); renderHub(); });
-try { const v = localStorage.getItem('mya-hub'); if (v && HUB[v]) sel.value = v; } catch(e) {}
 sel.addEventListener('change', () => { try { localStorage.setItem('mya-hub', sel.value); } catch(e) {} renderHub(); });
 $('#topn').addEventListener('change', renderHub);
-
-function renderHub(){
-  const h = HUB[sel.value] || D.hubs[0];
-  const n0 = +$('#topn').value; const n = n0 || h.n_products;
-  const nl = Math.max(h.n_products - (h.n_nodata || 0), 1);
-  const rows = h.all.slice(0, n).map(([pid, rank, score, score12, prov]) => { const o = P[pid]; if (!o) return null; const ratio = +(score * nl / 100).toFixed(2), ratio12 = +((score12 || 0) * nl / 100).toFixed(2); const tr = o.status !== 'Established' ? 'New' : !ratio12 && !ratio ? '' : !ratio12 ? 'New' : ratio / ratio12 >= 1.25 ? 'Rising' : ratio / ratio12 <= 0.8 ? 'Fading' : 'Steady'; return Object.assign({}, o, {score, rank, ratio, ratio12, prov: !!prov, trend: tr, nodata: rank === 0, tierH: rank === 0 ? 'No data' : (prov || o.status === 'New') ? 'New' : tierOf(ratio)}); }).filter(Boolean);
-  const note = !h.n_products ? 'This collection page has traffic but no live products on it right now (an older drop, a sold-through capsule, or a tag collection that is empty). Traffic is shown under Collections; there is nothing to rank.' : h.id === 'all' ? 'The whole catalogue ranked against itself. Use it for the home page and the Shop now grid; for a collection page, pick that collection instead.' : '';
-  $('#hubnote').textContent = note; $('#hubnote').hidden = !note;
-  $('#hubsrc').textContent = h.n_products ? `Members: the ${fmt(h.n_products)} products this collection lists on the store (read ${D.period.crawled}). ${h.kind === 'sub' || h.kind === 'root' ? 'In the site menu.' : h.kind === 'landing' ? 'A landing collection for Google searches, not in the menu.' : 'Not in the menu.'}` : '';
-  const t = h.tot; const soldout = rows.filter(r => r.instock === 0).length;
-  $('#hubtiles').innerHTML = [
-    ['Products in collection', h.n_products, `${fmt(h.all.filter(x => P[x[0]] && P[x[0]].instock === 0).length)} sold out`],
-    ['Product views', t.views, `${fmt(t.users)} users`],
-    ['Organic clicks', t.clicks, `${fmt(t.impr)} impressions on product pages`],
-    ['Add-to-cart', t.atc, `${fmt(t.purch)} purchased`],
-    ['Engagement rate', (rows.reduce((a,r)=>a+r.engs,0) / Math.max(rows.reduce((a,r)=>a+r.sess,0),1) * 100).toFixed(1) + '%', `shown products · site product pages ${D.product_er}%`],
-    ['Collection page views', h.hub_pages.views, h.hub_pages.clicks ? `${fmt(h.hub_pages.clicks)} organic clicks to the collection page` : 'no organic clicks to the collection page']
-  ].map(([l,v,s]) => `<div><span>${l}</span><b class="num">${typeof v === 'number' ? fmt(v) : v}</b>${s?`<small>${s}</small>`:''}</div>`).join('');
-  $('#chart-title').textContent = `Demand Share, ${h.label}` + (n > 25 ? ' (chart shows top 25, table shows ' + (n0 ? 'top ' + n : 'all ' + h.n_products) + ')' : '');
-  hbar($('#chart'), rows.slice(0, 25), {
-    aria: `Top ${n} products in ${h.label} by demand share`,
-    label: r => r.name, value: r => r.score, valueText: r => pct(r.score) + '%',
-    hi: r => r.purch > 0,
-    tip: r => `<b>${esc(r.name)}</b>Demand share ${pct(r.score)}%<br>${fmt(r.views)} views · ${fmt(r.users)} users<br>${fmt(r.clicks)} organic clicks · ${fmt(r.atc)} add-to-cart${r.purch?` · ${r.purch} purchased`:''}${r.instock === 0 ? '<br>Sold out' : ''}`
-  });
-  const conc = ['views','users','clicks','atc'].map(k => ({k, label: {views:'Page views',users:'Users',clicks:'Organic clicks',atc:'Add-to-cart'}[k], top: rows.reduce((a,r)=>a+r[k],0), tot: t[k]}));
-  hbar($('#mixchart'), conc, { aria: 'Share of collection totals captured by the listed products', labelW: 130, label: r => r.label, value: r => r.tot ? r.top / r.tot * 100 : 0, valueText: r => r.tot ? (r.top / r.tot * 100).toFixed(0) + '%' : 'n/a', tip: r => `<b>${r.label}</b>Top ${n} products: ${fmt(r.top)} of ${fmt(r.tot)} in collection` });
-  $('#mixnote').textContent = `The share of each signal that the top ${n} products take. High concentration means a few pieces carry the collection; low means demand is spread and the collection ordering does more work.`;
-  $('#topcards').innerHTML = rows.filter(r => !r.nodata).slice(0, 8).map(r => `<a class="card" href="${esc(r.url)}" target="_blank" rel="noopener">
-    <div class="img">${r.img ? `<img src="${esc(img(r, 480))}" alt="" loading="lazy">` : ''}<span class="badge b-${r.tierH}">${r.tierH === 'Hero' ? 'Popular' : r.tierH === 'New' ? 'New in' : r.tierH}</span><span class="rankno num">#${r.rank}</span>${r.instock === 0 ? '<span class="soldout">Sold out</span>' : ''}</div>
-    <div class="cname">${esc(r.name)}</div>
-    <div class="cmeta">${r.price ? eur(r.price) + ' · ' : ''}${pct(r.score)}% of collection demand</div>
-    <div class="cratio">Ratio <b>${r.ratio.toFixed(2)}</b>${r.trend && r.trend !== 'Steady' ? ' · ' + r.trend : ''}</div></a>`).join('');
-  $('#ranktable').innerHTML = `<thead><tr><th>#</th><th>Product</th><th class="n">Demand share</th><th class="n">Ratio</th><th>Tier</th><th class="n">12-mo ratio</th><th>Trend</th><th class="n">Views</th><th class="n">Users</th><th class="n">Eng. rate</th><th class="n">Engaged sessions</th><th class="n">Organic clicks</th><th class="n">Add-to-cart</th><th class="n">Purchased</th><th class="n">Revenue</th></tr></thead><tbody>` +
-    rows.map(r => `<tr><td class="num">${r.nodata ? '' : r.rank}</td><td><div class="pcell">${thumb(r)}<div><a class="name" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a><div class="chips">${chips(r)}</div><div class="pl">${plist(r, h.id)}</div></div></div></td>
-      <td class="n num"><span class="sharebar" style="width:${Math.max(2, 60 * r.score / (rows[0].score || 1))}px"></span><span class="share">${pct(r.score)}%</span></td>
-      <td class="n num">${r.nodata ? '' : r.ratio.toFixed(2)}</td><td>${tierPill(r.tierH)}${r.days_live ? `<div class="small muted">${r.days_live} days live</div>` : ''}</td>
-      <td class="n num">${r.nodata || !r.ratio12 ? '' : r.ratio12.toFixed(2)}</td><td>${trendPill(r.trend)}</td>
-      <td class="n num">${fmt(r.views)}</td><td class="n num">${fmt(r.users)}</td><td class="n num">${r.sess ? r.er.toFixed(1) + '%' : ''}</td><td class="n num">${fmt(r.engs)}</td><td class="n num">${fmt(r.clicks)}</td><td class="n num">${fmt(r.atc)}</td><td class="n num">${r.purch ? '<span class="flag">' + r.purch + '</span>' : '0'}</td><td class="n num">${r.revenue ? eur(r.revenue) : ''}</td></tr>`).join('') + '</tbody>';
+const COLS = ['#1A1B18', '#C9A99B', '#8A5F4E', '#5B7C99', '#7A9E7E', '#D4A24C', '#B36A6A', '#8C8C8C'];
+function timeline(el, legendEl, pids){
+  const Wd = 640, H = 220, ml = 40, mr = 10, mt = 10, mb = 26, iw = Wd - ml - mr, ih = H - mt - mb;
+  const series = pids.map(pid => P[pid].v); const max = Math.max(1, ...series.flat());
+  const X = i => ml + i / (NM - 1) * iw, Y = v => mt + ih - v / max * ih;
+  let s = `<svg viewBox="0 0 ${Wd} ${H}" role="img" aria-label="Monthly page views of the top products">`;
+  s += `<rect x="${X(A)}" y="${mt}" width="${Math.max(2, X(Bi) - X(A))}" height="${ih}" fill="var(--blush)"/>`;
+  M.forEach((k, i) => { if (k.endsWith('-01')) s += `<line x1="${X(i)}" x2="${X(i)}" y1="${mt}" y2="${mt + ih}" class="axis"/><text class="tick" x="${X(i) + 3}" y="${H - 8}">${k.slice(0, 4)}</text>`; });
+  [0.5, 1].forEach(f => s += `<text class="tick" x="${ml - 4}" y="${Y(max * f) + 3}" text-anchor="end">${fmt(max * f)}</text>`);
+  series.forEach((arr, si) => { let d = ''; arr.forEach((v, i) => { d += (i ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(v).toFixed(1) + ' '; }); s += `<path d="${d}" fill="none" stroke="${COLS[si % COLS.length]}" stroke-width="1.8" stroke-linejoin="round"/>`; });
+  s += '</svg>'; el.innerHTML = s;
+  legendEl.innerHTML = pids.map((pid, i) => `<span style="--c:${COLS[i % COLS.length]}" class="l-c">${esc(P[pid].name)}</span>`).join('');
 }
-renderHub();
+function renderHub(){
+  fillSel($('#hubq').value);
+  const h = HUB[sel.value] || HUB['ss26-sirens-dresses'] || HUBS[0]; const hs = CUR.HS[h.id];
+  const n0 = +$('#topn').value; const n = n0 || hs.n;
+  const rows = hs.rows.slice(0, n).map(r => Object.assign({}, P[r.pid], {score: r.score, rank: r.rank, ratioH: r.ratio, provH: r.prov, mm: CUR.MX[r.pid], tierH: CUR.MX[r.pid].V === 0 ? 'No data' : r.prov ? 'New' : tierOf(r.ratio)}));
+  const note = !hs.n ? 'No product of this collection had traffic in the chosen period.' : h.id === 'all' ? 'The whole catalogue (live and past) ranked against itself for this period.' : h.kind === 'type' ? `Every ${h.title.toLowerCase()} product, live or not, ranked for this period. Type of past products is read from the URL.` : '';
+  $('#hubnote').textContent = note; $('#hubnote').hidden = !note;
+  const nObs = hs.rows.filter(r => !h.live_members.includes(r.pid)).length;
+  $('#hubsrc').textContent = hs.n ? `Members in this period: ${fmt(hs.n)} products (${fmt(hs.n - nObs)} listed on the store today${nObs ? `, ${fmt(nObs)} seen opened from this collection page in the period but not listed today` : ''}).` : '';
+  const t = hs.tot;
+  $('#hubtiles').innerHTML = [['Products in collection', hs.n, `${fmt(rows.filter(r => !r.live).length)} of the shown not on site`], ['Product views', t.V, `${fmt(t.U)} users (monthly sum)`], ['Organic clicks', t.K, `${fmt(t.IM)} impressions`], ['Add-to-cart', t.A, `${fmt(t.B)} purchased · ${eur(t.R)}`], ['Engagement rate', (t.E / Math.max(t.S, 1) * 100).toFixed(1) + '%', 'engaged ÷ sessions'], ['Collection page views', sum(h.pv, A, Bi), sum(h.pk, A, Bi) ? `${fmt(sum(h.pk, A, Bi))} organic clicks to the page` : 'no organic clicks recorded']]
+    .map(([l, v, s]) => `<div><span>${l}</span><b class="num">${typeof v === 'number' ? fmt(v) : v}</b>${s ? `<small>${s}</small>` : ''}</div>`).join('');
+  $('#chart-title').textContent = `Demand Share, ${h.label}` + (n > 25 ? ' (chart shows top 25)' : '');
+  hbar($('#chart'), rows.slice(0, 25), {aria: 'Top products by demand share', label: r => r.name, value: r => r.score, valueText: r => pct(r.score) + '%', hi: r => r.mm.B > 0,
+    tip: r => `<b>${esc(r.name)}</b>Demand share ${pct(r.score)}%<br>${fmt(r.mm.V)} views · ${fmt(r.mm.U)} users<br>${fmt(r.mm.K)} organic clicks · ${fmt(r.mm.A)} add-to-cart${r.mm.B ? ` · ${r.mm.B} purchased` : ''}${r.live ? '' : '<br>Not on site any more'}`});
+  timeline($('#timeline'), $('#tlegend'), rows.slice(0, 8).map(r => r.pid));
+  $('#topcards').innerHTML = rows.filter(r => r.mm.V > 0).slice(0, 8).map(r => `<a class="card" href="${esc(r.url)}" target="_blank" rel="noopener"><div class="img">${r.img ? `<img src="${esc(img(r, 480))}" alt="" loading="lazy">` : `<span class="noimg">${esc(r.name)}</span>`}<span class="badge b-${r.tierH}">${r.tierH === 'Hero' ? 'Popular' : r.tierH === 'New' ? 'New in' : r.tierH}</span><span class="rankno num">#${r.rank}</span>${!r.live ? '<span class="soldout gone">Not on site</span>' : r.instock === 0 ? '<span class="soldout">Sold out</span>' : ''}</div><div class="cname">${esc(r.name)}</div><div class="cmeta">${r.price ? eur(r.price) + ' · ' : ''}${pct(r.score)}% of collection demand</div><div class="cratio">Ratio <b>${r.ratioH.toFixed(2)}</b>${r.trend && r.trend !== 'Steady' ? ' · ' + r.trend : ''}</div></a>`).join('');
+  $('#ranktable').innerHTML = `<thead><tr><th>#</th><th>Product</th><th class="n">Demand share</th><th class="n">Ratio</th><th>Tier</th><th class="n">Ratio before</th><th>Momentum</th><th class="n">Views</th><th class="n">Users</th><th class="n">Eng. rate</th><th class="n">Organic clicks</th><th class="n">Add-to-cart</th><th class="n">Purchased</th><th class="n">Revenue</th><th>First seen</th></tr></thead><tbody>` +
+    rows.map(r => `<tr><td class="num">${r.mm.V ? r.rank : ''}</td><td><div class="pcell">${thumb(r)}<div><a class="name" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a><div class="chips">${chips(r)}</div><div class="pl">${plist(r, h.id)}</div></div></div></td><td class="n num"><span class="sharebar" style="width:${Math.max(2, 60 * r.score / (rows[0].score || 1))}px"></span><span class="share">${pct(r.score)}%</span></td><td class="n num">${r.mm.V ? r.ratioH.toFixed(2) : ''}</td><td>${tierPill(r.tierH)}${r.mm.status !== 'Established' ? `<div class="small muted">${r.mm.active} of ${Bi - A + 1} months</div>` : ''}</td><td class="n num">${r.ratio_prev ? r.ratio_prev.toFixed(2) : ''}</td><td>${trendPill(r.trend)}</td><td class="n num">${fmt(r.mm.V)}</td><td class="n num">${fmt(r.mm.U)}</td><td class="n num">${r.mm.S ? (r.mm.E / r.mm.S * 100).toFixed(1) + '%' : ''}</td><td class="n num">${fmt(r.mm.K)}</td><td class="n num">${fmt(r.mm.A)}</td><td class="n num">${r.mm.B ? '<span class="flag">' + r.mm.B + '</span>' : '0'}</td><td class="n num">${r.mm.R ? eur(r.mm.R) : ''}</td><td class="small muted">${r.first !== null ? mlabel(M[r.first]) : ''}</td></tr>`).join('') + '</tbody>';
+}
+function plist(o, skip){ const xs = (o.placements || []).filter(x => x[0] !== skip); if (!xs.length) return '<span class="muted">main collection only</span>'; const f = x => `${esc(HUB[x[0]].label)} <b>#${x[1]}</b> of ${x[3]}`; return xs.slice(0, 5).map(f).join('<br>') + (xs.length > 5 ? `<details class="more"><summary>+${xs.length - 5} more</summary>${xs.slice(5).map(f).join('<br>')}</details>` : ''); }
 
-// ---- Portfolio (BCG) matrix
-const QUAD = {
-  Stars: {label:'Stars', rule:'Ratio ≥ 1.00 and momentum ≥ 1.00', act:'Protect and push: hero slots, first rows, internal links from the collection description, paid and social creative. Restock first if sold out.'},
-  Cash: {label:'Cash cows', rule:'Ratio ≥ 1.00 and momentum < 1.00', act:'Keep visible, spend little: they hold the top rows on history. Refresh imagery and check price before they slide; no need for extra promotion.'},
-  Question: {label:'Question marks', rule:'Ratio < 1.00 and momentum ≥ 1.00, plus every newcomer', act:'Test: give them a "New in" or trial slot on the collection for one refresh cycle. Rising ones become Stars; the rest drop to the default order.'},
-  Dogs: {label:'Dogs', rule:'Ratio < 1.00 and momentum < 1.00', act:'Back of the grid or review: move to Archive Sale, fix imagery, or retire. Do not spend links or ads on them.'}
-};
-const quadOf = o => { if (o.tier === 'No data' || !o.ratio) return null; if (o.status !== 'Established') return 'Question'; const m = o.ratio12 ? o.ratio / o.ratio12 : 1; return o.ratio >= 1 ? (m >= 1 ? 'Stars' : 'Cash') : (m >= 1 ? 'Question' : 'Dogs'); };
-PL.forEach(o => { o.quad = quadOf(o); o.mom = o.ratio12 ? +(o.ratio / o.ratio12).toFixed(2) : null; });
-const bcgHub = $('#bcghub');
-[...new Set(PL.map(o => o.hub_label).filter(Boolean))].sort().forEach(t => { const op = document.createElement('option'); op.value = t; op.textContent = t; bcgHub.appendChild(op); });
+// ---------- BCG
+const QUAD = {Stars: {label: 'Stars', rule: 'Ratio ≥ 1.00 and momentum ≥ 1.00', act: 'Protect and push: hero slots, first rows, internal links, paid and social creative. Restock first if sold out.'}, Cash: {label: 'Cash cows', rule: 'Ratio ≥ 1.00 and momentum < 1.00', act: 'Keep visible, spend little. Refresh imagery and check price before they slide.'}, Question: {label: 'Question marks', rule: 'Ratio < 1.00 and momentum ≥ 1.00, plus everything new in the period', act: 'Test: a "New in" or trial slot for one cycle. Rising ones become Stars.'}, Dogs: {label: 'Dogs', rule: 'Ratio < 1.00 and momentum < 1.00', act: 'Back of the grid or Archive Sale. No links, no ads.'}};
+const quadOf = o => { if (!o.ratio || o.m.V === 0) return null; if (o.m.status !== 'Established') return 'Question'; const m = o.mom || 1; return o.ratio >= 1 ? (m >= 1 ? 'Stars' : 'Cash') : (m >= 1 ? 'Question' : 'Dogs'); };
+const bcgHub = $('#bcghub'); let bcgFilled = false;
 function renderBCG(){
-  const hub = bcgHub.value, sz = $('#bcgsize').value;
-  const rows = PL.filter(o => o.quad && (!hub || o.hub_label === hub));
-  const tot = rows.reduce((a, o) => a + o.views, 0) || 1;
-  $('#quads').innerHTML = ['Stars','Question','Cash','Dogs'].map(q => {
-    const list = rows.filter(o => o.quad === q).sort((a, b) => b.views - a.views);
-    const v = list.reduce((a, o) => a + o.views, 0);
-    return `<div class="quad q-${q}"><h3>${QUAD[q].label}<small>${fmt(list.length)} products · ${(v / tot * 100).toFixed(0)}% of views</small></h3><div class="rule">${QUAD[q].rule}</div><div class="act">${QUAD[q].act}</div><ol>${list.slice(0, 6).map(o => `<li>${thumb(o)}<a href="${esc(o.url)}" target="_blank" rel="noopener" title="${esc(o.name)}">${esc(o.name)}${o.instock === 0 ? ' <span class="chip out">Sold out</span>' : ''}</a><span class="qn num">${o.ratio.toFixed(2)}${o.mom ? ' · ×' + o.mom.toFixed(2) : ' · new'}</span></li>`).join('')}</ol></div>`;
-  }).join('');
-  const W = 640, H = 460, ml = 52, mr = 16, mt = 18, mb = 44, iw = W - ml - mr, ih = H - mt - mb;
-  const lx = r => Math.max(-2, Math.min(2, Math.log10(r))), ly = m => Math.max(-1, Math.min(1, Math.log10(m)));
-  const X = r => ml + (lx(r) + 2) / 4 * iw, Y = m => mt + (1 - (ly(m) + 1) / 2) * ih;
-  const pts = rows.filter(o => o.mom);
-  const maxS = Math.max(...pts.map(o => sz === 'none' ? 1 : o[sz]), 1);
-  const col = {Stars:'#1A1B18', Cash:'#C9A99B', Question:'#ECD7CD', Dogs:'#D2D5D9'};
-  const dots = pts.map(o => { const r = sz === 'none' ? 3 : 2 + 9 * Math.sqrt((o[sz] || 0) / maxS); return `<circle class="dot" cx="${X(o.ratio).toFixed(1)}" cy="${Y(o.mom).toFixed(1)}" r="${r.toFixed(1)}" fill="${col[o.quad]}" data-i="${o.pid}"/>`; }).join('');
-  const xt = [0.01,0.1,1,10,100].map(v => `<line x1="${X(v)}" x2="${X(v)}" y1="${mt}" y2="${mt+ih}" class="axis"/><text class="tick" x="${X(v)}" y="${mt+ih+14}" text-anchor="middle">${v}</text>`).join('');
-  const yt = [0.1,0.5,1,2,10].map(v => `<line y1="${Y(v)}" y2="${Y(v)}" x1="${ml}" x2="${ml+iw}" class="axis"/><text class="tick" x="${ml-6}" y="${Y(v)+3}" text-anchor="end">×${v}</text>`).join('');
-  $('#bcgplot').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Growth share matrix of products">
-    <rect x="${ml}" y="${mt}" width="${iw}" height="${ih}" fill="var(--surface-2)"/>${xt}${yt}
-    <line x1="${X(1)}" x2="${X(1)}" y1="${mt}" y2="${mt+ih}" stroke="var(--ink)" stroke-width="1"/>
-    <line y1="${Y(1)}" y2="${Y(1)}" x1="${ml}" x2="${ml+iw}" stroke="var(--ink)" stroke-width="1"/>
-    <text class="qlab" x="${ml+iw-8}" y="${mt+18}" text-anchor="end">Stars</text>
-    <text class="qlab" x="${ml+8}" y="${mt+18}">Question marks</text>
-    <text class="qlab" x="${ml+iw-8}" y="${mt+ih-8}" text-anchor="end">Cash cows</text>
-    <text class="qlab" x="${ml+8}" y="${mt+ih-8}">Dogs</text>${dots}
-    <text class="axl" x="${ml+iw/2}" y="${H-6}" text-anchor="middle">Share: popularity ratio in main collection (log)</text>
-    <text class="axl" transform="translate(12 ${mt+ih/2}) rotate(-90)" text-anchor="middle">Growth: 90-day ÷ 12-month ratio (log)</text></svg>`;
-  const nNew = rows.filter(o => !o.mom).length;
-  $('#bcgnote').textContent = `${fmt(pts.length)} products plotted${hub ? ' in ' + hub : ''}; ${fmt(nNew)} newcomers without 12-month history are counted as question marks but not drawn.`;
-  $('#bcgplot').querySelectorAll('.dot').forEach(c => {
-    c.addEventListener('mousemove', e => { const o = P[c.dataset.i]; showTT(e, `<b>${esc(o.name)}</b>${QUAD[o.quad].label} · ${esc(o.hub_label)}<br>Ratio ${o.ratio.toFixed(2)} · 12-mo ${o.ratio12.toFixed(2)} · momentum ×${o.mom.toFixed(2)}<br>${fmt(o.views)} views · ${fmt(o.atc)} add-to-cart · ${fmt(o.purch)} purchased${o.instock === 0 ? '<br>Sold out' : ''}`); });
-    c.addEventListener('mouseleave', hideTT);
-  });
+  PL.forEach(o => o.quad = quadOf(o));
+  if (!bcgFilled) { [...new Set(PL.map(o => o.hub_label))].sort().forEach(t => { const op = document.createElement('option'); op.value = t; op.textContent = t; bcgHub.appendChild(op); }); bcgFilled = true; }
+  const hub = bcgHub.value, sz = $('#bcgsize').value; const rows = PL.filter(o => o.quad && (!hub || o.hub_label === hub)); const tot = rows.reduce((s, o) => s + o.m.V, 0) || 1;
+  $('#quads').innerHTML = ['Stars', 'Question', 'Cash', 'Dogs'].map(q => { const list = rows.filter(o => o.quad === q).sort((x, y) => y.m.V - x.m.V); const v = list.reduce((s, o) => s + o.m.V, 0);
+    return `<div class="quad q-${q}"><h3>${QUAD[q].label}<small>${fmt(list.length)} products · ${(v / tot * 100).toFixed(0)}% of views</small></h3><div class="rule">${QUAD[q].rule}</div><div class="act">${QUAD[q].act}</div><ol>${list.slice(0, 6).map(o => `<li>${thumb(o)}<a href="${esc(o.url)}" target="_blank" rel="noopener" title="${esc(o.name)}">${esc(o.name)}${!o.live ? ' <span class="chip gone">Not on site</span>' : o.instock === 0 ? ' <span class="chip out">Sold out</span>' : ''}</a><span class="qn num">${o.ratio.toFixed(2)}${o.mom ? ' · ×' + o.mom.toFixed(2) : ' · new'}</span></li>`).join('')}</ol></div>`; }).join('');
+  const Wd = 640, H = 460, ml = 52, mr = 16, mt = 18, mb = 44, iw = Wd - ml - mr, ih = H - mt - mb;
+  const lx = r => Math.max(-2, Math.min(2, Math.log10(r))), ly = m => Math.max(-1, Math.min(1, Math.log10(m))); const X = r => ml + (lx(r) + 2) / 4 * iw, Y = m => mt + (1 - (ly(m) + 1) / 2) * ih;
+  const pts = rows.filter(o => o.mom); const maxS = Math.max(...pts.map(o => sz === 'none' ? 1 : o.m[sz]), 1); const col = {Stars: '#1A1B18', Cash: '#C9A99B', Question: '#ECD7CD', Dogs: '#D2D5D9'};
+  const dots = pts.map(o => { const r = sz === 'none' ? 3 : 2 + 9 * Math.sqrt((o.m[sz] || 0) / maxS); return `<circle class="dot" cx="${X(o.ratio).toFixed(1)}" cy="${Y(o.mom).toFixed(1)}" r="${r.toFixed(1)}" fill="${col[o.quad]}" data-i="${o.pid}"/>`; }).join('');
+  const xt = [0.01, 0.1, 1, 10, 100].map(v => `<line x1="${X(v)}" x2="${X(v)}" y1="${mt}" y2="${mt + ih}" class="axis"/><text class="tick" x="${X(v)}" y="${mt + ih + 14}" text-anchor="middle">${v}</text>`).join('');
+  const yt = [0.1, 0.5, 1, 2, 10].map(v => `<line y1="${Y(v)}" y2="${Y(v)}" x1="${ml}" x2="${ml + iw}" class="axis"/><text class="tick" x="${ml - 6}" y="${Y(v) + 3}" text-anchor="end">×${v}</text>`).join('');
+  $('#bcgplot').innerHTML = `<svg viewBox="0 0 ${Wd} ${H}" role="img" aria-label="Growth share matrix"><rect x="${ml}" y="${mt}" width="${iw}" height="${ih}" fill="var(--surface-2)"/>${xt}${yt}<line x1="${X(1)}" x2="${X(1)}" y1="${mt}" y2="${mt + ih}" stroke="var(--ink)"/><line y1="${Y(1)}" y2="${Y(1)}" x1="${ml}" x2="${ml + iw}" stroke="var(--ink)"/><text class="qlab" x="${ml + iw - 8}" y="${mt + 18}" text-anchor="end">Stars</text><text class="qlab" x="${ml + 8}" y="${mt + 18}">Question marks</text><text class="qlab" x="${ml + iw - 8}" y="${mt + ih - 8}" text-anchor="end">Cash cows</text><text class="qlab" x="${ml + 8}" y="${mt + ih - 8}">Dogs</text>${dots}<text class="axl" x="${ml + iw / 2}" y="${H - 6}" text-anchor="middle">Share: popularity ratio in main collection (log)</text><text class="axl" transform="translate(12 ${mt + ih / 2}) rotate(-90)" text-anchor="middle">Momentum: this period ÷ period before (log)</text></svg>`;
+  $('#bcgnote').textContent = `${fmt(pts.length)} products plotted${hub ? ' in ' + hub : ''}; ${fmt(rows.filter(o => !o.mom).length)} without a previous-period ratio are counted as question marks but not drawn.${PREV ? '' : ' No earlier period exists for this range, so momentum is unavailable.'}`;
+  $('#bcgplot').querySelectorAll('.dot').forEach(c => { c.addEventListener('mousemove', e => { const o = P[c.dataset.i]; showTT(e, `<b>${esc(o.name)}</b>${QUAD[o.quad].label} · ${esc(o.hub_label)}<br>Ratio ${o.ratio.toFixed(2)} · before ${o.ratio_prev.toFixed(2)} · momentum ×${o.mom.toFixed(2)}<br>${fmt(o.m.V)} views · ${fmt(o.m.A)} add-to-cart · ${fmt(o.m.B)} purchased${o.live ? (o.instock === 0 ? '<br>Sold out today' : '') : '<br>Not on site any more'}`); }); c.addEventListener('mouseleave', hideTT); });
 }
 bcgHub.addEventListener('change', renderBCG); $('#bcgsize').addEventListener('change', renderBCG);
-renderBCG();
 
-// ---- Collections panel
-const hp = D.hub_pages.filter(h => h.views > 0).sort((a,b) => b.views - a.views);
-hbar($('#hubchart'), hp, { aria: 'Collection page views by family', labelW: 250, label: r => r.label, value: r => r.views, valueText: r => fmt(r.views), tip: r => `<b>${esc(r.label)}</b>${fmt(r.views)} collection page views<br>${fmt(r.clicks)} organic clicks · ${fmt(r.impr)} impressions` });
-$('#hublist').innerHTML = hp.map(h => `<figure><figcaption><h3>${esc(h.label)}</h3><span>top entry pages</span></figcaption><ol>` + h.pages.slice(0, 10).map(pg => `<li><code>${esc(pg.path)}</code><span class="num" style="white-space:nowrap">${fmt(pg.views)} views · ${fmt(pg.clicks)} clicks</span></li>`).join('') + '</ol></figure>').join('');
-const navHubs = D.hubs.filter(h => h.hub_pages.views > 0 || h.hub_pages.clicks > 0).sort((a,b) => b.hub_pages.views - a.hub_pages.views);
-$('#navnote').textContent = `${fmt(navHubs.length)} collection URLs with views or organic clicks in the period. Starred rows are in the site menu. Organic clicks and impressions are Search Console figures for the collection page itself.`;
-$('#navtable').innerHTML = '<thead><tr><th>Collection page</th><th>Group</th><th class="n">Live products</th><th class="n">Page views</th><th class="n">Organic clicks</th><th class="n">Impressions</th><th class="n">Views, 12 months</th></tr></thead><tbody>' +
-  navHubs.map(h => `<tr><td>${h.nav ? '★ ' : ''}<a href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.label)}</a><div class="small muted">/collections/${esc(h.id)}</div></td><td class="small">${esc(h.group)}</td><td class="n num">${h.n_products ? fmt(h.n_products) : '<span class="flag">none</span>'}</td><td class="n num">${fmt(h.hub_pages.views)}</td><td class="n num">${fmt(h.hub_pages.clicks)}</td><td class="n num">${fmt(h.hub_pages.impr)}</td><td class="n num">${fmt(h.hub_pages.views12)}</td></tr>`).join('') + '</tbody>';
+// ---------- seasons
+const seahub = $('#seahub'); let seaFilled = false;
+function renderSeasons(){
+  if (!seaFilled) { const opts = HUBS.filter(h => h.nav || h.kind === 'type' || h.kind === 'landing').sort((x, y) => groupOrder.indexOf(x.group) - groupOrder.indexOf(y.group)); opts.forEach(h => { const o = document.createElement('option'); o.value = h.id; o.textContent = h.label; seahub.appendChild(o); }); seahub.value = 'type:Dresses'; seaFilled = true; seahub.addEventListener('change', renderSeasons); $('#seatop').addEventListener('change', renderSeasons); }
+  const h = HUB[seahub.value]; const top = +$('#seatop').value;
+  const seasons = D.seasons.filter(s => !['last90', 'last12', 'all', 'bf25'].includes(s.id)).slice().sort((x, y) => M.indexOf(x.a) - M.indexOf(y.a));
+  $('#seasons').innerHTML = seasons.map(s => { const a = M.indexOf(s.a), b = M.indexOf(s.b); const R = compute(a, b); const hs = R.HS[h.id]; const rows = hs.rows.filter(r => R.MX[r.pid].V > 0).slice(0, top);
+    return `<figure class="season"><figcaption><h3><a href="#" data-a="${a}" data-b="${b}" class="sealink">${esc(s.label.replace(/ \(.*\)/, ''))}</a></h3><span>${mlabel(s.a)} to ${mlabel(s.b)} · ${fmt(hs.tot.V || 0)} views · ${fmt(hs.n)} products</span></figcaption><ol>${rows.map(r => { const o = P[r.pid], m = R.MX[r.pid]; return `<li>${thumb(o)}<a href="${esc(o.url)}" target="_blank" rel="noopener" title="${esc(o.name)}">${esc(o.name)}${!o.live ? ' <span class="chip gone">Not on site</span>' : ''}</a><span class="qn num">${r.ratio.toFixed(2)} · ${fmt(m.V)} views${m.B ? ' · ' + m.B + ' sold' : ''}</span></li>`; }).join('') || '<li class="muted">No traffic in this season</li>'}</ol></figure>`; }).join('');
+  $('#seasons').querySelectorAll('.sealink').forEach(a => a.addEventListener('click', e => { e.preventDefault(); setRange(+a.dataset.a, +a.dataset.b); window.scrollTo({top: 0, behavior: 'smooth'}); }));
+  // season chart
+  const Wd = 1100, H = 200, ml = 46, mr = 10, mt = 10, mb = 40, iw = Wd - ml - mr, ih = H - mt - mb; const max = Math.max(...D.monthly_total); const X = i => ml + i / (NM - 1) * iw, Y = v => mt + ih - v / max * ih;
+  let s = `<svg viewBox="0 0 ${Wd} ${H}">`;
+  seasons.forEach((se, i) => { const a = M.indexOf(se.a), b = M.indexOf(se.b); s += `<rect x="${X(a) - iw / (NM - 1) / 2}" y="${mt}" width="${X(b) - X(a) + iw / (NM - 1)}" height="${ih}" fill="${i % 2 ? 'var(--blush)' : 'var(--surface-2)'}"/><text class="tick" x="${(X(a) + X(b)) / 2}" y="${H - 22}" text-anchor="middle">${esc(se.label.split(' ')[0])}</text>`; });
+  let d = ''; D.monthly_total.forEach((v, i) => d += (i ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(v).toFixed(1) + ' '); s += `<path d="${d}" fill="none" stroke="var(--ink)" stroke-width="1.8"/>`;
+  M.forEach((k, i) => { if (k.endsWith('-01')) s += `<text class="tick" x="${X(i)}" y="${H - 6}" text-anchor="middle">${k.slice(0, 4)}</text>`; });
+  [0.5, 1].forEach(f => s += `<text class="tick" x="${ml - 4}" y="${Y(max * f) + 3}" text-anchor="end">${fmt(max * f)}</text>`);
+  $('#seasonchart').innerHTML = s + '</svg>';
+}
 
-// ---- What sells (attributes)
-const attrLabels = {type:'Product type', season:'Season / collection', colours:'Colour (from the colour option)', price_band:'Price band', stock_band:'Stock status right now', type_dresses_colour:'Dress colours'};
-$('#attrgrid').innerHTML = Object.keys(attrLabels).map(k => `<figure><figcaption><h3>${attrLabels[k]}</h3><span>share of product views</span></figcaption><div id="attr-${k}"></div></figure>`).join('');
-Object.keys(attrLabels).forEach(k => {
-  const rows = (D.attr[k] || []).slice(0, 12); const tot = (D.attr[k] || []).reduce((a,r)=>a+r.views,0) || 1;
-  hbar($('#attr-'+k), rows, { aria: attrLabels[k] + ' share of product views', labelW: 170, label: r => r.label, value: r => r.views, valueText: r => (r.views/tot*100).toFixed(0) + '%',
-    tip: r => `<b>${esc(r.label)}</b>${fmt(r.views)} views across ${fmt(r.n)} products<br>${fmt(r.users)} users · ${fmt(r.atc)} add-to-cart · ${fmt(r.purch)} purchased` });
-});
-const so = D.attr.stock_band.find(x => x.label === 'Sold out') || {views:0, n:0, atc:0};
-$('#stocknote').innerHTML = `<b>Stock is the headline finding.</b> ${fmt(so.n)} of ${fmt(D.coverage.products)} live products are sold out in every size, yet they took ${(so.views / D.coverage.product_views * 100).toFixed(0)}% of product page views in the period. Demand is landing on pages that cannot sell. Filter the Products tab by Stock = Sold out and Tier = Hero or Strong for the restock list.`;
-$('#stocktext').innerHTML = `Stock status was read from the live store on ${D.period.crawled}: a product counts as sold out when no size or colour variant is available. ${fmt(so.n)} of the ${fmt(D.coverage.products)} live products are sold out and they carried ${fmt(so.views)} of the ${fmt(D.coverage.product_views)} product page views (${(so.views / D.coverage.product_views * 100).toFixed(0)}%). The score deliberately does not penalise sold-out pieces: their views and users still count in full, and add-to-cart has only a 10% weight precisely because a sold-out product cannot be added to cart. A sold-out Hero is therefore a restock or re-cut candidate, not a product to hide; the Products tab flags it and the shop cards carry a "Sold out" tag. When the store keeps sold-out products visible, the Popular badge should still be shown with a back-in-stock signup rather than an add-to-cart button.`;
-
-// ---- Every product
-const fkeys = ['hub_label','type','season','colour','price_band','stock_band'];
-const bandOrder = ['Under €80','From €80 to €129','From €130 to €199','From €200 to €299','€300 and over','Sold out','Low stock (under half of sizes)','Mostly in stock','Fully in stock'];
-fkeys.forEach(k => { const vals = [...new Set(PL.map(o => o[k]).filter(Boolean))].sort((a,b) => (bandOrder.indexOf(a) - bandOrder.indexOf(b)) || a.localeCompare(b)); const s = $('#f-' + k); vals.forEach(v => { const o = document.createElement('option'); o.value = v; o.textContent = v; s.appendChild(o); }); });
-let sortKey = 'ratio', sortDir = 'desc', page = 1; const PAGE = 100;
-const trendOrder = {Rising:0, New:1, Steady:2, Fading:3, '':4};
-const allCols = [['name','Product',false],['hub_label','Main collection',false],['tier','Tier',false],['status','Age',false],['ratio','Ratio',true],['rank','Rank',true],['ratio12','12-mo ratio',true],['trend','Trend',false],['views','Views',true],['users','Users',true],['er','Eng. rate',true],['clicks','Organic clicks',true],['atc','Add-to-cart',true],['purch','Purchased',true],['revenue','Revenue',true],['instock','In stock',true]];
-const tierOrder = {Hero:0, Strong:1, Average:2, Low:3, New:4, 'No data':5};
+// ---------- products table
+const fkeys = ['hub_label', 'type', 'season', 'colour', 'price_band', 'stock_band']; let fFilled = false;
+const bandOrder = ['Under €80', 'From €80 to €129', 'From €130 to €199', 'From €200 to €299', '€300 and over', 'Sold out', 'Low stock (under half of sizes)', 'Mostly in stock', 'Fully in stock'];
+let sortKey = 'ratio', sortDir = 'desc', page = 1; const PAGE = 100; const trendOrder = {Rising: 0, New: 1, Steady: 2, Fading: 3, '': 4}; const tierOrder = {Hero: 0, Strong: 1, Average: 2, Low: 3, New: 4, 'No data': 5};
+const allCols = [['name', 'Product', false], ['hub_label', 'Main collection', false], ['tier', 'Tier', false], ['ratio', 'Ratio', true], ['rank', 'Rank', true], ['ratio_prev', 'Ratio before', true], ['trend', 'Momentum', false], ['V', 'Views', true], ['U', 'Users', true], ['er', 'Eng. rate', true], ['K', 'Organic clicks', true], ['A', 'Add-to-cart', true], ['B', 'Purchased', true], ['R', 'Revenue', true], ['first', 'First seen', true], ['instock', 'In stock today', true]];
+const val = (o, k) => ['V', 'U', 'K', 'A', 'B', 'R'].includes(k) ? o.m[k] : k === 'er' ? (o.m.S ? o.m.E / o.m.S : 0) : o[k];
 function filtered(){
-  const q = $('#q').value.trim().toLowerCase();
-  const f = {}; fkeys.forEach(k => f[k] = $('#f-' + k).value); const ft = $('#f-tier').value, ftr = $('#f-trend').value, fst = $('#f-status').value;
-  let rows = PL.filter(o => (!q || o.name.toLowerCase().includes(q) || o.slug.includes(q)) && (!ft || o.tier === ft) && (!ftr || o.trend === ftr) && (!fst || o.status === fst) && fkeys.every(k => !f[k] || o[k] === f[k]));
-  rows.sort((a, b) => { let x = a[sortKey], y = b[sortKey]; if (sortKey === 'tier') { x = tierOrder[x]; y = tierOrder[y]; } if (sortKey === 'trend') { x = trendOrder[x]; y = trendOrder[y]; } if (typeof x === 'string') return sortDir === 'asc' ? x.localeCompare(y) : y.localeCompare(x); x = x ?? -1; y = y ?? -1; return sortDir === 'asc' ? x - y : y - x; });
+  const q = $('#q').value.trim().toLowerCase(); const f = {}; fkeys.forEach(k => f[k] = $('#f-' + k).value); const ft = $('#f-tier').value, ftr = $('#f-trend').value, fl = $('#f-live').value;
+  let rows = PL.filter(o => o.m.V > 0 && (!q || o.name.toLowerCase().includes(q) || o.slug.includes(q)) && (!ft || o.tier === ft) && (!ftr || o.trend === ftr) && (!fl || (fl === 'yes') === o.live) && fkeys.every(k => !f[k] || o[k] === f[k]));
+  rows.sort((x, y) => { let a = val(x, sortKey), b = val(y, sortKey); if (sortKey === 'tier') { a = tierOrder[a]; b = tierOrder[b]; } if (sortKey === 'trend') { a = trendOrder[a]; b = trendOrder[b]; } if (typeof a === 'string') return sortDir === 'asc' ? a.localeCompare(b) : b.localeCompare(a); a = a ?? -1; b = b ?? -1; return sortDir === 'asc' ? a - b : b - a; });
   return rows;
 }
-function renderAll(){
-  const rows = filtered(); const pages = Math.max(1, Math.ceil(rows.length / PAGE)); if (page > pages) page = pages;
-  const slice = rows.slice((page - 1) * PAGE, page * PAGE);
-  $('#allcount').textContent = `${fmt(rows.length)} of ${fmt(PL.length)} products` + (rows.length > PAGE ? `, showing ${(page-1)*PAGE+1} to ${Math.min(page*PAGE, rows.length)}` : '');
-  $('#alltable').innerHTML = '<thead><tr>' + allCols.map(([k, l, num]) => `<th class="sort${num?' n':''}" data-k="${k}" ${k===sortKey?`data-dir="${sortDir}"`:''}>${l}</th>`).join('') + '<th>Also listed in (rank)</th></tr></thead><tbody>' +
-    slice.map(o => `<tr><td><div class="pcell">${thumb(o)}<div><a class="name" href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.name)}</a><div class="chips">${chips(o)}</div></div></div></td>
-      <td>${esc(o.hub_label)}</td><td>${tierPill(o.tier)}</td><td class="small">${o.status === 'Established' ? '<span class="muted">Established</span>' : o.status === 'No data' ? '<span class="muted">No views yet</span>' : `${o.status}, ${o.days_live} days${o.status === 'Ramping' ? `, ${fmt(o.views_raw)} real views` : ''}`}</td><td class="n num">${o.tier === 'No data' ? '' : o.ratio.toFixed(2)}</td><td class="n num">${o.rank || ''}</td>
-      <td class="n num">${o.tier === 'No data' || !o.ratio12 ? '' : o.ratio12.toFixed(2)}</td><td>${trendPill(o.trend)}</td>
-      <td class="n num">${fmt(o.views)}</td><td class="n num">${fmt(o.users)}</td><td class="n num">${o.sess ? o.er.toFixed(1) + '%' : ''}</td><td class="n num">${fmt(o.clicks)}</td><td class="n num">${fmt(o.atc)}</td><td class="n num">${o.purch ? '<span class="flag">' + o.purch + '</span>' : '0'}</td><td class="n num">${o.revenue ? eur(o.revenue) : ''}</td><td class="n num">${o.instock === 0 ? '<span class="chip out">Sold out</span>' : Math.round(o.instock) + '%'}</td>
-      <td class="pl">${plist(o, null)}</td></tr>`).join('') + '</tbody>';
-  $('#alltable').querySelectorAll('th.sort').forEach(th => th.addEventListener('click', () => { const k = th.dataset.k; if (sortKey === k) sortDir = sortDir === 'asc' ? 'desc' : 'asc'; else { sortKey = k; sortDir = (k === 'name' || k === 'hub_label' || k === 'tier' || k === 'rank') ? 'asc' : 'desc'; } page = 1; renderAll(); }));
-  let pg = '';
-  if (pages > 1) { const around = [...new Set([1, 2, page - 1, page, page + 1, pages - 1, pages].filter(x => x >= 1 && x <= pages))].sort((a,b)=>a-b); let prev = 0; around.forEach(x => { if (x - prev > 1) pg += '<span>…</span>'; pg += `<button data-p="${x}" ${x===page?'aria-current="true"':''}>${x}</button>`; prev = x; }); }
-  $('#pager').innerHTML = pg;
-  $('#pager').querySelectorAll('button').forEach(b => b.addEventListener('click', () => { page = +b.dataset.p; renderAll(); window.scrollTo({top: $('#allcount').offsetTop - 80}); }));
+function renderTable(){
+  if (!fFilled) { fkeys.forEach(k => { const vals = [...new Set(PL.map(o => o[k]).filter(Boolean))].sort((x, y) => (bandOrder.indexOf(x) - bandOrder.indexOf(y)) || x.localeCompare(y)); const s = $('#f-' + k); vals.forEach(v => { const o = document.createElement('option'); o.value = v; o.textContent = v; s.appendChild(o); }); }); fFilled = true;
+    $('#q').addEventListener('input', () => { page = 1; renderTable(); }); ['tier', 'trend', 'live', ...fkeys].forEach(k => $('#f-' + k).addEventListener('change', () => { page = 1; renderTable(); })); }
+  const rows = filtered(); const pages = Math.max(1, Math.ceil(rows.length / PAGE)); if (page > pages) page = pages; const slice = rows.slice((page - 1) * PAGE, page * PAGE);
+  $('#allcount').textContent = `${fmt(rows.length)} products with traffic in the period` + (rows.length > PAGE ? `, showing ${(page - 1) * PAGE + 1} to ${Math.min(page * PAGE, rows.length)}` : '');
+  $('#alltable').innerHTML = '<thead><tr>' + allCols.map(([k, l, num]) => `<th class="sort${num ? ' n' : ''}" data-k="${k}" ${k === sortKey ? `data-dir="${sortDir}"` : ''}>${l}</th>`).join('') + '<th>Also seen in (rank)</th></tr></thead><tbody>' +
+    slice.map(o => `<tr><td><div class="pcell">${thumb(o)}<div><a class="name" href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.name)}</a><div class="chips">${chips(o)}</div></div></div></td><td>${esc(o.hub_label)}<div class="small muted">${o.rank ? '#' + o.rank + ' of ' + o.nhub : ''}</div></td><td>${tierPill(o.tier)}${o.m.status !== 'Established' ? `<div class="small muted">${o.m.active} of ${Bi - A + 1} months</div>` : ''}</td><td class="n num">${o.ratio.toFixed(2)}</td><td class="n num">${o.rank || ''}</td><td class="n num">${o.ratio_prev ? o.ratio_prev.toFixed(2) : ''}</td><td>${trendPill(o.trend)}</td><td class="n num">${fmt(o.m.V)}</td><td class="n num">${fmt(o.m.U)}</td><td class="n num">${o.m.S ? (o.m.E / o.m.S * 100).toFixed(1) + '%' : ''}</td><td class="n num">${fmt(o.m.K)}</td><td class="n num">${fmt(o.m.A)}</td><td class="n num">${o.m.B ? '<span class="flag">' + o.m.B + '</span>' : '0'}</td><td class="n num">${o.m.R ? eur(o.m.R) : ''}</td><td class="small muted">${o.first !== null ? mlabel(M[o.first]) : ''}</td><td class="n num">${!o.live ? '<span class="chip gone">Not on site</span>' : o.instock === 0 ? '<span class="chip out">Sold out</span>' : Math.round(o.instock) + '%'}</td><td class="pl">${plist(o, null)}</td></tr>`).join('') + '</tbody>';
+  $('#alltable').querySelectorAll('th.sort').forEach(th => th.addEventListener('click', () => { const k = th.dataset.k; if (sortKey === k) sortDir = sortDir === 'asc' ? 'desc' : 'asc'; else { sortKey = k; sortDir = ['name', 'hub_label', 'tier', 'rank', 'first'].includes(k) ? 'asc' : 'desc'; } page = 1; renderTable(); }));
+  let pg = ''; if (pages > 1) { const around = [...new Set([1, 2, page - 1, page, page + 1, pages - 1, pages].filter(x => x >= 1 && x <= pages))].sort((x, y) => x - y); let prev = 0; around.forEach(x => { if (x - prev > 1) pg += '<span>…</span>'; pg += `<button data-p="${x}" ${x === page ? 'aria-current="true"' : ''}>${x}</button>`; prev = x; }); }
+  $('#pager').innerHTML = pg; $('#pager').querySelectorAll('button').forEach(b => b.addEventListener('click', () => { page = +b.dataset.p; renderTable(); window.scrollTo({top: $('#allcount').offsetTop - 80}); }));
 }
-$('#q').addEventListener('input', () => { page = 1; renderAll(); });
-['tier', 'trend', 'status', ...fkeys].forEach(k => $('#f-' + k).addEventListener('change', () => { page = 1; renderAll(); }));
-renderAll();
 
-// ---- Placement map
-$('#mapgroups').innerHTML = '<div class="legend"><span class="l-Hero">Hero (3.00+)</span><span class="l-Strong">Strong (1.50 to 2.99)</span><span class="l-Average">Average (0.50 to 1.49)</span><span class="l-Low">Low (under 0.50)</span><span class="l-New">New (provisional 1.50)</span></div>' + groups.map(g => { const hs = D.hubs.filter(h => h.group === g).sort((a,b) => b.n_products - a.n_products || b.hub_pages.views - a.hub_pages.views); const ranked = hs.filter(h => h.n_products > 0); const other = hs.filter(h => h.n_products === 0);
-  return `<details class="mapgroup" ${ranked.length && g !== 'Not in the menu (tag, drop or older collection)' ? 'open' : ''}><summary><h3 style="display:inline">${esc(g)}</h3> <span class="muted small">${hs.length} pages, ${ranked.length} with ranked products</span></summary>` +
-  ranked.map(h => { const t = D.tiers[h.id]; const n = h.n_products; return `<div class="stack" data-h="${h.id}"><span>${esc(h.label)}</span><div class="bar-row">${['Hero','Strong','Average','Low','New','No data'].map(k => t[k] ? `<div class="seg seg-${k.replace(' ','-')}" style="width:${t[k]/n*100}%"></div>` : '').join('')}</div><span class="num muted">${fmt(n)}</span></div>`; }).join('') +
-  (other.length ? `<details class="more" style="margin-top:8px"><summary>${other.length} collection pages with traffic but no live products</summary><div class="hublist" style="margin-top:8px"><figure><ol>${other.map(h => `<li><code>/collections/${esc(h.id)}</code><span class="num" style="white-space:nowrap">${fmt(h.hub_pages.views)} views · ${fmt(h.hub_pages.clicks)} clicks</span></li>`).join('')}</ol></figure></div></details>` : '') + '</details>'; }).join('');
-$('#mapgroups').querySelectorAll('.stack').forEach(el => { const h = HUB[el.dataset.h], t = D.tiers[h.id];
-  el.addEventListener('mousemove', e => showTT(e, `<b>${esc(h.label)}</b>Hero ${t.Hero||0} · Strong ${t.Strong||0} · Average ${t.Average||0} · Low ${t.Low||0} · New ${t.New || 0}<br>${fmt(h.n_products)} products, ${fmt(h.tot.views)} views`));
-  el.addEventListener('mouseleave', hideTT); });
+// ---------- placement map
+function renderMap(){
+  const tiers = {}; HUBS.forEach(h => { const t = {}; CUR.HS[h.id].rows.forEach(r => { const k = CUR.MX[r.pid].V === 0 ? 'No data' : r.prov ? 'New' : tierOf(r.ratio); t[k] = (t[k] || 0) + 1; }); tiers[h.id] = t; });
+  $('#mapgroups').innerHTML = '<div class="legend"><span class="l-Hero">Hero (3.00+)</span><span class="l-Strong">Strong (1.50 to 2.99)</span><span class="l-Average">Average (0.50 to 1.49)</span><span class="l-Low">Low (under 0.50)</span><span class="l-New">New (provisional 1.50)</span></div>' + groups.map(g => { const hs = HUBS.filter(h => h.group === g && CUR.HS[h.id].n > 0).sort((x, y) => CUR.HS[y.id].n - CUR.HS[x.id].n); if (!hs.length) return '';
+    return `<details class="mapgroup" ${g.startsWith('Not in') ? '' : 'open'}><summary><h3 style="display:inline">${esc(g)}</h3> <span class="muted small">${hs.length} collections with products in the period</span></summary>` + hs.map(h => { const t = tiers[h.id]; const n = CUR.HS[h.id].n; return `<div class="stack" data-h="${h.id}"><span>${esc(h.label)}</span><div class="bar-row">${['Hero', 'Strong', 'Average', 'Low', 'New', 'No data'].map(k => t[k] ? `<div class="seg seg-${k.replace(' ', '-')}" style="width:${t[k] / n * 100}%"></div>` : '').join('')}</div><span class="num muted">${fmt(n)}</span></div>`; }).join('') + '</details>'; }).join('');
+  $('#mapgroups').querySelectorAll('.stack').forEach(el => { const h = HUB[el.dataset.h], t = tiers[h.id]; el.addEventListener('mousemove', e => showTT(e, `<b>${esc(h.label)}</b>Hero ${t.Hero || 0} · Strong ${t.Strong || 0} · Average ${t.Average || 0} · Low ${t.Low || 0} · New ${t.New || 0}<br>${fmt(CUR.HS[h.id].n)} products, ${fmt(CUR.HS[h.id].tot.V)} views`)); el.addEventListener('mouseleave', hideTT); });
+}
 
-const c = D.coverage;
-$('#newnow').textContent = `In the current data ${fmt(c.newcomers)} products entered during the 90 days (the House of Peonies FW27 drop went live on 4 September): ${fmt(c.new_lt30)} are under 30 days old and held at 1.50, ${fmt(c.ramping)} are between 30 and 89 days and score on their scaled numbers blended with the prior. Filter the Products tab by Age to see them.`;
-$('#newstats').textContent = `Right now: ${fmt(c.new_lt30)} products under 30 days old, ${fmt(c.ramping)} between 30 and 89 days, ${fmt(c.provisional)} carrying the New label.`;
-$('#er-site').textContent = D.product_er + '%'; $('#er-all').textContent = D.site_er + '%';
-$('#newlink').addEventListener('click', e => { e.preventDefault(); $('#tab-method').click(); setTimeout(() => $('#newproduct').scrollIntoView({behavior: 'smooth'}), 50); });
-$('#coverage').innerHTML = [
-  `GA4 Pages and screens, 90 days: ${fmt(c.ga_rows)} rows; ${fmt(c.ga_product_paths)} distinct product URLs after merging language prefixes (/en/) and collection paths (/collections/x/products/y), ${fmt(c.ga_product_views)} product page views. ${fmt(c.product_views)} of them (${(c.product_views / c.ga_product_views * 100).toFixed(0)}%) belong to the ${fmt(c.products)} products live on the store today; the rest belong to ${fmt(c.ghost)} products that are no longer on the store and are not shown anywhere in this dashboard. Every product URL was checked against the live site on ${D.period.crawled}.`,
-  `GA4 Pages and screens, 30 days and 12 months: ${fmt(c.ga_rows12)} rows in the 12-month export, used for recency weighting and the trend column.`,
-  `GA4 Ecommerce items: ${fmt(c.items_n)} item names, ${fmt(c.items_matched)} matched to a live product (${(c.item_views_matched / c.item_views_total * 100).toFixed(0)}% of item views). Greek and English names of the same item (the /en/ storefront) are merged. Unmatched names are unpublished products.`,
-  `Search Console through the GA4 link: ${fmt(c.gsc_rows)} landing pages, ${fmt(c.gsc_clicks_total)} organic clicks, of which ${fmt(c.gsc_product_clicks)} land on product pages. Most organic demand lands on collection pages (wedding, home, dresses), which is why the click weight is redistributed inside most collections.`,
-  `Catalogue: ${fmt(c.collections_crawled)} collections and ${fmt(c.products)} live products read from the store on ${D.period.crawled}, with images, prices, colour options, publish dates and per-variant stock. ${fmt(c.listed)} products are listed in at least one collection; ${fmt(c.unlisted_with_views)} with traffic are in no collection at all.`,
-  `Stock: ${fmt(c.soldout)} products sold out in every size, carrying ${fmt(c.soldout_views)} product page views.`
-].map(s => `<li>${s}</li>`).join('');
+// ---------- collections
+function renderColls(){
+  const rows = HUBS.filter(h => h.kind !== 'type').map(h => ({h, v: sum(h.pv, A, Bi), u: sum(h.pu, A, Bi), k: sum(h.pk, A, Bi), im: sum(h.pim, A, Bi), n: CUR.HS[h.id].n, pv: CUR.HS[h.id].tot.V || 0})).filter(r => r.v > 0 || r.k > 0).sort((x, y) => y.v - x.v);
+  hbar($('#hubchart'), rows.slice(0, 25), {aria: 'Collection page views', labelW: 260, label: r => r.h.label, value: r => r.v, valueText: r => fmt(r.v), tip: r => `<b>${esc(r.h.label)}</b>${fmt(r.v)} collection page views<br>${fmt(r.k)} organic clicks · ${fmt(r.im)} impressions<br>${fmt(r.n)} products in the period, ${fmt(r.pv)} product views`});
+  $('#navtable').innerHTML = '<thead><tr><th>Collection page</th><th>Group</th><th class="n">Products in period</th><th class="n">Product views</th><th class="n">Page views</th><th class="n">Organic clicks</th><th class="n">Impressions</th></tr></thead><tbody>' + rows.map(r => `<tr><td>${r.h.nav ? '★ ' : ''}<a href="https://myacollection.com/collections/${esc(r.h.id)}" target="_blank" rel="noopener">${esc(r.h.label)}</a><div class="small muted">/collections/${esc(r.h.id)}</div></td><td class="small">${esc(r.h.group)}</td><td class="n num">${r.n ? fmt(r.n) : '<span class="flag">none</span>'}</td><td class="n num">${fmt(r.pv)}</td><td class="n num">${fmt(r.v)}</td><td class="n num">${fmt(r.k)}</td><td class="n num">${fmt(r.im)}</td></tr>`).join('') + '</tbody>';
+}
+
+// ---------- attributes
+function renderAttr(){
+  const labels = {type: 'Product type (all products)', season: 'Season tag (live products)', colours: 'Colour (live products)', price_band: 'Price band (live products)', stock_band: 'Stock today (live products)', live: 'Live vs no longer on site'};
+  const agg = key => { const m = {}; PL.forEach(o => { if (o.m.V === 0) return; const vals = key === 'live' ? [o.live ? 'Live on the store' : 'Not on site any more'] : Array.isArray(o[key]) ? o[key] : [o[key]]; vals.forEach(v => { if (!v) return; const a = m[v] || (m[v] = {label: v, views: 0, users: 0, atc: 0, purch: 0, n: 0}); a.views += o.m.V; a.users += o.m.U; a.atc += o.m.A; a.purch += o.m.B; a.n++; }); }); return Object.values(m).sort((x, y) => y.views - x.views); };
+  $('#attrgrid').innerHTML = Object.keys(labels).map(k => `<figure><figcaption><h3>${labels[k]}</h3><span>share of product views</span></figcaption><div id="attr-${k}"></div></figure>`).join('');
+  Object.keys(labels).forEach(k => { const rows = agg(k); const tot = rows.reduce((s, r) => s + r.views, 0) || 1; hbar($('#attr-' + k), rows.slice(0, 12), {aria: labels[k], labelW: 170, label: r => r.label, value: r => r.views, valueText: r => (r.views / tot * 100).toFixed(0) + '%', tip: r => `<b>${esc(r.label)}</b>${fmt(r.views)} views across ${fmt(r.n)} products<br>${fmt(r.users)} users · ${fmt(r.atc)} add-to-cart · ${fmt(r.purch)} purchased`}); });
+  const so = PL.filter(o => o.live && o.instock === 0 && o.m.V > 0); const sov = so.reduce((s, o) => s + o.m.V, 0); const tv = PL.reduce((s, o) => s + o.m.V, 0) || 1;
+  $('#stocknote').innerHTML = `<b>Stock today, demand in this period.</b> ${fmt(so.length)} products that are sold out in every size right now took ${(sov / tv * 100).toFixed(0)}% of the period's product page views (${fmt(sov)}). For the last 90 days that is the restock list; for an older season it shows which pieces still draw attention after selling through.`;
+}
+function renderMethod(){
+  const c = D.coverage;
+  $('#stocktext').textContent = `Stock status was read from the live store on ${D.crawled}: a product counts as sold out when no size or colour variant is available. ${fmt(c.soldout)} of the ${fmt(c.live)} live products are sold out today. The score never penalises sold-out pieces: their views and users count in full, and add-to-cart has only a 10% weight precisely because a sold-out product cannot be added to cart. A sold-out Hero is a restock or re-cut candidate, not a product to hide.`;
+  $('#coverage').innerHTML = [`GA4 Pages and screens by month, ${mlabel(M[0])} to ${mlabel(M[NM - 1])}: ${fmt(c.product_views)} product page views on ${fmt(c.products)} distinct products (${fmt(c.live)} live on the store today, ${fmt(c.old)} no longer on it). Language prefixes (/en/) and collection paths (/collections/x/products/y) are merged into one product; the collection in the path is kept as membership evidence.`,
+    `GA4 Ecommerce items by month: ${fmt(c.items_rows)} item-month rows, ${fmt(c.items_matched)} matched to a product (${(c.item_views_matched / c.item_views * 100).toFixed(0)}% of item views). Greek and English names and size variants of the same item are merged. Unmatched names are products whose URL never appeared in GA4.`,
+    `Search Console through the GA4 link: one export per month from ${mlabel(c.gsc_from)} to ${mlabel(c.gsc_to)} (Search Console keeps 16 months). Periods before June 2025 have no organic click signal and the weight is redistributed.`,
+    `Catalogue: ${fmt(c.collections_crawled)} collections and ${fmt(c.live)} live products read from the store on ${D.crawled}, each URL checked live; images, prices, colour options and per-size stock are for live products only.`,
+    `Known gap: ${c.truncated_2023}. Every other export is complete (no "(other)" rows).`].map(s => `<li>${s}</li>`).join('');
+}
+
+fillSel(''); try { const v = localStorage.getItem('mya-hub'); if (v && HUB[v]) sel.value = v; } catch(e) {}
+setRange(A, Bi);
 }
 const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
 document.body.classList.add('locked');
@@ -717,11 +762,12 @@ document.getElementById('lockform').addEventListener('submit', async ev => {
   ev.preventDefault(); const el = document.getElementById('enc'); const err = document.getElementById('lockerr'); err.textContent = 'Checking…';
   try {
     const km = await crypto.subtle.importKey('raw', new TextEncoder().encode(document.getElementById('pw').value), 'PBKDF2', false, ['deriveKey']);
-    const key = await crypto.subtle.deriveKey({name:'PBKDF2', salt:b64(el.dataset.salt), iterations:+el.dataset.iter, hash:'SHA-256'}, km, {name:'AES-GCM', length:256}, false, ['decrypt']);
-    const pt = await crypto.subtle.decrypt({name:'AES-GCM', iv:b64(el.dataset.iv)}, key, b64(window.__ENC));
+    const key = await crypto.subtle.deriveKey({name: 'PBKDF2', salt: b64(el.dataset.salt), iterations: +el.dataset.iter, hash: 'SHA-256'}, km, {name: 'AES-GCM', length: 256}, false, ['decrypt']);
+    const pt = await crypto.subtle.decrypt({name: 'AES-GCM', iv: b64(el.dataset.iv)}, key, b64(window.__ENC));
     document.getElementById('data').textContent = new TextDecoder().decode(pt);
     el.remove(); document.getElementById('lock').remove(); document.body.classList.remove('locked');
     await boot();
-  } catch(e) { err.textContent = 'Wrong password, try again.'; console.error(e); }
+  } catch(e) { err.textContent = e.name === 'OperationError' ? 'Wrong password, try again.' : 'Error: ' + e.message; console.error(e); }
 });
+
 </script></body></html>
