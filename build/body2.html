@@ -1,0 +1,232 @@
+<div id="lock"><form id="lockform" autocomplete="off"><div class="wm">MYA</div><h2>Product demand dashboard</h2><input id="pw" type="password" placeholder="Password" autofocus aria-label="Password"><button type="submit">Open dashboard</button><div class="err" id="lockerr"></div></form></div>
+<div class="topbar">Product demand dashboard for myacollection.com, every product with traffic since August 2023, scored for any period you pick. Built by <a href="https://growth-onomics.com" target="_blank" rel="noopener">Growth-onomics</a>.</div>
+<div class="sitehead"><div class="wrap">
+  <a class="wordmark" href="#top">MYA</a>
+  <nav class="tabs" role="tablist" aria-label="Views">
+    <button role="tab" id="tab-rank" aria-selected="true" aria-controls="p-rank">Rankings</button>
+    <button role="tab" id="tab-seasons" aria-selected="false" aria-controls="p-seasons">Seasons</button>
+    <button role="tab" id="tab-all" aria-selected="false" aria-controls="p-all">Products</button>
+    <button role="tab" id="tab-map" aria-selected="false" aria-controls="p-map">Placement</button>
+    <button role="tab" id="tab-hubs" aria-selected="false" aria-controls="p-hubs">Collections</button>
+    <button role="tab" id="tab-attr" aria-selected="false" aria-controls="p-attr">What sells</button>
+    <button role="tab" id="tab-method" aria-selected="false" aria-controls="p-method">Formula</button>
+  </nav>
+  <a class="headcta" href="#p-method" id="headcta">The method</a>
+</div></div>
+<div class="periodbar"><div class="wrap">
+  <div class="pb-row">
+    <label class="ctl">Period<select id="preset"></select></label>
+    <label class="ctl">From<select id="mfrom"></select></label>
+    <label class="ctl">To<select id="mto"></select></label>
+    <div class="pb-summary" id="pbsum"></div>
+  </div>
+  <div class="pb-chart" id="pbchart" title="Product page views per month. Click a month to start a range, click another to end it."></div>
+</div></div>
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">MYA Collection · myacollection.com</div>
+    <h1><em>Demand</em> Made Visible</h1>
+    <p class="sub">Which pieces customers actually look for inside each collection, in any period since August 2023, ranked from GA4 and Search Console. Every product carries a Popularity Ratio for the chosen period (1.00 = an average product of its collection) that the Shopify store can sort, badge and link by.</p>
+    <div class="totals" id="totals"></div>
+  </div>
+</section>
+<section class="matrix" id="p-bcg" aria-label="Portfolio matrix">
+  <div class="wrap">
+    <div class="panel-head" style="margin-top:0">
+      <div>
+        <div class="eyebrow" style="color:var(--accent-ink)">Portfolio matrix</div>
+        <h2 style="margin-top:6px">Where every piece sits, BCG style</h2>
+        <p>Share = the Popularity Ratio in the product's main collection for the chosen period (1.00 = collection average). Growth = momentum, the ratio in this period divided by the ratio in the period of equal length just before it (1.00 = holding its position). Products that entered during the period are question marks by definition.</p>
+      </div>
+      <div class="controls">
+        <label class="ctl">Collection<select id="bcghub"><option value="">All collections</option></select></label>
+        <label class="ctl">Size dots by<select id="bcgsize"><option value="V">Page views</option><option value="K">Organic clicks</option><option value="A">Add-to-cart</option><option value="B">Purchases</option><option value="none">Same size</option></select></label>
+      </div>
+    </div>
+    <div class="bcg">
+      <figure class="bcgchart"><figcaption><h3>Growth × share</h3><span>each dot is a product, hover for details</span></figcaption><div id="bcgplot"></div><p class="small muted" id="bcgnote" style="margin-top:10px"></p></figure>
+      <div class="quads" id="quads"></div>
+    </div>
+  </div>
+</section>
+<div class="wrap">
+<section class="formula-top" aria-label="The formula">
+  <div class="ft-main">
+    <div class="eyebrow">The formula</div>
+    <div class="formula" style="margin:8px 0 6px">Demand Share % = 100 × [ 0.35 × Views ÷ ΣViews(collection) + 0.25 × Users ÷ ΣUsers(collection) + 0.15 × Engaged sessions ÷ ΣEngaged(collection) + 0.15 × Organic clicks ÷ ΣClicks(collection) + 0.10 × Add-to-cart ÷ ΣATC(collection) ], all summed over the chosen months<br>Popularity Ratio = Demand Share % × Products in collection ÷ 100<br>Products that entered during the period: signals scaled to the full period, then Ratio = (real views × own ratio + 100 × 1.50) ÷ (real views + 100)<br>Momentum = Ratio this period ÷ Ratio in the equal-length period before it</div>
+    <p class="small muted">Each product is scored against the other products in the same collection in that period: the products the collection lists on the store today, plus every product that GA4 saw being opened from that collection page (URL /collections/…/products/…) during the period. That is how a collection can be ranked for a season whose products have since left the store. Ratio 1.00 = an average product of that collection; 3.00 and above = Hero, 1.50 to 2.99 = Strong, 0.50 to 1.49 = Average, under 0.50 = Low. Organic clicks exist from June 2025 (Search Console keeps 16 months); for earlier periods that weight is redistributed.</p>
+  </div>
+  <div class="ft-side">
+    <div class="eyebrow">Reading a period</div>
+    <ol class="mini">
+      <li><b>Pick a season or a custom range.</b> Every tab recomputes: rankings, tiers, matrix, collections, attributes. Nothing is pre-baked.</li>
+      <li><b>Products no longer on the store are included</b> and tagged "Not on site", so past seasons show what really sold attention then, not only what survived.</li>
+      <li><b>Stock is today's stock.</b> A sold-out tag means sold out on the crawl date, whatever period you look at.</li>
+    </ol>
+    <p class="small muted" id="newstats"></p>
+  </div>
+</section>
+
+<section role="tabpanel" id="p-rank" aria-labelledby="tab-rank">
+  <div class="panel-head">
+    <div>
+      <h2>Most popular pieces per collection</h2>
+      <p>Pick a collection (or a product type). Products are ranked by Demand Share for the chosen period: the share of that collection's page views, users, engaged sessions, organic clicks and add-to-carts each product captured. The timeline below shows how the top pieces moved month by month across the whole history.</p>
+    </div>
+    <div class="controls">
+      <label class="ctl">Find a collection<input id="hubq" type="search" placeholder="type part of the name, e.g. sirens"></label>
+      <label class="ctl">Collection<select id="hubsel"></select></label>
+      <label class="ctl">Show<select id="topn"><option value="10">Top 10</option><option value="15" selected>Top 15</option><option value="25">Top 25</option><option value="50">Top 50</option><option value="0">All products in collection</option></select></label>
+    </div>
+  </div>
+  <p class="callout small" id="hubnote" hidden></p>
+  <p class="small muted" id="hubsrc" style="margin:-8px 0 14px"></p>
+  <div class="tiles" id="hubtiles"></div>
+  <div class="grid2">
+    <figure>
+      <figcaption><h3 id="chart-title">Demand Share</h3><span>% of collection demand · <span style="display:inline-block;width:10px;height:10px;background:var(--gold);border-radius:2px;vertical-align:middle"></span> had a purchase</span></figcaption>
+      <div id="chart"></div>
+    </figure>
+    <figure>
+      <figcaption><h3>Month by month</h3><span>page views of the top 8 in this collection, whole history</span></figcaption>
+      <div id="timeline"></div>
+      <div class="legend" id="tlegend" style="margin-top:8px"></div>
+    </figure>
+  </div>
+  <h3 style="margin:30px 0 14px">Top of the collection, as it would look on the shop grid</h3>
+  <div class="cards" id="topcards"></div>
+  <h3 style="margin:26px 0 12px">Ranked table</h3>
+  <div class="tablewrap"><table id="ranktable"></table></div>
+  <p class="small muted" style="margin-top:8px">Add-to-cart and purchases come from the GA4 items report (item name matched to the product; sizes merged) where a match exists, otherwise from the product page. Stock status is today's, read from the live store at build time.</p>
+</section>
+
+<section role="tabpanel" id="p-seasons" aria-labelledby="tab-seasons" hidden>
+  <div class="panel-head">
+    <div>
+      <h2>What was popular, season by season</h2>
+      <p>The top pieces of each season, scored inside the collection or product type you pick, so you can see how taste moved from Wild Love to Sirens. Ratio is the Popularity Ratio for that season. Click a season heading to load it into the period bar.</p>
+    </div>
+    <div class="controls">
+      <label class="ctl">Score inside<select id="seahub"></select></label>
+      <label class="ctl">Show<select id="seatop"><option value="5">Top 5</option><option value="10" selected>Top 10</option><option value="15">Top 15</option></select></label>
+    </div>
+  </div>
+  <div class="seasons" id="seasons"></div>
+  <figure style="margin-top:22px"><figcaption><h3>Product page views by month</h3><span>all products, whole history; seasons shaded</span></figcaption><div id="seasonchart"></div></figure>
+</section>
+
+<section role="tabpanel" id="p-all" aria-labelledby="tab-all" hidden>
+  <div class="panel-head">
+    <div>
+      <h2>Every product and where it goes</h2>
+      <p>Every product with traffic in the chosen period, live or not, with its main collection, Popularity Ratio, merch tier, rank, momentum, today's stock and every other collection it was seen in. Search, filter, and click a column heading to sort.</p>
+    </div>
+  </div>
+  <div class="controls filters" id="filters">
+    <label class="ctl">Search<input id="q" type="search" placeholder="name or URL"></label>
+    <label class="ctl">On site today<select id="f-live"><option value="">All</option><option value="yes">Live on the store</option><option value="no">Not on site any more</option></select></label>
+    <label class="ctl">Main collection<select id="f-hub_label"><option value="">All</option></select></label>
+    <label class="ctl">Tier<select id="f-tier"><option value="">All</option><option>Hero</option><option>Strong</option><option>Average</option><option>Low</option><option>New</option></select></label>
+    <label class="ctl">Momentum<select id="f-trend"><option value="">All</option><option>Rising</option><option>Steady</option><option>Fading</option><option>New</option></select></label>
+    <label class="ctl">Type<select id="f-type"><option value="">All</option></select></label>
+    <label class="ctl">Season tag<select id="f-season"><option value="">All</option></select></label>
+    <label class="ctl">Colour<select id="f-colour"><option value="">All</option></select></label>
+    <label class="ctl">Price<select id="f-price_band"><option value="">All</option></select></label>
+    <label class="ctl">Stock today<select id="f-stock_band"><option value="">All</option></select></label>
+  </div>
+  <p class="small muted" id="allcount" style="margin:12px 0 8px"></p>
+  <div class="tablewrap"><table id="alltable"></table></div>
+  <div class="pager" id="pager"></div>
+</section>
+
+<section role="tabpanel" id="p-map" aria-labelledby="tab-map" hidden>
+  <div class="panel-head">
+    <div>
+      <h2>Placement map</h2>
+      <p>How each collection's products split into merch tiers for the chosen period. Hero (ratio 3.00 and above) gets the featured slots and the popular badge, Strong (1.50 to 2.99) fills the first rows, Average (0.50 to 1.49) is the default order, Low (under 0.50) goes to the back of the grid or gets reviewed. New is the provisional 1.50 for products that entered during the period with under 100 views. Hover a bar for counts.</p>
+    </div>
+  </div>
+  <div id="mapgroups"></div>
+</section>
+
+<section role="tabpanel" id="p-hubs" aria-labelledby="tab-hubs" hidden>
+  <div class="panel-head">
+    <div>
+      <h2>Collection page demand</h2>
+      <p>Traffic to the collection pages themselves in the chosen period (not the products inside). Page views from GA4, organic clicks from Search Console where available. Starred rows are in today's site menu.</p>
+    </div>
+  </div>
+  <figure>
+    <figcaption><h3>Collection page views</h3><span>top 25 collection pages in the period</span></figcaption>
+    <div id="hubchart"></div>
+  </figure>
+  <h3 style="margin:30px 0 10px">Every collection page with traffic in the period</h3>
+  <div class="tablewrap"><table id="navtable" style="min-width:900px"></table></div>
+</section>
+
+<section role="tabpanel" id="p-attr" aria-labelledby="tab-attr" hidden>
+  <div class="panel-head">
+    <div>
+      <h2>What MYA shoppers looked at</h2>
+      <p>Share of product page views in the chosen period by attribute. Product type is known for every product (from the catalogue, or from the URL for products no longer on the store). Colour, price, season tag and stock are known for live products only.</p>
+    </div>
+  </div>
+  <div class="attrgrid" id="attrgrid"></div>
+  <p class="callout small" style="margin-top:18px" id="stocknote"></p>
+</section>
+
+<section role="tabpanel" id="p-method" aria-labelledby="tab-method" hidden>
+  <div class="method">
+    <h2 style="margin-top:0">The formula</h2>
+    <p>Every product is scored inside its collection for the chosen months, never against the whole store, so a strong skirt is not buried under dresses. The score is a Demand Share: the percentage of the collection's total demand in the period that one product captures. Shares inside a collection add up to 100.</p>
+    <div class="formula">Demand Share (product, collection, period) =<br>
+&nbsp;&nbsp;0.35 × Views(product) / Σ Views(collection)<br>
+&nbsp;+ 0.25 × Users(product) / Σ Users(collection)<br>
+&nbsp;+ 0.15 × Engaged sessions(product) / Σ Engaged sessions(collection)<br>
+&nbsp;+ 0.15 × Organic clicks(product) / Σ Organic clicks(collection)<br>
+&nbsp;+ 0.10 × Add-to-cart(product) / Σ Add-to-cart(collection)<br>
+&nbsp;× 100, every term summed over the months in the period</div>
+    <table class="wtable"><thead><tr><th>Signal</th><th>Source</th><th class="n">Weight</th><th>Why</th></tr></thead><tbody>
+      <tr><td>Page views</td><td>GA4 · Pages and screens, by month</td><td class="n">35%</td><td>Raw interest. Counts repeat looks, which is how people shop for occasion wear.</td></tr>
+      <tr><td>Active users</td><td>GA4 · Pages and screens, by month</td><td class="n">25%</td><td>Breadth of interest. Monthly users are summed over the period, so a user active in two months counts twice, equally for every product.</td></tr>
+      <tr><td>Engaged sessions</td><td>GA4 · Pages and screens, by month</td><td class="n">15%</td><td>Quality of interest. A product people stay on, scroll and click earns more than one they bounce from.</td></tr>
+      <tr><td>Organic clicks</td><td>Search Console (GA4 link) · Landing pages, by month</td><td class="n">15%</td><td>Demand from Google. Available from June 2025 (Search Console keeps 16 months). In earlier periods, or in collections with no product-level clicks, the weight is redistributed.</td></tr>
+      <tr><td>Add-to-cart</td><td>GA4 · Ecommerce items, by month</td><td class="n">10%</td><td>Purchase intent. Low weight because sold-out products cannot be added to cart.</td></tr>
+    </tbody></table>
+    <p style="margin-top:12px">If a collection has no data for a signal in the period, that weight is dropped and the others are rescaled, so the shares still add up to 100.</p>
+
+    <h3>Who is in a collection, for a past period</h3>
+    <p>Shopify only knows today's membership. For any period the collection's members are the products it lists today plus every product that GA4 saw opened from that collection page during the period (the store's URLs carry the collection: /collections/ss26-sirens-dresses/products/elodie-dress). A product that has since been unpublished still appears in the seasons it was sold, tagged "Not on site". The same rule builds the product-type rankings (all dresses, all tops), where the type of an old product is read from its URL.</p>
+
+    <h3>Products that entered during the period</h3>
+    <p>A product first seen in the middle of the period has fewer months to collect views than its neighbours. Its signals are scaled to the full period (× months in period ÷ months since first seen), then blended with a prior of 1.50 in proportion to its real views: (views × own ratio + 100 × 1.50) ÷ (views + 100). With under 100 real views it stays at 1.50 and is labelled New. This replaces the launch-date rule of the first version and works for any period.</p>
+
+    <h3>Momentum, and the seasonal trap</h3>
+    <p>Momentum compares the product's ratio in the chosen period with its ratio in the period of equal length immediately before it (for Mar to Aug 2026 that is Sep 2025 to Feb 2026). Rising is at least 25% up, Fading at least 20% down, Steady is between, New means it had no ratio before. Because the comparison period is usually the opposite season, a summer dress fading against a winter period is normal; use the Seasons tab and compare like with like (SS26 against SS25) before drawing conclusions.</p>
+
+    <h2>Stock, and why it changes the reading</h2>
+    <p id="stocktext"></p>
+
+    <h2>Sources and coverage</h2>
+    <ul id="coverage" style="margin:0 0 12px;padding-left:20px"></ul>
+
+    <h2>Refreshing the data</h2>
+    <ol class="steps">
+      <li>GA4 → Reports → Engagement → Pages and screens. Add the metrics Sessions, Engaged sessions, Add to carts, Ecommerce purchases; secondary dimension Month; filter Page path contains "/products/". Export one CSV per calendar year (the export is capped at 100,000 rows). Repeat with the filter "/collections/".</li>
+      <li>GA4 → Monetization → Ecommerce purchases (Item name), secondary dimension Month, one CSV per year.</li>
+      <li>GA4 → Search Console → Google organic search traffic (Landing page), one CSV per month (this report does not accept the Month dimension).</li>
+      <li>Drop the files in build/hist, run build/crawl.py (catalogue and stock), build/build_history.py and build/build_page.py. The Shopify sort package (build/build_shopify.py) still runs on the 90-day view, which is the one that should drive the store's order.</li>
+    </ol>
+
+    <h2>Using it on the store</h2>
+    <ol class="steps">
+      <li>Collection ordering: use the last 90 days (the default period) and the shopify/ package in the repo. Seasons are for planning, the current period is for sorting.</li>
+      <li>Buying and re-cuts: open the season you are planning against (SS26 for next summer), filter Products by "Not on site" to see what sold attention and is gone, and by "Sold out" for what is still listed but cannot sell.</li>
+      <li>Merchandising gaps: in Collections, a collection page with strong views whose products carry low Demand Share is sending traffic to pieces people do not want to look at. Refresh the selection there first.</li>
+    </ol>
+  </div>
+</section>
+
+<footer><div class="fm">MYA</div>Data: GA4 property MYA Collection (347705989) with the Search Console link, monthly exports August 2023 to 23 September 2026; catalogue and stock from myacollection.com on 23 September 2026. Built by Growth-onomics.</footer>
+</div>
+<div class="tt" id="tt"></div>
